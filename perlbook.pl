@@ -7,12 +7,22 @@ get '/' => sub {
 	$self->render('index');
 }; 
 
+get '/restart' => sub {
+	my $self = shift;
+	
+	my $res = `./pull.sh`;
+	
+	$self->render(text => $res);
+	
+};
+
 get '/:page' => sub {
   my $self = shift;
   my $page = $self->stash('page');
   $page =~ s/\.html$//;
   $self->render( $page ) or $self->render_not_found();
 };
+
 
 app->config(hypnotoad => {listen => ['http://*:3000'], workers => 1 }) ;
 app->start;
