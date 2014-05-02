@@ -1,0 +1,138 @@
+% layout 'wrapper';
+<div class="span8">
+
+<h1 id="UGVybGFuZEl0c0NvbW11bml0eQ"><a name="UGVybGFuZEl0c0NvbW11bml0eQ"></a>Perl and Its Community</h1>
+
+<p>Perl&#39;s greatest accomplishment is the huge amount of reusable libraries developed for it. Where Perl 4 had forks to connect to databases such as Oracle and Sybase, for example, Perl now has a real extension mechanism. Larry wanted people to create and maintain their own extensions without fragmenting Perl into thousands of incompatible pidgins—and it worked.</p>
+
+<p>That technical accomplishment was almost as important as the growth of a community around Perl. <em>People</em> write libraries. <em>People</em> build on the work of other people. <em>People</em> make a community worth joining and preserving and expanding.</p>
+
+<p>The Perl community is strong and healthy. It welcomes willing participants at all levels, from novices to core developers. Take advantage of the knowledge and experience of countless other Perl programmers, and you&#39;ll become a better programmer.</p>
+
+<h2 id="Y3Bhbg"><a name="VGhlQ1BBTg"></a>The CPAN</h2>
+
+<p id="Y3Bhbg">Perl is a pragmatic language, and the availability of tens of thousands of freely reusable Perl libraries demonstrates that pragmatism. If you have a problem to solve, chances are the global Perl community has already written—and shared—code to solve it.</p>
+
+<p id="Q1BBTg2">Modern Perl programming makes heavy use of the CPAN (<a class="url" href="http://www.cpan.org/">http://www.cpan.org/</a>). The Comprehensive Perl Archive Network is an uploading and mirroring system for redistributable, reusable Perl code. It&#39;s one of—if not <em>the</em>—largest archives of libraries of code in the world. The CPAN offers libraries for everything from database access to profiling tools to protocols for almost every network device ever created to sound and graphics libraries and wrappers for shared libraries on your system.</p>
+
+<p>Modern Perl without the CPAN is just another language. Modern Perl with the CPAN is a powerful toolkit for solving problems.</p>
+
+<p id="ZGlzdHJpYnV0aW9u1"> <a name="bW9kdWxlcw1"></a>CPAN mirrors <em>distributions</em>, or collections of reusable Perl code. A single distribution can contain one or more <em>modules</em>, or self-contained libraries of Perl code. Each distribution occupies its own CPAN namespace and provides unique metadata.</p>
+
+<div class="tip">
+<p class="title">The CPAN is Big, Really Big</p>
+<p>The CPAN <em>adds</em> hundreds of registered contributors and thousands of indexed modules in hundreds of distributions every month. Those numbers do not take into account updates. In January 2014, search.cpan.org reported 11021 uploaders, 129039 modules, and 29068 distributions (representing growth rates of 15.1%, 21.2%, and 18.1% since the previous edition of this book, respectively).</p>
+
+</div><p id="c2VhcmNoLmNwYW4ub3Jn1"> <a name="bWV0YWNwYW4ub3Jn1"></a>The CPAN itself is merely a mirroring service. Authors upload distributions which get sent to various mirror sites from which CPAN clients download, configure, build, test, and install them. This simplicity has served Perl well, by enabling the contributions of thousands of volunteers. In particular, community standards have evolved to identify the attributes and characteristics of well-formed CPAN distributions. These include:</p>
+
+<ul>
+
+<li>the behavior of automated CPAN installers</li>
+
+<li>metadata to describe what each distribution provides and expects</li>
+
+<li>machine-readable documentation and licensing</li>
+
+</ul>
+
+<p>Additional CPAN services provide comprehensive automated testing and reporting to improve the quality of packaging and correctness across platforms and Perl versions. Every CPAN distribution has its own ticket queue on <a class="url" href="http://rt.cpan.org/">http://rt.cpan.org/</a> for reporting bugs and working with authors. CPAN sites also link to previous distribution versions, module ratings, documentation annotations, and more. All of this is available from both <a class="url" href="http://search.cpan.org/">http://search.cpan.org/</a> and <a class="url" href="http://metacpan.org/">http://metacpan.org/</a>.</p>
+
+<p id="Q1BBTjtDUEFOLnBt1">Modern Perl installations include a client to connect to, search, download, build, test, and install CPAN distributions; this is <em>CPAN.pm</em>. With a recent version (as of this writing, 2.0 is the latest stable release), module installation is reasonably easy. Start the client with:</p>
+
+<div class="screen">
+<pre><code>    $ <strong>cpan</strong></code></pre>
+
+</div><p>To install a distribution within the client:</p>
+
+<div class="screen">
+<pre><code>    $ <strong>cpan</strong>
+    cpan[1]&gt; <strong>install Modern::Perl</strong></code></pre>
+
+</div><p>... or to install directly from the command line:</p>
+
+<div class="screen">
+<pre><code>    $ <strong>cpan Modern::Perl</strong></code></pre>
+
+</div><p id="Q1BBTjtDUEFOLnBt2">Eric Wilhelm&#39;s tutorial on configuring CPAN.pm <span class="footnote"><a class="url" href="http://learnperl.scratchcomputing.com/tutorials/configuration/">http://learnperl.scratchcomputing.com/tutorials/configuration/</a></span> includes a great troubleshooting section.</p>
+
+<div class="sidebar">
+
+<p>Even though the CPAN client is a core module for the Perl distribution, you will likely need to install standard development tools such as a <code>make</code> utility and possibly a C compiler. Windows users, see Strawberry Perl (<a class="url" href="http://strawberryperl.com/">http://strawberryperl.com/</a>) and Strawberry Perl Professional. Mac OS X users must install XCode. Unix and Unix-like users often have these tools available (though Debian and Ubuntu users should install <code>build-essential</code>).</p>
+
+</div>
+
+<h3 id="cGVybF9jb21tdW5pdHk"><a name="Q1BBTk1hbmFnZW1lbnRUb29scw"></a>CPAN Management Tools</h3>
+
+<p>If your operating system provides its own Perl installation, that version may be out of date or it may have its own dependencies on specific versions of CPAN distributions. Serious Perl developers often construct virtual walls between the system Perl and their development Perl installations. Several projects help to make this possible.</p>
+
+<p><code>App::cpanminus</code> is a newer CPAN client with goals of speed, simplicity, and zero configuration. Install it with <code>cpan App::cpanminus</code>, or:</p>
+
+<div class="screen">
+<pre><code>    $ <strong>curl -LO http://xrl.us/cpanm</strong>
+    $ <strong>less cpanm</strong> # review the code before running
+    $ <strong>chmod +x cpanm</strong>
+    $ <strong>./cpanm</strong></code></pre>
+
+</div><p><code>App::perlbrew</code> is a system to manage and to switch between your own installations of multiple versions and configurations of Perl. Installation is as easy as:</p>
+
+<div class="screen">
+<pre><code>    $ <strong>curl -LO http://xrl.us/perlbrew</strong>
+    $ <strong>less perlbrew</strong> # review the code before running
+    $ <strong>chmod +x perlbrew</strong>
+    $ <strong>./perlbrew install</strong>
+    $ <strong>perldoc App::perlbrew</strong></code></pre>
+
+</div><p id="Q1BBTjtsb2NhbDo6bGli1"> <a name="Q1BBTjtBcHA6OmxvY2FsOjpsaWI6OmhlbHBlcg1"></a>The <code>local::lib</code> CPAN distribution allows you to install and to manage distributions in your own user directory, rather than for the system as a whole. This is an effective way to maintain CPAN distributions for individual users without affecting the system as a whole. Installation is somewhat more involved than the previous two distributions, though <code>App::local::lib::helper</code> can simplify the process. See <a class="url" href="https://metacpan.org/pod/local::lib">https://metacpan.org/pod/local::lib</a> and <a class="url" href="https://metacpan.org/pod/App::local::lib::helper">https://metacpan.org/pod/App::local::lib::helper</a> for more details.</p>
+
+<p>All three projects tend to assume a Unix-like environment (such as a GNU/Linux distribution or even Mac OS X). Windows users, see the Padre all-in-one download (<a class="url" href="http://padre.perlide.org/download.html">http://padre.perlide.org/download.html</a>).</p>
+
+<h2 id="Q29tbXVuaXR5U2l0ZXM"><a name="Q29tbXVuaXR5U2l0ZXM"></a>Community Sites</h2>
+
+<p id="cGVybF9jb21tdW5pdHk"><a name="cGVybC5vcmc1"></a> <a name="d2Vic2l0ZXM7cGVybC5vcmc1"></a>Perl&#39;s homepage at <a class="url" href="http://www.perl.org/">http://www.perl.org/</a> links to Perl documentation, source code, tutorials, mailing lists, and several important community projects. If you&#39;re new to Perl, the Perl beginners mailing list is a friendly place to ask novice questions and get accurate and helpful answers. See <a class="url" href="http://learn.perl.org/faq/beginners.html">http://learn.perl.org/faq/beginners.html</a>.</p>
+
+<p>The home of Perl development is <a class="url" href="http://dev.perl.org/">http://dev.perl.org/</a>, which links to relevant resources for Perl&#39;s core development.</p>
+
+<p id="cGVybC5jb201"> <a name="d2Vic2l0ZXM7cGVybC5jb201"></a>Perl.com publishes articles and tutorials about Perl and its culture. Its archives reach back into the 20th century. See <a class="url" href="http://www.perl.com/">http://www.perl.com/</a>.</p>
+
+<p id="Y3Bhbi5vcmc1"> <a name="d2Vic2l0ZXM7Y3Bhbi5vcmc1"></a> <a name="TWV0YUNQQU41"></a> <a name="d2Vic2l0ZXM7TWV0YUNQQU41"></a>The CPAN&#39;s (<a href="02-perl-community.html#Y3Bhbg">The CPAN</a>) central location is <a class="url" href="http://www.cpan.org/">http://www.cpan.org/</a>, though experienced users spend more time on <a class="url" href="http://search.cpan.org/">http://search.cpan.org/</a>. This central software distribution hub of reusable, free Perl code is an essential part of the Perl community. MetaCPAN (<a class="url" href="https://metacpan.org/">https://metacpan.org/</a>) is a recent alternative front end to the CPAN.</p>
+
+<p id="UGVybE1vbmtz1"> <a name="d2Vic2l0ZXM7UGVybE1vbmtz1"></a>PerlMonks, at <a class="url" href="http://perlmonks.org/">http://perlmonks.org/</a>, is a community site devoted to discussions about Perl programming. Its decade-plus history makes it one of the most venerable question and answer sites for any programming language.</p>
+
+<p id="YmxvZ3MucGVybC5vcmc1"> <a name="d2Vic2l0ZXM7YmxvZ3MucGVybC5vcmc1"></a>Several community sites offer news and commentary. <a class="url" href="http://blogs.perl.org/">http://blogs.perl.org/</a> is a free blog platform open to any Perl community member.</p>
+
+<p id="RW5saWdodGVuZWRQZXJsT3JnYW5pemF0aW9u1"> <a name="UGxhbmV0UGVybA1"></a> <a name="UGxhbmV0UGVybElyb25NYW41"></a> <a name="d2Vic2l0ZXM7UGxhbmV0UGVybA1"></a> <a name="d2Vic2l0ZXM7UGxhbmV0UGVybElyb25NYW41"></a>Other sites aggregate the musings of Perl hackers, including <a class="url" href="http://perlsphere.net/">http://perlsphere.net/</a>, <a class="url" href="http://planet.perl.org/">http://planet.perl.org/</a>, and <a class="url" href="http://ironman.enlightenedperl.org/">http://ironman.enlightenedperl.org/</a>. The latter is part of an initiative from the Enlightened Perl Organization (<a class="url" href="http://enlightenedperl.org/">http://enlightenedperl.org/</a>) to increase the amount and improve the quality of Perl publishing on the web.</p>
+
+<p id="UGVybEJ1eno1"> <a name="d2Vic2l0ZXM7UGVybEJ1eno1"></a> <a name="UGVybFdlZWtseQ1"></a> <a name="d2Vic2l0ZXM7UGVybFdlZWtseQ1"></a>Perl Buzz (<a class="url" href="http://perlbuzz.com/">http://perlbuzz.com/</a>) collects and republishes some of the most interesting and useful Perl news on a regular basis. Perl Weekly (<a class="url" href="http://perlweekly.com/">http://perlweekly.com/</a>) offers a weekly take on news from the Perl world.</p>
+
+<h2 id="RGV2ZWxvcG1lbnRTaXRlcw"><a name="RGV2ZWxvcG1lbnRTaXRlcw"></a>Development Sites</h2>
+
+<p id="UlQ1"> <a name="QmVzdFByYWN0aWNhbA1"></a>Best Practical Solutions (<a class="url" href="http://bestpractical.com/">http://bestpractical.com/</a>) maintains an installation of their popular request tracking system, RT, for CPAN authors as well as Perl development. Every CPAN distribution has its own RT queue on <a class="url" href="http://rt.cpan.org/">http://rt.cpan.org/</a>. Perl itself has a ticket queue at <a class="url" href="http://rt.perl.org/">http://rt.perl.org/</a>.</p>
+
+<p id="UGVybDVQb3J0ZXJz1"> <a name="cDVw1"></a>The Perl 5 Porters (or <em>p5p</em>) mailing list is the focal point of the development of Perl. See <a class="url" href="http://lists.cpan.org/showlist.cgi?name=perl5-porters">http://lists.cpan.org/showlist.cgi?name=perl5-porters</a>.</p>
+
+<p id="VFBG1"> <a name="VGhlUGVybEZvdW5kYXRpb241"></a> <a name="VFBGO3dpa2k1"></a> <a name="d2Vic2l0ZXM7VFBGd2lraQ1"></a>The Perl Foundation (<a class="url" href="http://www.perlfoundation.org/">http://www.perlfoundation.org/</a>) hosts a wiki for all things Perl. See <a class="url" href="http://www.perlfoundation.org/perl5">http://www.perlfoundation.org/perl5</a>.</p>
+
+<p id="R2l0aHVi1"> <a name="Z2l0cGFu1"></a> <a name="d2Vic2l0ZXM7Z2l0cGFu1"></a>Many Perl hackers use Github (<a class="url" href="http://github.com/">http://github.com/</a>) to host their projects <span class="footnote">... including the sources of this book at <a class="url" href="http://github.com/chromatic/modern_perl_book/">http://github.com/chromatic/modern_perl_book/</a></span>. See especially Gitpan (<a class="url" href="http://github.com/gitpan/">http://github.com/gitpan/</a>), which hosts Git repositories chronicling the complete history of every distribution on the CPAN.</p>
+
+<div class="tip">
+<p class="title">A Local Git Mirror</p>
+<p id="Q1BBTjtHaXQ6OkNQQU46OlBhdGNo1"> <a name="Q2hhbXBvdXgsWWFuaWNr1"></a></p>
+
+<p>GitPAN receives infrequent updates. As an alternative to hacking CPAN distributions from GitPAN, consider using Yanick Champoux&#39;s wonderful <code>Git::CPAN::Patch</code> module to create local Git repositories from CPAN distributions.</p>
+
+</div><h2 id="RXZlbnRz"><a name="RXZlbnRz"></a>Events</h2>
+
+<p id="WUFQQw1">The Perl community holds countless conferences, workshops, seminars, and meetings. In particular, the community-run YAPC—Yet Another Perl Conference—is a successful, local, low-cost conference model held on multiple continents. See <a class="url" href="http://yapc.org/">http://yapc.org/</a>.</p>
+
+<p>The Perl Foundation wiki lists other events at <a class="url" href="http://www.perlfoundation.org/perl5/index.cgi?perl_events">http://www.perlfoundation.org/perl5/index.cgi?perl_events</a>.</p>
+
+<p id="UGVybE1vbmdlcnM1">Hundreds of local Perl Mongers groups get together frequently for technical talks and social interaction. See <a class="url" href="http://www.pm.org/">http://www.pm.org/</a>.</p>
+
+<h2 id="SVJD"><a name="SVJD"></a>IRC</h2>
+
+<p id="SVJD1"> <a name="SVJDOyNtb29zZQ1"></a> <a name="SVJDOyNjYXRhbHlzdA1"></a> <a name="SVJDOyNwZXJsLWhlbHA1"></a> <a name="SVJDOyNwZXJs1"></a>When Perl mongers can&#39;t meet in person, many collaborate and chat online through the textual chat system known as IRC. Many of the most popular and useful Perl projects have their own IRC channels, such as <em>#moose</em> and <em>#catalyst</em>.</p>
+
+<p>The main server for Perl community is <a class="url" href="irc://irc.perl.org/">irc://irc.perl.org/</a>. Notable channels include <em>#perl-help</em>, for general assistance on Perl programming, and <em>#perl-qa</em>, devoted to testing and other quality issues. Be aware that the channel <em>#perl</em> is a general purpose channel for discussing whatever its participants want to discuss <span class="footnote">... and, as such, it&#39;s not primarily a helpdesk.</span>.</p>
+
+
+        </div>

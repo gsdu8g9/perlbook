@@ -1,0 +1,67 @@
+% layout 'wrapper';
+<div class="span8">
+
+<h1 id="UHJlZmFjZQ">Предисловие</h1>
+
+<p><em>Modern Perl</em> is one way to describe the way the world&#39;s most effective Perl programmers work. They use language idioms. They take advantage of the CPAN. They show good taste and craft to write powerful, maintainable, scalable, concise, and effective code. You can learn these skills too!</p>
+
+<p>Perl first appeared in 1987 as a simple tool for system administration. Though it began by declaring and occupying a comfortable niche between shell scripting and C programming, it has become a powerful, general-purpose language family. Perl has a solid history of pragmatism and a bright future of polish and enhancement.</p>
+
+<p>Over Perl&#39;s long history—especially the 19 years of Perl 5—our understanding of what makes great Perl programs has changed. While you can write productive programs which never take advantage of all the language has to offer, the global Perl community has invented, borrowed, enhanced, and polished ideas and made them available to anyone willing to learn them.</p>
+
+<h2 id="UnVubmluZ01vZGVyblBlcmw"><a name="UnVubmluZ01vZGVyblBlcmw"></a>Running Modern Perl</h2>
+
+<p>The <code>Modern::Perl</code> module from the CPAN (<a href="02-perl-community.html#Y3Bhbg">The CPAN</a>) asks Perl to warn of dubious constructs and typos and will enable new features introduced in modern Perl releases. Unless otherwise mentioned, code snippets always assume the basic skeleton of a program:</p>
+
+<div class="programlisting">
+
+<pre><code>    #!/usr/bin/env perl
+
+    use Modern::Perl &#39;2013&#39;;
+    use autodie;</code></pre>
+
+</div>
+
+<p>... which is equivalent to:</p>
+
+<div class="programlisting">
+
+<pre><code>    #!/usr/bin/env perl
+
+    use 5.016;      # implies &quot;use strict;&quot;
+    use warnings;
+    use autodie;</code></pre>
+
+</div>
+
+<p>Some examples use testing functions such as <code>ok()</code>, <code>like()</code>, and <code>is()</code> (<a href="09-managing-perl-programs.html#dGVzdGluZw">Testing</a>). These programs follow the pattern:</p>
+
+<div class="programlisting">
+
+<pre><code>    #!/usr/bin/env perl
+
+    use Modern::Perl;
+    <strong>use Test::More;</strong>
+
+    # example code here
+
+    <strong>done_testing();</strong></code></pre>
+
+</div>
+
+<p>At the time of writing, the current stable Perl release family is Perl 5.18. If you&#39;re using an older version of Perl, you may not be able to run all of the examples in this book unmodified. The examples in this book work best with Perl 5.14.0 or newer, though we recommend at least Perl 5.16. While the term &quot;Modern Perl&quot; can refer to any version of Perl from 5.10.1, several features added in newer versions are essential to modern development.</p>
+
+<p id="U3RyYXdiZXJyeVBlcmw1"> <a name="QWN0aXZlUGVybA1"></a> <a name="cGVybGJyZXc1"></a> <a name="Q1BBTjtBcHA6OnBlcmxicmV31"></a>If you have no Perl installed (or if you have an old version installed), you can install a newer release yourself. Windows users, download Strawberry Perl from <a class="url" href="http://www.strawberryperl.com/">http://www.strawberryperl.com/</a> or ActivePerl from <a class="url" href="http://www.activestate.com/activeperl">http://www.activestate.com/activeperl</a>. Users of other operating systems with Perl already installed (and a C compiler and the other development tools), start by installing the CPAN module <code>App::perlbrew</code> <span class="footnote">See <a class="url" href="http://search.cpan.org/perldoc?App::perlbrew">http://search.cpan.org/perldoc?App::perlbrew</a> for installation instructions.</span>.</p>
+
+<p><code>perlbrew</code> allows you to install and manage multiple versions of Perl. This allows you to switch between versions as well as to install Perl and CPAN modules in your home directory without affecting the system&#39;s version. If you&#39;ve ever had to beg your system administrator for permission to install software, you know how much easier your life can be now.</p>
+
+<h2 id="Y3JlZGl0cw"><a name="Q3JlZGl0cw"></a>Credits</h2>
+
+<p>This book would not have been possible without questions, comments, suggestions, advice, wisdom, and encouragement from many, many people. In particular, the author and editor thank:</p>
+
+<p id="Y3JlZGl0cw"> John SJ Anderson, Peter Aronoff, Lee Aylward, Alex Balhatchet, Nitesh Bezzala, Ævar Arnfjörð Bjarmason, Matthias Bloch, John Bokma, Vasily Chekalkin, Dmitry Chestnykh, E. Choroba, Tom Christiansen, Anneli Cuss, Paulo Custodio, Steve Dickinson, Kurt Edmiston, Felipe, Shlomi Fish, Jeremiah Foster, Mark Fowler, John Gabriele, Nathan Glenn, Kevin Granade, Andrew Grangaard, Bruce Gray, Ask Bjørn Hansen, Tim Heaney, Graeme Hewson, Robert Hicks, Michael Hicks, Michael Hind, Mark Hindess, Yary Hluchan, Daniel Holz, Mike Huffman, Gary H. Jones II, Curtis Jewell, Mohammed Arafat Kamaal, James E Keenan, Kirk Kimmel, Graham Knop, Yuval Kogman, Jan Krynicky, Michael Lang, Jeff Lavallee, Moritz Lenz, Andy Lester, Jean-Baptiste Mazon, Josh McAdams, Gareth McCaughan, John McNamara, Shawn M Moore, Alex Muntada, Carl Mäsak, Chris Niswander, Nelo Onyiah, Chas. Owens, ww from PerlMonks, Jess Robinson, Dave Rolsky, Gabrielle Roth, Grzegorz Rożniecki, Jean-Pierre Rupp, Eduardo Santiago, Andrew Savige, Lorne Schachter, Steve Schulze, Dan Scott, Alex-ander Scott-Johns, Phillip Smith, Christopher E. Stith, Mark A. Stratman, Bryan Summersett, Audrey Tang, Scott Thomson, Ben Tilly, Ruud H. G. van Tol, Sam Vilain, Larry Wall, Lewis Wall, Paul Waring, Colin Wetherbee, Frank Wiegand, Doug Wilson, Sawyer X, David Yingling, Marko Zagozen, Ahmad M. Zawawi, harleypig, hbm, and sunnavy.</p>
+
+<p>Any remaining errors are the fault of the stubborn author.</p>
+
+
+        </div>

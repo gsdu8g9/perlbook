@@ -1,0 +1,436 @@
+% layout 'wrapper';
+<div class="span8">
+
+<h1 id="UGVybEJleW9uZFN5bnRheA"><a name="UGVybEJleW9uZFN5bnRheA"></a>Perl Beyond Syntax</h1>
+
+<p>Baby Perl can solve a lot of your problems, but it will only take you so far. Effective programmers understand how Perl&#39;s features interact and combine. This fluent Perl takes advantage of the language&#39;s natural patterns and idioms. The result of Perlish thinking is concise, powerful, and useful code.</p>
+
+<h2 id="aWRpb21z"><a name="SWRpb21z"></a>Idioms</h2>
+
+<p id="aWRpb21z">Every language has common patterns of expression, or <em>idioms</em>. The earth revolves, but we speak of the sun rising or setting. We brag about clever hacks and cringe at nasty hacks as we sling code.</p>
+
+<p>Perl idioms are language features or design techniques. They&#39;re mannerisms and mechanisms that give your code a Perlish accent. You don&#39;t have to use them, but they play to Perl&#39;s strengths.</p>
+
+<h3 id="VGhlT2JqZWN0YXMkc2VsZg"><a name="VGhlT2JqZWN0YXMkc2VsZg"></a>The Object as <code>$self</code></h3>
+
+<p id="JHNlbGY1"> <a name="dmFyaWFibGVzOyRzZWxm1"></a> <a name="b2JqZWN0cztpbnZvY2FudA1"></a> <a name="bWV0aG9kcztpbnZvY2FudA1"></a> <a name="Q1BBTjtNb29zZVg6Ok1ldGhvZDo6U2lnbmF0dXJlcw4"></a>Perl&#39;s object system (<a href="07-object-oriented-perl.html#bW9vc2U">Moose</a>) treats the invocant of a method as a mundane parameter. Regardless of whether you invoke a class or an instance method, the first element of <code>@_</code> is always the invocant. By convention, most Perl code uses <code>$class</code> as the name of the class method invocant and <code>$self</code> for the name of the object invocant. This convention is strong enough that useful extensions such as <code>MooseX::Method::Signatures</code> assume you will use <code>$self</code> as the name of object invocants.</p>
+
+<h3 id="TmFtZWRQYXJhbWV0ZXJz"><a name="TmFtZWRQYXJhbWV0ZXJz"></a>Named Parameters</h3>
+
+<p id="cGFyYW1ldGVycztuYW1lZA1"> <a name="YXJndW1lbnRzO25hbWVk1"></a> <a name="Q1BBTjtzaWduYXR1cmVz2"></a> <a name="Q1BBTjtNb29zZVg6Ok11bHRpTWV0aG9kcw2"></a>Perl loves lists. Lists are a fundamental element of Perl. List flattening and binding lets you chain together multiple expressions to manipulate data in many ways to produce the results you want.</p>
+
+<p>While Perl&#39;s argument passing simplicity (everything flattens into <code>@_</code>) is occasionally too simple, assigning from <code>@_</code> in list context allows you to unpack named parameters as pairs. The fat comma (<a href="03-perl-language.html#ZGVjbGFyaW5nX2hhc2hlcw">Declaring Hashes</a>) operator turns an ordinary list into an obvious list of pairs of arguments:</p>
+
+<div class="programlisting">
+
+<pre><code>    make_ice_cream_sundae(
+        whipped_cream =&gt; 1,
+        sprinkles     =&gt; 1,
+        banana        =&gt; 0,
+        ice_cream     =&gt; &#39;mint chocolate chip&#39;,
+    );</code></pre>
+
+</div>
+
+<p>Within the function, code unpacks these parameters into a hash and treats that hash as if it were a single argument:</p>
+
+<div class="programlisting">
+
+<pre><code>    sub make_ice_cream_sundae
+    {
+        <strong>my %args    = @_;</strong>
+        my $dessert = get_ice_cream( $args{ice_cream} );
+
+        ...
+    }</code></pre>
+
+</div>
+
+<div class="tip">
+<p class="title">Hash or Hash Ref?</p>
+<p><em>Perl Best Practices</em> suggests passing hash references instead. This allows Perl to perform caller-side validation of the hash reference. In other words, if you pass the wrong number of arguments, you&#39;ll get an error where you <em>call</em> the function.</p>
+
+</div><p>This technique works well with <code>import()</code> (<a href="05-perl-functions.html#aW1wb3J0aW5n">Importing</a>) or other methods; process as many parameters as you like before slurping the remainder into a hash:</p>
+
+<div class="programlisting">
+
+<pre><code>    sub import
+    {
+        <strong>my ($class, %args)  = @_;</strong>
+        my $calling_package = caller();
+
+        ...
+    }</code></pre>
+
+</div>
+
+<h3 id="c2Nod2FydHppYW5fdHJhbnNmb3Jt"><a name="VGhlU2Nod2FydHppYW5UcmFuc2Zvcm0"></a>The Schwartzian Transform</h3>
+
+<p id="c2Nod2FydHppYW5fdHJhbnNmb3Jt"><a name="U2Nod2FydHppYW50cmFuc2Zvcm01"></a> <a name="bWFwO1NjaHdhcnR6aWFudHJhbnNmb3Jt1"></a> <a name="c29ydDtTY2h3YXJ0emlhbnRyYW5zZm9ybQ1"></a> <a name="YnVpbHRpbnM7bWFw2"></a> <a name="YnVpbHRpbnM7c29ydA1"></a>The <em>Schwartzian transform</em> is an elegant demonstration of Perl&#39;s pervasive list handling as an idiom borrowed from Lisp. Suppose you have a Perl hash which associates the names of your co-workers with their phone extensions:</p>
+
+<div class="programlisting">
+
+<pre><code>    my %extensions =
+    (
+        &#39;000&#39; =&gt; &#39;Damian&#39;,
+        &#39;002&#39; =&gt; &#39;Wesley&#39;,
+        &#39;012&#39; =&gt; &#39;LaMarcus&#39;,
+        &#39;042&#39; =&gt; &#39;Robin&#39;,
+        &#39;088&#39; =&gt; &#39;Nic&#39;,
+    );</code></pre>
+
+</div>
+
+<div class="tip">
+<p class="title">Hash Key Quoting Rules</p>
+<p>Fat comma hash key quoting only works on things that look like barewords. With the leading zero, these keys look like octal numbers. Almost everyone makes this mistake.</p>
+
+</div><p>To sort this list by name alphabetically, you must sort the hash by its values, not its keys. Getting the values sorted correctly is easy:</p>
+
+<div class="programlisting">
+
+<pre><code>    my @sorted_names = sort values %extensions;</code></pre>
+
+</div>
+
+<p>... but you need an extra step to preserve the association of names and extensions, hence the Schwartzian transform. First, convert the hash into a list of data structures which is easy to sort—in this case, two-element anonymous arrays:</p>
+
+<div class="programlisting">
+
+<pre><code>    my @pairs = map  { [ $_, $extensions{$_} ] }
+                keys %extensions;</code></pre>
+
+</div>
+
+<p><code>sort</code> takes the list of anonymous arrays and compares their second elements (the names) as strings:</p>
+
+<div class="programlisting">
+
+<pre><code>    my @sorted_pairs = sort { $a-&gt;[1] cmp $b-&gt;[1] }
+                            @pairs;</code></pre>
+
+</div>
+
+<p id="JGE1"> <a name="JGI1"></a> <a name="YnVpbHRpbnM7c29ydA2"></a>The block provided to <code>sort</code> takes its arguments in two package-scoped (<a href="05-perl-functions.html#c2NvcGU">Scope</a>) variables: <code>$a</code> and <code>$b</code> <span class="footnote">See <code>perldoc -f sort</code> for an extensive discussion of the implications of this scoping.</span>. The <code>sort</code> block takes its arguments two at a time. The first becomes the contents of <code>$a</code> and the second the contents of <code>$b</code>. If <code>$a</code> should come before <code>$b</code> in the results, the block must return -1. If both values sort to the same position, the block must return 0. Finally, if <code>$a</code> should come after <code>$b</code> in the results, the block should return 1. Any other return values are errors.</p>
+
+<div class="tip">
+<p class="title">Know Your Data</p>
+<p>Reversing the hash <em>in place</em> would work if no one had the same name. This particular data set presents no such problem, but code defensively.</p>
+
+</div><p id="b3BlcmF0b3JzO2NtcA2"> <a name="b3BlcmF0b3JzOzw9Pg2"></a>The <code>cmp</code> operator performs string comparisons and the <code>&lt;=&gt;</code> performs numeric comparisons. Given <code>@sorted_pairs</code>, a second <code>map</code> operation converts the data structure to a more usable form:</p>
+
+<div class="programlisting">
+
+<pre><code>    my @formatted_exts = map { &quot;$_-&gt;[1], ext. $_-&gt;[0]&quot; }
+                             @sorted_pairs;</code></pre>
+
+</div>
+
+<p>... and now you can print the whole thing:</p>
+
+<div class="programlisting">
+
+<pre><code>    say for @formatted_exts;</code></pre>
+
+</div>
+
+<p>The Schwartzian transformation uses Perl&#39;s pervasive list processing to get rid of the temporary variables:</p>
+
+<div class="programlisting">
+
+<pre><code>    say for
+        map  { &quot; $_-&gt;[1], ext. $_-&gt;[0]&quot;          }
+        sort {   $a-&gt;[1] cmp   $b-&gt;[1]           }
+        map  { [ $_      =&gt;    $extensions{$_} ] }
+            keys %extensions;</code></pre>
+
+</div>
+
+<p>Read the expression from right to left, in the order of evaluation. For each key in the extensions hash, make a two-item anonymous array containing the key and the value from the hash. Sort that list of anonymous arrays by their second elements, the values from the hash. Format a string of output from those sorted arrays.</p>
+
+<p>The Schwartzian transform pipeline of <code>map</code>-<code>sort</code>-<code>map</code> transforms a data structure into another form easier for sorting and then transforms it back into another form.</p>
+
+<p>While this sorting example is simple, consider the case of calculating a cryptographic hash for a large file. The Schwartzian transform is especially useful because it effectively caches any expensive calculations by performing them once in the rightmost <code>map</code>.</p>
+
+<h3 id="ZWFzeV9maWxlX3NsdXJwaW5n"><a name="RWFzeUZpbGVTbHVycGluZw"></a>Easy File Slurping</h3>
+
+<p id="ZWFzeV9maWxlX3NsdXJwaW5n"><a name="YnVpbHRpbnM7bG9jYWw2"></a> <a name="JC83"></a> <a name="ZmlsZXM7c2x1cnBpbmc1"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyQv2"></a><code>local</code> is essential to managing Perl&#39;s magic global variables. You must understand scope (<a href="05-perl-functions.html#c2NvcGU">Scope</a>) to use <code>local</code> effectively—but if you do, you can use tight and lightweight scopes in interesting ways. For example, to slurp files into a scalar in a single expression:</p>
+
+<div class="programlisting">
+
+<pre><code>    my $file = do { local $/; &lt;$fh&gt; };
+
+    # or
+    my $file; { local $/; $file = &lt;$fh&gt; };</code></pre>
+
+</div>
+
+<p><code>$/</code> is the input record separator. <code>local</code>izing it sets its value to <code>undef</code>, pending assignment. As the value of the separator is undefined, Perl happily reads the entire contents of the filehandle in one swoop. Because a <code>do</code> block evaluates to the value of the last expression evaluated within the block, this evaluates to the data read from the filehandle: the contents of the file. At the end of the expression, <code>$/</code> has reverted to its previous state and <code>$file</code> contains the contents of the file.</p>
+
+<p>The second example avoids a second copy of the string containing the file&#39;s contents; it&#39;s not as pretty, but it uses the least amount of memory.</p>
+
+<div class="tip">
+<p class="title"><code>File::Slurp</code></p>
+<a name="Q1BBTjtGaWxlOjpTbHVycA1"></a><p>This useful example is admittedly maddening for people who don&#39;t understand both <code>local</code> and scoping. The <code>File::Slurp</code> module from the CPAN is a worthy (and often faster) alternative.</p>
+
+</div><h3 id="SGFuZGxpbmdNYWlu"><a name="SGFuZGxpbmdNYWlu"></a>Handling Main</h3>
+
+<p>Perl requires no special syntax for creating closures (<a href="05-perl-functions.html#Y2xvc3VyZXM">Closures</a>). You can close over a lexical variable inadvertently. Many programs commonly set up several file-scoped lexical variables before handing off processing to other functions. It&#39;s tempting to use these variables directly, rather than passing values to and returning values from functions, especially as programs grow. Unfortunately, these programs may come to rely on subtleties of what happens when during Perl&#39;s compilation process—a variable you <em>thought</em> would be initialized to a specific value may not get initialized until much later.</p>
+
+<p>To avoid this, wrap the main code of your program in a single function, <code>main()</code>. Encapsulate your variables to their proper scopes. Then add a single line to the beginning of your program, after you&#39;ve used all of the modules and pragmas you need:</p>
+
+<div class="programlisting">
+
+<pre><code>    #!/usr/bin/perl
+
+    use Modern::Perl;
+
+    ...
+
+    <strong>exit main( @ARGV );</strong>
+
+    sub main {
+        ...
+
+        # successful exit
+        return 0;
+    }</code></pre>
+
+</div>
+
+<p>Calling <code>main()</code> <em>before</em> anything else in the program forces you to be explicit about initialization and order of compilation. Calling <code>exit</code> with <code>main()</code>&#39;s return value prevents any other bare code from running.</p>
+
+<h3 id="Y29udHJvbGxlZF9leGVjdXRpb24"><a name="Q29udHJvbGxlZEV4ZWN1dGlvbg"></a>Controlled Execution</h3>
+
+<p id="Y29udHJvbGxlZF9leGVjdXRpb24">The effective difference between a program and a module is in its intended use. Users invoke programs directly, while programs load modules after execution has already begun. Yet a module and a program are both Perl code. Making a module executable is easy. So is making a program behave as a module (useful for testing parts of an existing program without formally making a module). All you need to do is to discover <em>how</em> Perl began to execute a piece of code.</p>
+
+<p id="YnVpbHRpbnM7Y2FsbGVy2"><code>caller</code>&#39;s single optional argument is the number of call frames (<a href="05-perl-functions.html#cmVjdXJzaW9u">Recursion</a>) which to report. <code>caller(0)</code> reports information about the current call frame. To allow a module to run correctly as a program <em>or</em> a module, put all executable code in functions, add a <code>main()</code> function, and write a single line at the start of the module:</p>
+
+<div class="programlisting">
+
+<pre><code>    main() unless caller(0);</code></pre>
+
+</div>
+
+<p>If there&#39;s <em>no</em> caller for the module, someone invoked it directly as a program (with <code>perl path/to/Module.pm</code> instead of <code>use Module;</code>).</p>
+
+<div class="tip">
+<p class="title">Improved Caller Inspection</p>
+<p>The eighth element of the list returned from <code>caller</code> in list context is a true value if the call frame represents <code>use</code> or <code>require</code> and <code>undef</code> otherwise. While that&#39;s more accurate, few people use it.</p>
+
+</div><h3 id="cG9zdGZpeF9wYXJhbWV0ZXJfdmFsaWRhdGlvbg"><a name="UG9zdGZpeFBhcmFtZXRlclZhbGlkYXRpb24"></a>Postfix Parameter Validation</h3>
+
+<p id="cG9zdGZpeF9wYXJhbWV0ZXJfdmFsaWRhdGlvbg"><a name="Q1BBTjtQYXJhbXM6OlZhbGlkYXRl2"></a> <a name="Q1BBTjtNb29zZVg6OlBhcmFtczo6VmFsaWRhdGU1"></a>The CPAN has several modules which help verify the parameters of your functions; <code>Params::Validate</code> and <code>MooseX::Params::Validate</code> are two good options. Simple validation is easy even without those modules.</p>
+
+<p>Suppose your function takes exactly two arguments. You <em>could</em> write:</p>
+
+<div class="programlisting">
+
+<pre><code>    use Carp &#39;croak&#39;;
+
+    sub groom_monkeys
+    {
+        if (@_ != 2)
+        {
+            croak &#39;Can only groom two monkeys!&#39;;
+        }
+        ...
+    }</code></pre>
+
+</div>
+
+<p>... but from a linguistic perspective, the consequences are more important than the check and deserve to be at the <em>start</em> of the expression:</p>
+
+<div class="programlisting">
+
+<pre><code>    croak &#39;Can only groom two monkeys!&#39; unless @_ == 2;</code></pre>
+
+</div>
+
+<p>This early return technique—especially with postfix conditionals—can simplify the rest of the code. Each such assertion is effectively a single row in a truth table.</p>
+
+<h3 id="cmVnZXhfZW5fcGFzc2FudA"><a name="UmVnZXhFblBhc3NhbnQ"></a>Regex En Passant</h3>
+
+<p id="cmVnZXhfZW5fcGFzc2FudA"><a name="cmVnZXg7bW9kaWZpY2F0aW9u1"></a> <a name="cmVnZXg7c3Vic3RpdHV0aW9u1"></a>Many Perl idioms rely on the fact that expressions evaluate to values:</p>
+
+<div class="programlisting">
+
+<pre><code>    say my $ext_num = my $extension = 42;</code></pre>
+
+</div>
+
+<p>While that code is obviously clunky, it demonstrates how to use the value of one expression in another expression. This isn&#39;t a new idea; you&#39;ve likely used the return value of a function in a list or as an argument to another function before. You may not have realized its implications.</p>
+
+<p id="cmVnZXg7Y2FwdHVyZQ1">Suppose you want to extract a first name from a first name plus surname combination with a precompiled regular expression in <code>$first_name_rx</code>:</p>
+
+<div class="programlisting">
+
+<pre><code>    my ($first_name) = $name =~ /($first_name_rx)/;</code></pre>
+
+</div>
+
+<p>In list context, a successful regex match returns a list of all captures (<a href="06-perl-regular-expressions.html#cmVnZXhfY2FwdHVyZXM">Capturing</a>, and Perl assigns the first one to <code>$first_name</code>.</p>
+
+<p>To remove all non-word characters to create a useful user name for a system account, you could write:</p>
+
+<div class="programlisting">
+
+<pre><code>    (my $normalized_name = $name) =~ tr/A-Za-z//dc;</code></pre>
+
+</div>
+
+<div class="tip">
+<p class="title">/r in Perl 5.14</p>
+<p>Perl 5.14 added the non-destructive substitution modifier <code>/r</code>, so that you can write <code>my $normalized_name = $name =~ tr/A-Za-z//dc<strong>r</strong>;</code>.</p>
+
+</div><p>First, assign the value of <code>$name</code> to <code>$normalized_name</code>. The parentheses affect the precedence so that assignment happens first. The assignment expression evaluates to the <em>variable</em> <code>$normalized_name</code>. That variable becomes the first operand to the transliteration operator.</p>
+
+<p>This technique works on other in-place modification operators:</p>
+
+<div class="programlisting">
+
+<pre><code>    my $age = 14;
+    (my $next_age = $age)++;
+
+    say &quot;I am $age, but next year I will be $next_age&quot;;</code></pre>
+
+</div>
+
+<h3 id="dW5hcnlfY29lcmNpb25z"><a name="VW5hcnlDb2VyY2lvbnM"></a>Unary Coercions</h3>
+
+<p id="dW5hcnlfY29lcmNpb25z"><a name="Y29lcmNpb243"></a> <a name="dHlwZXM2"></a>Perl&#39;s type system almost always does the right thing when you choose the correct operators. Use the string concatenation operator and Perl will treat both operands as strings. Use the addition operator and Perl will treat both operands as numeric.</p>
+
+<p>Occasionally you have to give Perl a hint about what you mean with a <em>unary coercion</em> to force the evaluation of a value a specific way.</p>
+
+<p id="dW5hcnljb252ZXJzaW9ucztudW1lcmlj1">To ensure that Perl treats a value as numeric, add zero:</p>
+
+<div class="programlisting">
+
+<pre><code>    my $numeric_value = 0 + $value;</code></pre>
+
+</div>
+
+<p id="dW5hcnljb252ZXJzaW9ucztib29sZWFu1">To ensure that Perl treats a value as a boolean, double negate it:</p>
+
+<div class="programlisting">
+
+<pre><code>    my $boolean_value = !! $value;</code></pre>
+
+</div>
+
+<p id="dW5hcnljb252ZXJzaW9ucztzdHJpbmc1">To ensure that Perl treats a value as a string, concatenate it with the empty string:</p>
+
+<div class="programlisting">
+
+<pre><code>    my $string_value = &#39;&#39; . $value;</code></pre>
+
+</div>
+
+<p>Though the need for these coercions is vanishingly rare, you should understand these idioms if you encounter them. While it may look like it would be safe to remove a &quot;useless&quot; <code>+ 0</code> from an expression, doing so may well break the code.</p>
+
+<h2 id="Z2xvYmFscw"><a name="R2xvYmFsVmFyaWFibGVz"></a>Global Variables</h2>
+
+<p id="Z2xvYmFscw"><a name="c3VwZXJnbG9iYWxz1"></a> <a name="dmFyaWFibGVzO3N1cGVyZ2xvYmFs1"></a>Perl provides several <em>super global variables</em> that are truly global, not scoped to a package or file. Unfortunately, their global availability means that any direct or indirect modifications may have effects on other parts of the program—and they&#39;re terse. Experienced Perl hackers have memorized some of them. Few people have memorized all of them. Only a handful are ever useful. <code>perldoc perlvar</code> contains the exhaustive list of these variables.</p>
+
+<h3 id="TWFuYWdpbmdTdXBlckdsb2JhbHM"><a name="TWFuYWdpbmdTdXBlckdsb2JhbHM"></a>Managing Super Globals</h3>
+
+<p id="c3VwZXJnbG9iYWxzO21hbmFnaW5n1"> <a name="YnVpbHRpbnM7bG9jYWw3"></a>As Perl evolves, it moves more global behavior into lexical behavior, so that you can avoid many of these globals. When you can&#39;t avoid them, use <code>local</code> in the smallest possible scope to constrain any modifications. You are still susceptible to any changes code you <em>call</em> makes to those globals, but you reduce the likelihood of surprising code <em>outside</em> of your scope. As the easy file slurping idiom (<a href="10-perl-beyond-syntax.html#ZWFzeV9maWxlX3NsdXJwaW5n">Easy File Slurping</a>) demonstrates, <code>local</code> is often the right approach:</p>
+
+<div class="programlisting">
+
+<pre><code>    my $file; { <strong>local $/</strong>; $file = &lt;$fh&gt; };</code></pre>
+
+</div>
+
+<p>The effect of <code>local</code>izing <code>$/</code> lasts only through the end of the block. There is a low chance that any Perl code will run as a result of reading lines from the filehandle <span class="footnote">A tied filehandle (<a href="11-what-to-avoid-in-perl.html#dGll">Tie</a>) is one of the few possibilities.</span> and change the value of <code>$/</code> within the <code>do</code> block.</p>
+
+<p>Not all cases of using super globals are this easy to guard, but this often works.</p>
+
+<p id="ZXZhbA1"> <a name="ZXhjZXB0aW9ucztjYXRjaGluZw2"></a> <a name="ZXhjZXB0aW9uczskQA2"></a>Other times you need to <em>read</em> the value of a super global and hope that no other code has modified it. Catching exceptions with an <code>eval</code> block is susceptible at least one race condition where <code>DESTROY()</code> methods invoked on lexicals that have gone out of scope may reset <code>$@</code>:</p>
+
+<div class="programlisting">
+
+<pre><code>    local $@;
+
+    eval { ... };
+
+    if (<strong>my $exception = $@</strong>) { ... }</code></pre>
+
+</div>
+
+<p>Copy <code>$@</code> <em>immediately</em> after catching an exception to preserve its contents. See also <code>Try::Tiny</code> instead (<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9uX2NhdmVhdHM">Exception Caveats</a>).</p>
+
+<h3 id="RW5nbGlzaE5hbWVz"><a name="RW5nbGlzaE5hbWVz"></a>English Names</h3>
+
+<p id="RW5nbGlzaA1">The core <code>English</code> module provides verbose names for punctuation-heavy super globals. Import them into a namespace with:</p>
+
+<div class="programlisting">
+
+<pre><code>    use English &#39;-no_match_vars&#39;;</code></pre>
+
+</div>
+
+<p>This allows you to use the verbose names documented in <code>perldoc perlvar</code> within the scope of this pragma.</p>
+
+<p id="JCY1"> <a name="Z2xvYmFsdmFyaWFibGVzOyQm1"></a> <a name="JGA1"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyRg1"></a> <a name="JCc1"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyQn1"></a>Three regex-related super globals (<code>$&amp;</code>, <code>$`</code>, and <code>$&#39;</code>) impose a global performance penalty for <em>all</em> regular expressions within a program. If you forget the <code>-no_match_vars</code> import, your program will suffer the penalty even if you don&#39;t explicitly read from those variables. Modern Perl programs can use the <code>@-</code> variable instead of them.</p>
+
+<h3 id="VXNlZnVsU3VwZXJHbG9iYWxz"><a name="VXNlZnVsU3VwZXJHbG9iYWxz"></a>Useful Super Globals</h3>
+
+<p id="c3VwZXJnbG9iYWxzO3VzZWZ1bA1">Most modern Perl programs can get by with using only a couple of the super globals. You&#39;re most likely to encounter only a few of these variables in real programs.</p>
+
+<ul>
+
+<li><code>$/</code> (or <code>$INPUT_RECORD_SEPARATOR</code> from the <code>English</code> pragma) is a string of zero or more characters which denotes the end of a record when reading input a line at a time. By default, this is your platform-specific newline character sequence. If you undefine this value, Perl will attempt to read the entire file into memory. If you set this value to a <em>reference</em> to an integer, Perl will try to read that many <em>bytes</em> per record (so beware of Unicode concerns). If you set this value to an empty string (<code>&#39;&#39;</code>), Perl will read in a paragraph at a time, where a paragraph is a chunk of text followed by an arbitrary number of newlines.<p id="JC42"> <a name="Z2xvYmFsdmFyaWFibGVzOyQu2"></a> <a name="JElOUFVUX0xJTkVfTlVNQkVS1"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyRJTlBVVF9MSU5FX05VTUJFUg1"></a></p>
+
+</li>
+
+<li><code>$.</code> (<code>$INPUT_LINE_NUMBER</code>) contains the number of records read from the most recently-accessed filehandle. You can read from this variable, but writing to it has no effect. Localizing this variable will localize the filehandle to which it refers.<p id="JHw3"> <a name="Z2xvYmFsdmFyaWFibGVzOyR82"></a> <a name="JE9VVFBVVF9BVVRPRkxVU0g1"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyRPVVRQVVRfQVVUT0ZMVVNI1"></a></p>
+
+</li>
+
+<li><code>$|</code> (<code>$OUTPUT_AUTOFLUSH</code>) governs whether Perl will flush everything written to the currently selected filehandle immediately or only when Perl&#39;s buffer is full. Unbuffered output is useful when writing to a pipe or socket or terminal which should not block waiting for input. This variable will coerce any values assigned to it to boolean values.<p id="QEFSR1Y2"> <a name="Z2xvYmFsdmFyaWFibGVzO0BBUkdW1"></a></p>
+
+</li>
+
+<li><code>@ARGV</code> contains the command-line arguments passed to the program.<p id="JCE2"> <a name="Z2xvYmFsdmFyaWFibGVzOyQh1"></a> <a name="JEVSUk5P1"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyRFUlJOTw1"></a></p>
+
+</li>
+
+<li><code>$!</code> (<code>$ERRNO</code>) is a dualvar (<a href="03-perl-language.html#ZHVhbHZhcnM">Dualvars</a>) which contains the result of the <em>most recent</em> system call. In numeric context, this corresponds to C&#39;s <code>errno</code> value, where anything other than zero indicates an error. In string context, this evaluates to the appropriate system error string. Localize this variable before making a system call (implicitly or explicitly) to avoid overwriting the appropriate value for other code elsewhere. Perl&#39;s internals make system calls sometimes, so the value of this variable can change out from under you. Copy it <em>immediately</em> after causing a system call to get accurate results.<p id="JA2"> <a name="Z2xvYmFsdmFyaWFibGVzOyQ1"></a> <a name="JExJU1RfU0VQQVJBVE9S2"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyRMSVNUX1NFUEFSQVRPUg1"></a></p>
+
+</li>
+
+<li><code>$&quot;</code> (<code>$LIST_SEPARATOR</code>) is a string used to separate array and list elements interpolated into a string.<p id="JSs2"> <a name="Z2xvYmFsdmFyaWFibGVzOyUr2"></a></p>
+
+</li>
+
+<li><code>%+</code> contains named captures from successful regular expression matches (<a href="06-perl-regular-expressions.html#bmFtZWRfY2FwdHVyZXM">Named Captures</a>).<p id="JEA3"> <a name="Z2xvYmFsdmFyaWFibGVzOyRA1"></a> <a name="JEVWQUxfRVJST1I1"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyRFVkFMX0VSUk9S1"></a></p>
+
+</li>
+
+<li><code>$@</code> (<code>$EVAL_ERROR</code>) contains the value thrown from the most recent exception (<a href="08-perl-style-efficiency.html#Y2F0Y2hpbmdfZXhjZXB0aW9ucw">Catching Exceptions</a>).<p id="JDA1"> <a name="Z2xvYmFsdmFyaWFibGVzOyQw1"></a> <a name="JFBST0dSQU1fTkFNRQ1"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyRQUk9HUkFNX05BTUU1"></a></p>
+
+</li>
+
+<li><code>$0</code> (<code>$PROGRAM_NAME</code>) contains the name of the program currently executing. You may modify this value on some Unix-like platforms to change the name of the program as it appears to other programs on the system, such as <code>ps</code> or <code>top</code>.<p id="JCQ1"> <a name="Z2xvYmFsdmFyaWFibGVzOyQk1"></a> <a name="JFBJRA1"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyRQSUQ1"></a></p>
+
+</li>
+
+<li><code>$$</code> (<code>$PID</code>) contains the process id of the currently running instance of the program, as the operating system understands it. This will vary between <code>fork()</code>ed programs and <em>may</em> vary between threads in the same program.<p id="QElOQw2"> <a name="Z2xvYmFsdmFyaWFibGVzO0BJTkM1"></a></p>
+
+</li>
+
+<li><code>@INC</code> holds a list of filesystem paths in which Perl will look for files to load with <code>use</code> or <code>require</code>. See <code>perldoc -f require</code> for other items this array can contain.<p id="JVNJRw1"> <a name="Z2xvYmFsdmFyaWFibGVzOyVTSUc1"></a></p>
+
+</li>
+
+<li><code>%SIG</code> maps OS and low-level Perl signals to function references used to handle those signals. Trap the standard Ctrl-C interrupt by catching the <code>INT</code> signal, for example. See <code>perldoc perlipc</code> for more information about signals and signal handling.</li>
+
+</ul>
+
+<h3 id="QWx0ZXJuYXRpdmVzdG9TdXBlckdsb2JhbHM"><a name="QWx0ZXJuYXRpdmVzdG9TdXBlckdsb2JhbHM"></a>Alternatives to Super Globals</h3>
+
+<p id="JC84"> <a name="Z2xvYmFsdmFyaWFibGVzOyQv3"></a> <a name="JElOUFVUX1JFQ09SRF9TRVBBUkFUT1I1"></a> <a name="Z2xvYmFsdmFyaWFibGVzOyRJTlBVVF9SRUNPUkRfU0VQQVJBVE9S1"></a> <a name="cmVhZGxpbmU1"></a><a name="c3VwZXJnbG9iYWxzO2FsdGVybmF0aXZlcw1"></a> <a name="VHJ5OjpUaW552"></a>IO and exceptions are the worst perpetrators of action at a distance. Use <code>Try::Tiny</code> (<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9uX2NhdmVhdHM">Exception Caveats</a>) to insulate you from the tricky semantics of proper exception handling. <code>local</code>ize and copy the value of <code>$!</code> to avoid strange behaviors when Perl makes implicit system calls. Use <code>IO::File</code> and its methods on lexical filehandles (<a href="09-managing-perl-programs.html#ZmlsZV9oYW5kbGluZ192YXJpYWJsZXM">Special File Handling Variables</a>) to limit unwanted global changes to IO behavior.</p>
+
+
+        </div>

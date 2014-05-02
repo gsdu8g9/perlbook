@@ -1,0 +1,534 @@
+% layout 'wrapper';
+<div class="span8">
+
+<ul>
+<h2><a href="00-preface.html#UHJlZmFjZQ">Preface</a></h2>
+<ul>
+<li><a href="00-preface.html#UnVubmluZ01vZGVyblBlcmw">Running Modern Perl</a></li>
+<li><a href="00-preface.html#Q3JlZGl0cw">Credits</a></li>
+
+</ul>
+<h2><a href="01-perl-philosophy.html#VGhlUGVybFBoaWxvc29waHk">The Perl Philosophy</a></h2>
+<ul>
+<li><a href="01-perl-philosophy.html#UGVybGRvYw">Perldoc</a></li>
+<li><a href="01-perl-philosophy.html#RXhwcmVzc2l2aXR5">Expressivity</a></li>
+<li><a href="01-perl-philosophy.html#Q29udGV4dA">Context</a><ul>
+<li><a href="01-perl-philosophy.html#Vm9pZCxTY2FsYXIsYW5kTGlzdENvbnRleHQ">Void, Scalar, and List Context</a></li>
+<li><a href="01-perl-philosophy.html#TnVtZXJpYyxTdHJpbmcsYW5kQm9vbGVhbkNvbnRleHQ">Numeric, String, and Boolean Context</a></li>
+
+</ul>
+</li>
+<li><a href="01-perl-philosophy.html#SW1wbGljaXRJZGVhcw">Implicit Ideas</a><ul>
+<li><a href="01-perl-philosophy.html#VGhlRGVmYXVsdFNjYWxhclZhcmlhYmxl">The Default Scalar Variable</a></li>
+<li><a href="01-perl-philosophy.html#VGhlRGVmYXVsdEFycmF5VmFyaWFibGVz">The Default Array Variables</a></li>
+
+</ul>
+</li>
+
+</ul>
+<h2><a href="02-perl-community.html#UGVybGFuZEl0c0NvbW11bml0eQ">Perl and Its Community</a></h2>
+<ul>
+<li><a href="02-perl-community.html#VGhlQ1BBTg">The CPAN</a><ul>
+<li><a href="02-perl-community.html#Q1BBTk1hbmFnZW1lbnRUb29scw">CPAN Management Tools</a></li>
+
+</ul>
+</li>
+<li><a href="02-perl-community.html#Q29tbXVuaXR5U2l0ZXM">Community Sites</a></li>
+<li><a href="02-perl-community.html#RGV2ZWxvcG1lbnRTaXRlcw">Development Sites</a></li>
+<li><a href="02-perl-community.html#RXZlbnRz">Events</a></li>
+<li><a href="02-perl-community.html#SVJD">IRC</a></li>
+
+</ul>
+<h2><a href="03-perl-language.html#VGhlUGVybExhbmd1YWdl">The Perl Language</a></h2>
+<ul>
+<li><a href="03-perl-language.html#TmFtZXM">Names</a><ul>
+<li><a href="03-perl-language.html#VmFyaWFibGVOYW1lc2FuZFNpZ2lscw">Variable Names and Sigils</a></li>
+<li><a href="03-perl-language.html#TmFtZXNwYWNlcw">Namespaces</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#VmFyaWFibGVz">Variables</a><ul>
+<li><a href="03-perl-language.html#VmFyaWFibGVTY29wZXM">Variable Scopes</a></li>
+<li><a href="03-perl-language.html#VmFyaWFibGVTaWdpbHM">Variable Sigils</a></li>
+<li><a href="03-perl-language.html#QW5vbnltb3VzVmFyaWFibGVz">Anonymous Variables</a></li>
+<li><a href="03-perl-language.html#VmFyaWFibGVzLFR5cGVzLGFuZENvZXJjaW9u">Variables, Types, and Coercion</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#VmFsdWVz">Values</a><ul>
+<li><a href="03-perl-language.html#U3RyaW5ncw">Strings</a></li>
+<li><a href="03-perl-language.html#VW5pY29kZWFuZFN0cmluZ3M">Unicode and Strings</a><ul>
+<li><a href="03-perl-language.html#Q2hhcmFjdGVyRW5jb2Rpbmdz">Character Encodings</a></li>
+<li><a href="03-perl-language.html#VW5pY29kZWluWW91ckZpbGVoYW5kbGVz">Unicode in Your Filehandles</a></li>
+<li><a href="03-perl-language.html#VW5pY29kZWluWW91ckRhdGE">Unicode in Your Data</a></li>
+<li><a href="03-perl-language.html#VW5pY29kZWluWW91clByb2dyYW1z">Unicode in Your Programs</a></li>
+<li><a href="03-perl-language.html#SW1wbGljaXRDb252ZXJzaW9u">Implicit Conversion</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#TnVtYmVycw">Numbers</a></li>
+<li><a href="03-perl-language.html#VW5kZWY">Undef</a></li>
+<li><a href="03-perl-language.html#VGhlRW1wdHlMaXN0">The Empty List</a></li>
+<li><a href="03-perl-language.html#TGlzdHM">Lists</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#Q29udHJvbEZsb3c">Control Flow</a><ul>
+<li><a href="03-perl-language.html#QnJhbmNoaW5nRGlyZWN0aXZlcw">Branching Directives</a></li>
+<li><a href="03-perl-language.html#VGhlVGVybmFyeUNvbmRpdGlvbmFsT3BlcmF0b3I">The Ternary Conditional Operator</a><ul>
+<li><a href="03-perl-language.html#U2hvcnRDaXJjdWl0aW5n">Short Circuiting</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#Q29udGV4dGZvckNvbmRpdGlvbmFsRGlyZWN0aXZlcw">Context for Conditional Directives</a></li>
+<li><a href="03-perl-language.html#TG9vcGluZ0RpcmVjdGl2ZXM">Looping Directives</a></li>
+<li><a href="03-perl-language.html#SXRlcmF0aW9uYW5kQWxpYXNpbmc">Iteration and Aliasing</a></li>
+<li><a href="03-perl-language.html#SXRlcmF0aW9uYW5kU2NvcGluZw">Iteration and Scoping</a></li>
+<li><a href="03-perl-language.html#VGhlQy1TdHlsZUZvckxvb3A">The C-Style For Loop</a></li>
+<li><a href="03-perl-language.html#V2hpbGVhbmRVbnRpbA">While and Until</a></li>
+<li><a href="03-perl-language.html#TG9vcHN3aXRoaW5Mb29wcw">Loops within Loops</a></li>
+<li><a href="03-perl-language.html#TG9vcENvbnRyb2w">Loop Control</a></li>
+<li><a href="03-perl-language.html#Q29udGludWU">Continue</a></li>
+<li><a href="03-perl-language.html#U3dpdGNoU3RhdGVtZW50cw">Switch Statements</a></li>
+<li><a href="03-perl-language.html#VGFpbGNhbGxz">Tailcalls</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#U2NhbGFycw">Scalars</a><ul>
+<li><a href="03-perl-language.html#U2NhbGFyc2FuZFR5cGVz">Scalars and Types</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#QXJyYXlz">Arrays</a><ul>
+<li><a href="03-perl-language.html#QXJyYXlFbGVtZW50cw">Array Elements</a></li>
+<li><a href="03-perl-language.html#QXJyYXlBc3NpZ25tZW50">Array Assignment</a></li>
+<li><a href="03-perl-language.html#QXJyYXlPcGVyYXRpb25z">Array Operations</a></li>
+<li><a href="03-perl-language.html#QXJyYXlTbGljZXM">Array Slices</a></li>
+<li><a href="03-perl-language.html#QXJyYXlzYW5kQ29udGV4dA">Arrays and Context</a></li>
+<li><a href="03-perl-language.html#QXJyYXlJbnRlcnBvbGF0aW9u">Array Interpolation</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#SGFzaGVz">Hashes</a><ul>
+<li><a href="03-perl-language.html#RGVjbGFyaW5nSGFzaGVz">Declaring Hashes</a></li>
+<li><a href="03-perl-language.html#SGFzaEluZGV4aW5n">Hash Indexing</a></li>
+<li><a href="03-perl-language.html#SGFzaEtleUV4aXN0ZW5jZQ">Hash Key Existence</a></li>
+<li><a href="03-perl-language.html#QWNjZXNzaW5nSGFzaEtleXNhbmRWYWx1ZXM">Accessing Hash Keys and Values</a></li>
+<li><a href="03-perl-language.html#SGFzaFNsaWNlcw">Hash Slices</a></li>
+<li><a href="03-perl-language.html#VGhlRW1wdHlIYXNo">The Empty Hash</a></li>
+<li><a href="03-perl-language.html#SGFzaElkaW9tcw">Hash Idioms</a></li>
+<li><a href="03-perl-language.html#TG9ja2luZ0hhc2hlcw">Locking Hashes</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#Q29lcmNpb24">Coercion</a><ul>
+<li><a href="03-perl-language.html#Qm9vbGVhbkNvZXJjaW9u">Boolean Coercion</a></li>
+<li><a href="03-perl-language.html#U3RyaW5nQ29lcmNpb24">String Coercion</a></li>
+<li><a href="03-perl-language.html#TnVtZXJpY0NvZXJjaW9u">Numeric Coercion</a></li>
+<li><a href="03-perl-language.html#UmVmZXJlbmNlQ29lcmNpb24">Reference Coercion</a></li>
+<li><a href="03-perl-language.html#Q2FjaGVkQ29lcmNpb25z">Cached Coercions</a></li>
+<li><a href="03-perl-language.html#RHVhbHZhcnM">Dualvars</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#UGFja2FnZXM">Packages</a><ul>
+<li><a href="03-perl-language.html#UGFja2FnZXNhbmROYW1lc3BhY2Vz">Packages and Namespaces</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#UmVmZXJlbmNlcw">References</a><ul>
+<li><a href="03-perl-language.html#U2NhbGFyUmVmZXJlbmNlcw">Scalar References</a></li>
+<li><a href="03-perl-language.html#QXJyYXlSZWZlcmVuY2Vz">Array References</a></li>
+<li><a href="03-perl-language.html#SGFzaFJlZmVyZW5jZXM">Hash References</a></li>
+<li><a href="03-perl-language.html#RnVuY3Rpb25SZWZlcmVuY2Vz">Function References</a></li>
+<li><a href="03-perl-language.html#RmlsZWhhbmRsZVJlZmVyZW5jZXM">Filehandle References</a></li>
+<li><a href="03-perl-language.html#UmVmZXJlbmNlQ291bnRz">Reference Counts</a></li>
+<li><a href="03-perl-language.html#UmVmZXJlbmNlc2FuZEZ1bmN0aW9ucw">References and Functions</a></li>
+
+</ul>
+</li>
+<li><a href="03-perl-language.html#TmVzdGVkRGF0YVN0cnVjdHVyZXM">Nested Data Structures</a><ul>
+<li><a href="03-perl-language.html#QXV0b3ZpdmlmaWNhdGlvbg">Autovivification</a></li>
+<li><a href="03-perl-language.html#RGVidWdnaW5nTmVzdGVkRGF0YVN0cnVjdHVyZXM">Debugging Nested Data Structures</a></li>
+<li><a href="03-perl-language.html#Q2lyY3VsYXJSZWZlcmVuY2Vz">Circular References</a></li>
+<li><a href="03-perl-language.html#QWx0ZXJuYXRpdmVzdG9OZXN0ZWREYXRhU3RydWN0dXJlcw">Alternatives to Nested Data Structures</a></li>
+
+</ul>
+</li>
+
+</ul>
+<h2><a href="04-perl-operators.html#T3BlcmF0b3Jz">Operators</a></h2>
+<ul>
+<li><a href="04-perl-operators.html#T3BlcmF0b3JDaGFyYWN0ZXJpc3RpY3M">Operator Characteristics</a><ul>
+<li><a href="04-perl-operators.html#UHJlY2VkZW5jZQ">Precedence</a></li>
+<li><a href="04-perl-operators.html#QXNzb2NpYXRpdml0eQ">Associativity</a></li>
+<li><a href="04-perl-operators.html#QXJpdHk">Arity</a></li>
+<li><a href="04-perl-operators.html#Rml4aXR5">Fixity</a></li>
+
+</ul>
+</li>
+<li><a href="04-perl-operators.html#T3BlcmF0b3JUeXBlcw">Operator Types</a><ul>
+<li><a href="04-perl-operators.html#TnVtZXJpY09wZXJhdG9ycw">Numeric Operators</a></li>
+<li><a href="04-perl-operators.html#U3RyaW5nT3BlcmF0b3Jz">String Operators</a></li>
+<li><a href="04-perl-operators.html#TG9naWNhbE9wZXJhdG9ycw">Logical Operators</a></li>
+<li><a href="04-perl-operators.html#Qml0d2lzZU9wZXJhdG9ycw">Bitwise Operators</a></li>
+<li><a href="04-perl-operators.html#U3BlY2lhbE9wZXJhdG9ycw">Special Operators</a></li>
+
+</ul>
+</li>
+
+</ul>
+<h2><a href="05-perl-functions.html#RnVuY3Rpb25z">Functions</a></h2>
+<ul>
+<li><a href="05-perl-functions.html#RGVjbGFyaW5nRnVuY3Rpb25z">Declaring Functions</a></li>
+<li><a href="05-perl-functions.html#SW52b2tpbmdGdW5jdGlvbnM">Invoking Functions</a></li>
+<li><a href="05-perl-functions.html#RnVuY3Rpb25QYXJhbWV0ZXJz">Function Parameters</a><ul>
+<li><a href="05-perl-functions.html#RmxhdHRlbmluZw">Flattening</a></li>
+<li><a href="05-perl-functions.html#U2x1cnBpbmc">Slurping</a></li>
+<li><a href="05-perl-functions.html#QWxpYXNpbmc">Aliasing</a></li>
+
+</ul>
+</li>
+<li><a href="05-perl-functions.html#RnVuY3Rpb25zYW5kTmFtZXNwYWNlcw">Functions and Namespaces</a><ul>
+<li><a href="05-perl-functions.html#SW1wb3J0aW5n">Importing</a></li>
+
+</ul>
+</li>
+<li><a href="05-perl-functions.html#UmVwb3J0aW5nRXJyb3Jz">Reporting Errors</a><ul>
+<li><a href="05-perl-functions.html#VmFsaWRhdGluZ0FyZ3VtZW50cw">Validating Arguments</a></li>
+
+</ul>
+</li>
+<li><a href="05-perl-functions.html#QWR2YW5jZWRGdW5jdGlvbnM">Advanced Functions</a><ul>
+<li><a href="05-perl-functions.html#Q29udGV4dEF3YXJlbmVzcw">Context Awareness</a></li>
+<li><a href="05-perl-functions.html#UmVjdXJzaW9u">Recursion</a></li>
+<li><a href="05-perl-functions.html#TGV4aWNhbHM">Lexicals</a></li>
+<li><a href="05-perl-functions.html#VGFpbENhbGxz">Tail Calls</a></li>
+
+</ul>
+</li>
+<li><a href="05-perl-functions.html#UGl0ZmFsbHNhbmRNaXNmZWF0dXJlcw">Pitfalls and Misfeatures</a></li>
+<li><a href="05-perl-functions.html#U2NvcGU">Scope</a><ul>
+<li><a href="05-perl-functions.html#TGV4aWNhbFNjb3Bl">Lexical Scope</a></li>
+<li><a href="05-perl-functions.html#T3VyU2NvcGU">Our Scope</a></li>
+<li><a href="05-perl-functions.html#RHluYW1pY1Njb3Bl">Dynamic Scope</a></li>
+<li><a href="05-perl-functions.html#U3RhdGVTY29wZQ">State Scope</a></li>
+
+</ul>
+</li>
+<li><a href="05-perl-functions.html#QW5vbnltb3VzRnVuY3Rpb25z">Anonymous Functions</a><ul>
+<li><a href="05-perl-functions.html#RGVjbGFyaW5nQW5vbnltb3VzRnVuY3Rpb25z">Declaring Anonymous Functions</a></li>
+<li><a href="05-perl-functions.html#QW5vbnltb3VzRnVuY3Rpb25OYW1lcw">Anonymous Function Names</a></li>
+<li><a href="05-perl-functions.html#SW1wbGljaXRBbm9ueW1vdXNGdW5jdGlvbnM">Implicit Anonymous Functions</a></li>
+
+</ul>
+</li>
+<li><a href="05-perl-functions.html#Q2xvc3VyZXM">Closures</a><ul>
+<li><a href="05-perl-functions.html#Q3JlYXRpbmdDbG9zdXJlcw">Creating Closures</a></li>
+<li><a href="05-perl-functions.html#VXNlc29mQ2xvc3VyZXM">Uses of Closures</a></li>
+<li><a href="05-perl-functions.html#Q2xvc3VyZXNhbmRQYXJ0aWFsQXBwbGljYXRpb24">Closures and Partial Application</a></li>
+
+</ul>
+</li>
+<li><a href="05-perl-functions.html#U3RhdGV2ZXJzdXNDbG9zdXJlcw">State versus Closures</a></li>
+<li><a href="05-perl-functions.html#U3RhdGV2ZXJzdXNQc2V1ZG8tU3RhdGU">State versus Pseudo-State</a></li>
+<li><a href="05-perl-functions.html#QXR0cmlidXRlcw">Attributes</a><ul>
+<li><a href="05-perl-functions.html#RHJhd2JhY2tzb2ZBdHRyaWJ1dGVz">Drawbacks of Attributes</a></li>
+
+</ul>
+</li>
+<li><a href="05-perl-functions.html#QVVUT0xPQUQ">AUTOLOAD</a><ul>
+<li><a href="05-perl-functions.html#UmVkaXNwYXRjaGluZ01ldGhvZHNpbkFVVE9MT0FEKCk">Redispatching Methods in AUTOLOAD()</a></li>
+<li><a href="05-perl-functions.html#R2VuZXJhdGluZ0NvZGVpbkFVVE9MT0FEKCk">Generating Code in AUTOLOAD()</a></li>
+<li><a href="05-perl-functions.html#RHJhd2JhY2tzb2ZBVVRPTE9BRA">Drawbacks of AUTOLOAD</a></li>
+
+</ul>
+</li>
+
+</ul>
+<h2><a href="06-perl-regular-expressions.html#UmVndWxhckV4cHJlc3Npb25zYW5kTWF0Y2hpbmc">Regular Expressions and Matching</a></h2>
+<ul>
+<li><a href="06-perl-regular-expressions.html#TGl0ZXJhbHM">Literals</a></li>
+<li><a href="06-perl-regular-expressions.html#VGhlcXIvL09wZXJhdG9yYW5kUmVnZXhDb21iaW5hdGlvbnM">The qr// Operator and Regex Combinations</a></li>
+<li><a href="06-perl-regular-expressions.html#UXVhbnRpZmllcnM">Quantifiers</a></li>
+<li><a href="06-perl-regular-expressions.html#R3JlZWRpbmVzcw">Greediness</a></li>
+<li><a href="06-perl-regular-expressions.html#UmVnZXhBbmNob3Jz">Regex Anchors</a></li>
+<li><a href="06-perl-regular-expressions.html#TWV0YWNoYXJhY3RlcnM">Metacharacters</a></li>
+<li><a href="06-perl-regular-expressions.html#Q2hhcmFjdGVyQ2xhc3Nlcw">Character Classes</a></li>
+<li><a href="06-perl-regular-expressions.html#Q2FwdHVyaW5n">Capturing</a><ul>
+<li><a href="06-perl-regular-expressions.html#TmFtZWRDYXB0dXJlcw">Named Captures</a></li>
+<li><a href="06-perl-regular-expressions.html#TnVtYmVyZWRDYXB0dXJlcw">Numbered Captures</a></li>
+
+</ul>
+</li>
+<li><a href="06-perl-regular-expressions.html#R3JvdXBpbmdhbmRBbHRlcm5hdGlvbg">Grouping and Alternation</a></li>
+<li><a href="06-perl-regular-expressions.html#T3RoZXJFc2NhcGVTZXF1ZW5jZXM">Other Escape Sequences</a></li>
+<li><a href="06-perl-regular-expressions.html#QXNzZXJ0aW9ucw">Assertions</a></li>
+<li><a href="06-perl-regular-expressions.html#UmVnZXhNb2RpZmllcnM">Regex Modifiers</a></li>
+<li><a href="06-perl-regular-expressions.html#U21hcnRNYXRjaGluZw">Smart Matching</a></li>
+
+</ul>
+<h2><a href="07-object-oriented-perl.html#T2JqZWN0cw">Objects</a></h2>
+<ul>
+<li><a href="07-object-oriented-perl.html#TW9vc2U">Moose</a><ul>
+<li><a href="07-object-oriented-perl.html#Q2xhc3Nlcw">Classes</a></li>
+<li><a href="07-object-oriented-perl.html#TWV0aG9kcw">Methods</a></li>
+<li><a href="07-object-oriented-perl.html#QXR0cmlidXRlcw">Attributes</a></li>
+<li><a href="07-object-oriented-perl.html#RW5jYXBzdWxhdGlvbg">Encapsulation</a><ul>
+<li><a href="07-object-oriented-perl.html#UG9seW1vcnBoaXNt">Polymorphism</a></li>
+
+</ul>
+</li>
+<li><a href="07-object-oriented-perl.html#Um9sZXM">Roles</a><ul>
+<li><a href="07-object-oriented-perl.html#Um9sZXNhbmRET0VTKCk">Roles and DOES()</a></li>
+
+</ul>
+</li>
+<li><a href="07-object-oriented-perl.html#SW5oZXJpdGFuY2U">Inheritance</a><ul>
+<li><a href="07-object-oriented-perl.html#SW5oZXJpdGFuY2VhbmRBdHRyaWJ1dGVz">Inheritance and Attributes</a></li>
+<li><a href="07-object-oriented-perl.html#TWV0aG9kRGlzcGF0Y2hPcmRlcg">Method Dispatch Order</a></li>
+<li><a href="07-object-oriented-perl.html#SW5oZXJpdGFuY2VhbmRNZXRob2Rz">Inheritance and Methods</a></li>
+<li><a href="07-object-oriented-perl.html#SW5oZXJpdGFuY2VhbmRpc2EoKQ">Inheritance and isa()</a></li>
+
+</ul>
+</li>
+<li><a href="07-object-oriented-perl.html#TW9vc2VhbmRQZXJsT08">Moose and Perl OO</a></li>
+
+</ul>
+</li>
+<li><a href="07-object-oriented-perl.html#Qmxlc3NlZFJlZmVyZW5jZXM">Blessed References</a><ul>
+<li><a href="07-object-oriented-perl.html#TWV0aG9kTG9va3VwYW5kSW5oZXJpdGFuY2U">Method Lookup and Inheritance</a></li>
+<li><a href="07-object-oriented-perl.html#QVVUT0xPQUQ">AUTOLOAD</a></li>
+<li><a href="07-object-oriented-perl.html#TWV0aG9kT3ZlcnJpZGluZ2FuZFNVUEVS">Method Overriding and SUPER</a></li>
+<li><a href="07-object-oriented-perl.html#U3RyYXRlZ2llc2ZvckNvcGluZ3dpdGhCbGVzc2VkUmVmZXJlbmNlcw">Strategies for Coping with Blessed References</a></li>
+
+</ul>
+</li>
+<li><a href="07-object-oriented-perl.html#UmVmbGVjdGlvbg">Reflection</a><ul>
+<li><a href="07-object-oriented-perl.html#Q2hlY2tpbmd0aGF0YU1vZHVsZUhhc0xvYWRlZA">Checking that a Module Has Loaded</a></li>
+<li><a href="07-object-oriented-perl.html#Q2hlY2tpbmd0aGF0YVBhY2thZ2VFeGlzdHM">Checking that a Package Exists</a></li>
+<li><a href="07-object-oriented-perl.html#Q2hlY2tpbmd0aGF0YUNsYXNzRXhpc3Rz">Checking that a Class Exists</a></li>
+<li><a href="07-object-oriented-perl.html#Q2hlY2tpbmdhTW9kdWxlVmVyc2lvbk51bWJlcg">Checking a Module Version Number</a></li>
+<li><a href="07-object-oriented-perl.html#Q2hlY2tpbmd0aGF0YUZ1bmN0aW9uRXhpc3Rz">Checking that a Function Exists</a></li>
+<li><a href="07-object-oriented-perl.html#Q2hlY2tpbmd0aGF0YU1ldGhvZEV4aXN0cw">Checking that a Method Exists</a></li>
+<li><a href="07-object-oriented-perl.html#Um9vdGluZ0Fyb3VuZGluU3ltYm9sVGFibGVz">Rooting Around in Symbol Tables</a></li>
+
+</ul>
+</li>
+<li><a href="07-object-oriented-perl.html#QWR2YW5jZWRPT1Blcmw">Advanced OO Perl</a><ul>
+<li><a href="07-object-oriented-perl.html#RmF2b3JDb21wb3NpdGlvbk92ZXJJbmhlcml0YW5jZQ">Favor Composition Over Inheritance</a></li>
+<li><a href="07-object-oriented-perl.html#U2luZ2xlUmVzcG9uc2liaWxpdHlQcmluY2lwbGU">Single Responsibility Principle</a></li>
+<li><a href="07-object-oriented-perl.html#RG9uJ3RSZXBlYXRZb3Vyc2VsZg">Don&#39;t Repeat Yourself</a></li>
+<li><a href="07-object-oriented-perl.html#TGlza292U3Vic3RpdHV0aW9uUHJpbmNpcGxl">Liskov Substitution Principle</a></li>
+<li><a href="07-object-oriented-perl.html#U3VidHlwZXNhbmRDb2VyY2lvbnM">Subtypes and Coercions</a></li>
+<li><a href="07-object-oriented-perl.html#SW1tdXRhYmlsaXR5">Immutability</a></li>
+
+</ul>
+</li>
+
+</ul>
+<h2><a href="08-perl-style-efficiency.html#U3R5bGVhbmRFZmZpY2FjeQ">Style and Efficacy</a></h2>
+<ul>
+<li><a href="08-perl-style-efficiency.html#V3JpdGluZ01haW50YWluYWJsZVBlcmw">Writing Maintainable Perl</a></li>
+<li><a href="08-perl-style-efficiency.html#V3JpdGluZ0lkaW9tYXRpY1Blcmw">Writing Idiomatic Perl</a></li>
+<li><a href="08-perl-style-efficiency.html#V3JpdGluZ0VmZmVjdGl2ZVBlcmw">Writing Effective Perl</a></li>
+<li><a href="08-perl-style-efficiency.html#RXhjZXB0aW9ucw">Exceptions</a><ul>
+<li><a href="08-perl-style-efficiency.html#VGhyb3dpbmdFeGNlcHRpb25z">Throwing Exceptions</a></li>
+<li><a href="08-perl-style-efficiency.html#Q2F0Y2hpbmdFeGNlcHRpb25z">Catching Exceptions</a></li>
+<li><a href="08-perl-style-efficiency.html#RXhjZXB0aW9uQ2F2ZWF0cw">Exception Caveats</a></li>
+<li><a href="08-perl-style-efficiency.html#QnVpbHQtaW5FeGNlcHRpb25z">Built-in Exceptions</a></li>
+
+</ul>
+</li>
+<li><a href="08-perl-style-efficiency.html#UHJhZ21hcw">Pragmas</a><ul>
+<li><a href="08-perl-style-efficiency.html#UHJhZ21hc2FuZFNjb3Bl">Pragmas and Scope</a></li>
+<li><a href="08-perl-style-efficiency.html#VXNpbmdQcmFnbWFz">Using Pragmas</a></li>
+<li><a href="08-perl-style-efficiency.html#VXNlZnVsUHJhZ21hcw">Useful Pragmas</a></li>
+
+</ul>
+</li>
+
+</ul>
+<h2><a href="09-managing-perl-programs.html#TWFuYWdpbmdSZWFsUHJvZ3JhbXM">Managing Real Programs</a></h2>
+<ul>
+<li><a href="09-managing-perl-programs.html#VGVzdGluZw">Testing</a><ul>
+<li><a href="09-managing-perl-programs.html#VGVzdDo6TW9yZQ">Test::More</a></li>
+<li><a href="09-managing-perl-programs.html#UnVubmluZ1Rlc3Rz">Running Tests</a></li>
+<li><a href="09-managing-perl-programs.html#QmV0dGVyQ29tcGFyaXNvbnM">Better Comparisons</a></li>
+<li><a href="09-managing-perl-programs.html#T3JnYW5pemluZ1Rlc3Rz">Organizing Tests</a></li>
+<li><a href="09-managing-perl-programs.html#T3RoZXJUZXN0aW5nTW9kdWxlcw">Other Testing Modules</a></li>
+
+</ul>
+</li>
+<li><a href="09-managing-perl-programs.html#SGFuZGxpbmdXYXJuaW5ncw">Handling Warnings</a><ul>
+<li><a href="09-managing-perl-programs.html#UHJvZHVjaW5nV2FybmluZ3M">Producing Warnings</a></li>
+<li><a href="09-managing-perl-programs.html#RW5hYmxpbmdhbmREaXNhYmxpbmdXYXJuaW5ncw">Enabling and Disabling Warnings</a></li>
+<li><a href="09-managing-perl-programs.html#RGlzYWJsaW5nV2FybmluZ0NhdGVnb3JpZXM">Disabling Warning Categories</a></li>
+<li><a href="09-managing-perl-programs.html#TWFraW5nV2FybmluZ3NGYXRhbA">Making Warnings Fatal</a></li>
+<li><a href="09-managing-perl-programs.html#Q2F0Y2hpbmdXYXJuaW5ncw">Catching Warnings</a></li>
+<li><a href="09-managing-perl-programs.html#UmVnaXN0ZXJpbmdZb3VyT3duV2FybmluZ3M">Registering Your Own Warnings</a></li>
+
+</ul>
+</li>
+<li><a href="09-managing-perl-programs.html#RmlsZXM">Files</a><ul>
+<li><a href="09-managing-perl-programs.html#SW5wdXRhbmRPdXRwdXQ">Input and Output</a><ul>
+<li><a href="09-managing-perl-programs.html#VW5pY29kZSxJT0xheWVycyxhbmRGaWxlTW9kZXM">Unicode, IO Layers, and File Modes</a></li>
+<li><a href="09-managing-perl-programs.html#VHdvLWFyZ3VtZW50b3Blbg">Two-argument <code>open</code></a></li>
+<li><a href="09-managing-perl-programs.html#UmVhZGluZ2Zyb21GaWxlcw">Reading from Files</a></li>
+<li><a href="09-managing-perl-programs.html#V3JpdGluZ3RvRmlsZXM">Writing to Files</a></li>
+<li><a href="09-managing-perl-programs.html#Q2xvc2luZ0ZpbGVz">Closing Files</a></li>
+<li><a href="09-managing-perl-programs.html#U3BlY2lhbEZpbGVIYW5kbGluZ1ZhcmlhYmxlcw">Special File Handling Variables</a></li>
+
+</ul>
+</li>
+<li><a href="09-managing-perl-programs.html#RGlyZWN0b3JpZXNhbmRQYXRocw">Directories and Paths</a><ul>
+<li><a href="09-managing-perl-programs.html#TWFuaXB1bGF0aW5nUGF0aHM">Manipulating Paths</a></li>
+
+</ul>
+</li>
+<li><a href="09-managing-perl-programs.html#RmlsZU1hbmlwdWxhdGlvbg">File Manipulation</a></li>
+
+</ul>
+</li>
+<li><a href="09-managing-perl-programs.html#TW9kdWxlcw">Modules</a><ul>
+<li><a href="09-managing-perl-programs.html#VXNpbmdhbmRJbXBvcnRpbmc">Using and Importing</a></li>
+<li><a href="09-managing-perl-programs.html#RXhwb3J0aW5n">Exporting</a></li>
+<li><a href="09-managing-perl-programs.html#T3JnYW5pemluZ0NvZGV3aXRoTW9kdWxlcw">Organizing Code with Modules</a></li>
+
+</ul>
+</li>
+<li><a href="09-managing-perl-programs.html#RGlzdHJpYnV0aW9ucw">Distributions</a><ul>
+<li><a href="09-managing-perl-programs.html#QXR0cmlidXRlc29mYURpc3RyaWJ1dGlvbg">Attributes of a Distribution</a></li>
+<li><a href="09-managing-perl-programs.html#Q1BBTlRvb2xzZm9yTWFuYWdpbmdEaXN0cmlidXRpb25z">CPAN Tools for Managing Distributions</a></li>
+<li><a href="09-managing-perl-programs.html#RGVzaWduaW5nRGlzdHJpYnV0aW9ucw">Designing Distributions</a></li>
+
+</ul>
+</li>
+<li><a href="09-managing-perl-programs.html#VGhlVU5JVkVSU0FMUGFja2FnZQ">The UNIVERSAL Package</a><ul>
+<li><a href="09-managing-perl-programs.html#VGhlVkVSU0lPTigpTWV0aG9k">The VERSION() Method</a></li>
+<li><a href="09-managing-perl-programs.html#VGhlRE9FUygpTWV0aG9k">The DOES() Method</a></li>
+<li><a href="09-managing-perl-programs.html#VGhlY2FuKClNZXRob2Q">The can() Method</a></li>
+<li><a href="09-managing-perl-programs.html#VGhlaXNhKClNZXRob2Q">The isa() Method</a></li>
+<li><a href="09-managing-perl-programs.html#RXh0ZW5kaW5nVU5JVkVSU0FM">Extending UNIVERSAL</a></li>
+
+</ul>
+</li>
+<li><a href="09-managing-perl-programs.html#Q29kZUdlbmVyYXRpb24">Code Generation</a><ul>
+<li><a href="09-managing-perl-programs.html#ZXZhbA">eval</a></li>
+<li><a href="09-managing-perl-programs.html#UGFyYW1ldHJpY0Nsb3N1cmVz">Parametric Closures</a></li>
+<li><a href="09-managing-perl-programs.html#Q29tcGlsZS10aW1lTWFuaXB1bGF0aW9u">Compile-time Manipulation</a></li>
+<li><a href="09-managing-perl-programs.html#Q2xhc3M6Ok1PUA">Class::MOP</a></li>
+
+</ul>
+</li>
+<li><a href="09-managing-perl-programs.html#T3ZlcmxvYWRpbmc">Overloading</a><ul>
+<li><a href="09-managing-perl-programs.html#T3ZlcmxvYWRpbmdDb21tb25PcGVyYXRpb25z">Overloading Common Operations</a></li>
+<li><a href="09-managing-perl-programs.html#T3ZlcmxvYWRhbmRJbmhlcml0YW5jZQ">Overload and Inheritance</a></li>
+<li><a href="09-managing-perl-programs.html#VXNlc29mT3ZlcmxvYWRpbmc">Uses of Overloading</a></li>
+
+</ul>
+</li>
+<li><a href="09-managing-perl-programs.html#VGFpbnQ">Taint</a><ul>
+<li><a href="09-managing-perl-programs.html#VXNpbmdUYWludE1vZGU">Using Taint Mode</a></li>
+<li><a href="09-managing-perl-programs.html#U291cmNlc29mVGFpbnQ">Sources of Taint</a></li>
+<li><a href="09-managing-perl-programs.html#UmVtb3ZpbmdUYWludGZyb21EYXRh">Removing Taint from Data</a></li>
+<li><a href="09-managing-perl-programs.html#UmVtb3ZpbmdUYWludGZyb210aGVFbnZpcm9ubWVudA">Removing Taint from the Environment</a></li>
+<li><a href="09-managing-perl-programs.html#VGFpbnRHb3RjaGFz">Taint Gotchas</a></li>
+
+</ul>
+</li>
+
+</ul>
+<h2><a href="10-perl-beyond-syntax.html#UGVybEJleW9uZFN5bnRheA">Perl Beyond Syntax</a></h2>
+<ul>
+<li><a href="10-perl-beyond-syntax.html#SWRpb21z">Idioms</a><ul>
+<li><a href="10-perl-beyond-syntax.html#VGhlT2JqZWN0YXMkc2VsZg">The Object as <code>$self</code></a></li>
+<li><a href="10-perl-beyond-syntax.html#TmFtZWRQYXJhbWV0ZXJz">Named Parameters</a></li>
+<li><a href="10-perl-beyond-syntax.html#VGhlU2Nod2FydHppYW5UcmFuc2Zvcm0">The Schwartzian Transform</a></li>
+<li><a href="10-perl-beyond-syntax.html#RWFzeUZpbGVTbHVycGluZw">Easy File Slurping</a></li>
+<li><a href="10-perl-beyond-syntax.html#SGFuZGxpbmdNYWlu">Handling Main</a></li>
+<li><a href="10-perl-beyond-syntax.html#Q29udHJvbGxlZEV4ZWN1dGlvbg">Controlled Execution</a></li>
+<li><a href="10-perl-beyond-syntax.html#UG9zdGZpeFBhcmFtZXRlclZhbGlkYXRpb24">Postfix Parameter Validation</a></li>
+<li><a href="10-perl-beyond-syntax.html#UmVnZXhFblBhc3NhbnQ">Regex En Passant</a></li>
+<li><a href="10-perl-beyond-syntax.html#VW5hcnlDb2VyY2lvbnM">Unary Coercions</a></li>
+
+</ul>
+</li>
+<li><a href="10-perl-beyond-syntax.html#R2xvYmFsVmFyaWFibGVz">Global Variables</a><ul>
+<li><a href="10-perl-beyond-syntax.html#TWFuYWdpbmdTdXBlckdsb2JhbHM">Managing Super Globals</a></li>
+<li><a href="10-perl-beyond-syntax.html#RW5nbGlzaE5hbWVz">English Names</a></li>
+<li><a href="10-perl-beyond-syntax.html#VXNlZnVsU3VwZXJHbG9iYWxz">Useful Super Globals</a></li>
+<li><a href="10-perl-beyond-syntax.html#QWx0ZXJuYXRpdmVzdG9TdXBlckdsb2JhbHM">Alternatives to Super Globals</a></li>
+
+</ul>
+</li>
+
+</ul>
+<h2><a href="11-what-to-avoid-in-perl.html#V2hhdHRvQXZvaWQ">What to Avoid</a></h2>
+<ul>
+<li><a href="11-what-to-avoid-in-perl.html#QmFyZXdvcmRz">Barewords</a><ul>
+<li><a href="11-what-to-avoid-in-perl.html#R29vZFVzZXNvZkJhcmV3b3Jkcw">Good Uses of Barewords</a><ul>
+<li><a href="11-what-to-avoid-in-perl.html#QmFyZXdvcmRoYXNoa2V5cw">Bareword hash keys</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#QmFyZXdvcmRwYWNrYWdlbmFtZXM">Bareword package names</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#QmFyZXdvcmRuYW1lZGNvZGVibG9ja3M">Bareword named code blocks</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#QmFyZXdvcmRjb25zdGFudHM">Bareword constants</a></li>
+
+</ul>
+</li>
+<li><a href="11-what-to-avoid-in-perl.html#SWxsLUFkdmlzZWRVc2Vzb2ZCYXJld29yZHM">Ill-Advised Uses of Barewords</a><ul>
+<li><a href="11-what-to-avoid-in-perl.html#QmFyZXdvcmRoYXNodmFsdWVz">Bareword hash values</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#QmFyZXdvcmRmdW5jdGlvbmNhbGxz">Bareword function calls</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#QmFyZXdvcmRmaWxlaGFuZGxlcw">Bareword filehandles</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#QmFyZXdvcmRzb3J0ZnVuY3Rpb25z">Bareword sort functions</a></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><a href="11-what-to-avoid-in-perl.html#SW5kaXJlY3RPYmplY3Rz">Indirect Objects</a><ul>
+<li><a href="11-what-to-avoid-in-perl.html#QmFyZXdvcmRJbmRpcmVjdEludm9jYXRpb25z">Bareword Indirect Invocations</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#SW5kaXJlY3ROb3RhdGlvblNjYWxhckxpbWl0YXRpb25z">Indirect Notation Scalar Limitations</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#QWx0ZXJuYXRpdmVzdG9JbmRpcmVjdE5vdGF0aW9u">Alternatives to Indirect Notation</a></li>
+
+</ul>
+</li>
+<li><a href="11-what-to-avoid-in-perl.html#UHJvdG90eXBlcw">Prototypes</a><ul>
+<li><a href="11-what-to-avoid-in-perl.html#VGhlUHJvYmxlbXdpdGhQcm90b3R5cGVz">The Problem with Prototypes</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#R29vZFVzZXNvZlByb3RvdHlwZXM">Good Uses of Prototypes</a></li>
+
+</ul>
+</li>
+<li><a href="11-what-to-avoid-in-perl.html#TWV0aG9kLUZ1bmN0aW9uRXF1aXZhbGVuY2U">Method-Function Equivalence</a><ul>
+<li><a href="11-what-to-avoid-in-perl.html#Q2FsbGVyLXNpZGU">Caller-side</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#Q2FsbGVlLXNpZGU">Callee-side</a></li>
+
+</ul>
+</li>
+<li><a href="11-what-to-avoid-in-perl.html#QXV0b21hdGljRGVyZWZlcmVuY2luZw">Automatic Dereferencing</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#VGll">Tie</a><ul>
+<li><a href="11-what-to-avoid-in-perl.html#VHlpbmdWYXJpYWJsZXM">Tying Variables</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#SW1wbGVtZW50aW5nVGllZFZhcmlhYmxlcw">Implementing Tied Variables</a></li>
+<li><a href="11-what-to-avoid-in-perl.html#V2hlbnRvdXNlVGllZFZhcmlhYmxlcw">When to use Tied Variables</a></li>
+
+</ul>
+</li>
+
+</ul>
+<h2><a href="12-perl-missing-features.html#V2hhdCdzTWlzc2luZw">What&#39;s Missing</a></h2>
+<ul>
+<li><a href="12-perl-missing-features.html#TWlzc2luZ0RlZmF1bHRz">Missing Defaults</a><ul>
+<li><a href="12-perl-missing-features.html#VGhlc3RyaWN0UHJhZ21h">The strict Pragma</a></li>
+<li><a href="12-perl-missing-features.html#VGhld2FybmluZ3NQcmFnbWE">The warnings Pragma</a></li>
+<li><a href="12-perl-missing-features.html#SU86OkZpbGVhbmRJTzo6SGFuZGxl"><code>IO::File</code> and <code>IO::Handle</code></a></li>
+<li><a href="12-perl-missing-features.html#VGhlYXV0b2RpZVByYWdtYQ">The autodie Pragma</a></li>
+<li><a href="12-perl-missing-features.html#UGVybFZlcnNpb25OdW1iZXJz">Perl Version Numbers</a></li>
+
+</ul>
+</li>
+
+</ul>
+</ul>
+
+
+        </div>

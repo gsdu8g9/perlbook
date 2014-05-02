@@ -1,0 +1,2491 @@
+% layout 'wrapper';
+<div class="span8">
+
+<h1 id="index">Index</h1>
+<h2>!</h2>
+
+<ul>
+<li>!~
+<ul>
+<li>infix operator [<a href="04-perl-operators.html#IX47aW5maXhvcGVyYXRvcg1">1</a>]</li>
+<li>negated regex bind [<a href="06-perl-regular-expressions.html#IX47bmVnYXRlZHJlZ2V4YmluZA1">1</a>]</li>
+<li>string operator [<a href="04-perl-operators.html#IX47c3RyaW5nb3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>!!
+<ul>
+<li>prefix operator [<a href="04-perl-operators.html#ISE7cHJlZml4b3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>!=
+<ul>
+<li>numeric comparison operator [<a href="04-perl-operators.html#IT07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>!
+<ul>
+<li>logical operator [<a href="04-perl-operators.html#ITtsb2dpY2Fsb3BlcmF0b3I1">1</a>]</li>
+<li>prefix operator [<a href="04-perl-operators.html#ITtwcmVmaXhvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>&quot;</h2>
+
+<ul>
+<li>&quot;&quot;
+<ul>
+<li>circumfix operator [<a href="04-perl-operators.html#O2NpcmN1bWZpeG9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>$</h2>
+
+<ul>
+<li>$
+<ul>
+<li>end of string before newline regex metacharacter [<a href="06-perl-regular-expressions.html#JDtlbmRvZnN0cmluZ2JlZm9yZW5ld2xpbmVyZWdleG1ldGFjaGFyYWN0ZXI1">1</a>]</li>
+<li>sigil [<a href="03-perl-language.html#JDtzaWdpbA1">1</a>] [<a href="03-perl-language.html#JDtzaWdpbA2">2</a>] [<a href="03-perl-language.html#JDtzaWdpbA3">3</a>]</li>
+</ul>
+</li>
+<li>$@ [<a href="05-perl-functions.html#JEA1">1</a>] [<a href="08-perl-style-efficiency.html#JEA2">2</a>] [<a href="10-perl-beyond-syntax.html#JEA3">3</a>]</li>
+<li>$#
+<ul>
+<li>sigil [<a href="03-perl-language.html#JCM7c2lnaWw1">1</a>]</li>
+</ul>
+</li>
+<li>$&amp; [<a href="10-perl-beyond-syntax.html#JCY1">1</a>]</li>
+<li>$, [<a href="09-managing-perl-programs.html#JCw1">1</a>]</li>
+<li>$| [<a href="05-perl-functions.html#JHw1">1</a>] [<a href="09-managing-perl-programs.html#JHw2">2</a>] [<a href="10-perl-beyond-syntax.html#JHw3">3</a>]</li>
+<li>$/ [<a href="05-perl-functions.html#JC81">1</a>] [<a href="09-managing-perl-programs.html#JC82">2</a>] [<a href="10-perl-beyond-syntax.html#JC83">3</a>] [<a href="10-perl-beyond-syntax.html#JC84">4</a>]</li>
+<li>$\ [<a href="09-managing-perl-programs.html#JFw1">1</a>]</li>
+<li>$. [<a href="09-managing-perl-programs.html#JC41">1</a>] [<a href="10-perl-beyond-syntax.html#JC42">2</a>]</li>
+<li>$$ [<a href="10-perl-beyond-syntax.html#JCQ1">1</a>]</li>
+<li>$` [<a href="10-perl-beyond-syntax.html#JGA1">1</a>]</li>
+<li>$! [<a href="05-perl-functions.html#JCE1">1</a>] [<a href="10-perl-beyond-syntax.html#JCE2">2</a>]</li>
+<li>$&quot; [<a href="03-perl-language.html#JA1">1</a>] [<a href="10-perl-beyond-syntax.html#JA2">2</a>]</li>
+<li>$&#39; [<a href="10-perl-beyond-syntax.html#JCc1">1</a>]</li>
+</ul>
+
+<h2>%</h2>
+
+<ul>
+<li>%+ [<a href="06-perl-regular-expressions.html#JSs1">1</a>] [<a href="10-perl-beyond-syntax.html#JSs2">2</a>]</li>
+<li>%=
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#JT07bnVtZXJpY29wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>%
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#JTtudW1lcmljb3BlcmF0b3I1">1</a>]</li>
+<li>sigil [<a href="03-perl-language.html#JTtzaWdpbA1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>&amp;</h2>
+
+<ul>
+<li>&amp;&amp;
+<ul>
+<li>logical operator [<a href="04-perl-operators.html#JiY7bG9naWNhbG9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>&amp;
+<ul>
+<li>bitwise operator [<a href="04-perl-operators.html#JjtiaXR3aXNlb3BlcmF0b3I1">1</a>]</li>
+<li>sigil [<a href="03-perl-language.html#JjtzaWdpbA1">1</a>] [<a href="05-perl-functions.html#JjtzaWdpbA2">2</a>]</li>
+</ul>
+</li>
+<li>&amp;=
+<ul>
+<li>bitwise operator [<a href="04-perl-operators.html#Jj07Yml0d2lzZW9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>&#39;</h2>
+
+<ul>
+<li>&#39;&#39;
+<ul>
+<li>circumfix operator [<a href="04-perl-operators.html#Jyc7Y2lyY3VtZml4b3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>(</h2>
+
+<ul>
+<li>()
+<ul>
+<li>capturing regex metacharacters [<a href="06-perl-regular-expressions.html#KCk7Y2FwdHVyaW5ncmVnZXhtZXRhY2hhcmFjdGVycw1">1</a>]</li>
+<li>circumfix operator [<a href="04-perl-operators.html#KCk7Y2lyY3VtZml4b3BlcmF0b3I1">1</a>]</li>
+<li>empty list [<a href="03-perl-language.html#KCk7ZW1wdHlsaXN01">1</a>]</li>
+<li>postcircumfix operator [<a href="04-perl-operators.html#KCk7cG9zdGNpcmN1bWZpeG9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>(?&lt;=...)
+<ul>
+<li>zero-width positive look-behind regex assertion [<a href="06-perl-regular-expressions.html#KD88PS4uLik7emVyby13aWR0aHBvc2l0aXZlbG9vay1iZWhpbmRyZWdleGFzc2VydGlvbg1">1</a>]</li>
+</ul>
+</li>
+<li>(?=...)
+<ul>
+<li>zero-width positive look-ahead regex assertion [<a href="06-perl-regular-expressions.html#KD89Li4uKTt6ZXJvLXdpZHRocG9zaXRpdmVsb29rLWFoZWFkcmVnZXhhc3NlcnRpb241">1</a>]</li>
+</ul>
+</li>
+<li>(?!...)
+<ul>
+<li>zero-width negative look-ahead regex assertion [<a href="06-perl-regular-expressions.html#KD8hLi4uKTt6ZXJvLXdpZHRobmVnYXRpdmVsb29rLWFoZWFkcmVnZXhhc3NlcnRpb241">1</a>]</li>
+</ul>
+</li>
+<li>(?&lt;&gt;)
+<ul>
+<li>regex named capture [<a href="06-perl-regular-expressions.html#KD88Pik7cmVnZXhuYW1lZGNhcHR1cmU1">1</a>]</li>
+</ul>
+</li>
+<li>(?:)
+<ul>
+<li>non-capturing regex group [<a href="06-perl-regular-expressions.html#KD86KTtub24tY2FwdHVyaW5ncmVnZXhncm91cA1">1</a>]</li>
+</ul>
+</li>
+<li>(?&lt;!...)
+<ul>
+<li>zero-width negative look-behind regex assertion [<a href="06-perl-regular-expressions.html#KD88IS4uLik7emVyby13aWR0aG5lZ2F0aXZlbG9vay1iZWhpbmRyZWdleGFzc2VydGlvbg1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>*</h2>
+
+<ul>
+<li>*=
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#PTtudW1lcmljb3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>*?
+<ul>
+<li>non-greedy zero or one regex quantifier [<a href="06-perl-regular-expressions.html#Pztub24tZ3JlZWR5emVyb29yb25lcmVnZXhxdWFudGlmaWVy1">1</a>]</li>
+</ul>
+</li>
+<li>**
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#KjtudW1lcmljb3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>*
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#O251bWVyaWNvcGVyYXRvcg1">1</a>]</li>
+<li>sigil [<a href="09-managing-perl-programs.html#O3NpZ2ls1">1</a>]</li>
+<li>zero or more regex quantifier [<a href="06-perl-regular-expressions.html#O3plcm9vcm1vcmVyZWdleHF1YW50aWZpZXI1">1</a>]</li>
+</ul>
+</li>
+<li>**=
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#Kj07bnVtZXJpY29wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>+</h2>
+
+<ul>
+<li>+?
+<ul>
+<li>non-greedy one or more regex quantifier [<a href="06-perl-regular-expressions.html#Kz87bm9uLWdyZWVkeW9uZW9ybW9yZXJlZ2V4cXVhbnRpZmllcg1">1</a>]</li>
+</ul>
+</li>
+<li>++
+<ul>
+<li>auto-increment operator [<a href="04-perl-operators.html#Kys7YXV0by1pbmNyZW1lbnRvcGVyYXRvcg1">1</a>]</li>
+<li>prefix operator [<a href="04-perl-operators.html#Kys7cHJlZml4b3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>+=
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#Kz07bnVtZXJpY29wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>+
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#KztudW1lcmljb3BlcmF0b3I1">1</a>]</li>
+<li>one or more regex quantifier [<a href="06-perl-regular-expressions.html#KztvbmVvcm1vcmVyZWdleHF1YW50aWZpZXI1">1</a>]</li>
+<li>prefix operator [<a href="04-perl-operators.html#KztwcmVmaXhvcGVyYXRvcg1">1</a>]</li>
+<li>unary operator [<a href="11-what-to-avoid-in-perl.html#Kzt1bmFyeW9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>,</h2>
+
+<ul>
+<li>,
+<ul>
+<li>operator [<a href="04-perl-operators.html#LDtvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>-</h2>
+
+<ul>
+<li>-=
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#LT07bnVtZXJpY29wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>-
+<ul>
+<li>character class range regex metacharacter [<a href="06-perl-regular-expressions.html#LTtjaGFyYWN0ZXJjbGFzc3JhbmdlcmVnZXhtZXRhY2hhcmFjdGVy1">1</a>]</li>
+<li>numeric operator [<a href="04-perl-operators.html#LTtudW1lcmljb3BlcmF0b3I1">1</a>]</li>
+<li>prefix operator [<a href="04-perl-operators.html#LTtwcmVmaXhvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>--
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#LS07bnVtZXJpY29wZXJhdG9y1">1</a>]</li>
+<li>prefix operator [<a href="04-perl-operators.html#LS07cHJlZml4b3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>-&gt;
+<ul>
+<li>dereferencing arrow [<a href="03-perl-language.html#LT47ZGVyZWZlcmVuY2luZ2Fycm931">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>.</h2>
+
+<ul>
+<li>.=
+<ul>
+<li>infix operator [<a href="04-perl-operators.html#Lj07aW5maXhvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>.
+<ul>
+<li>anything but newline regex metacharacter [<a href="06-perl-regular-expressions.html#Ljthbnl0aGluZ2J1dG5ld2xpbmVyZWdleG1ldGFjaGFyYWN0ZXI1">1</a>]</li>
+<li>infix operator [<a href="04-perl-operators.html#LjtpbmZpeG9wZXJhdG9y1">1</a>]</li>
+<li>string operator [<a href="04-perl-operators.html#LjtzdHJpbmdvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>..
+<ul>
+<li>flip-flop operator [<a href="04-perl-operators.html#Li47ZmxpcC1mbG9wb3BlcmF0b3I1">1</a>]</li>
+<li>infix operator [<a href="04-perl-operators.html#Li47aW5maXhvcGVyYXRvcg1">1</a>]</li>
+<li>range operator [<a href="03-perl-language.html#Li47cmFuZ2VvcGVyYXRvcg1">1</a>] [<a href="04-perl-operators.html#Li47cmFuZ2VvcGVyYXRvcg2">2</a>]</li>
+</ul>
+</li>
+<li>...
+<ul>
+<li>infix operator [<a href="04-perl-operators.html#Li4uO2luZml4b3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>/</h2>
+
+<ul>
+<li>/
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#LztudW1lcmljb3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>//=
+<ul>
+<li>infix operator [<a href="04-perl-operators.html#Ly89O2luZml4b3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>/=
+<ul>
+<li>numeric operator [<a href="04-perl-operators.html#Lz07bnVtZXJpY29wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>//
+<ul>
+<li>circumfix operator [<a href="04-perl-operators.html#Ly87Y2lyY3VtZml4b3BlcmF0b3I1">1</a>]</li>
+<li>infix operator [<a href="03-perl-language.html#Ly87aW5maXhvcGVyYXRvcg1">1</a>] [<a href="04-perl-operators.html#Ly87aW5maXhvcGVyYXRvcg2">2</a>]</li>
+<li>logical operator [<a href="04-perl-operators.html#Ly87bG9naWNhbG9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>0</h2>
+
+<ul>
+<li>0 [<a href="03-perl-language.html#MA1">1</a>]</li>
+<li>$0 [<a href="10-perl-beyond-syntax.html#JDA1">1</a>]</li>
+<li>0b [<a href="03-perl-language.html#MGI1">1</a>]</li>
+<li>0x [<a href="03-perl-language.html#MHg1">1</a>]</li>
+</ul>
+
+<h2>1</h2>
+
+<ul>
+<li>$1
+<ul>
+<li>regex metacharacter [<a href="06-perl-regular-expressions.html#JDE7cmVnZXhtZXRhY2hhcmFjdGVy1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>2</h2>
+
+<ul>
+<li>$2
+<ul>
+<li>regex metacharacter [<a href="06-perl-regular-expressions.html#JDI7cmVnZXhtZXRhY2hhcmFjdGVy1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>:</h2>
+
+<ul>
+<li>::
+<ul>
+<li>package name separator [<a href="09-managing-perl-programs.html#Ojo7cGFja2FnZW5hbWVzZXBhcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>&lt;</h2>
+
+<ul>
+<li>&lt;=&gt;
+<ul>
+<li>numeric comparison operator [<a href="04-perl-operators.html#PD0-O251bWVyaWNjb21wYXJpc29ub3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>&lt;=
+<ul>
+<li>numeric comparison operator [<a href="04-perl-operators.html#PD07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>&lt;&gt;
+<ul>
+<li>circumfix readline operator [<a href="09-managing-perl-programs.html#PD47Y2lyY3VtZml4cmVhZGxpbmVvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>&lt;&lt;
+<ul>
+<li>bitwise operator [<a href="04-perl-operators.html#PDw7Yml0d2lzZW9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>&lt;&lt;=
+<ul>
+<li>bitwise operator [<a href="04-perl-operators.html#PDw9O2JpdHdpc2VvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>&lt;
+<ul>
+<li>numeric comparison operator [<a href="04-perl-operators.html#PDtudW1lcmljY29tcGFyaXNvbm9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>=</h2>
+
+<ul>
+<li>==
+<ul>
+<li>numeric comparison operator [<a href="04-perl-operators.html#PT07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>=&gt;
+<ul>
+<li>fat comma operator [<a href="03-perl-language.html#PT47ZmF0Y29tbWFvcGVyYXRvcg1">1</a>] [<a href="04-perl-operators.html#PT47ZmF0Y29tbWFvcGVyYXRvcg2">2</a>]</li>
+</ul>
+</li>
+<li>=~
+<ul>
+<li>infix operator [<a href="04-perl-operators.html#PX47aW5maXhvcGVyYXRvcg1">1</a>]</li>
+<li>regex bind [<a href="06-perl-regular-expressions.html#PX47cmVnZXhiaW5k1">1</a>]</li>
+<li>string operator [<a href="04-perl-operators.html#PX47c3RyaW5nb3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>&gt;</h2>
+
+<ul>
+<li>&gt;=
+<ul>
+<li>numeric comparison operator [<a href="04-perl-operators.html#Pj07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>&gt;&gt;=
+<ul>
+<li>bitwise operator [<a href="04-perl-operators.html#Pj49O2JpdHdpc2VvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>&gt;&gt;
+<ul>
+<li>bitwise operator [<a href="04-perl-operators.html#Pj47Yml0d2lzZW9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>&gt;
+<ul>
+<li>numeric comparison operator [<a href="04-perl-operators.html#PjtudW1lcmljY29tcGFyaXNvbm9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>?</h2>
+
+<ul>
+<li>?
+<ul>
+<li>zero or one regex quantifier [<a href="06-perl-regular-expressions.html#Pzt6ZXJvb3JvbmVyZWdleHF1YW50aWZpZXI1">1</a>] [<a href="06-perl-regular-expressions.html#Pzt6ZXJvb3JvbmVyZWdleHF1YW50aWZpZXI2">2</a>]</li>
+</ul>
+</li>
+<li>??
+<ul>
+<li>non-greedy zero or one regex quantifier [<a href="06-perl-regular-expressions.html#Pz87bm9uLWdyZWVkeXplcm9vcm9uZXJlZ2V4cXVhbnRpZmllcg1">1</a>]</li>
+</ul>
+</li>
+<li>?:
+<ul>
+<li>logical operator [<a href="04-perl-operators.html#Pzo7bG9naWNhbG9wZXJhdG9y1">1</a>]</li>
+<li>ternary conditional operator [<a href="04-perl-operators.html#Pzo7dGVybmFyeWNvbmRpdGlvbmFsb3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>@</h2>
+
+<ul>
+<li>@
+<ul>
+<li>sigil [<a href="03-perl-language.html#QDtzaWdpbA1">1</a>] [<a href="03-perl-language.html#QDtzaWdpbA2">2</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>A</h2>
+
+<ul>
+<li>\A
+<ul>
+<li>start of line regex metacharacter [<a href="06-perl-regular-expressions.html#XEE7c3RhcnRvZmxpbmVyZWdleG1ldGFjaGFyYWN0ZXI1">1</a>]</li>
+<li>start of string regex metacharacter [<a href="06-perl-regular-expressions.html#XEE7c3RhcnRvZnN0cmluZ3JlZ2V4bWV0YWNoYXJhY3Rlcg1">1</a>]</li>
+</ul>
+</li>
+<li>$a [<a href="10-perl-beyond-syntax.html#JGE1">1</a>]</li>
+<li>ActivePerl [<a href="00-preface.html#QWN0aXZlUGVybA1">1</a>]</li>
+<li>aliases [<a href="03-perl-language.html#YWxpYXNlcw1">1</a>]</li>
+<li>aliasing [<a href="03-perl-language.html#YWxpYXNpbmc1">1</a>] [<a href="03-perl-language.html#YWxpYXNpbmc2">2</a>]</li>
+
+<li>aliasing
+<ul>
+<li>iteration [<a href="03-perl-language.html#YWxpYXNpbmc7aXRlcmF0aW9u1">1</a>]</li>
+</ul>
+</li>
+<li>allomorphism [<a href="07-object-oriented-perl.html#YWxsb21vcnBoaXNt1">1</a>]</li>
+<li>amount context [<a href="01-perl-philosophy.html#YW1vdW50Y29udGV4dA1">1</a>]</li>
+<li>anchors
+<ul>
+<li>end of string [<a href="06-perl-regular-expressions.html#YW5jaG9ycztlbmRvZnN0cmluZw1">1</a>]</li>
+<li>end of string before newline [<a href="06-perl-regular-expressions.html#YW5jaG9ycztlbmRvZnN0cmluZ2JlZm9yZW5ld2xpbmU1">1</a>]</li>
+<li>start of string [<a href="06-perl-regular-expressions.html#YW5jaG9ycztzdGFydG9mc3RyaW5n1">1</a>]</li>
+<li>start of string after newline [<a href="06-perl-regular-expressions.html#YW5jaG9ycztzdGFydG9mc3RyaW5nYWZ0ZXJuZXdsaW5l1">1</a>]</li>
+</ul>
+</li>
+<li>and
+<ul>
+<li>logical operator [<a href="04-perl-operators.html#YW5kO2xvZ2ljYWxvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>anonymous functions
+<ul>
+<li>implicit [<a href="05-perl-functions.html#YW5vbnltb3VzZnVuY3Rpb25zO2ltcGxpY2l01">1</a>]</li>
+<li>names [<a href="05-perl-functions.html#YW5vbnltb3VzZnVuY3Rpb25zO25hbWVz1">1</a>]</li>
+</ul>
+</li>
+<li>anonymous variables [<a href="03-perl-language.html#YW5vbnltb3VzdmFyaWFibGVz1">1</a>]</li>
+<li>arguments
+<ul>
+<li>named [<a href="10-perl-beyond-syntax.html#YXJndW1lbnRzO25hbWVk1">1</a>]</li>
+</ul>
+</li>
+<li>@ARGV [<a href="01-perl-philosophy.html#QEFSR1Y1">1</a>] [<a href="10-perl-beyond-syntax.html#QEFSR1Y2">2</a>]</li>
+<li>arity [<a href="04-perl-operators.html#YXJpdHk1">1</a>]</li>
+<li>ARRAY [<a href="09-managing-perl-programs.html#QVJSQVk1">1</a>]</li>
+<li>arrays [<a href="03-perl-language.html#YXJyYXlz1">1</a>] [<a href="03-perl-language.html#YXJyYXlz2">2</a>]</li>
+
+<li>arrays
+<ul>
+<li>anonymous [<a href="03-perl-language.html#YXJyYXlzO2Fub255bW91cw1">1</a>]</li>
+<li>each [<a href="03-perl-language.html#YXJyYXlzO2VhY2g1">1</a>]</li>
+<li>interpolation [<a href="03-perl-language.html#YXJyYXlzO2ludGVycG9sYXRpb241">1</a>]</li>
+<li>pop [<a href="03-perl-language.html#YXJyYXlzO3BvcA1">1</a>]</li>
+<li>push [<a href="03-perl-language.html#YXJyYXlzO3B1c2g1">1</a>]</li>
+<li>references [<a href="03-perl-language.html#YXJyYXlzO3JlZmVyZW5jZXM1">1</a>]</li>
+<li>shift [<a href="03-perl-language.html#YXJyYXlzO3NoaWZ01">1</a>]</li>
+<li>slices [<a href="03-perl-language.html#YXJyYXlzO3NsaWNlcw1">1</a>]</li>
+<li>splice [<a href="03-perl-language.html#YXJyYXlzO3NwbGljZQ1">1</a>]</li>
+<li>unshift [<a href="03-perl-language.html#YXJyYXlzO3Vuc2hpZnQ1">1</a>]</li>
+</ul>
+</li>
+<li>ASCII [<a href="03-perl-language.html#QVNDSUk1">1</a>]</li>
+<li>associativity [<a href="04-perl-operators.html#YXNzb2NpYXRpdml0eQ1">1</a>]</li>
+
+<li>associativity
+<ul>
+<li>disambiguation [<a href="04-perl-operators.html#YXNzb2NpYXRpdml0eTtkaXNhbWJpZ3VhdGlvbg1">1</a>]</li>
+<li>left [<a href="04-perl-operators.html#YXNzb2NpYXRpdml0eTtsZWZ01">1</a>]</li>
+<li>right [<a href="04-perl-operators.html#YXNzb2NpYXRpdml0eTtyaWdodA1">1</a>]</li>
+</ul>
+</li>
+<li>atom [<a href="06-perl-regular-expressions.html#YXRvbQ1">1</a>]</li>
+<li>attributes
+<ul>
+<li>default values [<a href="07-object-oriented-perl.html#YXR0cmlidXRlcztkZWZhdWx0dmFsdWVz1">1</a>]</li>
+<li>objects [<a href="07-object-oriented-perl.html#YXR0cmlidXRlcztvYmplY3Rz1">1</a>]</li>
+<li>ro(read only) [<a href="07-object-oriented-perl.html#YXR0cmlidXRlcztybyhyZWFkb25seSk1">1</a>]</li>
+<li>rw(read-write) [<a href="07-object-oriented-perl.html#YXR0cmlidXRlcztydyhyZWFkLXdyaXRlKQ1">1</a>]</li>
+<li>typed [<a href="07-object-oriented-perl.html#YXR0cmlidXRlczt0eXBlZA1">1</a>]</li>
+<li>untyped [<a href="07-object-oriented-perl.html#YXR0cmlidXRlczt1bnR5cGVk1">1</a>]</li>
+</ul>
+</li>
+<li>attributespragma [<a href="05-perl-functions.html#YXR0cmlidXRlc3ByYWdtYQ1">1</a>]</li>
+<li>autodie [<a href="08-perl-style-efficiency.html#YXV0b2RpZQ1">1</a>]</li>
+<li>autodiepragma [<a href="12-perl-missing-features.html#YXV0b2RpZXByYWdtYQ1">1</a>]</li>
+<li>autoflush() [<a href="09-managing-perl-programs.html#YXV0b2ZsdXNoKCk1">1</a>]</li>
+<li>auto-increment [<a href="04-perl-operators.html#YXV0by1pbmNyZW1lbnQ1">1</a>]</li>
+<li>AUTOLOAD [<a href="07-object-oriented-perl.html#QVVUT0xPQUQ1">1</a>] [<a href="11-what-to-avoid-in-perl.html#QVVUT0xPQUQ2">2</a>]</li>
+
+<li>AUTOLOAD
+<ul>
+<li>code installation [<a href="05-perl-functions.html#QVVUT0xPQUQ7Y29kZWluc3RhbGxhdGlvbg1">1</a>]</li>
+<li>delegation [<a href="05-perl-functions.html#QVVUT0xPQUQ7ZGVsZWdhdGlvbg1">1</a>]</li>
+<li>drawbacks [<a href="05-perl-functions.html#QVVUT0xPQUQ7ZHJhd2JhY2tz1">1</a>]</li>
+<li>redispatch [<a href="05-perl-functions.html#QVVUT0xPQUQ7cmVkaXNwYXRjaA1">1</a>]</li>
+</ul>
+</li>
+<li>$AUTOLOAD [<a href="05-perl-functions.html#JEFVVE9MT0FE1">1</a>]</li>
+<li>autovivification [<a href="03-perl-language.html#YXV0b3ZpdmlmaWNhdGlvbg1">1</a>] [<a href="03-perl-language.html#YXV0b3ZpdmlmaWNhdGlvbg2">2</a>] [<a href="03-perl-language.html#YXV0b3ZpdmlmaWNhdGlvbg3">3</a>]</li>
+<li>autovivificationpragma [<a href="03-perl-language.html#YXV0b3ZpdmlmaWNhdGlvbnByYWdtYQ1">1</a>]</li>
+</ul>
+
+<h2>B</h2>
+
+<ul>
+<li>$b [<a href="10-perl-beyond-syntax.html#JGI1">1</a>]</li>
+<li>\B
+<ul>
+<li>non-word boundary regex metacharacter [<a href="06-perl-regular-expressions.html#XEI7bm9uLXdvcmRib3VuZGFyeXJlZ2V4bWV0YWNoYXJhY3Rlcg1">1</a>]</li>
+</ul>
+</li>
+<li>\b
+<ul>
+<li>word boundary regex metacharacter [<a href="06-perl-regular-expressions.html#XGI7d29yZGJvdW5kYXJ5cmVnZXhtZXRhY2hhcmFjdGVy1">1</a>]</li>
+</ul>
+</li>
+<li>baby Perl [<a href="01-perl-philosophy.html#YmFieVBlcmw1">1</a>]</li>
+<li>barewords [<a href="11-what-to-avoid-in-perl.html#YmFyZXdvcmRz1">1</a>]</li>
+
+<li>barewords
+<ul>
+<li>cons [<a href="11-what-to-avoid-in-perl.html#YmFyZXdvcmRzO2NvbnM1">1</a>]</li>
+<li>filehandles [<a href="11-what-to-avoid-in-perl.html#YmFyZXdvcmRzO2ZpbGVoYW5kbGVz1">1</a>]</li>
+<li>function calls [<a href="11-what-to-avoid-in-perl.html#YmFyZXdvcmRzO2Z1bmN0aW9uY2FsbHM1">1</a>]</li>
+<li>hash values [<a href="11-what-to-avoid-in-perl.html#YmFyZXdvcmRzO2hhc2h2YWx1ZXM1">1</a>]</li>
+<li>pros [<a href="11-what-to-avoid-in-perl.html#YmFyZXdvcmRzO3Byb3M1">1</a>]</li>
+<li>sort functions [<a href="11-what-to-avoid-in-perl.html#YmFyZXdvcmRzO3NvcnRmdW5jdGlvbnM1">1</a>]</li>
+</ul>
+</li>
+<li>B::Deparse [<a href="04-perl-operators.html#Qjo6RGVwYXJzZQ1">1</a>] [<a href="11-what-to-avoid-in-perl.html#Qjo6RGVwYXJzZQ2">2</a>]</li>
+<li>BEGIN [<a href="09-managing-perl-programs.html#QkVHSU41">1</a>] [<a href="11-what-to-avoid-in-perl.html#QkVHSU42">2</a>]</li>
+
+<li>BEGIN
+<ul>
+<li>implicit [<a href="09-managing-perl-programs.html#QkVHSU47aW1wbGljaXQ1">1</a>]</li>
+</ul>
+</li>
+<li>Best Practical [<a href="02-perl-community.html#QmVzdFByYWN0aWNhbA1">1</a>]</li>
+<li>binary [<a href="04-perl-operators.html#YmluYXJ51">1</a>]</li>
+<li>binmode [<a href="03-perl-language.html#YmlubW9kZQ1">1</a>]</li>
+<li>blogs.perl.org [<a href="02-perl-community.html#YmxvZ3MucGVybC5vcmc1">1</a>]</li>
+<li>boolean [<a href="03-perl-language.html#Ym9vbGVhbg1">1</a>]</li>
+
+<li>boolean
+<ul>
+<li>false [<a href="03-perl-language.html#Ym9vbGVhbjtmYWxzZQ1">1</a>]</li>
+<li>true [<a href="03-perl-language.html#Ym9vbGVhbjt0cnVl1">1</a>] [<a href="03-perl-language.html#Ym9vbGVhbjt0cnVl2">2</a>]</li>
+</ul>
+</li>
+<li>boolean context [<a href="01-perl-philosophy.html#Ym9vbGVhbmNvbnRleHQ1">1</a>]</li>
+<li>buffering [<a href="09-managing-perl-programs.html#YnVmZmVyaW5n1">1</a>]</li>
+<li>builtins
+<ul>
+<li>== [<a href="01-perl-philosophy.html#YnVpbHRpbnM7PT01">1</a>]</li>
+<li>... [<a href="01-perl-philosophy.html#YnVpbHRpbnM7Li4u1">1</a>]</li>
+<li>binmode [<a href="03-perl-language.html#YnVpbHRpbnM7YmlubW9kZQ1">1</a>] [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7YmlubW9kZQ2">2</a>]</li>
+<li>bless [<a href="07-object-oriented-perl.html#YnVpbHRpbnM7Ymxlc3M1">1</a>]</li>
+<li>caller [<a href="05-perl-functions.html#YnVpbHRpbnM7Y2FsbGVy1">1</a>] [<a href="10-perl-beyond-syntax.html#YnVpbHRpbnM7Y2FsbGVy2">2</a>]</li>
+<li>chdir [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7Y2hkaXI1">1</a>]</li>
+<li>chomp [<a href="01-perl-philosophy.html#YnVpbHRpbnM7Y2hvbXA1">1</a>] [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7Y2hvbXA2">2</a>]</li>
+<li>chr [<a href="01-perl-philosophy.html#YnVpbHRpbnM7Y2hy1">1</a>]</li>
+<li>close [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7Y2xvc2U1">1</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7Y2xvc2U2">2</a>]</li>
+<li>closedir [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7Y2xvc2VkaXI1">1</a>]</li>
+<li>defined [<a href="03-perl-language.html#YnVpbHRpbnM7ZGVmaW5lZA1">1</a>] [<a href="03-perl-language.html#YnVpbHRpbnM7ZGVmaW5lZA2">2</a>]</li>
+<li>delete [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7ZGVsZXRl1">1</a>]</li>
+<li>die [<a href="08-perl-style-efficiency.html#YnVpbHRpbnM7ZGll1">1</a>]</li>
+<li>do [<a href="05-perl-functions.html#YnVpbHRpbnM7ZG81">1</a>]</li>
+<li>each [<a href="03-perl-language.html#YnVpbHRpbnM7ZWFjaA1">1</a>] [<a href="03-perl-language.html#YnVpbHRpbnM7ZWFjaA2">2</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7ZWFjaA3">3</a>]</li>
+<li>eof [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7ZW9m1">1</a>]</li>
+<li>eq [<a href="01-perl-philosophy.html#YnVpbHRpbnM7ZXE1">1</a>]</li>
+<li>eval [<a href="08-perl-style-efficiency.html#YnVpbHRpbnM7ZXZhbA1">1</a>] [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7ZXZhbA2">2</a>] [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7ZXZhbA3">3</a>]</li>
+<li>exists [<a href="03-perl-language.html#YnVpbHRpbnM7ZXhpc3Rz1">1</a>]</li>
+<li>for [<a href="01-perl-philosophy.html#YnVpbHRpbnM7Zm9y1">1</a>] [<a href="03-perl-language.html#YnVpbHRpbnM7Zm9y2">2</a>]</li>
+<li>foreach [<a href="03-perl-language.html#YnVpbHRpbnM7Zm9yZWFjaA1">1</a>]</li>
+<li>given [<a href="03-perl-language.html#YnVpbHRpbnM7Z2l2ZW41">1</a>] [<a href="06-perl-regular-expressions.html#YnVpbHRpbnM7Z2l2ZW42">2</a>]</li>
+<li>glob [<a href="01-perl-philosophy.html#YnVpbHRpbnM7Z2xvYg1">1</a>]</li>
+<li>goto [<a href="03-perl-language.html#YnVpbHRpbnM7Z290bw1">1</a>] [<a href="05-perl-functions.html#YnVpbHRpbnM7Z290bw2">2</a>]</li>
+<li>grep [<a href="01-perl-philosophy.html#YnVpbHRpbnM7Z3JlcA1">1</a>]</li>
+<li>index [<a href="06-perl-regular-expressions.html#YnVpbHRpbnM7aW5kZXg1">1</a>]</li>
+<li>keys [<a href="03-perl-language.html#YnVpbHRpbnM7a2V5cw1">1</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7a2V5cw2">2</a>]</li>
+<li>lc [<a href="01-perl-philosophy.html#YnVpbHRpbnM7bGM1">1</a>]</li>
+<li>length [<a href="01-perl-philosophy.html#YnVpbHRpbnM7bGVuZ3Ro1">1</a>]</li>
+<li>local [<a href="05-perl-functions.html#YnVpbHRpbnM7bG9jYWw1">1</a>] [<a href="10-perl-beyond-syntax.html#YnVpbHRpbnM7bG9jYWw2">2</a>] [<a href="10-perl-beyond-syntax.html#YnVpbHRpbnM7bG9jYWw3">3</a>]</li>
+<li>map [<a href="01-perl-philosophy.html#YnVpbHRpbnM7bWFw1">1</a>] [<a href="10-perl-beyond-syntax.html#YnVpbHRpbnM7bWFw2">2</a>]</li>
+<li>no [<a href="08-perl-style-efficiency.html#YnVpbHRpbnM7bm81">1</a>] [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7bm82">2</a>]</li>
+<li>open [<a href="03-perl-language.html#YnVpbHRpbnM7b3Blbg1">1</a>] [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7b3Blbg2">2</a>]</li>
+<li>opendir [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7b3BlbmRpcg1">1</a>]</li>
+<li>ord [<a href="01-perl-philosophy.html#YnVpbHRpbnM7b3Jk1">1</a>]</li>
+<li>our [<a href="05-perl-functions.html#YnVpbHRpbnM7b3Vy1">1</a>]</li>
+<li>overriding [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7b3ZlcnJpZGluZw1">1</a>]</li>
+<li>package [<a href="03-perl-language.html#YnVpbHRpbnM7cGFja2FnZQ1">1</a>] [<a href="03-perl-language.html#YnVpbHRpbnM7cGFja2FnZQ2">2</a>] [<a href="07-object-oriented-perl.html#YnVpbHRpbnM7cGFja2FnZQ3">3</a>]</li>
+
+<li>package
+<ul>
+<li>BLOCK [<a href="03-perl-language.html#YnVpbHRpbnM7cGFja2FnZTtCTE9DSw1">1</a>]</li>
+</ul>
+</li>
+<li>pop [<a href="01-perl-philosophy.html#YnVpbHRpbnM7cG9w1">1</a>] [<a href="03-perl-language.html#YnVpbHRpbnM7cG9w2">2</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7cG9w3">3</a>]</li>
+<li>print [<a href="01-perl-philosophy.html#YnVpbHRpbnM7cHJpbnQ1">1</a>] [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7cHJpbnQ2">2</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7cHJpbnQ3">3</a>]</li>
+<li>prototype [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7cHJvdG90eXBl1">1</a>]</li>
+<li>push [<a href="03-perl-language.html#YnVpbHRpbnM7cHVzaA1">1</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7cHVzaA2">2</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7cHVzaA3">3</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7cHVzaA4">4</a>]</li>
+<li>readdir [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7cmVhZGRpcg1">1</a>]</li>
+<li>readline [<a href="01-perl-philosophy.html#YnVpbHRpbnM7cmVhZGxpbmU1">1</a>] [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7cmVhZGxpbmU2">2</a>]</li>
+<li>rename [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7cmVuYW1l1">1</a>]</li>
+<li>require [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7cmVxdWlyZQ1">1</a>]</li>
+<li>reverse [<a href="01-perl-philosophy.html#YnVpbHRpbnM7cmV2ZXJzZQ1">1</a>]</li>
+<li>say [<a href="01-perl-philosophy.html#YnVpbHRpbnM7c2F51">1</a>] [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7c2F52">2</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7c2F53">3</a>]</li>
+<li>scalar [<a href="01-perl-philosophy.html#YnVpbHRpbnM7c2NhbGFy1">1</a>]</li>
+<li>shift [<a href="01-perl-philosophy.html#YnVpbHRpbnM7c2hpZnQ1">1</a>] [<a href="03-perl-language.html#YnVpbHRpbnM7c2hpZnQ2">2</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7c2hpZnQ3">3</a>]</li>
+<li>sort [<a href="10-perl-beyond-syntax.html#YnVpbHRpbnM7c29ydA1">1</a>] [<a href="10-perl-beyond-syntax.html#YnVpbHRpbnM7c29ydA2">2</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7c29ydA3">3</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7c29ydA4">4</a>]</li>
+<li>splice [<a href="03-perl-language.html#YnVpbHRpbnM7c3BsaWNl1">1</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7c3BsaWNl2">2</a>]</li>
+<li>state [<a href="05-perl-functions.html#YnVpbHRpbnM7c3RhdGU1">1</a>] [<a href="05-perl-functions.html#YnVpbHRpbnM7c3RhdGU2">2</a>]</li>
+<li>sub [<a href="03-perl-language.html#YnVpbHRpbnM7c3Vi1">1</a>] [<a href="05-perl-functions.html#YnVpbHRpbnM7c3Vi2">2</a>] [<a href="05-perl-functions.html#YnVpbHRpbnM7c3Vi3">3</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7c3Vi4">4</a>]</li>
+<li>SUPER:: [<a href="07-object-oriented-perl.html#YnVpbHRpbnM7U1VQRVI6Og1">1</a>]</li>
+<li>sysopen [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7c3lzb3Blbg1">1</a>]</li>
+<li>tie [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7dGll1">1</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7dGll2">2</a>]</li>
+<li>tied [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7dGllZA1">1</a>]</li>
+<li>uc [<a href="01-perl-philosophy.html#YnVpbHRpbnM7dWM1">1</a>]</li>
+<li>unlink [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7dW5saW5r1">1</a>]</li>
+<li>unshift [<a href="03-perl-language.html#YnVpbHRpbnM7dW5zaGlmdA1">1</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7dW5zaGlmdA2">2</a>]</li>
+<li>use [<a href="05-perl-functions.html#YnVpbHRpbnM7dXNl1">1</a>] [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7dXNl2">2</a>]</li>
+<li>values [<a href="03-perl-language.html#YnVpbHRpbnM7dmFsdWVz1">1</a>] [<a href="11-what-to-avoid-in-perl.html#YnVpbHRpbnM7dmFsdWVz2">2</a>]</li>
+<li>wantarray [<a href="05-perl-functions.html#YnVpbHRpbnM7d2FudGFycmF51">1</a>]</li>
+<li>warn [<a href="09-managing-perl-programs.html#YnVpbHRpbnM7d2Fybg1">1</a>]</li>
+<li>when [<a href="03-perl-language.html#YnVpbHRpbnM7d2hlbg1">1</a>]</li>
+<li>while [<a href="01-perl-philosophy.html#YnVpbHRpbnM7d2hpbGU1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>C</h2>
+
+<ul>
+<li>call frame [<a href="05-perl-functions.html#Y2FsbGZyYW1l1">1</a>]</li>
+<li>can() [<a href="05-perl-functions.html#Y2FuKCk1">1</a>] [<a href="09-managing-perl-programs.html#Y2FuKCk2">2</a>] [<a href="11-what-to-avoid-in-perl.html#Y2FuKCk3">3</a>]</li>
+<li>Carp [<a href="05-perl-functions.html#Q2FycA1">1</a>] [<a href="09-managing-perl-programs.html#Q2FycA2">2</a>]</li>
+
+<li>Carp
+<ul>
+<li>carp() [<a href="05-perl-functions.html#Q2FycDtjYXJwKCk1">1</a>] [<a href="09-managing-perl-programs.html#Q2FycDtjYXJwKCk2">2</a>]</li>
+<li>cluck() [<a href="09-managing-perl-programs.html#Q2FycDtjbHVjaygp1">1</a>]</li>
+<li>confess() [<a href="09-managing-perl-programs.html#Q2FycDtjb25mZXNzKCk1">1</a>]</li>
+<li>croak() [<a href="05-perl-functions.html#Q2FycDtjcm9haygp1">1</a>] [<a href="09-managing-perl-programs.html#Q2FycDtjcm9haygp2">2</a>]</li>
+<li>verbose [<a href="09-managing-perl-programs.html#Q2FycDt2ZXJib3Nl1">1</a>]</li>
+</ul>
+</li>
+<li>carton [<a href="09-managing-perl-programs.html#Y2FydG9u1">1</a>]</li>
+<li>case-sensitivity [<a href="09-managing-perl-programs.html#Y2FzZS1zZW5zaXRpdml0eQ1">1</a>]</li>
+<li>Catalyst [<a href="05-perl-functions.html#Q2F0YWx5c3Q1">1</a>]</li>
+<li>CGI [<a href="09-managing-perl-programs.html#Q0dJ1">1</a>]</li>
+<li>Champoux, Yanick [<a href="02-perl-community.html#Q2hhbXBvdXgsWWFuaWNr1">1</a>]</li>
+<li>character classes [<a href="06-perl-regular-expressions.html#Y2hhcmFjdGVyY2xhc3Nlcw1">1</a>]</li>
+<li>charnamespragma [<a href="03-perl-language.html#Y2hhcm5hbWVzcHJhZ21h1">1</a>]</li>
+<li>CHECK [<a href="11-what-to-avoid-in-perl.html#Q0hFQ0s1">1</a>]</li>
+<li>circular references [<a href="03-perl-language.html#Y2lyY3VsYXJyZWZlcmVuY2Vz1">1</a>]</li>
+<li>circumfix [<a href="04-perl-operators.html#Y2lyY3VtZml41">1</a>]</li>
+<li>class method [<a href="07-object-oriented-perl.html#Y2xhc3NtZXRob2Q1">1</a>]</li>
+<li>Class::Accessor [<a href="07-object-oriented-perl.html#Q2xhc3M6OkFjY2Vzc29y1">1</a>]</li>
+<li>classes [<a href="07-object-oriented-perl.html#Y2xhc3Nlcw1">1</a>] [<a href="07-object-oriented-perl.html#Y2xhc3Nlcw2">2</a>]</li>
+<li>Class::MOP [<a href="07-object-oriented-perl.html#Q2xhc3M6Ok1PUA1">1</a>] [<a href="09-managing-perl-programs.html#Q2xhc3M6Ok1PUA2">2</a>]</li>
+<li>Class::MOP::Class [<a href="07-object-oriented-perl.html#Q2xhc3M6Ok1PUDo6Q2xhc3M1">1</a>]</li>
+<li>closures [<a href="05-perl-functions.html#Y2xvc3VyZXM1">1</a>]</li>
+
+<li>closures
+<ul>
+<li>installing into symbol table [<a href="09-managing-perl-programs.html#Y2xvc3VyZXM7aW5zdGFsbGluZ2ludG9zeW1ib2x0YWJsZQ1">1</a>]</li>
+<li>parametric [<a href="09-managing-perl-programs.html#Y2xvc3VyZXM7cGFyYW1ldHJpYw1">1</a>]</li>
+</ul>
+</li>
+<li>cmp
+<ul>
+<li>string comparison operator [<a href="04-perl-operators.html#Y21wO3N0cmluZ2NvbXBhcmlzb25vcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>cmp_ok() [<a href="09-managing-perl-programs.html#Y21wX29rKCk1">1</a>]</li>
+<li>CODE [<a href="09-managing-perl-programs.html#Q09ERQ1">1</a>]</li>
+<li>code generation [<a href="09-managing-perl-programs.html#Y29kZWdlbmVyYXRpb241">1</a>]</li>
+<li>codepoint [<a href="03-perl-language.html#Y29kZXBvaW501">1</a>]</li>
+<li>coercion [<a href="03-perl-language.html#Y29lcmNpb241">1</a>] [<a href="07-object-oriented-perl.html#Y29lcmNpb242">2</a>] [<a href="10-perl-beyond-syntax.html#Y29lcmNpb243">3</a>]</li>
+
+<li>coercion
+<ul>
+<li>boolean [<a href="03-perl-language.html#Y29lcmNpb247Ym9vbGVhbg1">1</a>]</li>
+<li>cached [<a href="03-perl-language.html#Y29lcmNpb247Y2FjaGVk1">1</a>]</li>
+<li>dualvars [<a href="03-perl-language.html#Y29lcmNpb247ZHVhbHZhcnM1">1</a>]</li>
+<li>numeric [<a href="03-perl-language.html#Y29lcmNpb247bnVtZXJpYw1">1</a>]</li>
+<li>reference [<a href="03-perl-language.html#Y29lcmNpb247cmVmZXJlbmNl1">1</a>]</li>
+<li>string [<a href="03-perl-language.html#Y29lcmNpb247c3RyaW5n1">1</a>]</li>
+</ul>
+</li>
+<li>command-line arguments
+<ul>
+<li>-T [<a href="09-managing-perl-programs.html#Y29tbWFuZC1saW5lYXJndW1lbnRzOy1U1">1</a>]</li>
+<li>-t [<a href="09-managing-perl-programs.html#Y29tbWFuZC1saW5lYXJndW1lbnRzOy101">1</a>]</li>
+<li>-w [<a href="09-managing-perl-programs.html#Y29tbWFuZC1saW5lYXJndW1lbnRzOy131">1</a>]</li>
+<li>-W [<a href="09-managing-perl-programs.html#Y29tbWFuZC1saW5lYXJndW1lbnRzOy1X1">1</a>]</li>
+<li>-X [<a href="09-managing-perl-programs.html#Y29tbWFuZC1saW5lYXJndW1lbnRzOy1Y1">1</a>]</li>
+</ul>
+</li>
+<li>concatenation [<a href="03-perl-language.html#Y29uY2F0ZW5hdGlvbg1">1</a>]</li>
+<li>constantpragma [<a href="11-what-to-avoid-in-perl.html#Y29uc3RhbnRwcmFnbWE1">1</a>]</li>
+<li>constants [<a href="11-what-to-avoid-in-perl.html#Y29uc3RhbnRz1">1</a>]</li>
+
+<li>constants
+<ul>
+<li>barewords [<a href="11-what-to-avoid-in-perl.html#Y29uc3RhbnRzO2JhcmV3b3Jkcw1">1</a>]</li>
+</ul>
+</li>
+<li>context [<a href="01-perl-philosophy.html#Y29udGV4dA1">1</a>] [<a href="05-perl-functions.html#Y29udGV4dA2">2</a>]</li>
+
+<li>context
+<ul>
+<li>amount [<a href="01-perl-philosophy.html#Y29udGV4dDthbW91bnQ1">1</a>]</li>
+<li>boolean [<a href="01-perl-philosophy.html#Y29udGV4dDtib29sZWFu1">1</a>]</li>
+<li>conditional [<a href="03-perl-language.html#Y29udGV4dDtjb25kaXRpb25hbA1">1</a>]</li>
+<li>explicit [<a href="01-perl-philosophy.html#Y29udGV4dDtleHBsaWNpdA1">1</a>]</li>
+<li>list [<a href="01-perl-philosophy.html#Y29udGV4dDtsaXN01">1</a>]</li>
+<li>numeric [<a href="01-perl-philosophy.html#Y29udGV4dDtudW1lcmlj1">1</a>]</li>
+<li>scalar [<a href="01-perl-philosophy.html#Y29udGV4dDtzY2FsYXI1">1</a>]</li>
+<li>string [<a href="01-perl-philosophy.html#Y29udGV4dDtzdHJpbmc1">1</a>]</li>
+<li>value [<a href="01-perl-philosophy.html#Y29udGV4dDt2YWx1ZQ1">1</a>]</li>
+<li>void [<a href="01-perl-philosophy.html#Y29udGV4dDt2b2lk1">1</a>]</li>
+</ul>
+</li>
+<li>Contextual::Return [<a href="05-perl-functions.html#Q29udGV4dHVhbDo6UmV0dXJu1">1</a>]</li>
+<li>control flow [<a href="03-perl-language.html#Y29udHJvbGZsb3c1">1</a>]</li>
+<li>control flow directives [<a href="03-perl-language.html#Y29udHJvbGZsb3dkaXJlY3RpdmVz1">1</a>]</li>
+
+<li>control flow directives
+<ul>
+<li>else [<a href="03-perl-language.html#Y29udHJvbGZsb3dkaXJlY3RpdmVzO2Vsc2U1">1</a>]</li>
+<li>elsif [<a href="03-perl-language.html#Y29udHJvbGZsb3dkaXJlY3RpdmVzO2Vsc2lm1">1</a>]</li>
+<li>if [<a href="03-perl-language.html#Y29udHJvbGZsb3dkaXJlY3RpdmVzO2lm1">1</a>]</li>
+<li>ternary conditional [<a href="03-perl-language.html#Y29udHJvbGZsb3dkaXJlY3RpdmVzO3Rlcm5hcnljb25kaXRpb25hbA1">1</a>]</li>
+<li>unless [<a href="03-perl-language.html#Y29udHJvbGZsb3dkaXJlY3RpdmVzO3VubGVzcw1">1</a>]</li>
+</ul>
+</li>
+<li>Conway, Damian [<a href="09-managing-perl-programs.html#Q29ud2F5LERhbWlhbg1">1</a>]</li>
+<li>CPAN [<a href="01-perl-philosophy.html#Q1BBTg1">1</a>] [<a href="02-perl-community.html#Q1BBTg2">2</a>] [<a href="09-managing-perl-programs.html#Q1BBTg3">3</a>]</li>
+
+<li>CPAN
+<ul>
+<li>App::cpanminus [<a href="09-managing-perl-programs.html#Q1BBTjtBcHA6OmNwYW5taW51cw1">1</a>]</li>
+<li>App::local::lib::helper [<a href="02-perl-community.html#Q1BBTjtBcHA6OmxvY2FsOjpsaWI6OmhlbHBlcg1">1</a>]</li>
+<li>App::perlbrew [<a href="00-preface.html#Q1BBTjtBcHA6OnBlcmxicmV31">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtBcHA6OnBlcmxicmV32">2</a>]</li>
+<li>Attribute::Handlers [<a href="05-perl-functions.html#Q1BBTjtBdHRyaWJ1dGU6OkhhbmRsZXJz1">1</a>]</li>
+<li>Attribute::Lexical [<a href="05-perl-functions.html#Q1BBTjtBdHRyaWJ1dGU6OkxleGljYWw1">1</a>]</li>
+<li>autobox [<a href="08-perl-style-efficiency.html#Q1BBTjthdXRvYm941">1</a>]</li>
+<li>autovivification [<a href="08-perl-style-efficiency.html#Q1BBTjthdXRvdml2aWZpY2F0aW9u1">1</a>]</li>
+<li>Carton [<a href="08-perl-style-efficiency.html#Q1BBTjtDYXJ0b241">1</a>]</li>
+<li>Catalyst [<a href="05-perl-functions.html#Q1BBTjtDYXRhbHlzdA1">1</a>]</li>
+<li>Class::Load [<a href="07-object-oriented-perl.html#Q1BBTjtDbGFzczo6TG9hZA1">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtDbGFzczo6TG9hZA2">2</a>]</li>
+<li>Class::MOP [<a href="07-object-oriented-perl.html#Q1BBTjtDbGFzczo6TU9Q1">1</a>]</li>
+<li>Class::MOP::Attribute [<a href="09-managing-perl-programs.html#Q1BBTjtDbGFzczo6TU9QOjpBdHRyaWJ1dGU1">1</a>]</li>
+<li>Class::MOP::Method [<a href="09-managing-perl-programs.html#Q1BBTjtDbGFzczo6TU9QOjpNZXRob2Q1">1</a>]</li>
+<li>Const::Fast [<a href="11-what-to-avoid-in-perl.html#Q1BBTjtDb25zdDo6RmFzdA1">1</a>]</li>
+<li>cpanmini [<a href="09-managing-perl-programs.html#Q1BBTjtjcGFubWluaQ1">1</a>]</li>
+<li>CPAN::Mini [<a href="08-perl-style-efficiency.html#Q1BBTjtDUEFOOjpNaW5p1">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtDUEFOOjpNaW5p2">2</a>]</li>
+<li>CPAN.pm [<a href="02-perl-community.html#Q1BBTjtDUEFOLnBt1">1</a>] [<a href="02-perl-community.html#Q1BBTjtDUEFOLnBt2">2</a>]</li>
+<li>CPANTS [<a href="09-managing-perl-programs.html#Q1BBTjtDUEFOVFM1">1</a>]</li>
+<li>DBICx::TestDatabase [<a href="09-managing-perl-programs.html#Q1BBTjtEQklDeDo6VGVzdERhdGFiYXNl1">1</a>]</li>
+<li>DBIx::Class [<a href="09-managing-perl-programs.html#Q1BBTjtEQkl4OjpDbGFzcw1">1</a>]</li>
+<li>Devel::Cover [<a href="09-managing-perl-programs.html#Q1BBTjtEZXZlbDo6Q292ZXI1">1</a>]</li>
+<li>Devel::Declare [<a href="07-object-oriented-perl.html#Q1BBTjtEZXZlbDo6RGVjbGFyZQ1">1</a>]</li>
+<li>Dist::Zilla [<a href="09-managing-perl-programs.html#Q1BBTjtEaXN0OjpaaWxsYQ1">1</a>]</li>
+<li>File::pushd [<a href="09-managing-perl-programs.html#Q1BBTjtGaWxlOjpwdXNoZA1">1</a>]</li>
+<li>File::Slurp [<a href="10-perl-beyond-syntax.html#Q1BBTjtGaWxlOjpTbHVycA1">1</a>]</li>
+<li>Function::Parameters [<a href="05-perl-functions.html#Q1BBTjtGdW5jdGlvbjo6UGFyYW1ldGVycw1">1</a>]</li>
+<li>Git::CPAN::Patch [<a href="02-perl-community.html#Q1BBTjtHaXQ6OkNQQU46OlBhdGNo1">1</a>]</li>
+<li>indirect [<a href="08-perl-style-efficiency.html#Q1BBTjtpbmRpcmVjdA1">1</a>] [<a href="11-what-to-avoid-in-perl.html#Q1BBTjtpbmRpcmVjdA2">2</a>]</li>
+<li>IO::All [<a href="09-managing-perl-programs.html#Q1BBTjtJTzo6QWxs1">1</a>]</li>
+<li>local::lib [<a href="02-perl-community.html#Q1BBTjtsb2NhbDo6bGli1">1</a>]</li>
+<li>Memoize [<a href="05-perl-functions.html#Q1BBTjtNZW1vaXpl1">1</a>]</li>
+<li>Method::Signatures [<a href="05-perl-functions.html#Q1BBTjtNZXRob2Q6OlNpZ25hdHVyZXM1">1</a>]</li>
+<li>Method::Signatures::Simple [<a href="05-perl-functions.html#Q1BBTjtNZXRob2Q6OlNpZ25hdHVyZXM6OlNpbXBsZQ1">1</a>]</li>
+<li>Module::Build [<a href="09-managing-perl-programs.html#Q1BBTjtNb2R1bGU6OkJ1aWxk1">1</a>]</li>
+<li>Module::Pluggable [<a href="09-managing-perl-programs.html#Q1BBTjtNb2R1bGU6OlBsdWdnYWJsZQ1">1</a>]</li>
+<li>Module::Starter [<a href="09-managing-perl-programs.html#Q1BBTjtNb2R1bGU6OlN0YXJ0ZXI1">1</a>]</li>
+<li>Moo [<a href="07-object-oriented-perl.html#Q1BBTjtNb281">1</a>]</li>
+<li>Moops [<a href="05-perl-functions.html#Q1BBTjtNb29wcw1">1</a>] [<a href="07-object-oriented-perl.html#Q1BBTjtNb29wcw2">2</a>]</li>
+<li>Moose [<a href="07-object-oriented-perl.html#Q1BBTjtNb29zZQ1">1</a>]</li>
+<li>Moose::Manual [<a href="07-object-oriented-perl.html#Q1BBTjtNb29zZTo6TWFudWFs1">1</a>]</li>
+<li>MooseX::Declare [<a href="07-object-oriented-perl.html#Q1BBTjtNb29zZVg6OkRlY2xhcmU1">1</a>]</li>
+<li>MooseX::Method::Signatures [<a href="05-perl-functions.html#Q1BBTjtNb29zZVg6Ok1ldGhvZDo6U2lnbmF0dXJlcw1">1</a>] [<a href="05-perl-functions.html#Q1BBTjtNb29zZVg6Ok1ldGhvZDo6U2lnbmF0dXJlcw2">2</a>] [<a href="07-object-oriented-perl.html#Q1BBTjtNb29zZVg6Ok1ldGhvZDo6U2lnbmF0dXJlcw3">3</a>] [<a href="10-perl-beyond-syntax.html#Q1BBTjtNb29zZVg6Ok1ldGhvZDo6U2lnbmF0dXJlcw4">4</a>]</li>
+<li>MooseX::MultiMethods [<a href="03-perl-language.html#Q1BBTjtNb29zZVg6Ok11bHRpTWV0aG9kcw1">1</a>] [<a href="10-perl-beyond-syntax.html#Q1BBTjtNb29zZVg6Ok11bHRpTWV0aG9kcw2">2</a>]</li>
+<li>MooseX::Params::Validate [<a href="10-perl-beyond-syntax.html#Q1BBTjtNb29zZVg6OlBhcmFtczo6VmFsaWRhdGU1">1</a>]</li>
+<li>namespace::autoclean [<a href="07-object-oriented-perl.html#Q1BBTjtuYW1lc3BhY2U6OmF1dG9jbGVhbg1">1</a>]</li>
+<li>Package::Stash [<a href="07-object-oriented-perl.html#Q1BBTjtQYWNrYWdlOjpTdGFzaA1">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtQYWNrYWdlOjpTdGFzaA2">2</a>]</li>
+<li>PadWalker [<a href="05-perl-functions.html#Q1BBTjtQYWRXYWxrZXI1">1</a>]</li>
+<li>Params::Validate [<a href="05-perl-functions.html#Q1BBTjtQYXJhbXM6OlZhbGlkYXRl1">1</a>] [<a href="10-perl-beyond-syntax.html#Q1BBTjtQYXJhbXM6OlZhbGlkYXRl2">2</a>]</li>
+<li>Path::Class [<a href="09-managing-perl-programs.html#Q1BBTjtQYXRoOjpDbGFzcw1">1</a>]</li>
+<li>Path::Class::Dir [<a href="09-managing-perl-programs.html#Q1BBTjtQYXRoOjpDbGFzczo6RGly1">1</a>]</li>
+<li>Path::Class::File [<a href="09-managing-perl-programs.html#Q1BBTjtQYXRoOjpDbGFzczo6RmlsZQ1">1</a>]</li>
+<li>Path::Tiny [<a href="09-managing-perl-programs.html#Q1BBTjtQYXRoOjpUaW551">1</a>]</li>
+<li>perl5i [<a href="08-perl-style-efficiency.html#Q1BBTjtwZXJsNWk1">1</a>]</li>
+<li>Perl::Critic [<a href="08-perl-style-efficiency.html#Q1BBTjtQZXJsOjpDcml0aWM1">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtQZXJsOjpDcml0aWM2">2</a>] [<a href="11-what-to-avoid-in-perl.html#Q1BBTjtQZXJsOjpDcml0aWM3">3</a>]</li>
+<li>Perl::Critic::Policy::Dynamic::NoIndirect [<a href="11-what-to-avoid-in-perl.html#Q1BBTjtQZXJsOjpDcml0aWM6OlBvbGljeTo6RHluYW1pYzo6Tm9JbmRpcmVjdA1">1</a>]</li>
+<li>Perl::MinimumVersion [<a href="12-perl-missing-features.html#Q1BBTjtQZXJsOjpNaW5pbXVtVmVyc2lvbg1">1</a>]</li>
+<li>Perl::Tidy [<a href="08-perl-style-efficiency.html#Q1BBTjtQZXJsOjpUaWR51">1</a>]</li>
+<li>Pinto [<a href="08-perl-style-efficiency.html#Q1BBTjtQaW50bw1">1</a>]</li>
+<li>Plack::Test [<a href="09-managing-perl-programs.html#Q1BBTjtQbGFjazo6VGVzdA1">1</a>]</li>
+<li>Pod::Webserver [<a href="01-perl-philosophy.html#Q1BBTjtQb2Q6OldlYnNlcnZlcg1">1</a>]</li>
+<li>Role::Tiny [<a href="07-object-oriented-perl.html#Q1BBTjtSb2xlOjpUaW551">1</a>]</li>
+<li>signatures [<a href="05-perl-functions.html#Q1BBTjtzaWduYXR1cmVz1">1</a>] [<a href="10-perl-beyond-syntax.html#Q1BBTjtzaWduYXR1cmVz2">2</a>]</li>
+<li>Sub::Exporter [<a href="09-managing-perl-programs.html#Q1BBTjtTdWI6OkV4cG9ydGVy1">1</a>]</li>
+<li>Sub::Identify [<a href="05-perl-functions.html#Q1BBTjtTdWI6OklkZW50aWZ51">1</a>]</li>
+<li>Sub::Install [<a href="05-perl-functions.html#Q1BBTjtTdWI6Okluc3RhbGw1">1</a>]</li>
+<li>Sub::Name [<a href="05-perl-functions.html#Q1BBTjtTdWI6Ok5hbWU1">1</a>]</li>
+<li>SUPER [<a href="07-object-oriented-perl.html#Q1BBTjtTVVBFUg1">1</a>]</li>
+<li>Task::Kensho [<a href="12-perl-missing-features.html#Q1BBTjtUYXNrOjpLZW5zaG81">1</a>]</li>
+<li>Test::Class [<a href="05-perl-functions.html#Q1BBTjtUZXN0OjpDbGFzcw1">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpDbGFzcw2">2</a>]</li>
+<li>Test::Database [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpEYXRhYmFzZQ1">1</a>]</li>
+<li>Test::Deep [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpEZWVw1">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpEZWVw2">2</a>]</li>
+<li>Test::Differences [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpEaWZmZXJlbmNlcw1">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpEaWZmZXJlbmNlcw2">2</a>]</li>
+<li>Test::Exception [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpFeGNlcHRpb241">1</a>] [<a href="11-what-to-avoid-in-perl.html#Q1BBTjtUZXN0OjpFeGNlcHRpb242">2</a>]</li>
+<li>Test::Fatal [<a href="05-perl-functions.html#Q1BBTjtUZXN0OjpGYXRhbA1">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpGYXRhbA2">2</a>] [<a href="11-what-to-avoid-in-perl.html#Q1BBTjtUZXN0OjpGYXRhbA3">3</a>]</li>
+<li>Test::LongString [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpMb25nU3RyaW5n1">1</a>]</li>
+<li>Test::MockModule [<a href="07-object-oriented-perl.html#Q1BBTjtUZXN0OjpNb2NrTW9kdWxl1">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpNb2NrTW9kdWxl2">2</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpNb2NrTW9kdWxl3">3</a>]</li>
+<li>Test::MockObject [<a href="07-object-oriented-perl.html#Q1BBTjtUZXN0OjpNb2NrT2JqZWN01">1</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpNb2NrT2JqZWN02">2</a>] [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpNb2NrT2JqZWN03">3</a>]</li>
+<li>Test::More [<a href="06-perl-regular-expressions.html#Q1BBTjtUZXN0OjpNb3Jl1">1</a>]</li>
+<li>Test::Most [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpNb3N01">1</a>]</li>
+<li>Test::Reporter [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpSZXBvcnRlcg1">1</a>]</li>
+<li>Test::Routine [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpSb3V0aW5l1">1</a>]</li>
+<li>Test::WWW::Mechanize [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpXV1c6Ok1lY2hhbml6ZQ1">1</a>]</li>
+<li>Test::WWW::Mechanize::PSGI [<a href="09-managing-perl-programs.html#Q1BBTjtUZXN0OjpXV1c6Ok1lY2hhbml6ZTo6UFNHSQ1">1</a>]</li>
+<li>UNIVERSAL::can [<a href="09-managing-perl-programs.html#Q1BBTjtVTklWRVJTQUw6OmNhbg1">1</a>]</li>
+<li>UNIVERSAL::isa [<a href="09-managing-perl-programs.html#Q1BBTjtVTklWRVJTQUw6OmlzYQ1">1</a>]</li>
+<li>UNIVERSAL::ref [<a href="09-managing-perl-programs.html#Q1BBTjtVTklWRVJTQUw6OnJlZg1">1</a>]</li>
+<li>UNIVERSAL::require [<a href="09-managing-perl-programs.html#Q1BBTjtVTklWRVJTQUw6OnJlcXVpcmU1">1</a>]</li>
+<li>Want [<a href="03-perl-language.html#Q1BBTjtXYW501">1</a>]</li>
+</ul>
+</li>
+<li>cpanm [<a href="09-managing-perl-programs.html#Y3Bhbm01">1</a>]</li>
+<li>cpanminus [<a href="09-managing-perl-programs.html#Y3Bhbm1pbnVz1">1</a>]</li>
+<li>cpan.org [<a href="02-perl-community.html#Y3Bhbi5vcmc1">1</a>]</li>
+<li>Cwd [<a href="09-managing-perl-programs.html#Q3dk1">1</a>]</li>
+
+<li>Cwd
+<ul>
+<li>cwd() [<a href="09-managing-perl-programs.html#Q3dkO2N3ZCgp1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>D</h2>
+
+<ul>
+<li>-d
+<ul>
+<li>directory test operator [<a href="09-managing-perl-programs.html#LWQ7ZGlyZWN0b3J5dGVzdG9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>\d
+<ul>
+<li>digit regex metacharacter [<a href="06-perl-regular-expressions.html#XGQ7ZGlnaXRyZWdleG1ldGFjaGFyYWN0ZXI1">1</a>]</li>
+</ul>
+</li>
+<li>\D
+<ul>
+<li>non-digit regex metacharacter [<a href="06-perl-regular-expressions.html#XEQ7bm9uLWRpZ2l0cmVnZXhtZXRhY2hhcmFjdGVy1">1</a>]</li>
+</ul>
+</li>
+<li>DATA [<a href="09-managing-perl-programs.html#REFUQQ1">1</a>]</li>
+<li>data structures [<a href="03-perl-language.html#ZGF0YXN0cnVjdHVyZXM1">1</a>]</li>
+<li>Data::Dumper [<a href="03-perl-language.html#RGF0YTo6RHVtcGVy1">1</a>]</li>
+<li>dative notation [<a href="11-what-to-avoid-in-perl.html#ZGF0aXZlbm90YXRpb241">1</a>]</li>
+<li>dclone() [<a href="03-perl-language.html#ZGNsb25lKCk1">1</a>]</li>
+<li>decode() [<a href="03-perl-language.html#ZGVjb2RlKCk1">1</a>]</li>
+<li>default variables
+<ul>
+<li>@_ [<a href="01-perl-philosophy.html#ZGVmYXVsdHZhcmlhYmxlcztAXw1">1</a>]</li>
+<li>$_ [<a href="01-perl-philosophy.html#ZGVmYXVsdHZhcmlhYmxlczskXw1">1</a>]</li>
+<li>@ARGV [<a href="01-perl-philosophy.html#ZGVmYXVsdHZhcmlhYmxlcztAQVJHVg1">1</a>]</li>
+<li>array [<a href="01-perl-philosophy.html#ZGVmYXVsdHZhcmlhYmxlczthcnJheQ1">1</a>]</li>
+<li>scalar [<a href="01-perl-philosophy.html#ZGVmYXVsdHZhcmlhYmxlcztzY2FsYXI1">1</a>]</li>
+</ul>
+</li>
+<li>defined-or [<a href="03-perl-language.html#ZGVmaW5lZC1vcg1">1</a>]</li>
+
+<li>defined-or
+<ul>
+<li>logical operator [<a href="04-perl-operators.html#ZGVmaW5lZC1vcjtsb2dpY2Fsb3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>delegation [<a href="05-perl-functions.html#ZGVsZWdhdGlvbg1">1</a>]</li>
+<li>dereferencing [<a href="03-perl-language.html#ZGVyZWZlcmVuY2luZw1">1</a>]</li>
+<li>DESTROY [<a href="11-what-to-avoid-in-perl.html#REVTVFJPWQ1">1</a>]</li>
+<li>destructive update [<a href="03-perl-language.html#ZGVzdHJ1Y3RpdmV1cGRhdGU1">1</a>]</li>
+<li>dispatch [<a href="07-object-oriented-perl.html#ZGlzcGF0Y2g1">1</a>]</li>
+<li>dispatch table [<a href="05-perl-functions.html#ZGlzcGF0Y2h0YWJsZQ1">1</a>]</li>
+<li>distribution [<a href="02-perl-community.html#ZGlzdHJpYnV0aW9u1">1</a>] [<a href="09-managing-perl-programs.html#ZGlzdHJpYnV0aW9u2">2</a>]</li>
+<li>DOES() [<a href="07-object-oriented-perl.html#RE9FUygp1">1</a>] [<a href="09-managing-perl-programs.html#RE9FUygp2">2</a>]</li>
+<li>DRY [<a href="07-object-oriented-perl.html#RFJZ1">1</a>]</li>
+<li>dualvar() [<a href="03-perl-language.html#ZHVhbHZhcigp1">1</a>] [<a href="03-perl-language.html#ZHVhbHZhcigp2">2</a>]</li>
+<li>dualvars [<a href="03-perl-language.html#ZHVhbHZhcnM1">1</a>] [<a href="03-perl-language.html#ZHVhbHZhcnM2">2</a>]</li>
+<li>duck typing [<a href="07-object-oriented-perl.html#ZHVja3R5cGluZw1">1</a>]</li>
+<li>DWIM [<a href="01-perl-philosophy.html#RFdJTQ1">1</a>] [<a href="03-perl-language.html#RFdJTQ2">2</a>]</li>
+<li>dwimmery [<a href="03-perl-language.html#ZHdpbW1lcnk1">1</a>]</li>
+<li>dynamic scope [<a href="05-perl-functions.html#ZHluYW1pY3Njb3Bl1">1</a>]</li>
+</ul>
+
+<h2>E</h2>
+
+<ul>
+<li>-e
+<ul>
+<li>file exists operator [<a href="09-managing-perl-programs.html#LWU7ZmlsZWV4aXN0c29wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>\E
+<ul>
+<li>reenable metacharacters regex metacharacter [<a href="06-perl-regular-expressions.html#XEU7cmVlbmFibGVtZXRhY2hhcmFjdGVyc3JlZ2V4bWV0YWNoYXJhY3Rlcg1">1</a>]</li>
+</ul>
+</li>
+<li>/e
+<ul>
+<li>substitution evaluation regex modifier [<a href="06-perl-regular-expressions.html#L2U7c3Vic3RpdHV0aW9uZXZhbHVhdGlvbnJlZ2V4bW9kaWZpZXI1">1</a>]</li>
+</ul>
+</li>
+<li>efficacy [<a href="08-perl-style-efficiency.html#ZWZmaWNhY3k1">1</a>]</li>
+<li>empty list [<a href="03-perl-language.html#ZW1wdHlsaXN01">1</a>]</li>
+<li>encapsulation [<a href="05-perl-functions.html#ZW5jYXBzdWxhdGlvbg1">1</a>] [<a href="07-object-oriented-perl.html#ZW5jYXBzdWxhdGlvbg2">2</a>]</li>
+<li>Encode [<a href="03-perl-language.html#RW5jb2Rl1">1</a>]</li>
+<li>encode() [<a href="03-perl-language.html#ZW5jb2RlKCk1">1</a>]</li>
+<li>encoding [<a href="03-perl-language.html#ZW5jb2Rpbmc1">1</a>] [<a href="03-perl-language.html#ZW5jb2Rpbmc2">2</a>]</li>
+<li>END [<a href="11-what-to-avoid-in-perl.html#RU5E1">1</a>]</li>
+<li>English [<a href="10-perl-beyond-syntax.html#RW5nbGlzaA1">1</a>]</li>
+<li>Enlightened Perl Organization [<a href="02-perl-community.html#RW5saWdodGVuZWRQZXJsT3JnYW5pemF0aW9u1">1</a>]</li>
+<li>%ENV [<a href="09-managing-perl-programs.html#JUVOVg1">1</a>]</li>
+<li>eq
+<ul>
+<li>string comparison operator [<a href="04-perl-operators.html#ZXE7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>$ERRNO [<a href="10-perl-beyond-syntax.html#JEVSUk5P1">1</a>]</li>
+<li>escaping [<a href="03-perl-language.html#ZXNjYXBpbmc1">1</a>] [<a href="06-perl-regular-expressions.html#ZXNjYXBpbmc2">2</a>]</li>
+<li>eval [<a href="10-perl-beyond-syntax.html#ZXZhbA1">1</a>]</li>
+
+<li>eval
+<ul>
+<li>block [<a href="08-perl-style-efficiency.html#ZXZhbDtibG9jaw1">1</a>]</li>
+<li>string [<a href="09-managing-perl-programs.html#ZXZhbDtzdHJpbmc1">1</a>]</li>
+</ul>
+</li>
+<li>$EVAL_ERROR [<a href="10-perl-beyond-syntax.html#JEVWQUxfRVJST1I1">1</a>]</li>
+<li>Exception::Class [<a href="08-perl-style-efficiency.html#RXhjZXB0aW9uOjpDbGFzcw1">1</a>]</li>
+<li>exceptions [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9ucw1">1</a>]</li>
+
+<li>exceptions
+<ul>
+<li>$@ [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9uczskQA1">1</a>] [<a href="10-perl-beyond-syntax.html#ZXhjZXB0aW9uczskQA2">2</a>]</li>
+<li>catching [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9ucztjYXRjaGluZw1">1</a>] [<a href="10-perl-beyond-syntax.html#ZXhjZXB0aW9ucztjYXRjaGluZw2">2</a>]</li>
+<li>caveats [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9ucztjYXZlYXRz1">1</a>]</li>
+<li>core [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9ucztjb3Jl1">1</a>]</li>
+<li>custom classes withException::Class [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9ucztjdXN0b21jbGFzc2Vzd2l0aEV4Y2VwdGlvbjo6Q2xhc3M1">1</a>]</li>
+<li>die [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9ucztkaWU1">1</a>]</li>
+<li>handling safely withTry::Tiny [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9ucztoYW5kbGluZ3NhZmVseXdpdGhUcnk6OlRpbnk1">1</a>]</li>
+<li>rethrowing [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9ucztyZXRocm93aW5n1">1</a>]</li>
+<li>throwing [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9uczt0aHJvd2luZw1">1</a>]</li>
+<li>throwing objects [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9uczt0aHJvd2luZ29iamVjdHM1">1</a>]</li>
+<li>throwing strings [<a href="08-perl-style-efficiency.html#ZXhjZXB0aW9uczt0aHJvd2luZ3N0cmluZ3M1">1</a>]</li>
+</ul>
+</li>
+<li>Exporter [<a href="09-managing-perl-programs.html#RXhwb3J0ZXI1">1</a>]</li>
+
+<li>Exporter
+<ul>
+<li>@EXPORT [<a href="09-managing-perl-programs.html#RXhwb3J0ZXI7QEVYUE9SVA1">1</a>]</li>
+<li>@EXPORT_OK [<a href="09-managing-perl-programs.html#RXhwb3J0ZXI7QEVYUE9SVF9PSw1">1</a>]</li>
+</ul>
+</li>
+<li>exporting [<a href="09-managing-perl-programs.html#ZXhwb3J0aW5n1">1</a>]</li>
+<li>ExtUtils::MakeMaker [<a href="09-managing-perl-programs.html#RXh0VXRpbHM6Ok1ha2VNYWtlcg1">1</a>] [<a href="09-managing-perl-programs.html#RXh0VXRpbHM6Ok1ha2VNYWtlcg2">2</a>] [<a href="09-managing-perl-programs.html#RXh0VXRpbHM6Ok1ha2VNYWtlcg3">3</a>]</li>
+</ul>
+
+<h2>F</h2>
+
+<ul>
+<li>-f
+<ul>
+<li>file test operator [<a href="09-managing-perl-programs.html#LWY7ZmlsZXRlc3RvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>false [<a href="03-perl-language.html#ZmFsc2U1">1</a>]</li>
+<li>feature [<a href="05-perl-functions.html#ZmVhdHVyZQ1">1</a>]</li>
+
+<li>feature
+<ul>
+<li>state [<a href="05-perl-functions.html#ZmVhdHVyZTtzdGF0ZQ1">1</a>]</li>
+</ul>
+</li>
+<li>featurepragma [<a href="09-managing-perl-programs.html#ZmVhdHVyZXByYWdtYQ1">1</a>]</li>
+<li>File::Copy [<a href="09-managing-perl-programs.html#RmlsZTo6Q29weQ1">1</a>]</li>
+<li>FileHandle [<a href="09-managing-perl-programs.html#RmlsZUhhbmRsZQ1">1</a>]</li>
+<li>filehandles [<a href="09-managing-perl-programs.html#ZmlsZWhhbmRsZXM1">1</a>]</li>
+
+<li>filehandles
+<ul>
+<li>references [<a href="03-perl-language.html#ZmlsZWhhbmRsZXM7cmVmZXJlbmNlcw1">1</a>]</li>
+<li>STDERR [<a href="09-managing-perl-programs.html#ZmlsZWhhbmRsZXM7U1RERVJS1">1</a>]</li>
+<li>STDIN [<a href="09-managing-perl-programs.html#ZmlsZWhhbmRsZXM7U1RESU41">1</a>]</li>
+<li>STDOUT [<a href="09-managing-perl-programs.html#ZmlsZWhhbmRsZXM7U1RET1VU1">1</a>]</li>
+</ul>
+</li>
+<li>files
+<ul>
+<li>absolute paths [<a href="09-managing-perl-programs.html#ZmlsZXM7YWJzb2x1dGVwYXRocw1">1</a>]</li>
+<li>copying [<a href="09-managing-perl-programs.html#ZmlsZXM7Y29weWluZw1">1</a>]</li>
+<li>deleting [<a href="09-managing-perl-programs.html#ZmlsZXM7ZGVsZXRpbmc1">1</a>]</li>
+<li>hidden [<a href="09-managing-perl-programs.html#ZmlsZXM7aGlkZGVu1">1</a>]</li>
+<li>moving [<a href="09-managing-perl-programs.html#ZmlsZXM7bW92aW5n1">1</a>]</li>
+<li>relative paths [<a href="09-managing-perl-programs.html#ZmlsZXM7cmVsYXRpdmVwYXRocw1">1</a>]</li>
+<li>removing [<a href="09-managing-perl-programs.html#ZmlsZXM7cmVtb3Zpbmc1">1</a>]</li>
+<li>slurping [<a href="10-perl-beyond-syntax.html#ZmlsZXM7c2x1cnBpbmc1">1</a>]</li>
+</ul>
+</li>
+<li>File::Spec [<a href="09-managing-perl-programs.html#RmlsZTo6U3BlYw1">1</a>]</li>
+<li>fixity [<a href="04-perl-operators.html#Zml4aXR51">1</a>]</li>
+
+<li>fixity
+<ul>
+<li>circumfix [<a href="04-perl-operators.html#Zml4aXR5O2NpcmN1bWZpeA1">1</a>]</li>
+<li>infix [<a href="04-perl-operators.html#Zml4aXR5O2luZml41">1</a>]</li>
+<li>postcircumfix [<a href="04-perl-operators.html#Zml4aXR5O3Bvc3RjaXJjdW1maXg1">1</a>]</li>
+<li>postfix [<a href="04-perl-operators.html#Zml4aXR5O3Bvc3RmaXg1">1</a>]</li>
+<li>prefix [<a href="04-perl-operators.html#Zml4aXR5O3ByZWZpeA1">1</a>]</li>
+</ul>
+</li>
+<li>flip-flop [<a href="04-perl-operators.html#ZmxpcC1mbG9w1">1</a>]</li>
+<li>floating-point values [<a href="03-perl-language.html#ZmxvYXRpbmctcG9pbnR2YWx1ZXM1">1</a>]</li>
+<li>fully-qualified name [<a href="03-perl-language.html#ZnVsbHktcXVhbGlmaWVkbmFtZQ1">1</a>]</li>
+<li>function [<a href="05-perl-functions.html#ZnVuY3Rpb241">1</a>]</li>
+<li>functions
+<ul>
+<li>aliasing parameters [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2FsaWFzaW5ncGFyYW1ldGVycw1">1</a>]</li>
+<li>anonymous [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2Fub255bW91cw1">1</a>]</li>
+<li>avoid calling as methods [<a href="11-what-to-avoid-in-perl.html#ZnVuY3Rpb25zO2F2b2lkY2FsbGluZ2FzbWV0aG9kcw1">1</a>]</li>
+<li>call frame [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2NhbGxmcmFtZQ1">1</a>]</li>
+<li>closures [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2Nsb3N1cmVz1">1</a>]</li>
+<li>declaration [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2RlY2xhcmF0aW9u1">1</a>]</li>
+<li>dispatch table [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2Rpc3BhdGNodGFibGU1">1</a>]</li>
+<li>first-class [<a href="03-perl-language.html#ZnVuY3Rpb25zO2ZpcnN0LWNsYXNz1">1</a>]</li>
+<li>forward declaration [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2ZvcndhcmRkZWNsYXJhdGlvbg1">1</a>]</li>
+<li>goto [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2dvdG81">1</a>]</li>
+<li>higher order [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2hpZ2hlcm9yZGVy1">1</a>]</li>
+<li>importing [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2ltcG9ydGluZw1">1</a>]</li>
+<li>invoking [<a href="05-perl-functions.html#ZnVuY3Rpb25zO2ludm9raW5n1">1</a>]</li>
+<li>misfeatures [<a href="05-perl-functions.html#ZnVuY3Rpb25zO21pc2ZlYXR1cmVz1">1</a>]</li>
+<li>parameters [<a href="05-perl-functions.html#ZnVuY3Rpb25zO3BhcmFtZXRlcnM1">1</a>]</li>
+<li>Perl 1 [<a href="05-perl-functions.html#ZnVuY3Rpb25zO1Blcmwx1">1</a>]</li>
+<li>Perl 4 [<a href="05-perl-functions.html#ZnVuY3Rpb25zO1Blcmw01">1</a>]</li>
+<li>predeclaration [<a href="05-perl-functions.html#ZnVuY3Rpb25zO3ByZWRlY2xhcmF0aW9u1">1</a>]</li>
+<li>references [<a href="03-perl-language.html#ZnVuY3Rpb25zO3JlZmVyZW5jZXM1">1</a>]</li>
+<li>sigil [<a href="03-perl-language.html#ZnVuY3Rpb25zO3NpZ2ls1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>G</h2>
+
+<ul>
+<li>\G
+<ul>
+<li>global match anchor regex metacharacter [<a href="06-perl-regular-expressions.html#XEc7Z2xvYmFsbWF0Y2hhbmNob3JyZWdleG1ldGFjaGFyYWN0ZXI1">1</a>]</li>
+</ul>
+</li>
+<li>/g
+<ul>
+<li>global match regex modifier [<a href="06-perl-regular-expressions.html#L2c7Z2xvYmFsbWF0Y2hyZWdleG1vZGlmaWVy1">1</a>]</li>
+</ul>
+</li>
+<li>garbage collection [<a href="03-perl-language.html#Z2FyYmFnZWNvbGxlY3Rpb241">1</a>]</li>
+<li>ge
+<ul>
+<li>string comparison operator [<a href="04-perl-operators.html#Z2U7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>genericity [<a href="07-object-oriented-perl.html#Z2VuZXJpY2l0eQ1">1</a>]</li>
+<li>Github [<a href="02-perl-community.html#R2l0aHVi1">1</a>]</li>
+<li>gitpan [<a href="02-perl-community.html#Z2l0cGFu1">1</a>]</li>
+<li>global variables
+<ul>
+<li>%+ [<a href="06-perl-regular-expressions.html#Z2xvYmFsdmFyaWFibGVzOyUr1">1</a>] [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyUr2">2</a>]</li>
+<li>$&amp; [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyQm1">1</a>]</li>
+<li>$| [<a href="09-managing-perl-programs.html#Z2xvYmFsdmFyaWFibGVzOyR81">1</a>] [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyR82">2</a>]</li>
+<li>$/ [<a href="09-managing-perl-programs.html#Z2xvYmFsdmFyaWFibGVzOyQv1">1</a>] [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyQv2">2</a>] [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyQv3">3</a>]</li>
+<li>$. [<a href="09-managing-perl-programs.html#Z2xvYmFsdmFyaWFibGVzOyQu1">1</a>] [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyQu2">2</a>]</li>
+<li>$! [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyQh1">1</a>]</li>
+<li>$@ [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyRA1">1</a>]</li>
+<li>$, [<a href="09-managing-perl-programs.html#Z2xvYmFsdmFyaWFibGVzOyQs1">1</a>]</li>
+<li>$\ [<a href="09-managing-perl-programs.html#Z2xvYmFsdmFyaWFibGVzOyRc1">1</a>]</li>
+<li>$$ [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyQk1">1</a>]</li>
+<li>$` [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyRg1">1</a>]</li>
+<li>$&quot; [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyQ1">1</a>]</li>
+<li>$&#39; [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyQn1">1</a>]</li>
+<li>$0 [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyQw1">1</a>]</li>
+<li>@ARGV [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzO0BBUkdW1">1</a>]</li>
+<li>$ERRNO [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyRFUlJOTw1">1</a>]</li>
+<li>$EVAL_ERROR [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyRFVkFMX0VSUk9S1">1</a>]</li>
+<li>@INC [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzO0BJTkM1">1</a>]</li>
+<li>$INPUT_LINE_NUMBER [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyRJTlBVVF9MSU5FX05VTUJFUg1">1</a>]</li>
+<li>$INPUT_RECORD_SEPARATOR [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyRJTlBVVF9SRUNPUkRfU0VQQVJBVE9S1">1</a>]</li>
+<li>$LIST_SEPARATOR [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyRMSVNUX1NFUEFSQVRPUg1">1</a>]</li>
+<li>$OUTPUT_AUTOFLUSH [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyRPVVRQVVRfQVVUT0ZMVVNI1">1</a>]</li>
+<li>$PID [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyRQSUQ1">1</a>]</li>
+<li>$PROGRAM_NAME [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyRQUk9HUkFNX05BTUU1">1</a>]</li>
+<li>%SIG [<a href="10-perl-beyond-syntax.html#Z2xvYmFsdmFyaWFibGVzOyVTSUc1">1</a>]</li>
+<li>$^W [<a href="09-managing-perl-programs.html#Z2xvYmFsdmFyaWFibGVzOyReVw1">1</a>]</li>
+</ul>
+</li>
+<li>goto [<a href="05-perl-functions.html#Z290bw1">1</a>]</li>
+
+<li>goto
+<ul>
+<li>tailcall [<a href="05-perl-functions.html#Z290bzt0YWlsY2FsbA1">1</a>]</li>
+</ul>
+</li>
+<li>greedy quantifiers [<a href="06-perl-regular-expressions.html#Z3JlZWR5cXVhbnRpZmllcnM1">1</a>]</li>
+<li>gt
+<ul>
+<li>string comparison operator [<a href="04-perl-operators.html#Z3Q7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>H</h2>
+
+<ul>
+<li>HASH [<a href="09-managing-perl-programs.html#SEFTSA1">1</a>]</li>
+<li>hashes [<a href="03-perl-language.html#aGFzaGVz1">1</a>] [<a href="03-perl-language.html#aGFzaGVz2">2</a>]</li>
+
+<li>hashes
+<ul>
+<li>bareword keys [<a href="11-what-to-avoid-in-perl.html#aGFzaGVzO2JhcmV3b3Jka2V5cw1">1</a>]</li>
+<li>caching [<a href="03-perl-language.html#aGFzaGVzO2NhY2hpbmc1">1</a>]</li>
+<li>counting items [<a href="03-perl-language.html#aGFzaGVzO2NvdW50aW5naXRlbXM1">1</a>]</li>
+<li>declaring [<a href="03-perl-language.html#aGFzaGVzO2RlY2xhcmluZw1">1</a>]</li>
+<li>each [<a href="03-perl-language.html#aGFzaGVzO2VhY2g1">1</a>]</li>
+<li>exists [<a href="03-perl-language.html#aGFzaGVzO2V4aXN0cw1">1</a>]</li>
+<li>finding uniques [<a href="03-perl-language.html#aGFzaGVzO2ZpbmRpbmd1bmlxdWVz1">1</a>]</li>
+<li>keys [<a href="03-perl-language.html#aGFzaGVzO2tleXM1">1</a>]</li>
+<li>locked [<a href="03-perl-language.html#aGFzaGVzO2xvY2tlZA1">1</a>]</li>
+<li>named parameters [<a href="03-perl-language.html#aGFzaGVzO25hbWVkcGFyYW1ldGVycw1">1</a>]</li>
+<li>references [<a href="03-perl-language.html#aGFzaGVzO3JlZmVyZW5jZXM1">1</a>]</li>
+<li>slicing [<a href="03-perl-language.html#aGFzaGVzO3NsaWNpbmc1">1</a>]</li>
+<li>values [<a href="03-perl-language.html#aGFzaGVzO3ZhbHVlcw1">1</a>] [<a href="03-perl-language.html#aGFzaGVzO3ZhbHVlcw2">2</a>]</li>
+</ul>
+</li>
+<li>Hash::Util [<a href="03-perl-language.html#SGFzaDo6VXRpbA1">1</a>]</li>
+
+<li>Hash::Util
+<ul>
+<li>lock_hash [<a href="03-perl-language.html#SGFzaDo6VXRpbDtsb2NrX2hhc2g1">1</a>]</li>
+<li>lock_keys [<a href="03-perl-language.html#SGFzaDo6VXRpbDtsb2NrX2tleXM1">1</a>]</li>
+<li>lock_value [<a href="03-perl-language.html#SGFzaDo6VXRpbDtsb2NrX3ZhbHVl1">1</a>]</li>
+<li>unlock_hash [<a href="03-perl-language.html#SGFzaDo6VXRpbDt1bmxvY2tfaGFzaA1">1</a>]</li>
+</ul>
+</li>
+<li>heredocs [<a href="03-perl-language.html#aGVyZWRvY3M1">1</a>]</li>
+<li>higher order functions [<a href="05-perl-functions.html#aGlnaGVyb3JkZXJmdW5jdGlvbnM1">1</a>]</li>
+<li>Higher Order Perl [<a href="05-perl-functions.html#SGlnaGVyT3JkZXJQZXJs1">1</a>]</li>
+</ul>
+
+<h2>I</h2>
+
+<ul>
+<li>/i
+<ul>
+<li>case-insensitive regex modifier [<a href="06-perl-regular-expressions.html#L2k7Y2FzZS1pbnNlbnNpdGl2ZXJlZ2V4bW9kaWZpZXI1">1</a>]</li>
+</ul>
+</li>
+<li>identifiers [<a href="03-perl-language.html#aWRlbnRpZmllcnM1">1</a>]</li>
+<li>idioms [<a href="08-perl-style-efficiency.html#aWRpb21z1">1</a>]</li>
+
+<li>idioms
+<ul>
+<li>dispatch table [<a href="05-perl-functions.html#aWRpb21zO2Rpc3BhdGNodGFibGU1">1</a>]</li>
+</ul>
+</li>
+<li>import() [<a href="09-managing-perl-programs.html#aW1wb3J0KCk1">1</a>]</li>
+<li>%INC [<a href="07-object-oriented-perl.html#JUlOQw1">1</a>]</li>
+<li>@INC [<a href="07-object-oriented-perl.html#QElOQw1">1</a>] [<a href="10-perl-beyond-syntax.html#QElOQw2">2</a>]</li>
+<li>increment
+<ul>
+<li>string [<a href="03-perl-language.html#aW5jcmVtZW50O3N0cmluZw1">1</a>]</li>
+</ul>
+</li>
+<li>indirect object notation [<a href="11-what-to-avoid-in-perl.html#aW5kaXJlY3RvYmplY3Rub3RhdGlvbg1">1</a>]</li>
+<li>infix [<a href="04-perl-operators.html#aW5maXg1">1</a>]</li>
+<li>inheritance [<a href="07-object-oriented-perl.html#aW5oZXJpdGFuY2U1">1</a>]</li>
+<li>INIT [<a href="11-what-to-avoid-in-perl.html#SU5JVA1">1</a>]</li>
+<li>$INPUT_LINE_NUMBER [<a href="10-perl-beyond-syntax.html#JElOUFVUX0xJTkVfTlVNQkVS1">1</a>]</li>
+<li>$INPUT_RECORD_SEPARATOR [<a href="10-perl-beyond-syntax.html#JElOUFVUX1JFQ09SRF9TRVBBUkFUT1I1">1</a>]</li>
+<li>instance method [<a href="07-object-oriented-perl.html#aW5zdGFuY2VtZXRob2Q1">1</a>]</li>
+<li>integers [<a href="03-perl-language.html#aW50ZWdlcnM1">1</a>]</li>
+<li>interpolation [<a href="03-perl-language.html#aW50ZXJwb2xhdGlvbg1">1</a>]</li>
+
+<li>interpolation
+<ul>
+<li>arrays [<a href="03-perl-language.html#aW50ZXJwb2xhdGlvbjthcnJheXM1">1</a>]</li>
+</ul>
+</li>
+<li>introspection [<a href="07-object-oriented-perl.html#aW50cm9zcGVjdGlvbg1">1</a>]</li>
+<li>IO [<a href="09-managing-perl-programs.html#SU81">1</a>]</li>
+<li>IO layers [<a href="03-perl-language.html#SU9sYXllcnM1">1</a>] [<a href="09-managing-perl-programs.html#SU9sYXllcnM2">2</a>]</li>
+<li>IO::File [<a href="03-perl-language.html#SU86OkZpbGU1">1</a>] [<a href="09-managing-perl-programs.html#SU86OkZpbGU2">2</a>] [<a href="11-what-to-avoid-in-perl.html#SU86OkZpbGU3">3</a>] [<a href="12-perl-missing-features.html#SU86OkZpbGU4">4</a>]</li>
+
+<li>IO::File
+<ul>
+<li>autoflush() [<a href="09-managing-perl-programs.html#SU86OkZpbGU7YXV0b2ZsdXNoKCk1">1</a>]</li>
+<li>input_line_number() [<a href="09-managing-perl-programs.html#SU86OkZpbGU7aW5wdXRfbGluZV9udW1iZXIoKQ1">1</a>]</li>
+<li>input_record_separator() [<a href="09-managing-perl-programs.html#SU86OkZpbGU7aW5wdXRfcmVjb3JkX3NlcGFyYXRvcigp1">1</a>]</li>
+</ul>
+</li>
+<li>IO::Handle [<a href="03-perl-language.html#SU86OkhhbmRsZQ1">1</a>] [<a href="09-managing-perl-programs.html#SU86OkhhbmRsZQ2">2</a>] [<a href="12-perl-missing-features.html#SU86OkhhbmRsZQ3">3</a>]</li>
+<li>IO::Seekable
+<ul>
+<li>seek() [<a href="09-managing-perl-programs.html#SU86OlNlZWthYmxlO3NlZWsoKQ1">1</a>]</li>
+</ul>
+</li>
+<li>IRC [<a href="02-perl-community.html#SVJD1">1</a>]</li>
+
+<li>IRC
+<ul>
+<li>#catalyst [<a href="02-perl-community.html#SVJDOyNjYXRhbHlzdA1">1</a>]</li>
+<li>#moose [<a href="02-perl-community.html#SVJDOyNtb29zZQ1">1</a>]</li>
+<li>#perl [<a href="02-perl-community.html#SVJDOyNwZXJs1">1</a>]</li>
+<li>#perl-help [<a href="02-perl-community.html#SVJDOyNwZXJsLWhlbHA1">1</a>]</li>
+</ul>
+</li>
+<li>is() [<a href="09-managing-perl-programs.html#aXMoKQ1">1</a>]</li>
+<li>isa() [<a href="07-object-oriented-perl.html#aXNhKCk1">1</a>] [<a href="09-managing-perl-programs.html#aXNhKCk2">2</a>]</li>
+<li>@ISA [<a href="07-object-oriented-perl.html#QElTQQ1">1</a>]</li>
+<li>isa_ok() [<a href="09-managing-perl-programs.html#aXNhX29rKCk1">1</a>]</li>
+<li>isnt() [<a href="09-managing-perl-programs.html#aXNudCgp1">1</a>]</li>
+<li>iteration
+<ul>
+<li>aliasing [<a href="03-perl-language.html#aXRlcmF0aW9uO2FsaWFzaW5n1">1</a>]</li>
+<li>scoping [<a href="03-perl-language.html#aXRlcmF0aW9uO3Njb3Bpbmc1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>K</h2>
+
+<ul>
+<li>\K
+<ul>
+<li>keep regex assertion [<a href="06-perl-regular-expressions.html#XEs7a2VlcHJlZ2V4YXNzZXJ0aW9u1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>L</h2>
+
+<ul>
+<li>Larry Wall [<a href="01-perl-philosophy.html#TGFycnlXYWxs1">1</a>]</li>
+<li>Latin-1 [<a href="03-perl-language.html#TGF0aW4tMQ1">1</a>]</li>
+<li>le
+<ul>
+<li>string comparison operator [<a href="04-perl-operators.html#bGU7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>left associativity [<a href="04-perl-operators.html#bGVmdGFzc29jaWF0aXZpdHk1">1</a>]</li>
+<li>lexical scope [<a href="05-perl-functions.html#bGV4aWNhbHNjb3Bl1">1</a>]</li>
+<li>lexical shadowing [<a href="05-perl-functions.html#bGV4aWNhbHNoYWRvd2luZw1">1</a>]</li>
+<li>lexical warnings [<a href="09-managing-perl-programs.html#bGV4aWNhbHdhcm5pbmdz1">1</a>]</li>
+<li>lexicals
+<ul>
+<li>lifecycle [<a href="03-perl-language.html#bGV4aWNhbHM7bGlmZWN5Y2xl1">1</a>]</li>
+<li>pads [<a href="05-perl-functions.html#bGV4aWNhbHM7cGFkcw1">1</a>]</li>
+</ul>
+</li>
+<li>lexpads [<a href="05-perl-functions.html#bGV4cGFkcw1">1</a>]</li>
+<li>like [<a href="06-perl-regular-expressions.html#bGlrZQ1">1</a>]</li>
+<li>list context [<a href="01-perl-philosophy.html#bGlzdGNvbnRleHQ1">1</a>]</li>
+
+<li>list context
+<ul>
+<li>arrays [<a href="03-perl-language.html#bGlzdGNvbnRleHQ7YXJyYXlz1">1</a>]</li>
+</ul>
+</li>
+<li>$LIST_SEPARATOR [<a href="03-perl-language.html#JExJU1RfU0VQQVJBVE9S1">1</a>] [<a href="10-perl-beyond-syntax.html#JExJU1RfU0VQQVJBVE9S2">2</a>]</li>
+<li>listary [<a href="04-perl-operators.html#bGlzdGFyeQ1">1</a>]</li>
+<li>lists [<a href="03-perl-language.html#bGlzdHM1">1</a>]</li>
+<li>looks_like_number() [<a href="03-perl-language.html#bG9va3NfbGlrZV9udW1iZXIoKQ1">1</a>]</li>
+<li>looping directives
+<ul>
+<li>for [<a href="03-perl-language.html#bG9vcGluZ2RpcmVjdGl2ZXM7Zm9y1">1</a>]</li>
+<li>foreach [<a href="03-perl-language.html#bG9vcGluZ2RpcmVjdGl2ZXM7Zm9yZWFjaA1">1</a>]</li>
+</ul>
+</li>
+<li>loops
+<ul>
+<li>continue [<a href="03-perl-language.html#bG9vcHM7Y29udGludWU1">1</a>]</li>
+<li>control [<a href="03-perl-language.html#bG9vcHM7Y29udHJvbA1">1</a>]</li>
+<li>do [<a href="03-perl-language.html#bG9vcHM7ZG81">1</a>]</li>
+<li>for [<a href="03-perl-language.html#bG9vcHM7Zm9y1">1</a>]</li>
+<li>labels [<a href="03-perl-language.html#bG9vcHM7bGFiZWxz1">1</a>]</li>
+<li>last [<a href="03-perl-language.html#bG9vcHM7bGFzdA1">1</a>]</li>
+<li>nested [<a href="03-perl-language.html#bG9vcHM7bmVzdGVk1">1</a>]</li>
+<li>next [<a href="03-perl-language.html#bG9vcHM7bmV4dA1">1</a>]</li>
+<li>redo [<a href="03-perl-language.html#bG9vcHM7cmVkbw1">1</a>]</li>
+<li>until [<a href="03-perl-language.html#bG9vcHM7dW50aWw1">1</a>]</li>
+<li>while [<a href="03-perl-language.html#bG9vcHM7d2hpbGU1">1</a>]</li>
+</ul>
+</li>
+<li>lt
+<ul>
+<li>string comparison operator [<a href="04-perl-operators.html#bHQ7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>lvalue [<a href="03-perl-language.html#bHZhbHVl1">1</a>]</li>
+</ul>
+
+<h2>M</h2>
+
+<ul>
+<li>/m
+<ul>
+<li>multiline regex modifier [<a href="06-perl-regular-expressions.html#L207bXVsdGlsaW5lcmVnZXhtb2RpZmllcg1">1</a>]</li>
+</ul>
+</li>
+<li>m//
+<ul>
+<li>match operator [<a href="01-perl-philosophy.html#bS8vO21hdGNob3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>magic variables
+<ul>
+<li>$@ [<a href="05-perl-functions.html#bWFnaWN2YXJpYWJsZXM7JEA1">1</a>] [<a href="08-perl-style-efficiency.html#bWFnaWN2YXJpYWJsZXM7JEA2">2</a>]</li>
+<li>$! [<a href="05-perl-functions.html#bWFnaWN2YXJpYWJsZXM7JCE1">1</a>]</li>
+<li>$| [<a href="05-perl-functions.html#bWFnaWN2YXJpYWJsZXM7JHw1">1</a>]</li>
+<li>$/ [<a href="05-perl-functions.html#bWFnaWN2YXJpYWJsZXM7JC81">1</a>]</li>
+<li>$^H [<a href="08-perl-style-efficiency.html#bWFnaWN2YXJpYWJsZXM7JF5I1">1</a>]</li>
+</ul>
+</li>
+<li>maintainability [<a href="08-perl-style-efficiency.html#bWFpbnRhaW5hYmlsaXR51">1</a>]</li>
+<li>map
+<ul>
+<li>Schwartzian transform [<a href="10-perl-beyond-syntax.html#bWFwO1NjaHdhcnR6aWFudHJhbnNmb3Jt1">1</a>]</li>
+</ul>
+</li>
+<li>memory management
+<ul>
+<li>circular references [<a href="03-perl-language.html#bWVtb3J5bWFuYWdlbWVudDtjaXJjdWxhcnJlZmVyZW5jZXM1">1</a>]</li>
+</ul>
+</li>
+<li>meta object protocol [<a href="09-managing-perl-programs.html#bWV0YW9iamVjdHByb3RvY29s1">1</a>]</li>
+<li>metacharacters
+<ul>
+<li>regex [<a href="06-perl-regular-expressions.html#bWV0YWNoYXJhY3RlcnM7cmVnZXg1">1</a>]</li>
+</ul>
+</li>
+<li>metaclass [<a href="09-managing-perl-programs.html#bWV0YWNsYXNz1">1</a>]</li>
+<li>metacpan [<a href="01-perl-philosophy.html#bWV0YWNwYW41">1</a>]</li>
+<li>MetaCPAN [<a href="02-perl-community.html#TWV0YUNQQU41">1</a>]</li>
+<li>metacpan.org [<a href="02-perl-community.html#bWV0YWNwYW4ub3Jn1">1</a>]</li>
+<li>metaprogramming [<a href="07-object-oriented-perl.html#bWV0YXByb2dyYW1taW5n1">1</a>] [<a href="09-managing-perl-programs.html#bWV0YXByb2dyYW1taW5n2">2</a>]</li>
+<li>method dispatch [<a href="07-object-oriented-perl.html#bWV0aG9kZGlzcGF0Y2g1">1</a>] [<a href="07-object-oriented-perl.html#bWV0aG9kZGlzcGF0Y2g2">2</a>]</li>
+<li>method resolution order [<a href="07-object-oriented-perl.html#bWV0aG9kcmVzb2x1dGlvbm9yZGVy1">1</a>]</li>
+<li>methods
+<ul>
+<li>accessor [<a href="07-object-oriented-perl.html#bWV0aG9kczthY2Nlc3Nvcg1">1</a>]</li>
+<li>AUTOLOAD [<a href="07-object-oriented-perl.html#bWV0aG9kcztBVVRPTE9BRA1">1</a>]</li>
+<li>avoid calling as functions [<a href="11-what-to-avoid-in-perl.html#bWV0aG9kczthdm9pZGNhbGxpbmdhc2Z1bmN0aW9ucw1">1</a>] [<a href="11-what-to-avoid-in-perl.html#bWV0aG9kczthdm9pZGNhbGxpbmdhc2Z1bmN0aW9ucw2">2</a>]</li>
+<li>calling with references [<a href="11-what-to-avoid-in-perl.html#bWV0aG9kcztjYWxsaW5nd2l0aHJlZmVyZW5jZXM1">1</a>]</li>
+<li>class [<a href="07-object-oriented-perl.html#bWV0aG9kcztjbGFzcw1">1</a>] [<a href="07-object-oriented-perl.html#bWV0aG9kcztjbGFzcw2">2</a>]</li>
+<li>constructor [<a href="07-object-oriented-perl.html#bWV0aG9kcztjb25zdHJ1Y3Rvcg1">1</a>]</li>
+<li>dispatch order [<a href="07-object-oriented-perl.html#bWV0aG9kcztkaXNwYXRjaG9yZGVy1">1</a>]</li>
+<li>instance [<a href="07-object-oriented-perl.html#bWV0aG9kcztpbnN0YW5jZQ1">1</a>]</li>
+<li>invocant [<a href="10-perl-beyond-syntax.html#bWV0aG9kcztpbnZvY2FudA1">1</a>]</li>
+<li>mutator [<a href="07-object-oriented-perl.html#bWV0aG9kczttdXRhdG9y1">1</a>]</li>
+<li>resolution [<a href="07-object-oriented-perl.html#bWV0aG9kcztyZXNvbHV0aW9u1">1</a>]</li>
+</ul>
+</li>
+<li>Module::Build [<a href="09-managing-perl-programs.html#TW9kdWxlOjpCdWlsZA1">1</a>] [<a href="09-managing-perl-programs.html#TW9kdWxlOjpCdWlsZA2">2</a>]</li>
+<li>modules [<a href="02-perl-community.html#bW9kdWxlcw1">1</a>] [<a href="09-managing-perl-programs.html#bW9kdWxlcw2">2</a>]</li>
+
+<li>modules
+<ul>
+<li>case-sensitivity [<a href="09-managing-perl-programs.html#bW9kdWxlcztjYXNlLXNlbnNpdGl2aXR51">1</a>]</li>
+<li>implicitBEGIN [<a href="09-managing-perl-programs.html#bW9kdWxlcztpbXBsaWNpdEJFR0lO1">1</a>]</li>
+<li>pragmas [<a href="08-perl-style-efficiency.html#bW9kdWxlcztwcmFnbWFz1">1</a>]</li>
+</ul>
+</li>
+<li>Moose [<a href="09-managing-perl-programs.html#TW9vc2U1">1</a>]</li>
+
+<li>Moose
+<ul>
+<li>attribute inheritance [<a href="07-object-oriented-perl.html#TW9vc2U7YXR0cmlidXRlaW5oZXJpdGFuY2U1">1</a>]</li>
+<li>compared to default Perl OO [<a href="07-object-oriented-perl.html#TW9vc2U7Y29tcGFyZWR0b2RlZmF1bHRQZXJsT081">1</a>]</li>
+<li>DOES() [<a href="07-object-oriented-perl.html#TW9vc2U7RE9FUygp1">1</a>]</li>
+<li>extends [<a href="07-object-oriented-perl.html#TW9vc2U7ZXh0ZW5kcw1">1</a>]</li>
+<li>inheritance [<a href="07-object-oriented-perl.html#TW9vc2U7aW5oZXJpdGFuY2U1">1</a>]</li>
+<li>isa() [<a href="07-object-oriented-perl.html#TW9vc2U7aXNhKCk1">1</a>]</li>
+<li>metaprogramming [<a href="07-object-oriented-perl.html#TW9vc2U7bWV0YXByb2dyYW1taW5n1">1</a>]</li>
+<li>MOP [<a href="07-object-oriented-perl.html#TW9vc2U7TU9Q1">1</a>]</li>
+<li>override [<a href="07-object-oriented-perl.html#TW9vc2U7b3ZlcnJpZGU1">1</a>]</li>
+<li>overriding methods [<a href="07-object-oriented-perl.html#TW9vc2U7b3ZlcnJpZGluZ21ldGhvZHM1">1</a>]</li>
+</ul>
+</li>
+<li>moose [<a href="07-object-oriented-perl.html#bW9vc2U1">1</a>]</li>
+<li>Moose::Util::TypeConstraints [<a href="07-object-oriented-perl.html#TW9vc2U6OlV0aWw6OlR5cGVDb25zdHJhaW50cw1">1</a>]</li>
+<li>MooseX::Types [<a href="07-object-oriented-perl.html#TW9vc2VYOjpUeXBlcw1">1</a>]</li>
+<li>MRO [<a href="07-object-oriented-perl.html#TVJP1">1</a>]</li>
+<li>multiple inheritance [<a href="07-object-oriented-perl.html#bXVsdGlwbGVpbmhlcml0YW5jZQ1">1</a>] [<a href="07-object-oriented-perl.html#bXVsdGlwbGVpbmhlcml0YW5jZQ2">2</a>]</li>
+</ul>
+
+<h2>N</h2>
+
+<ul>
+<li>\N{}
+<ul>
+<li>escape sequence for named character encodings [<a href="03-perl-language.html#XE57fTtlc2NhcGVzZXF1ZW5jZWZvcm5hbWVkY2hhcmFjdGVyZW5jb2Rpbmdz1">1</a>]</li>
+</ul>
+</li>
+<li>names [<a href="03-perl-language.html#bmFtZXM1">1</a>]</li>
+<li>namespaces [<a href="03-perl-language.html#bmFtZXNwYWNlcw1">1</a>] [<a href="03-perl-language.html#bmFtZXNwYWNlcw2">2</a>] [<a href="03-perl-language.html#bmFtZXNwYWNlcw3">3</a>]</li>
+
+<li>namespaces
+<ul>
+<li>fully qualified [<a href="03-perl-language.html#bmFtZXNwYWNlcztmdWxseXF1YWxpZmllZA1">1</a>]</li>
+<li>multi-level [<a href="03-perl-language.html#bmFtZXNwYWNlczttdWx0aS1sZXZlbA1">1</a>]</li>
+<li>open [<a href="03-perl-language.html#bmFtZXNwYWNlcztvcGVu1">1</a>]</li>
+</ul>
+</li>
+<li>ne
+<ul>
+<li>string comparison operator [<a href="04-perl-operators.html#bmU7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>nested data structures [<a href="03-perl-language.html#bmVzdGVkZGF0YXN0cnVjdHVyZXM1">1</a>]</li>
+<li>not
+<ul>
+<li>logical operator [<a href="04-perl-operators.html#bm90O2xvZ2ljYWxvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>null filehandle [<a href="01-perl-philosophy.html#bnVsbGZpbGVoYW5kbGU1">1</a>]</li>
+<li>nullary [<a href="04-perl-operators.html#bnVsbGFyeQ1">1</a>]</li>
+<li>numbers [<a href="03-perl-language.html#bnVtYmVycw1">1</a>]</li>
+
+<li>numbers
+<ul>
+<li>false [<a href="03-perl-language.html#bnVtYmVycztmYWxzZQ1">1</a>]</li>
+<li>representation prefixes [<a href="03-perl-language.html#bnVtYmVycztyZXByZXNlbnRhdGlvbnByZWZpeGVz1">1</a>]</li>
+<li>true [<a href="03-perl-language.html#bnVtYmVyczt0cnVl1">1</a>]</li>
+<li>underscore separator [<a href="03-perl-language.html#bnVtYmVyczt1bmRlcnNjb3Jlc2VwYXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>numeric context [<a href="01-perl-philosophy.html#bnVtZXJpY2NvbnRleHQ1">1</a>]</li>
+<li>numeric quantifiers [<a href="06-perl-regular-expressions.html#bnVtZXJpY3F1YW50aWZpZXJz1">1</a>]</li>
+<li>numification [<a href="03-perl-language.html#bnVtaWZpY2F0aW9u1">1</a>] [<a href="03-perl-language.html#bnVtaWZpY2F0aW9u2">2</a>]</li>
+</ul>
+
+<h2>O</h2>
+
+<ul>
+<li>objects [<a href="07-object-oriented-perl.html#b2JqZWN0cw1">1</a>]</li>
+
+<li>objects
+<ul>
+<li>inheritance [<a href="07-object-oriented-perl.html#b2JqZWN0cztpbmhlcml0YW5jZQ1">1</a>]</li>
+<li>invocant [<a href="10-perl-beyond-syntax.html#b2JqZWN0cztpbnZvY2FudA1">1</a>]</li>
+<li>meta object protocol [<a href="09-managing-perl-programs.html#b2JqZWN0czttZXRhb2JqZWN0cHJvdG9jb2w1">1</a>]</li>
+<li>multiple inheritance [<a href="07-object-oriented-perl.html#b2JqZWN0czttdWx0aXBsZWluaGVyaXRhbmNl1">1</a>]</li>
+</ul>
+</li>
+<li>octet [<a href="03-perl-language.html#b2N0ZXQ1">1</a>]</li>
+<li>ok() [<a href="09-managing-perl-programs.html#b2soKQ1">1</a>]</li>
+<li>OO [<a href="07-object-oriented-perl.html#T081">1</a>]</li>
+
+<li>OO
+<ul>
+<li>accessor methods [<a href="07-object-oriented-perl.html#T087YWNjZXNzb3JtZXRob2Rz1">1</a>]</li>
+<li>attributes [<a href="07-object-oriented-perl.html#T087YXR0cmlidXRlcw1">1</a>]</li>
+<li>AUTOLOAD [<a href="07-object-oriented-perl.html#T087QVVUT0xPQUQ1">1</a>]</li>
+<li>bless [<a href="07-object-oriented-perl.html#T087Ymxlc3M1">1</a>]</li>
+<li>class methods [<a href="07-object-oriented-perl.html#T087Y2xhc3NtZXRob2Rz1">1</a>] [<a href="07-object-oriented-perl.html#T087Y2xhc3NtZXRob2Rz2">2</a>]</li>
+<li>classes [<a href="07-object-oriented-perl.html#T087Y2xhc3Nlcw1">1</a>]</li>
+<li>constructors [<a href="07-object-oriented-perl.html#T087Y29uc3RydWN0b3Jz1">1</a>]</li>
+<li>delegation [<a href="05-perl-functions.html#T087ZGVsZWdhdGlvbg1">1</a>]</li>
+<li>dispatch [<a href="07-object-oriented-perl.html#T087ZGlzcGF0Y2g1">1</a>]</li>
+<li>duck typing [<a href="07-object-oriented-perl.html#T087ZHVja3R5cGluZw1">1</a>]</li>
+<li>encapsulation [<a href="07-object-oriented-perl.html#T087ZW5jYXBzdWxhdGlvbg1">1</a>]</li>
+<li>genericity [<a href="07-object-oriented-perl.html#T087Z2VuZXJpY2l0eQ1">1</a>]</li>
+<li>has-a [<a href="07-object-oriented-perl.html#T087aGFzLWE1">1</a>]</li>
+<li>immutability [<a href="07-object-oriented-perl.html#T087aW1tdXRhYmlsaXR51">1</a>]</li>
+<li>inheritance [<a href="07-object-oriented-perl.html#T087aW5oZXJpdGFuY2U1">1</a>] [<a href="07-object-oriented-perl.html#T087aW5oZXJpdGFuY2U2">2</a>] [<a href="07-object-oriented-perl.html#T087aW5oZXJpdGFuY2U3">3</a>]</li>
+<li>instance data [<a href="07-object-oriented-perl.html#T087aW5zdGFuY2VkYXRh1">1</a>]</li>
+<li>instance methods [<a href="07-object-oriented-perl.html#T087aW5zdGFuY2VtZXRob2Rz1">1</a>]</li>
+<li>instances [<a href="07-object-oriented-perl.html#T087aW5zdGFuY2Vz1">1</a>]</li>
+<li>invocants [<a href="07-object-oriented-perl.html#T087aW52b2NhbnRz1">1</a>]</li>
+<li>is-a [<a href="07-object-oriented-perl.html#T087aXMtYQ1">1</a>]</li>
+<li>@ISA [<a href="07-object-oriented-perl.html#T087QElTQQ1">1</a>]</li>
+<li>Liskov Substitution Principle [<a href="07-object-oriented-perl.html#T087TGlza292U3Vic3RpdHV0aW9uUHJpbmNpcGxl1">1</a>]</li>
+<li>metaclass [<a href="09-managing-perl-programs.html#T087bWV0YWNsYXNz1">1</a>]</li>
+<li>method dispatch [<a href="07-object-oriented-perl.html#T087bWV0aG9kZGlzcGF0Y2g1">1</a>]</li>
+<li>methods [<a href="07-object-oriented-perl.html#T087bWV0aG9kcw1">1</a>] [<a href="07-object-oriented-perl.html#T087bWV0aG9kcw2">2</a>]</li>
+<li>mixins [<a href="07-object-oriented-perl.html#T087bWl4aW5z1">1</a>]</li>
+<li>monkeypatching [<a href="07-object-oriented-perl.html#T087bW9ua2V5cGF0Y2hpbmc1">1</a>]</li>
+<li>multiple inheritance [<a href="07-object-oriented-perl.html#T087bXVsdGlwbGVpbmhlcml0YW5jZQ1">1</a>]</li>
+<li>mutator methods [<a href="07-object-oriented-perl.html#T087bXV0YXRvcm1ldGhvZHM1">1</a>]</li>
+<li>polymorphism [<a href="07-object-oriented-perl.html#T087cG9seW1vcnBoaXNt1">1</a>]</li>
+<li>proxying [<a href="05-perl-functions.html#T087cHJveHlpbmc1">1</a>]</li>
+<li>single responsibility principle [<a href="07-object-oriented-perl.html#T087c2luZ2xlcmVzcG9uc2liaWxpdHlwcmluY2lwbGU1">1</a>]</li>
+<li>state [<a href="07-object-oriented-perl.html#T087c3RhdGU1">1</a>]</li>
+</ul>
+</li>
+<li>OO: composition [<a href="07-object-oriented-perl.html#T086Y29tcG9zaXRpb241">1</a>]</li>
+<li>open [<a href="03-perl-language.html#b3Blbg1">1</a>]</li>
+<li>operands [<a href="04-perl-operators.html#b3BlcmFuZHM1">1</a>]</li>
+<li>operators [<a href="04-perl-operators.html#b3BlcmF0b3Jz1">1</a>]</li>
+
+<li>operators
+<ul>
+<li>/ [<a href="04-perl-operators.html#b3BlcmF0b3JzOy81">1</a>]</li>
+<li>, [<a href="04-perl-operators.html#b3BlcmF0b3JzOyw1">1</a>]</li>
+<li>// [<a href="03-perl-language.html#b3BlcmF0b3JzOy8v1">1</a>] [<a href="04-perl-operators.html#b3BlcmF0b3JzOy8v2">2</a>] [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzOy8v3">3</a>]</li>
+<li>++ [<a href="04-perl-operators.html#b3BlcmF0b3JzOysr1">1</a>]</li>
+<li>&amp;= [<a href="04-perl-operators.html#b3BlcmF0b3JzOyY91">1</a>]</li>
+<li>|= [<a href="04-perl-operators.html#b3BlcmF0b3JzO3w91">1</a>]</li>
+<li>&gt;= [<a href="04-perl-operators.html#b3BlcmF0b3JzOz491">1</a>]</li>
+<li>== [<a href="04-perl-operators.html#b3BlcmF0b3JzOz091">1</a>]</li>
+<li>| [<a href="04-perl-operators.html#b3BlcmF0b3JzO3w1">1</a>]</li>
+<li>|| [<a href="04-perl-operators.html#b3BlcmF0b3JzO3x81">1</a>]</li>
+<li>/= [<a href="04-perl-operators.html#b3BlcmF0b3JzOy891">1</a>]</li>
+<li>^ [<a href="04-perl-operators.html#b3BlcmF0b3JzO141">1</a>]</li>
+<li>=~ [<a href="04-perl-operators.html#b3BlcmF0b3JzOz1-1">1</a>] [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzOz1-2">2</a>]</li>
+<li>&gt;&gt;= [<a href="04-perl-operators.html#b3BlcmF0b3JzOz4-PQ1">1</a>]</li>
+<li>\ [<a href="03-perl-language.html#b3BlcmF0b3JzO1w1">1</a>] [<a href="03-perl-language.html#b3BlcmF0b3JzO1w2">2</a>]</li>
+<li>?: [<a href="04-perl-operators.html#b3BlcmF0b3JzOz861">1</a>]</li>
+<li>+= [<a href="04-perl-operators.html#b3BlcmF0b3JzOys91">1</a>]</li>
+<li>- [<a href="04-perl-operators.html#b3BlcmF0b3JzOy01">1</a>]</li>
+<li>*= [<a href="04-perl-operators.html#b3BlcmF0b3JzOz01">1</a>]</li>
+<li>! [<a href="04-perl-operators.html#b3BlcmF0b3JzOyE1">1</a>]</li>
+<li>-= [<a href="04-perl-operators.html#b3BlcmF0b3JzOy091">1</a>]</li>
+<li>&amp;&amp; [<a href="04-perl-operators.html#b3BlcmF0b3JzOyYm1">1</a>]</li>
+<li>% [<a href="04-perl-operators.html#b3BlcmF0b3JzOyU1">1</a>]</li>
+<li>+ [<a href="04-perl-operators.html#b3BlcmF0b3JzOys1">1</a>]</li>
+<li>&lt;&lt; [<a href="04-perl-operators.html#b3BlcmF0b3JzOzw81">1</a>]</li>
+<li>&lt; [<a href="04-perl-operators.html#b3BlcmF0b3JzOzw1">1</a>]</li>
+<li>&lt;= [<a href="04-perl-operators.html#b3BlcmF0b3JzOzw91">1</a>]</li>
+<li>&gt; [<a href="04-perl-operators.html#b3BlcmF0b3JzOz41">1</a>]</li>
+<li>&lt;&lt;= [<a href="04-perl-operators.html#b3BlcmF0b3JzOzw8PQ1">1</a>]</li>
+<li>!~ [<a href="04-perl-operators.html#b3BlcmF0b3JzOyF-1">1</a>] [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzOyF-2">2</a>]</li>
+<li>&amp; [<a href="04-perl-operators.html#b3BlcmF0b3JzOyY1">1</a>]</li>
+<li>** [<a href="04-perl-operators.html#b3BlcmF0b3JzOyo1">1</a>]</li>
+<li>-&gt; [<a href="03-perl-language.html#b3BlcmF0b3JzOy0-1">1</a>]</li>
+<li>* [<a href="04-perl-operators.html#b3BlcmF0b3JzOw1">1</a>]</li>
+<li>... [<a href="04-perl-operators.html#b3BlcmF0b3JzOy4uLg1">1</a>]</li>
+<li>-- [<a href="04-perl-operators.html#b3BlcmF0b3JzOy0t1">1</a>]</li>
+<li>. [<a href="03-perl-language.html#b3BlcmF0b3JzOy41">1</a>] [<a href="04-perl-operators.html#b3BlcmF0b3JzOy42">2</a>]</li>
+<li>!= [<a href="04-perl-operators.html#b3BlcmF0b3JzOyE91">1</a>]</li>
+<li>%= [<a href="04-perl-operators.html#b3BlcmF0b3JzOyU91">1</a>]</li>
+<li>&gt;&gt; [<a href="04-perl-operators.html#b3BlcmF0b3JzOz4-1">1</a>]</li>
+<li>&lt;&gt; [<a href="09-managing-perl-programs.html#b3BlcmF0b3JzOzw-1">1</a>]</li>
+<li>.. [<a href="03-perl-language.html#b3BlcmF0b3JzOy4u1">1</a>] [<a href="04-perl-operators.html#b3BlcmF0b3JzOy4u2">2</a>]</li>
+<li>=&gt; [<a href="03-perl-language.html#b3BlcmF0b3JzOz0-1">1</a>] [<a href="04-perl-operators.html#b3BlcmF0b3JzOz0-2">2</a>]</li>
+<li>**= [<a href="04-perl-operators.html#b3BlcmF0b3JzOyo91">1</a>]</li>
+<li>~~ [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzO35-1">1</a>] [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzO35-2">2</a>]</li>
+<li>&lt;=&gt; [<a href="04-perl-operators.html#b3BlcmF0b3JzOzw9Pg1">1</a>] [<a href="10-perl-beyond-syntax.html#b3BlcmF0b3JzOzw9Pg2">2</a>]</li>
+<li>^= [<a href="04-perl-operators.html#b3BlcmF0b3JzO1491">1</a>]</li>
+<li>and [<a href="04-perl-operators.html#b3BlcmF0b3JzO2FuZA1">1</a>]</li>
+<li>arithmetic [<a href="04-perl-operators.html#b3BlcmF0b3JzO2FyaXRobWV0aWM1">1</a>]</li>
+<li>arity [<a href="04-perl-operators.html#b3BlcmF0b3JzO2FyaXR51">1</a>]</li>
+<li>auto-increment [<a href="04-perl-operators.html#b3BlcmF0b3JzO2F1dG8taW5jcmVtZW501">1</a>]</li>
+<li>bitwise [<a href="04-perl-operators.html#b3BlcmF0b3JzO2JpdHdpc2U1">1</a>]</li>
+<li>characteristics [<a href="04-perl-operators.html#b3BlcmF0b3JzO2NoYXJhY3RlcmlzdGljcw1">1</a>]</li>
+<li>cmp [<a href="04-perl-operators.html#b3BlcmF0b3JzO2NtcA1">1</a>] [<a href="10-perl-beyond-syntax.html#b3BlcmF0b3JzO2NtcA2">2</a>]</li>
+<li>comma [<a href="04-perl-operators.html#b3BlcmF0b3JzO2NvbW1h1">1</a>]</li>
+<li>-d [<a href="09-managing-perl-programs.html#b3BlcmF0b3JzOy1k1">1</a>]</li>
+<li>defined-or [<a href="03-perl-language.html#b3BlcmF0b3JzO2RlZmluZWQtb3I1">1</a>] [<a href="04-perl-operators.html#b3BlcmF0b3JzO2RlZmluZWQtb3I2">2</a>]</li>
+<li>-e [<a href="09-managing-perl-programs.html#b3BlcmF0b3JzOy1l1">1</a>]</li>
+<li>eq [<a href="04-perl-operators.html#b3BlcmF0b3JzO2Vx1">1</a>] [<a href="09-managing-perl-programs.html#b3BlcmF0b3JzO2Vx2">2</a>]</li>
+<li>-f [<a href="09-managing-perl-programs.html#b3BlcmF0b3JzOy1m1">1</a>]</li>
+<li>fixity [<a href="04-perl-operators.html#b3BlcmF0b3JzO2ZpeGl0eQ1">1</a>]</li>
+<li>flip-flop [<a href="04-perl-operators.html#b3BlcmF0b3JzO2ZsaXAtZmxvcA1">1</a>]</li>
+<li>ge [<a href="04-perl-operators.html#b3BlcmF0b3JzO2dl1">1</a>]</li>
+<li>gt [<a href="04-perl-operators.html#b3BlcmF0b3JzO2d01">1</a>]</li>
+<li>le [<a href="04-perl-operators.html#b3BlcmF0b3JzO2xl1">1</a>]</li>
+<li>logical [<a href="04-perl-operators.html#b3BlcmF0b3JzO2xvZ2ljYWw1">1</a>]</li>
+<li>lt [<a href="04-perl-operators.html#b3BlcmF0b3JzO2x01">1</a>]</li>
+<li>m// [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzO20vLw1">1</a>]</li>
+<li>match [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzO21hdGNo1">1</a>]</li>
+<li>ne [<a href="04-perl-operators.html#b3BlcmF0b3JzO25l1">1</a>] [<a href="09-managing-perl-programs.html#b3BlcmF0b3JzO25l2">2</a>]</li>
+<li>not [<a href="04-perl-operators.html#b3BlcmF0b3JzO25vdA1">1</a>]</li>
+<li>numeric [<a href="04-perl-operators.html#b3BlcmF0b3JzO251bWVyaWM1">1</a>]</li>
+<li>or [<a href="04-perl-operators.html#b3BlcmF0b3JzO29y1">1</a>]</li>
+<li>q [<a href="03-perl-language.html#b3BlcmF0b3JzO3E1">1</a>]</li>
+<li>qq [<a href="03-perl-language.html#b3BlcmF0b3JzO3Fx1">1</a>]</li>
+<li>qr// [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzO3FyLy81">1</a>]</li>
+<li>quoting [<a href="03-perl-language.html#b3BlcmF0b3JzO3F1b3Rpbmc1">1</a>]</li>
+<li>qw() [<a href="03-perl-language.html#b3BlcmF0b3JzO3F3KCk1">1</a>]</li>
+<li>-r [<a href="09-managing-perl-programs.html#b3BlcmF0b3JzOy1y1">1</a>]</li>
+<li>range [<a href="03-perl-language.html#b3BlcmF0b3JzO3Jhbmdl1">1</a>] [<a href="04-perl-operators.html#b3BlcmF0b3JzO3Jhbmdl2">2</a>]</li>
+<li>repetition [<a href="04-perl-operators.html#b3BlcmF0b3JzO3JlcGV0aXRpb241">1</a>]</li>
+<li>-s [<a href="09-managing-perl-programs.html#b3BlcmF0b3JzOy1z1">1</a>]</li>
+<li>s/// [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzO3MvLy81">1</a>]</li>
+<li>smart match [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzO3NtYXJ0bWF0Y2g1">1</a>]</li>
+<li>string [<a href="04-perl-operators.html#b3BlcmF0b3JzO3N0cmluZw1">1</a>]</li>
+<li>substitution [<a href="06-perl-regular-expressions.html#b3BlcmF0b3JzO3N1YnN0aXR1dGlvbg1">1</a>]</li>
+<li>triple-dot [<a href="04-perl-operators.html#b3BlcmF0b3JzO3RyaXBsZS1kb3Q1">1</a>]</li>
+<li>whatever [<a href="04-perl-operators.html#b3BlcmF0b3JzO3doYXRldmVy1">1</a>]</li>
+<li>-X [<a href="09-managing-perl-programs.html#b3BlcmF0b3JzOy1Y1">1</a>]</li>
+<li>x [<a href="04-perl-operators.html#b3BlcmF0b3JzO3g1">1</a>]</li>
+<li>xor [<a href="04-perl-operators.html#b3BlcmF0b3JzO3hvcg1">1</a>]</li>
+</ul>
+</li>
+<li>or
+<ul>
+<li>logical operator [<a href="04-perl-operators.html#b3I7bG9naWNhbG9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>orcish maneuver [<a href="03-perl-language.html#b3JjaXNobWFuZXV2ZXI1">1</a>]</li>
+<li>$OUTPUT_AUTOFLUSH [<a href="10-perl-beyond-syntax.html#JE9VVFBVVF9BVVRPRkxVU0g1">1</a>]</li>
+<li>overloading [<a href="09-managing-perl-programs.html#b3ZlcmxvYWRpbmc1">1</a>]</li>
+
+<li>overloading
+<ul>
+<li>boolean [<a href="09-managing-perl-programs.html#b3ZlcmxvYWRpbmc7Ym9vbGVhbg1">1</a>]</li>
+<li>inheritance [<a href="09-managing-perl-programs.html#b3ZlcmxvYWRpbmc7aW5oZXJpdGFuY2U1">1</a>]</li>
+<li>numeric [<a href="09-managing-perl-programs.html#b3ZlcmxvYWRpbmc7bnVtZXJpYw1">1</a>]</li>
+<li>string [<a href="09-managing-perl-programs.html#b3ZlcmxvYWRpbmc7c3RyaW5n1">1</a>]</li>
+</ul>
+</li>
+<li>overloadpragma [<a href="09-managing-perl-programs.html#b3ZlcmxvYWRwcmFnbWE1">1</a>]</li>
+</ul>
+
+<h2>P</h2>
+
+<ul>
+<li>p5p [<a href="02-perl-community.html#cDVw1">1</a>]</li>
+<li>packages [<a href="03-perl-language.html#cGFja2FnZXM1">1</a>]</li>
+
+<li>packages
+<ul>
+<li>bareword names [<a href="11-what-to-avoid-in-perl.html#cGFja2FnZXM7YmFyZXdvcmRuYW1lcw1">1</a>]</li>
+<li>namespaces [<a href="03-perl-language.html#cGFja2FnZXM7bmFtZXNwYWNlcw1">1</a>]</li>
+<li>scope [<a href="05-perl-functions.html#cGFja2FnZXM7c2NvcGU1">1</a>]</li>
+<li>versions [<a href="03-perl-language.html#cGFja2FnZXM7dmVyc2lvbnM1">1</a>]</li>
+</ul>
+</li>
+<li>parameters [<a href="05-perl-functions.html#cGFyYW1ldGVycw1">1</a>]</li>
+
+<li>parameters
+<ul>
+<li>aliasing [<a href="05-perl-functions.html#cGFyYW1ldGVyczthbGlhc2luZw1">1</a>]</li>
+<li>flattening [<a href="05-perl-functions.html#cGFyYW1ldGVycztmbGF0dGVuaW5n1">1</a>]</li>
+<li>named [<a href="10-perl-beyond-syntax.html#cGFyYW1ldGVycztuYW1lZA1">1</a>]</li>
+<li>slurping [<a href="05-perl-functions.html#cGFyYW1ldGVycztzbHVycGluZw1">1</a>]</li>
+</ul>
+</li>
+<li>parentpragma [<a href="07-object-oriented-perl.html#cGFyZW50cHJhZ21h1">1</a>]</li>
+<li>partial application [<a href="05-perl-functions.html#cGFydGlhbGFwcGxpY2F0aW9u1">1</a>]</li>
+<li>Perl 5 Porters [<a href="02-perl-community.html#UGVybDVQb3J0ZXJz1">1</a>]</li>
+<li>Perl Buzz [<a href="02-perl-community.html#UGVybEJ1eno1">1</a>]</li>
+<li>Perl Mongers [<a href="02-perl-community.html#UGVybE1vbmdlcnM1">1</a>]</li>
+<li>Perl Weekly [<a href="02-perl-community.html#UGVybFdlZWtseQ1">1</a>]</li>
+<li>perlbrew [<a href="00-preface.html#cGVybGJyZXc1">1</a>] [<a href="09-managing-perl-programs.html#cGVybGJyZXc2">2</a>]</li>
+<li>perl.com [<a href="02-perl-community.html#cGVybC5jb201">1</a>] [<a href="03-perl-language.html#cGVybC5jb202">2</a>]</li>
+<li>perldoc [<a href="01-perl-philosophy.html#cGVybGRvYw1">1</a>]</li>
+
+<li>perldoc
+<ul>
+<li>-f(search perlfunc) [<a href="01-perl-philosophy.html#cGVybGRvYzstZihzZWFyY2hwZXJsZnVuYyk1">1</a>]</li>
+<li>-l [<a href="09-managing-perl-programs.html#cGVybGRvYzstbA1">1</a>]</li>
+<li>-lm [<a href="09-managing-perl-programs.html#cGVybGRvYzstbG01">1</a>]</li>
+<li>-m [<a href="09-managing-perl-programs.html#cGVybGRvYzstbQ1">1</a>]</li>
+<li>-q(search perlfaq) [<a href="01-perl-philosophy.html#cGVybGRvYzstcShzZWFyY2hwZXJsZmFxKQ1">1</a>]</li>
+<li>-v(search perlvar) [<a href="01-perl-philosophy.html#cGVybGRvYzstdihzZWFyY2hwZXJsdmFyKQ1">1</a>]</li>
+</ul>
+</li>
+<li>PerlMonks [<a href="02-perl-community.html#UGVybE1vbmtz1">1</a>]</li>
+<li>perl.org [<a href="02-perl-community.html#cGVybC5vcmc1">1</a>]</li>
+<li>$PID [<a href="10-perl-beyond-syntax.html#JFBJRA1">1</a>]</li>
+<li>Pinto [<a href="09-managing-perl-programs.html#UGludG81">1</a>]</li>
+<li>plan() [<a href="09-managing-perl-programs.html#cGxhbigp1">1</a>]</li>
+<li>Planet Perl [<a href="02-perl-community.html#UGxhbmV0UGVybA1">1</a>]</li>
+<li>Planet Perl Iron Man [<a href="02-perl-community.html#UGxhbmV0UGVybElyb25NYW41">1</a>]</li>
+<li>POD [<a href="01-perl-philosophy.html#UE9E1">1</a>]</li>
+
+<li>POD
+<ul>
+<li>perldoc [<a href="01-perl-philosophy.html#UE9EO3Blcmxkb2M1">1</a>]</li>
+<li>podchecker [<a href="01-perl-philosophy.html#UE9EO3BvZGNoZWNrZXI1">1</a>]</li>
+<li>Pod::Webserver [<a href="01-perl-philosophy.html#UE9EO1BvZDo6V2Vic2VydmVy1">1</a>]</li>
+</ul>
+</li>
+<li>polymorphism [<a href="07-object-oriented-perl.html#cG9seW1vcnBoaXNt1">1</a>]</li>
+<li>postcircumfix [<a href="04-perl-operators.html#cG9zdGNpcmN1bWZpeA1">1</a>]</li>
+<li>postfix [<a href="04-perl-operators.html#cG9zdGZpeA1">1</a>]</li>
+<li>pragmas [<a href="08-perl-style-efficiency.html#cHJhZ21hcw1">1</a>]</li>
+
+<li>pragmas
+<ul>
+<li>attributes [<a href="05-perl-functions.html#cHJhZ21hczthdHRyaWJ1dGVz1">1</a>]</li>
+<li>autodie [<a href="08-perl-style-efficiency.html#cHJhZ21hczthdXRvZGll1">1</a>] [<a href="12-perl-missing-features.html#cHJhZ21hczthdXRvZGll2">2</a>]</li>
+<li>autovivification [<a href="03-perl-language.html#cHJhZ21hczthdXRvdml2aWZpY2F0aW9u1">1</a>]</li>
+<li>charnames [<a href="03-perl-language.html#cHJhZ21hcztjaGFybmFtZXM1">1</a>]</li>
+<li>constant [<a href="08-perl-style-efficiency.html#cHJhZ21hcztjb25zdGFudA1">1</a>] [<a href="11-what-to-avoid-in-perl.html#cHJhZ21hcztjb25zdGFudA2">2</a>]</li>
+<li>disabling [<a href="08-perl-style-efficiency.html#cHJhZ21hcztkaXNhYmxpbmc1">1</a>]</li>
+<li>enabling [<a href="08-perl-style-efficiency.html#cHJhZ21hcztlbmFibGluZw1">1</a>]</li>
+<li>feature [<a href="03-perl-language.html#cHJhZ21hcztmZWF0dXJl1">1</a>] [<a href="08-perl-style-efficiency.html#cHJhZ21hcztmZWF0dXJl2">2</a>] [<a href="09-managing-perl-programs.html#cHJhZ21hcztmZWF0dXJl3">3</a>]</li>
+<li>less [<a href="08-perl-style-efficiency.html#cHJhZ21hcztsZXNz1">1</a>]</li>
+<li>overload [<a href="09-managing-perl-programs.html#cHJhZ21hcztvdmVybG9hZA1">1</a>]</li>
+<li>overloading [<a href="03-perl-language.html#cHJhZ21hcztvdmVybG9hZGluZw1">1</a>]</li>
+<li>parent [<a href="07-object-oriented-perl.html#cHJhZ21hcztwYXJlbnQ1">1</a>]</li>
+<li>scope [<a href="08-perl-style-efficiency.html#cHJhZ21hcztzY29wZQ1">1</a>]</li>
+<li>strict [<a href="08-perl-style-efficiency.html#cHJhZ21hcztzdHJpY3Q1">1</a>] [<a href="09-managing-perl-programs.html#cHJhZ21hcztzdHJpY3Q2">2</a>] [<a href="11-what-to-avoid-in-perl.html#cHJhZ21hcztzdHJpY3Q3">3</a>] [<a href="12-perl-missing-features.html#cHJhZ21hcztzdHJpY3Q4">4</a>]</li>
+<li>subs [<a href="05-perl-functions.html#cHJhZ21hcztzdWJz1">1</a>] [<a href="11-what-to-avoid-in-perl.html#cHJhZ21hcztzdWJz2">2</a>]</li>
+<li>useful core pragmas [<a href="08-perl-style-efficiency.html#cHJhZ21hczt1c2VmdWxjb3JlcHJhZ21hcw1">1</a>]</li>
+<li>utf8 [<a href="03-perl-language.html#cHJhZ21hczt1dGY41">1</a>] [<a href="08-perl-style-efficiency.html#cHJhZ21hczt1dGY42">2</a>]</li>
+<li>vars [<a href="08-perl-style-efficiency.html#cHJhZ21hczt2YXJz1">1</a>]</li>
+<li>warnings [<a href="08-perl-style-efficiency.html#cHJhZ21hczt3YXJuaW5ncw1">1</a>] [<a href="09-managing-perl-programs.html#cHJhZ21hczt3YXJuaW5ncw2">2</a>]</li>
+<li>writing [<a href="08-perl-style-efficiency.html#cHJhZ21hczt3cml0aW5n1">1</a>]</li>
+</ul>
+</li>
+<li>precedence [<a href="04-perl-operators.html#cHJlY2VkZW5jZQ1">1</a>]</li>
+
+<li>precedence
+<ul>
+<li>disambiguation [<a href="04-perl-operators.html#cHJlY2VkZW5jZTtkaXNhbWJpZ3VhdGlvbg1">1</a>]</li>
+</ul>
+</li>
+<li>prefix [<a href="04-perl-operators.html#cHJlZml41">1</a>]</li>
+<li>principle of least astonishment [<a href="01-perl-philosophy.html#cHJpbmNpcGxlb2ZsZWFzdGFzdG9uaXNobWVudA1">1</a>]</li>
+<li>$PROGRAM_NAME [<a href="10-perl-beyond-syntax.html#JFBST0dSQU1fTkFNRQ1">1</a>]</li>
+<li>prototypes [<a href="11-what-to-avoid-in-perl.html#cHJvdG90eXBlcw1">1</a>]</li>
+
+<li>prototypes
+<ul>
+<li>barewords [<a href="11-what-to-avoid-in-perl.html#cHJvdG90eXBlcztiYXJld29yZHM1">1</a>]</li>
+</ul>
+</li>
+<li>prove [<a href="09-managing-perl-programs.html#cHJvdmU1">1</a>] [<a href="09-managing-perl-programs.html#cHJvdmU2">2</a>]</li>
+<li>proveall [<a href="09-managing-perl-programs.html#cHJvdmVhbGw1">1</a>]</li>
+<li>proxying [<a href="05-perl-functions.html#cHJveHlpbmc1">1</a>]</li>
+</ul>
+
+<h2>Q</h2>
+
+<ul>
+<li>\Q
+<ul>
+<li>disable metacharacters regex metacharacter [<a href="06-perl-regular-expressions.html#XFE7ZGlzYWJsZW1ldGFjaGFyYWN0ZXJzcmVnZXhtZXRhY2hhcmFjdGVy1">1</a>]</li>
+</ul>
+</li>
+<li>q
+<ul>
+<li>single quoting operator [<a href="03-perl-language.html#cTtzaW5nbGVxdW90aW5nb3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>qq
+<ul>
+<li>double quoting operator [<a href="03-perl-language.html#cXE7ZG91YmxlcXVvdGluZ29wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>qr//
+<ul>
+<li>compile regex operator [<a href="06-perl-regular-expressions.html#cXIvLztjb21waWxlcmVnZXhvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>quantifiers
+<ul>
+<li>greedy [<a href="06-perl-regular-expressions.html#cXVhbnRpZmllcnM7Z3JlZWR51">1</a>]</li>
+<li>zero or more [<a href="06-perl-regular-expressions.html#cXVhbnRpZmllcnM7emVyb29ybW9yZQ1">1</a>]</li>
+</ul>
+</li>
+<li>qw()
+<ul>
+<li>quote words operator [<a href="03-perl-language.html#cXcoKTtxdW90ZXdvcmRzb3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>R</h2>
+
+<ul>
+<li>/r
+<ul>
+<li>non-destructive substitution modifier [<a href="06-perl-regular-expressions.html#L3I7bm9uLWRlc3RydWN0aXZlc3Vic3RpdHV0aW9ubW9kaWZpZXI1">1</a>]</li>
+</ul>
+</li>
+<li>-r
+<ul>
+<li>readable file test operator [<a href="09-managing-perl-programs.html#LXI7cmVhZGFibGVmaWxldGVzdG9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>range [<a href="04-perl-operators.html#cmFuZ2U1">1</a>]</li>
+<li>readline [<a href="10-perl-beyond-syntax.html#cmVhZGxpbmU1">1</a>]</li>
+<li>recursion [<a href="05-perl-functions.html#cmVjdXJzaW9u1">1</a>]</li>
+
+<li>recursion
+<ul>
+<li>guard conditions [<a href="05-perl-functions.html#cmVjdXJzaW9uO2d1YXJkY29uZGl0aW9ucw1">1</a>]</li>
+</ul>
+</li>
+<li>references [<a href="03-perl-language.html#cmVmZXJlbmNlcw1">1</a>]</li>
+
+<li>references
+<ul>
+<li>aliases [<a href="03-perl-language.html#cmVmZXJlbmNlczthbGlhc2Vz1">1</a>]</li>
+<li>anonymous arrays [<a href="03-perl-language.html#cmVmZXJlbmNlczthbm9ueW1vdXNhcnJheXM1">1</a>]</li>
+<li>arrays [<a href="03-perl-language.html#cmVmZXJlbmNlczthcnJheXM1">1</a>]</li>
+<li>dereferencing [<a href="03-perl-language.html#cmVmZXJlbmNlcztkZXJlZmVyZW5jaW5n1">1</a>]</li>
+<li>filehandles [<a href="03-perl-language.html#cmVmZXJlbmNlcztmaWxlaGFuZGxlcw1">1</a>]</li>
+<li>functions [<a href="03-perl-language.html#cmVmZXJlbmNlcztmdW5jdGlvbnM1">1</a>]</li>
+<li>hashes [<a href="03-perl-language.html#cmVmZXJlbmNlcztoYXNoZXM1">1</a>]</li>
+<li>\operator [<a href="03-perl-language.html#cmVmZXJlbmNlcztcb3BlcmF0b3I1">1</a>]</li>
+<li>reference counting [<a href="03-perl-language.html#cmVmZXJlbmNlcztyZWZlcmVuY2Vjb3VudGluZw1">1</a>]</li>
+<li>scalar [<a href="03-perl-language.html#cmVmZXJlbmNlcztzY2FsYXI1">1</a>]</li>
+<li>weak [<a href="03-perl-language.html#cmVmZXJlbmNlczt3ZWFr1">1</a>]</li>
+</ul>
+</li>
+<li>reflection [<a href="07-object-oriented-perl.html#cmVmbGVjdGlvbg1">1</a>]</li>
+<li>regex [<a href="06-perl-regular-expressions.html#cmVnZXg1">1</a>]</li>
+
+<li>regex
+<ul>
+<li>() [<a href="06-perl-regular-expressions.html#cmVnZXg7KCk1">1</a>]</li>
+<li>. [<a href="06-perl-regular-expressions.html#cmVnZXg7Lg1">1</a>]</li>
+<li>$1 [<a href="06-perl-regular-expressions.html#cmVnZXg7JDE1">1</a>]</li>
+<li>$2 [<a href="06-perl-regular-expressions.html#cmVnZXg7JDI1">1</a>]</li>
+<li>alternation [<a href="06-perl-regular-expressions.html#cmVnZXg7YWx0ZXJuYXRpb241">1</a>]</li>
+<li>anchors [<a href="06-perl-regular-expressions.html#cmVnZXg7YW5jaG9ycw1">1</a>]</li>
+<li>assertions [<a href="06-perl-regular-expressions.html#cmVnZXg7YXNzZXJ0aW9ucw1">1</a>]</li>
+<li>atom [<a href="06-perl-regular-expressions.html#cmVnZXg7YXRvbQ1">1</a>]</li>
+<li>\B [<a href="06-perl-regular-expressions.html#cmVnZXg7XEI1">1</a>]</li>
+<li>capture [<a href="10-perl-beyond-syntax.html#cmVnZXg7Y2FwdHVyZQ1">1</a>]</li>
+<li>captures [<a href="06-perl-regular-expressions.html#cmVnZXg7Y2FwdHVyZXM1">1</a>] [<a href="06-perl-regular-expressions.html#cmVnZXg7Y2FwdHVyZXM2">2</a>]</li>
+<li>case-insensitive [<a href="06-perl-regular-expressions.html#cmVnZXg7Y2FzZS1pbnNlbnNpdGl2ZQ1">1</a>]</li>
+<li>\d [<a href="06-perl-regular-expressions.html#cmVnZXg7XGQ1">1</a>]</li>
+<li>\D [<a href="06-perl-regular-expressions.html#cmVnZXg7XEQ1">1</a>]</li>
+<li>disabling metacharacters [<a href="06-perl-regular-expressions.html#cmVnZXg7ZGlzYWJsaW5nbWV0YWNoYXJhY3RlcnM1">1</a>]</li>
+<li>embedded modifiers [<a href="06-perl-regular-expressions.html#cmVnZXg7ZW1iZWRkZWRtb2RpZmllcnM1">1</a>]</li>
+<li>/emodifier [<a href="06-perl-regular-expressions.html#cmVnZXg7L2Vtb2RpZmllcg1">1</a>]</li>
+<li>engine [<a href="06-perl-regular-expressions.html#cmVnZXg7ZW5naW5l1">1</a>]</li>
+<li>escaping metacharacters [<a href="06-perl-regular-expressions.html#cmVnZXg7ZXNjYXBpbmdtZXRhY2hhcmFjdGVycw1">1</a>]</li>
+<li>extended readability [<a href="06-perl-regular-expressions.html#cmVnZXg7ZXh0ZW5kZWRyZWFkYWJpbGl0eQ1">1</a>]</li>
+<li>first-class [<a href="06-perl-regular-expressions.html#cmVnZXg7Zmlyc3QtY2xhc3M1">1</a>]</li>
+<li>\G [<a href="06-perl-regular-expressions.html#cmVnZXg7XEc1">1</a>]</li>
+<li>global match [<a href="06-perl-regular-expressions.html#cmVnZXg7Z2xvYmFsbWF0Y2g1">1</a>]</li>
+<li>global match anchor [<a href="06-perl-regular-expressions.html#cmVnZXg7Z2xvYmFsbWF0Y2hhbmNob3I1">1</a>]</li>
+<li>/gmodifier [<a href="06-perl-regular-expressions.html#cmVnZXg7L2dtb2RpZmllcg1">1</a>]</li>
+<li>/imodifier [<a href="06-perl-regular-expressions.html#cmVnZXg7L2ltb2RpZmllcg1">1</a>]</li>
+<li>keep assertion [<a href="06-perl-regular-expressions.html#cmVnZXg7a2VlcGFzc2VydGlvbg1">1</a>]</li>
+<li>literals [<a href="06-perl-regular-expressions.html#cmVnZXg7bGl0ZXJhbHM1">1</a>]</li>
+<li>metacharacters [<a href="06-perl-regular-expressions.html#cmVnZXg7bWV0YWNoYXJhY3RlcnM1">1</a>] [<a href="06-perl-regular-expressions.html#cmVnZXg7bWV0YWNoYXJhY3RlcnM2">2</a>]</li>
+<li>/mmodifier [<a href="06-perl-regular-expressions.html#cmVnZXg7L21tb2RpZmllcg1">1</a>]</li>
+<li>modification [<a href="10-perl-beyond-syntax.html#cmVnZXg7bW9kaWZpY2F0aW9u1">1</a>]</li>
+<li>modifiers [<a href="06-perl-regular-expressions.html#cmVnZXg7bW9kaWZpZXJz1">1</a>]</li>
+<li>multiline [<a href="06-perl-regular-expressions.html#cmVnZXg7bXVsdGlsaW5l1">1</a>]</li>
+<li>named captures [<a href="06-perl-regular-expressions.html#cmVnZXg7bmFtZWRjYXB0dXJlcw1">1</a>]</li>
+<li>non-destructive substitution [<a href="06-perl-regular-expressions.html#cmVnZXg7bm9uLWRlc3RydWN0aXZlc3Vic3RpdHV0aW9u1">1</a>]</li>
+<li>numbered captures [<a href="06-perl-regular-expressions.html#cmVnZXg7bnVtYmVyZWRjYXB0dXJlcw1">1</a>]</li>
+<li>one or more quantifier [<a href="06-perl-regular-expressions.html#cmVnZXg7b25lb3Jtb3JlcXVhbnRpZmllcg1">1</a>]</li>
+<li>qr// [<a href="06-perl-regular-expressions.html#cmVnZXg7cXIvLw1">1</a>]</li>
+<li>quantifiers [<a href="06-perl-regular-expressions.html#cmVnZXg7cXVhbnRpZmllcnM1">1</a>]</li>
+<li>/rmodifier [<a href="06-perl-regular-expressions.html#cmVnZXg7L3Jtb2RpZmllcg1">1</a>]</li>
+<li>\S [<a href="06-perl-regular-expressions.html#cmVnZXg7XFM1">1</a>]</li>
+<li>\s [<a href="06-perl-regular-expressions.html#cmVnZXg7XHM1">1</a>]</li>
+<li>single line [<a href="06-perl-regular-expressions.html#cmVnZXg7c2luZ2xlbGluZQ1">1</a>]</li>
+<li>/smodifier [<a href="06-perl-regular-expressions.html#cmVnZXg7L3Ntb2RpZmllcg1">1</a>]</li>
+<li>substitution [<a href="10-perl-beyond-syntax.html#cmVnZXg7c3Vic3RpdHV0aW9u1">1</a>]</li>
+<li>substitution evaluation [<a href="06-perl-regular-expressions.html#cmVnZXg7c3Vic3RpdHV0aW9uZXZhbHVhdGlvbg1">1</a>]</li>
+<li>\w [<a href="06-perl-regular-expressions.html#cmVnZXg7XHc1">1</a>]</li>
+<li>\W [<a href="06-perl-regular-expressions.html#cmVnZXg7XFc1">1</a>]</li>
+<li>whitespace [<a href="06-perl-regular-expressions.html#cmVnZXg7d2hpdGVzcGFjZQ1">1</a>]</li>
+<li>/xmodifier [<a href="06-perl-regular-expressions.html#cmVnZXg7L3htb2RpZmllcg1">1</a>]</li>
+<li>zero or one quantifier [<a href="06-perl-regular-expressions.html#cmVnZXg7emVyb29yb25lcXVhbnRpZmllcg1">1</a>]</li>
+<li>zero-width assertion [<a href="06-perl-regular-expressions.html#cmVnZXg7emVyby13aWR0aGFzc2VydGlvbg1">1</a>]</li>
+<li>zero-width negative look-ahead assertion [<a href="06-perl-regular-expressions.html#cmVnZXg7emVyby13aWR0aG5lZ2F0aXZlbG9vay1haGVhZGFzc2VydGlvbg1">1</a>]</li>
+<li>zero-width negative look-behind assertion [<a href="06-perl-regular-expressions.html#cmVnZXg7emVyby13aWR0aG5lZ2F0aXZlbG9vay1iZWhpbmRhc3NlcnRpb241">1</a>]</li>
+<li>zero-width positive look-ahead assertion [<a href="06-perl-regular-expressions.html#cmVnZXg7emVyby13aWR0aHBvc2l0aXZlbG9vay1haGVhZGFzc2VydGlvbg1">1</a>]</li>
+<li>zero-width positive look-behind assertion [<a href="06-perl-regular-expressions.html#cmVnZXg7emVyby13aWR0aHBvc2l0aXZlbG9vay1iZWhpbmRhc3NlcnRpb241">1</a>]</li>
+</ul>
+</li>
+<li>Regexp [<a href="09-managing-perl-programs.html#UmVnZXhw1">1</a>]</li>
+<li>Regexp::Common [<a href="03-perl-language.html#UmVnZXhwOjpDb21tb241">1</a>]</li>
+<li>regular expressions [<a href="06-perl-regular-expressions.html#cmVndWxhcmV4cHJlc3Npb25z1">1</a>]</li>
+<li>right associativity [<a href="04-perl-operators.html#cmlnaHRhc3NvY2lhdGl2aXR51">1</a>]</li>
+<li>roles [<a href="07-object-oriented-perl.html#cm9sZXM1">1</a>]</li>
+
+<li>roles
+<ul>
+<li>allomorphism [<a href="07-object-oriented-perl.html#cm9sZXM7YWxsb21vcnBoaXNt1">1</a>]</li>
+<li>composition [<a href="07-object-oriented-perl.html#cm9sZXM7Y29tcG9zaXRpb241">1</a>]</li>
+</ul>
+</li>
+<li>RT [<a href="02-perl-community.html#UlQ1">1</a>]</li>
+<li>rvalue [<a href="03-perl-language.html#cnZhbHVl1">1</a>]</li>
+</ul>
+
+<h2>S</h2>
+
+<ul>
+<li>\S
+<ul>
+<li>non-whitespace regex metacharacter [<a href="06-perl-regular-expressions.html#XFM7bm9uLXdoaXRlc3BhY2VyZWdleG1ldGFjaGFyYWN0ZXI1">1</a>]</li>
+</ul>
+</li>
+<li>\s
+<ul>
+<li>whitespace regex metacharacter [<a href="06-perl-regular-expressions.html#XHM7d2hpdGVzcGFjZXJlZ2V4bWV0YWNoYXJhY3Rlcg1">1</a>]</li>
+</ul>
+</li>
+<li>s///
+<ul>
+<li>substitution operator [<a href="01-perl-philosophy.html#cy8vLztzdWJzdGl0dXRpb25vcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>-s
+<ul>
+<li>non-empty file test operator [<a href="09-managing-perl-programs.html#LXM7bm9uLWVtcHR5ZmlsZXRlc3RvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>/s
+<ul>
+<li>single line regex modifier [<a href="06-perl-regular-expressions.html#L3M7c2luZ2xlbGluZXJlZ2V4bW9kaWZpZXI1">1</a>]</li>
+</ul>
+</li>
+<li>SCALAR [<a href="09-managing-perl-programs.html#U0NBTEFS1">1</a>]</li>
+<li>scalar context [<a href="01-perl-philosophy.html#c2NhbGFyY29udGV4dA1">1</a>]</li>
+<li>scalar variables [<a href="03-perl-language.html#c2NhbGFydmFyaWFibGVz1">1</a>]</li>
+<li>scalars [<a href="03-perl-language.html#c2NhbGFycw1">1</a>] [<a href="03-perl-language.html#c2NhbGFycw2">2</a>]</li>
+
+<li>scalars
+<ul>
+<li>boolean values [<a href="03-perl-language.html#c2NhbGFycztib29sZWFudmFsdWVz1">1</a>]</li>
+<li>references [<a href="03-perl-language.html#c2NhbGFycztyZWZlcmVuY2Vz1">1</a>]</li>
+</ul>
+</li>
+<li>Scalar::Util [<a href="03-perl-language.html#U2NhbGFyOjpVdGls1">1</a>] [<a href="03-perl-language.html#U2NhbGFyOjpVdGls2">2</a>] [<a href="03-perl-language.html#U2NhbGFyOjpVdGls3">3</a>] [<a href="03-perl-language.html#U2NhbGFyOjpVdGls4">4</a>] [<a href="03-perl-language.html#U2NhbGFyOjpVdGls5">5</a>] [<a href="09-managing-perl-programs.html#U2NhbGFyOjpVdGls6">6</a>]</li>
+
+<li>Scalar::Util
+<ul>
+<li>looks_like_number [<a href="03-perl-language.html#U2NhbGFyOjpVdGlsO2xvb2tzX2xpa2VfbnVtYmVy1">1</a>]</li>
+</ul>
+</li>
+<li>Schwartzian transform [<a href="10-perl-beyond-syntax.html#U2Nod2FydHppYW50cmFuc2Zvcm01">1</a>]</li>
+<li>scope [<a href="03-perl-language.html#c2NvcGU1">1</a>] [<a href="05-perl-functions.html#c2NvcGU2">2</a>]</li>
+
+<li>scope
+<ul>
+<li>dynamic [<a href="05-perl-functions.html#c2NvcGU7ZHluYW1pYw1">1</a>]</li>
+<li>iterator [<a href="03-perl-language.html#c2NvcGU7aXRlcmF0b3I1">1</a>]</li>
+<li>lexical [<a href="05-perl-functions.html#c2NvcGU7bGV4aWNhbA1">1</a>]</li>
+<li>lexical shadowing [<a href="05-perl-functions.html#c2NvcGU7bGV4aWNhbHNoYWRvd2luZw1">1</a>]</li>
+<li>packages [<a href="03-perl-language.html#c2NvcGU7cGFja2FnZXM1">1</a>] [<a href="05-perl-functions.html#c2NvcGU7cGFja2FnZXM2">2</a>]</li>
+<li>state [<a href="05-perl-functions.html#c2NvcGU7c3RhdGU1">1</a>]</li>
+</ul>
+</li>
+<li>search.cpan.org [<a href="02-perl-community.html#c2VhcmNoLmNwYW4ub3Jn1">1</a>]</li>
+<li>$self [<a href="10-perl-beyond-syntax.html#JHNlbGY1">1</a>]</li>
+<li>short-circuiting [<a href="03-perl-language.html#c2hvcnQtY2lyY3VpdGluZw1">1</a>] [<a href="04-perl-operators.html#c2hvcnQtY2lyY3VpdGluZw2">2</a>]</li>
+<li>%SIG [<a href="10-perl-beyond-syntax.html#JVNJRw1">1</a>]</li>
+<li>$SIG{__WARN__} [<a href="09-managing-perl-programs.html#JFNJR3tfX1dBUk5fX301">1</a>]</li>
+<li>@sigil [<a href="03-perl-language.html#QHNpZ2ls1">1</a>]</li>
+<li>sigil [<a href="03-perl-language.html#c2lnaWw1">1</a>]</li>
+<li>sigils [<a href="03-perl-language.html#c2lnaWxz1">1</a>]</li>
+
+<li>sigils
+<ul>
+<li>$ [<a href="03-perl-language.html#c2lnaWxzOyQ1">1</a>] [<a href="03-perl-language.html#c2lnaWxzOyQ2">2</a>] [<a href="03-perl-language.html#c2lnaWxzOyQ3">3</a>]</li>
+<li>$# [<a href="03-perl-language.html#c2lnaWxzOyQj1">1</a>]</li>
+<li>&amp; [<a href="03-perl-language.html#c2lnaWxzOyY1">1</a>] [<a href="05-perl-functions.html#c2lnaWxzOyY2">2</a>]</li>
+<li>% [<a href="03-perl-language.html#c2lnaWxzOyU1">1</a>]</li>
+<li>* [<a href="09-managing-perl-programs.html#c2lnaWxzOw1">1</a>]</li>
+<li>@ [<a href="03-perl-language.html#c2lnaWxzO0A1">1</a>] [<a href="03-perl-language.html#c2lnaWxzO0A2">2</a>] [<a href="03-perl-language.html#c2lnaWxzO0A3">3</a>]</li>
+<li>variant [<a href="03-perl-language.html#c2lnaWxzO3ZhcmlhbnQ1">1</a>]</li>
+</ul>
+</li>
+<li>slices [<a href="03-perl-language.html#c2xpY2Vz1">1</a>]</li>
+
+<li>slices
+<ul>
+<li>array [<a href="03-perl-language.html#c2xpY2VzO2FycmF51">1</a>]</li>
+<li>hash [<a href="03-perl-language.html#c2xpY2VzO2hhc2g1">1</a>]</li>
+</ul>
+</li>
+<li>smart match [<a href="06-perl-regular-expressions.html#c21hcnRtYXRjaA1">1</a>]</li>
+<li>sort [<a href="11-what-to-avoid-in-perl.html#c29ydA1">1</a>]</li>
+
+<li>sort
+<ul>
+<li>Schwartzian transform [<a href="10-perl-beyond-syntax.html#c29ydDtTY2h3YXJ0emlhbnRyYW5zZm9ybQ1">1</a>]</li>
+</ul>
+</li>
+<li>state [<a href="05-perl-functions.html#c3RhdGU1">1</a>] [<a href="05-perl-functions.html#c3RhdGU2">2</a>]</li>
+<li>STDERR [<a href="09-managing-perl-programs.html#U1RERVJS1">1</a>]</li>
+<li>STDIN [<a href="09-managing-perl-programs.html#U1RESU41">1</a>]</li>
+<li>STDOUT [<a href="09-managing-perl-programs.html#U1RET1VU1">1</a>]</li>
+<li>Storable [<a href="03-perl-language.html#U3RvcmFibGU1">1</a>]</li>
+<li>Strawberry Perl [<a href="00-preface.html#U3RyYXdiZXJyeVBlcmw1">1</a>]</li>
+<li>strict [<a href="12-perl-missing-features.html#c3RyaWN01">1</a>]</li>
+<li>strictpragma [<a href="09-managing-perl-programs.html#c3RyaWN0cHJhZ21h1">1</a>] [<a href="11-what-to-avoid-in-perl.html#c3RyaWN0cHJhZ21h2">2</a>]</li>
+<li>string context [<a href="01-perl-philosophy.html#c3RyaW5nY29udGV4dA1">1</a>]</li>
+<li>stringification [<a href="03-perl-language.html#c3RyaW5naWZpY2F0aW9u1">1</a>] [<a href="03-perl-language.html#c3RyaW5naWZpY2F0aW9u2">2</a>]</li>
+<li>strings [<a href="03-perl-language.html#c3RyaW5ncw1">1</a>]</li>
+
+<li>strings
+<ul>
+<li>concatenation [<a href="03-perl-language.html#c3RyaW5ncztjb25jYXRlbmF0aW9u1">1</a>]</li>
+<li>delimiters [<a href="03-perl-language.html#c3RyaW5ncztkZWxpbWl0ZXJz1">1</a>]</li>
+<li>double-quoted [<a href="03-perl-language.html#c3RyaW5ncztkb3VibGUtcXVvdGVk1">1</a>]</li>
+<li>false [<a href="03-perl-language.html#c3RyaW5ncztmYWxzZQ1">1</a>]</li>
+<li>heredocs [<a href="03-perl-language.html#c3RyaW5ncztoZXJlZG9jcw1">1</a>]</li>
+<li>interpolation [<a href="03-perl-language.html#c3RyaW5ncztpbnRlcnBvbGF0aW9u1">1</a>]</li>
+<li>\N{} [<a href="03-perl-language.html#c3RyaW5ncztcTnt91">1</a>]</li>
+<li>operators [<a href="04-perl-operators.html#c3RyaW5ncztvcGVyYXRvcnM1">1</a>]</li>
+<li>single-quoted [<a href="03-perl-language.html#c3RyaW5ncztzaW5nbGUtcXVvdGVk1">1</a>]</li>
+<li>true [<a href="03-perl-language.html#c3RyaW5nczt0cnVl1">1</a>]</li>
+<li>\x{} [<a href="03-perl-language.html#c3RyaW5ncztceHt91">1</a>]</li>
+</ul>
+</li>
+<li>subroutine [<a href="05-perl-functions.html#c3Vicm91dGluZQ1">1</a>]</li>
+<li>subspragma [<a href="05-perl-functions.html#c3Vic3ByYWdtYQ1">1</a>] [<a href="11-what-to-avoid-in-perl.html#c3Vic3ByYWdtYQ2">2</a>]</li>
+<li>subtypes [<a href="07-object-oriented-perl.html#c3VidHlwZXM1">1</a>]</li>
+<li>super globals [<a href="10-perl-beyond-syntax.html#c3VwZXJnbG9iYWxz1">1</a>]</li>
+
+<li>super globals
+<ul>
+<li>alternatives [<a href="10-perl-beyond-syntax.html#c3VwZXJnbG9iYWxzO2FsdGVybmF0aXZlcw1">1</a>]</li>
+<li>managing [<a href="10-perl-beyond-syntax.html#c3VwZXJnbG9iYWxzO21hbmFnaW5n1">1</a>]</li>
+<li>useful [<a href="10-perl-beyond-syntax.html#c3VwZXJnbG9iYWxzO3VzZWZ1bA1">1</a>]</li>
+</ul>
+</li>
+<li>symbol tables [<a href="05-perl-functions.html#c3ltYm9sdGFibGVz1">1</a>] [<a href="07-object-oriented-perl.html#c3ltYm9sdGFibGVz2">2</a>] [<a href="09-managing-perl-programs.html#c3ltYm9sdGFibGVz3">3</a>]</li>
+<li>symbolic lookups [<a href="03-perl-language.html#c3ltYm9saWNsb29rdXBz1">1</a>]</li>
+</ul>
+
+<h2>T</h2>
+
+<ul>
+<li>-T
+<ul>
+<li>taint command-line argument [<a href="09-managing-perl-programs.html#LVQ7dGFpbnRjb21tYW5kLWxpbmVhcmd1bWVudA1">1</a>]</li>
+</ul>
+</li>
+<li>-t
+<ul>
+<li>enable baby taint command-line argument [<a href="09-managing-perl-programs.html#LXQ7ZW5hYmxlYmFieXRhaW50Y29tbWFuZC1saW5lYXJndW1lbnQ1">1</a>]</li>
+</ul>
+</li>
+<li>tailcalls [<a href="03-perl-language.html#dGFpbGNhbGxz1">1</a>] [<a href="05-perl-functions.html#dGFpbGNhbGxz2">2</a>]</li>
+<li>taint [<a href="09-managing-perl-programs.html#dGFpbnQ1">1</a>]</li>
+
+<li>taint
+<ul>
+<li>checking [<a href="09-managing-perl-programs.html#dGFpbnQ7Y2hlY2tpbmc1">1</a>]</li>
+<li>removing sources of [<a href="09-managing-perl-programs.html#dGFpbnQ7cmVtb3Zpbmdzb3VyY2Vzb2Y1">1</a>]</li>
+<li>untainting [<a href="09-managing-perl-programs.html#dGFpbnQ7dW50YWludGluZw1">1</a>]</li>
+</ul>
+</li>
+<li>tainted() [<a href="09-managing-perl-programs.html#dGFpbnRlZCgp1">1</a>]</li>
+<li>TAP (Test Anything Protocol) [<a href="09-managing-perl-programs.html#VEFQKFRlc3RBbnl0aGluZ1Byb3RvY29sKQ1">1</a>]</li>
+<li>TAP::Harness [<a href="09-managing-perl-programs.html#VEFQOjpIYXJuZXNz1">1</a>] [<a href="09-managing-perl-programs.html#VEFQOjpIYXJuZXNz2">2</a>]</li>
+<li>ternary conditional [<a href="03-perl-language.html#dGVybmFyeWNvbmRpdGlvbmFs1">1</a>]</li>
+<li>Test::Builder [<a href="09-managing-perl-programs.html#VGVzdDo6QnVpbGRlcg1">1</a>]</li>
+<li>testing [<a href="09-managing-perl-programs.html#dGVzdGluZw1">1</a>]</li>
+
+<li>testing
+<ul>
+<li>assertion [<a href="09-managing-perl-programs.html#dGVzdGluZzthc3NlcnRpb241">1</a>]</li>
+<li>cmp_ok() [<a href="09-managing-perl-programs.html#dGVzdGluZztjbXBfb2soKQ1">1</a>]</li>
+<li>is() [<a href="09-managing-perl-programs.html#dGVzdGluZztpcygp1">1</a>]</li>
+<li>isa_ok() [<a href="09-managing-perl-programs.html#dGVzdGluZztpc2Ffb2soKQ1">1</a>]</li>
+<li>isnt() [<a href="09-managing-perl-programs.html#dGVzdGluZztpc250KCk1">1</a>]</li>
+<li>ok() [<a href="09-managing-perl-programs.html#dGVzdGluZztvaygp1">1</a>]</li>
+<li>plan [<a href="09-managing-perl-programs.html#dGVzdGluZztwbGFu1">1</a>]</li>
+<li>prove [<a href="09-managing-perl-programs.html#dGVzdGluZztwcm92ZQ1">1</a>]</li>
+<li>proveallalias [<a href="09-managing-perl-programs.html#dGVzdGluZztwcm92ZWFsbGFsaWFz1">1</a>]</li>
+<li>running tests [<a href="09-managing-perl-programs.html#dGVzdGluZztydW5uaW5ndGVzdHM1">1</a>]</li>
+<li>TAP [<a href="09-managing-perl-programs.html#dGVzdGluZztUQVA1">1</a>]</li>
+<li>t/directory [<a href="09-managing-perl-programs.html#dGVzdGluZzt0L2RpcmVjdG9yeQ1">1</a>]</li>
+<li>Test::Builder [<a href="09-managing-perl-programs.html#dGVzdGluZztUZXN0OjpCdWlsZGVy1">1</a>]</li>
+<li>.tfiles [<a href="09-managing-perl-programs.html#dGVzdGluZzsudGZpbGVz1">1</a>]</li>
+</ul>
+</li>
+<li>Test::More [<a href="09-managing-perl-programs.html#VGVzdDo6TW9yZQ1">1</a>] [<a href="09-managing-perl-programs.html#VGVzdDo6TW9yZQ2">2</a>]</li>
+<li>The Perl Foundation [<a href="02-perl-community.html#VGhlUGVybEZvdW5kYXRpb241">1</a>]</li>
+<li>Tie::File [<a href="11-what-to-avoid-in-perl.html#VGllOjpGaWxl1">1</a>]</li>
+<li>Tie::StdArray [<a href="11-what-to-avoid-in-perl.html#VGllOjpTdGRBcnJheQ1">1</a>]</li>
+<li>Tie::StdHash [<a href="11-what-to-avoid-in-perl.html#VGllOjpTdGRIYXNo1">1</a>]</li>
+<li>Tie::StdScalar [<a href="11-what-to-avoid-in-perl.html#VGllOjpTdGRTY2FsYXI1">1</a>]</li>
+<li>Tim Toady [<a href="01-perl-philosophy.html#VGltVG9hZHk1">1</a>]</li>
+<li>TIMTOWTDI [<a href="01-perl-philosophy.html#VElNVE9XVERJ1">1</a>]</li>
+<li>TPF [<a href="02-perl-community.html#VFBG1">1</a>]</li>
+
+<li>TPF
+<ul>
+<li>wiki [<a href="02-perl-community.html#VFBGO3dpa2k1">1</a>]</li>
+</ul>
+</li>
+<li>tr//
+<ul>
+<li>transliteration operator [<a href="01-perl-philosophy.html#dHIvLzt0cmFuc2xpdGVyYXRpb25vcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+<li>trinary [<a href="04-perl-operators.html#dHJpbmFyeQ1">1</a>]</li>
+<li>true [<a href="03-perl-language.html#dHJ1ZQ1">1</a>]</li>
+<li>truthiness [<a href="03-perl-language.html#dHJ1dGhpbmVzcw1">1</a>]</li>
+<li>Try::Tiny [<a href="08-perl-style-efficiency.html#VHJ5OjpUaW551">1</a>] [<a href="10-perl-beyond-syntax.html#VHJ5OjpUaW552">2</a>]</li>
+<li>typeglobs [<a href="07-object-oriented-perl.html#dHlwZWdsb2Jz1">1</a>] [<a href="09-managing-perl-programs.html#dHlwZWdsb2Jz2">2</a>]</li>
+<li>types [<a href="07-object-oriented-perl.html#dHlwZXM1">1</a>] [<a href="10-perl-beyond-syntax.html#dHlwZXM2">2</a>]</li>
+</ul>
+
+<h2>U</h2>
+
+<ul>
+<li>unary [<a href="04-perl-operators.html#dW5hcnk1">1</a>]</li>
+<li>unary conversions
+<ul>
+<li>boolean [<a href="10-perl-beyond-syntax.html#dW5hcnljb252ZXJzaW9ucztib29sZWFu1">1</a>]</li>
+<li>numeric [<a href="10-perl-beyond-syntax.html#dW5hcnljb252ZXJzaW9ucztudW1lcmlj1">1</a>]</li>
+<li>string [<a href="10-perl-beyond-syntax.html#dW5hcnljb252ZXJzaW9ucztzdHJpbmc1">1</a>]</li>
+</ul>
+</li>
+<li>undef [<a href="03-perl-language.html#dW5kZWY1">1</a>] [<a href="03-perl-language.html#dW5kZWY2">2</a>]</li>
+
+<li>undef
+<ul>
+<li>coercions [<a href="03-perl-language.html#dW5kZWY7Y29lcmNpb25z1">1</a>]</li>
+</ul>
+</li>
+<li>underscore [<a href="03-perl-language.html#dW5kZXJzY29yZQ1">1</a>]</li>
+<li>Unicode [<a href="03-perl-language.html#VW5pY29kZQ1">1</a>]</li>
+
+<li>Unicode
+<ul>
+<li>encoding [<a href="03-perl-language.html#VW5pY29kZTtlbmNvZGluZw1">1</a>]</li>
+</ul>
+</li>
+<li>unicode_strings [<a href="03-perl-language.html#dW5pY29kZV9zdHJpbmdz1">1</a>]</li>
+<li>unimporting [<a href="09-managing-perl-programs.html#dW5pbXBvcnRpbmc1">1</a>]</li>
+<li>UNITCHECK [<a href="11-what-to-avoid-in-perl.html#VU5JVENIRUNL1">1</a>]</li>
+<li>UNIVERSAL [<a href="03-perl-language.html#VU5JVkVSU0FM1">1</a>] [<a href="09-managing-perl-programs.html#VU5JVkVSU0FM2">2</a>]</li>
+
+<li>UNIVERSAL
+<ul>
+<li>can() [<a href="11-what-to-avoid-in-perl.html#VU5JVkVSU0FMO2Nhbigp1">1</a>]</li>
+</ul>
+</li>
+<li>UNIVERSAL::can [<a href="05-perl-functions.html#VU5JVkVSU0FMOjpjYW41">1</a>] [<a href="09-managing-perl-programs.html#VU5JVkVSU0FMOjpjYW42">2</a>]</li>
+<li>UNIVERSAL::DOES [<a href="09-managing-perl-programs.html#VU5JVkVSU0FMOjpET0VT1">1</a>]</li>
+<li>UNIVERSAL::isa [<a href="09-managing-perl-programs.html#VU5JVkVSU0FMOjppc2E1">1</a>]</li>
+<li>UNIVERSAL::VERSION [<a href="09-managing-perl-programs.html#VU5JVkVSU0FMOjpWRVJTSU9O1">1</a>]</li>
+<li>Unix [<a href="09-managing-perl-programs.html#VW5peA1">1</a>]</li>
+<li>untainting [<a href="09-managing-perl-programs.html#dW50YWludGluZw1">1</a>]</li>
+<li>UTF-8 [<a href="03-perl-language.html#VVRGLTg1">1</a>]</li>
+<li>utf8::all [<a href="03-perl-language.html#dXRmODo6YWxs1">1</a>]</li>
+<li>utf8pragma [<a href="03-perl-language.html#dXRmOHByYWdtYQ1">1</a>]</li>
+</ul>
+
+<h2>V</h2>
+
+<ul>
+<li>value context [<a href="01-perl-philosophy.html#dmFsdWVjb250ZXh01">1</a>]</li>
+<li>values [<a href="03-perl-language.html#dmFsdWVz1">1</a>]</li>
+<li>variable [<a href="03-perl-language.html#dmFyaWFibGU1">1</a>]</li>
+<li>variables [<a href="03-perl-language.html#dmFyaWFibGVz1">1</a>]</li>
+
+<li>variables
+<ul>
+<li>@_ [<a href="01-perl-philosophy.html#dmFyaWFibGVzO0Bf1">1</a>]</li>
+<li>$_ [<a href="01-perl-philosophy.html#dmFyaWFibGVzOyRf1">1</a>]</li>
+<li>anonymous [<a href="03-perl-language.html#dmFyaWFibGVzO2Fub255bW91cw1">1</a>]</li>
+<li>@ARGV [<a href="01-perl-philosophy.html#dmFyaWFibGVzO0BBUkdW1">1</a>]</li>
+<li>arrays [<a href="03-perl-language.html#dmFyaWFibGVzO2FycmF5cw1">1</a>]</li>
+<li>container type [<a href="03-perl-language.html#dmFyaWFibGVzO2NvbnRhaW5lcnR5cGU1">1</a>]</li>
+<li>hashes [<a href="03-perl-language.html#dmFyaWFibGVzO2hhc2hlcw1">1</a>]</li>
+<li>lexical [<a href="05-perl-functions.html#dmFyaWFibGVzO2xleGljYWw1">1</a>]</li>
+<li>names [<a href="03-perl-language.html#dmFyaWFibGVzO25hbWVz1">1</a>]</li>
+<li>scalars [<a href="03-perl-language.html#dmFyaWFibGVzO3NjYWxhcnM1">1</a>]</li>
+<li>scope [<a href="03-perl-language.html#dmFyaWFibGVzO3Njb3Bl1">1</a>]</li>
+<li>$self [<a href="10-perl-beyond-syntax.html#dmFyaWFibGVzOyRzZWxm1">1</a>]</li>
+<li>sigils [<a href="03-perl-language.html#dmFyaWFibGVzO3NpZ2lscw1">1</a>]</li>
+<li>super global [<a href="10-perl-beyond-syntax.html#dmFyaWFibGVzO3N1cGVyZ2xvYmFs1">1</a>]</li>
+<li>types [<a href="03-perl-language.html#dmFyaWFibGVzO3R5cGVz1">1</a>]</li>
+<li>value type [<a href="03-perl-language.html#dmFyaWFibGVzO3ZhbHVldHlwZQ1">1</a>]</li>
+</ul>
+</li>
+<li>variant sigils [<a href="03-perl-language.html#dmFyaWFudHNpZ2lscw1">1</a>]</li>
+<li>VERSION() [<a href="03-perl-language.html#VkVSU0lPTigp1">1</a>] [<a href="09-managing-perl-programs.html#VkVSU0lPTigp2">2</a>]</li>
+<li>$VERSION [<a href="03-perl-language.html#JFZFUlNJT041">1</a>]</li>
+<li>version numbers [<a href="03-perl-language.html#dmVyc2lvbm51bWJlcnM1">1</a>]</li>
+<li>void context [<a href="01-perl-philosophy.html#dm9pZGNvbnRleHQ1">1</a>]</li>
+</ul>
+
+<h2>W</h2>
+
+<ul>
+<li>$^W [<a href="09-managing-perl-programs.html#JF5X1">1</a>]</li>
+<li>\w
+<ul>
+<li>alphanumeric regex metacharacter [<a href="06-perl-regular-expressions.html#XHc7YWxwaGFudW1lcmljcmVnZXhtZXRhY2hhcmFjdGVy1">1</a>]</li>
+</ul>
+</li>
+<li>-w
+<ul>
+<li>enable warnings command-line argument [<a href="09-managing-perl-programs.html#LXc7ZW5hYmxld2FybmluZ3Njb21tYW5kLWxpbmVhcmd1bWVudA1">1</a>]</li>
+</ul>
+</li>
+<li>-W
+<ul>
+<li>enable warnings command-line argument [<a href="09-managing-perl-programs.html#LVc7ZW5hYmxld2FybmluZ3Njb21tYW5kLWxpbmVhcmd1bWVudA1">1</a>]</li>
+</ul>
+</li>
+<li>\W
+<ul>
+<li>non-alphanumeric regex metacharacter [<a href="06-perl-regular-expressions.html#XFc7bm9uLWFscGhhbnVtZXJpY3JlZ2V4bWV0YWNoYXJhY3Rlcg1">1</a>]</li>
+</ul>
+</li>
+<li>Wall, Larry [<a href="01-perl-philosophy.html#V2FsbCxMYXJyeQ1">1</a>]</li>
+<li>Want [<a href="05-perl-functions.html#V2FudA1">1</a>]</li>
+<li>wantarray [<a href="05-perl-functions.html#d2FudGFycmF51">1</a>]</li>
+<li>warnings [<a href="09-managing-perl-programs.html#d2FybmluZ3M1">1</a>]</li>
+
+<li>warnings
+<ul>
+<li>catching [<a href="09-managing-perl-programs.html#d2FybmluZ3M7Y2F0Y2hpbmc1">1</a>]</li>
+<li>fatal [<a href="09-managing-perl-programs.html#d2FybmluZ3M7ZmF0YWw1">1</a>]</li>
+<li>registering [<a href="09-managing-perl-programs.html#d2FybmluZ3M7cmVnaXN0ZXJpbmc1">1</a>]</li>
+</ul>
+</li>
+<li>weak references [<a href="03-perl-language.html#d2Vha3JlZmVyZW5jZXM1">1</a>]</li>
+<li>websites
+<ul>
+<li>blogs.perl.org [<a href="02-perl-community.html#d2Vic2l0ZXM7YmxvZ3MucGVybC5vcmc1">1</a>]</li>
+<li>cpan.org [<a href="02-perl-community.html#d2Vic2l0ZXM7Y3Bhbi5vcmc1">1</a>]</li>
+<li>gitpan [<a href="02-perl-community.html#d2Vic2l0ZXM7Z2l0cGFu1">1</a>]</li>
+<li>MetaCPAN [<a href="02-perl-community.html#d2Vic2l0ZXM7TWV0YUNQQU41">1</a>]</li>
+<li>Perl Buzz [<a href="02-perl-community.html#d2Vic2l0ZXM7UGVybEJ1eno1">1</a>]</li>
+<li>Perl Weekly [<a href="02-perl-community.html#d2Vic2l0ZXM7UGVybFdlZWtseQ1">1</a>]</li>
+<li>perl.com [<a href="02-perl-community.html#d2Vic2l0ZXM7cGVybC5jb201">1</a>]</li>
+<li>PerlMonks [<a href="02-perl-community.html#d2Vic2l0ZXM7UGVybE1vbmtz1">1</a>]</li>
+<li>perl.org [<a href="02-perl-community.html#d2Vic2l0ZXM7cGVybC5vcmc1">1</a>]</li>
+<li>Planet Perl [<a href="02-perl-community.html#d2Vic2l0ZXM7UGxhbmV0UGVybA1">1</a>]</li>
+<li>Planet Perl Iron Man [<a href="02-perl-community.html#d2Vic2l0ZXM7UGxhbmV0UGVybElyb25NYW41">1</a>]</li>
+<li>TPF wiki [<a href="02-perl-community.html#d2Vic2l0ZXM7VFBGd2lraQ1">1</a>]</li>
+</ul>
+</li>
+<li>word boundary metacharacter [<a href="06-perl-regular-expressions.html#d29yZGJvdW5kYXJ5bWV0YWNoYXJhY3Rlcg1">1</a>]</li>
+</ul>
+
+<h2>X</h2>
+
+<ul>
+<li>-X
+<ul>
+<li>disable warnings command-line argument [<a href="09-managing-perl-programs.html#LVg7ZGlzYWJsZXdhcm5pbmdzY29tbWFuZC1saW5lYXJndW1lbnQ1">1</a>]</li>
+<li>file test operators [<a href="09-managing-perl-programs.html#LVg7ZmlsZXRlc3RvcGVyYXRvcnM1">1</a>]</li>
+</ul>
+</li>
+<li>\x{}
+<ul>
+<li>escape sequence for character encodings [<a href="03-perl-language.html#XHh7fTtlc2NhcGVzZXF1ZW5jZWZvcmNoYXJhY3RlcmVuY29kaW5ncw1">1</a>]</li>
+</ul>
+</li>
+<li>/x
+<ul>
+<li>extended readability regex modifier [<a href="06-perl-regular-expressions.html#L3g7ZXh0ZW5kZWRyZWFkYWJpbGl0eXJlZ2V4bW9kaWZpZXI1">1</a>]</li>
+</ul>
+</li>
+<li>x
+<ul>
+<li>repetition operator [<a href="04-perl-operators.html#eDtyZXBldGl0aW9ub3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>xor
+<ul>
+<li>logical operator [<a href="04-perl-operators.html#eG9yO2xvZ2ljYWxvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>Y</h2>
+
+<ul>
+<li>YAPC [<a href="02-perl-community.html#WUFQQw1">1</a>]</li>
+</ul>
+
+<h2>Z</h2>
+
+<ul>
+<li>\Z
+<ul>
+<li>end of line regex metacharacter [<a href="06-perl-regular-expressions.html#XFo7ZW5kb2ZsaW5lcmVnZXhtZXRhY2hhcmFjdGVy1">1</a>]</li>
+</ul>
+</li>
+<li>\z
+<ul>
+<li>end of string regex metacharacter [<a href="06-perl-regular-expressions.html#XHo7ZW5kb2ZzdHJpbmdyZWdleG1ldGFjaGFyYWN0ZXI1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>[</h2>
+
+<ul>
+<li>[]
+<ul>
+<li>character class regex metacharacters [<a href="06-perl-regular-expressions.html#W107Y2hhcmFjdGVyY2xhc3NyZWdleG1ldGFjaGFyYWN0ZXJz1">1</a>]</li>
+<li>circumfix operator [<a href="04-perl-operators.html#W107Y2lyY3VtZml4b3BlcmF0b3I1">1</a>]</li>
+<li>postcircumfix operator [<a href="04-perl-operators.html#W107cG9zdGNpcmN1bWZpeG9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>\</h2>
+
+<ul>
+<li>\
+<ul>
+<li>prefix operator [<a href="04-perl-operators.html#XDtwcmVmaXhvcGVyYXRvcg1">1</a>]</li>
+<li>regex escaping metacharacter [<a href="06-perl-regular-expressions.html#XDtyZWdleGVzY2FwaW5nbWV0YWNoYXJhY3Rlcg1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>^</h2>
+
+<ul>
+<li>^=
+<ul>
+<li>bitwise operator [<a href="04-perl-operators.html#Xj07Yml0d2lzZW9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>^
+<ul>
+<li>bitwise operator [<a href="04-perl-operators.html#XjtiaXR3aXNlb3BlcmF0b3I1">1</a>]</li>
+<li>negation of character class regex metacharacter [<a href="06-perl-regular-expressions.html#XjtuZWdhdGlvbm9mY2hhcmFjdGVyY2xhc3NyZWdleG1ldGFjaGFyYWN0ZXI1">1</a>]</li>
+<li>start of string after newline regex metacharacter [<a href="06-perl-regular-expressions.html#XjtzdGFydG9mc3RyaW5nYWZ0ZXJuZXdsaW5lcmVnZXhtZXRhY2hhcmFjdGVy1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>_</h2>
+
+<ul>
+<li>@_ [<a href="01-perl-philosophy.html#QF81">1</a>] [<a href="05-perl-functions.html#QF82">2</a>]</li>
+<li>$_
+<ul>
+<li>default scalar variable [<a href="01-perl-philosophy.html#JF87ZGVmYXVsdHNjYWxhcnZhcmlhYmxl1">1</a>]</li>
+</ul>
+</li>
+<li>__DATA__ [<a href="09-managing-perl-programs.html#X19EQVRBX181">1</a>]</li>
+<li>__END__ [<a href="09-managing-perl-programs.html#X19FTkRfXw1">1</a>]</li>
+</ul>
+
+<h2>`</h2>
+
+<ul>
+<li>``
+<ul>
+<li>circumfix operator [<a href="04-perl-operators.html#YGA7Y2lyY3VtZml4b3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>{</h2>
+
+<ul>
+<li>{}
+<ul>
+<li>circumfix operator [<a href="04-perl-operators.html#e307Y2lyY3VtZml4b3BlcmF0b3I1">1</a>]</li>
+<li>postcircumfix operator [<a href="04-perl-operators.html#e307cG9zdGNpcmN1bWZpeG9wZXJhdG9y1">1</a>]</li>
+<li>regex numeric quantifier [<a href="06-perl-regular-expressions.html#e307cmVnZXhudW1lcmljcXVhbnRpZmllcg1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>|</h2>
+
+<ul>
+<li>||=
+<ul>
+<li>infix operator [<a href="04-perl-operators.html#fHw9O2luZml4b3BlcmF0b3I1">1</a>]</li>
+</ul>
+</li>
+<li>||
+<ul>
+<li>infix operator [<a href="04-perl-operators.html#fHw7aW5maXhvcGVyYXRvcg1">1</a>]</li>
+<li>logical operator [<a href="04-perl-operators.html#fHw7bG9naWNhbG9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>|
+<ul>
+<li>alternation regex metacharacter [<a href="06-perl-regular-expressions.html#fDthbHRlcm5hdGlvbnJlZ2V4bWV0YWNoYXJhY3Rlcg1">1</a>]</li>
+<li>bitwise operator [<a href="04-perl-operators.html#fDtiaXR3aXNlb3BlcmF0b3I1">1</a>]</li>
+<li>infix operator [<a href="04-perl-operators.html#fDtpbmZpeG9wZXJhdG9y1">1</a>]</li>
+</ul>
+</li>
+<li>|=
+<ul>
+<li>bitwise operator [<a href="04-perl-operators.html#fD07Yml0d2lzZW9wZXJhdG9y1">1</a>]</li>
+<li>infix operator [<a href="04-perl-operators.html#fD07aW5maXhvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+<h2>~</h2>
+
+<ul>
+<li>~~
+<ul>
+<li>smart match operator [<a href="06-perl-regular-expressions.html#fn47c21hcnRtYXRjaG9wZXJhdG9y1">1</a>] [<a href="06-perl-regular-expressions.html#fn47c21hcnRtYXRjaG9wZXJhdG9y2">2</a>]</li>
+</ul>
+</li>
+<li>~
+<ul>
+<li>prefix operator [<a href="04-perl-operators.html#fjtwcmVmaXhvcGVyYXRvcg1">1</a>]</li>
+</ul>
+</li>
+</ul>
+
+
+        </div>
