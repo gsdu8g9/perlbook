@@ -21,7 +21,7 @@
   <a class="brand" href="#">Modern Perl: 2014</a>
   <div class="nav-collapse">
     <ul class="nav">
-      <li><a href="index.html">Table of Contents</a></li>
+      <li><a href="index.html">Содержание</a></li>
       <li><a href="theindex.html">Index</a></li>
       <li><a href="http://modernperlbooks.com/">Modern Perl Books</a></li>
     </ul>
