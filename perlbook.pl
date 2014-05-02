@@ -14,6 +14,7 @@ get '/:page' => sub {
   $self->render( $page ) or $self->render_not_found();
 };
 
+app->config(hypnotoad => {listen => ['http://*:3000'], workers => 1 }) ;
 app->start;
 
 
