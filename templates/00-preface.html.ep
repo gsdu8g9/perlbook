@@ -3,15 +3,15 @@
 
 <h1 id="UHJlZmFjZQ">Предисловие</h1>
 
-<p><em>Modern Perl</em> is one way to describe the way the world&#39;s most effective Perl programmers work. They use language idioms. They take advantage of the CPAN. They show good taste and craft to write powerful, maintainable, scalable, concise, and effective code. You can learn these skills too!</p>
+<p>Книга <em>Modern Perl</em> является одним из способов описания того, как работают наиболее эффективные Perl программисты в во всем мире. Они используют идиомы языка. Они пользуются преимуществом CPAN. Они показывают хороший стиль и мастерство для написания мощного, сопровождаемого, масштабируемого, краткого и эффективного кода. Вы тоже можете научится этому!</p>
 
-<p>Perl first appeared in 1987 as a simple tool for system administration. Though it began by declaring and occupying a comfortable niche between shell scripting and C programming, it has become a powerful, general-purpose language family. Perl has a solid history of pragmatism and a bright future of polish and enhancement.</p>
+<p>Perl впервые появился в 1987 году, как простой инструмент для системного администрирования. Хотя в начале он занял комфортную нишу между написанием shell сценариев и C программированием, он стал мощным семейством языков общего назначения. Perl имеет солидную историю прагматизма и светлое будущее улучшений и полировки.</p>
 
-<p>Over Perl&#39;s long history—especially the 19 years of Perl 5—our understanding of what makes great Perl programs has changed. While you can write productive programs which never take advantage of all the language has to offer, the global Perl community has invented, borrowed, enhanced, and polished ideas and made them available to anyone willing to learn them.</p>
+<p> За долгую историю Perl, особенно 19-и лет 5- ого Perl, наше понимание того что делает великим Perl программы изменилось. Хотя вы можете писать продуктивные программы которые никогда не не используют все преимущество языка, мировое сообщество Perl изобрело, позаимствовало, улучшило и отполировало идеи и сделало их доступными для каждого, кто готов их изучить. </p>
 
-<h2 id="UnVubmluZ01vZGVyblBlcmw"><a name="UnVubmluZ01vZGVyblBlcmw"></a>Running Modern Perl</h2>
+<h2 id="UnVubmluZ01vZGVyblBlcmw"><a name="UnVubmluZ01vZGVyblBlcmw"></a>Запуск Modern Perl</h2>
 
-<p>The <code>Modern::Perl</code> module from the CPAN (<a href="02-perl-community.html#Y3Bhbg">The CPAN</a>) asks Perl to warn of dubious constructs and typos and will enable new features introduced in modern Perl releases. Unless otherwise mentioned, code snippets always assume the basic skeleton of a program:</p>
+<p>Модуль <code>Modern::Perl</code> из CPAN (<a href="02-perl-community.html#Y3Bhbg">The CPAN</a>) указывает Perl предупреждать о сомнительных конструкций и опечатках, а также активирует новые возможности, введенные в современных версиях Perl. Если другого не указано, фрагменты кода всегда предполагают основной каркас программы:</p>
 
 <div class="programlisting">
 
@@ -22,13 +22,13 @@
 
 </div>
 
-<p>... which is equivalent to:</p>
+<p>... который эквивалентен:</p>
 
 <div class="programlisting">
 
 <pre><code>    #!/usr/bin/env perl
 
-    use 5.016;      # implies &quot;use strict;&quot;
+    use 5.016;      # подразумевается &quot;use strict;&quot;
     use warnings;
     use autodie;</code></pre>
 
