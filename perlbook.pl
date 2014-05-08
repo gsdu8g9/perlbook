@@ -7,15 +7,6 @@ get '/' => sub {
 	$self->render('index');
 }; 
 
-get '/restart' => sub {
-	my $self = shift;
-	
-	my $res = `./pull.sh`;
-	
-	$self->render(text => $res);
-	
-};
-
 get '/:page' => sub {
   my $self = shift;
   my $page = $self->stash('page');
