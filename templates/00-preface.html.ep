@@ -34,7 +34,7 @@
 
 </div>
 
-<p>Some examples use testing functions such as <code>ok()</code>, <code>like()</code>, and <code>is()</code> (<a href="09-managing-perl-programs.html#dGVzdGluZw">Testing</a>). These programs follow the pattern:</p>
+<p>Некоторые примеры используют функции тестирования, такие как <code>ok()</code>, <code>like()</code>, и <code>is()</code> (<a href="09-managing-perl-programs.html#dGVzdGluZw">Testing</a>). Эти программы следуют шаблону:</p>
 
 <div class="programlisting">
 
@@ -43,13 +43,13 @@
     use Modern::Perl;
     <strong>use Test::More;</strong>
 
-    # example code here
+    # здесь код примера
 
     <strong>done_testing();</strong></code></pre>
 
 </div>
 
-<p>At the time of writing, the current stable Perl release family is Perl 5.18. If you&#39;re using an older version of Perl, you may not be able to run all of the examples in this book unmodified. The examples in this book work best with Perl 5.14.0 or newer, though we recommend at least Perl 5.16. While the term &quot;Modern Perl&quot; can refer to any version of Perl from 5.10.1, several features added in newer versions are essential to modern development.</p>
+<p>На момент написания, текущая стабильная версия Perl это Perl 5.18. Если вы используете более ранние версии Perl, то вы вероятно не сможете запустить все примеры этой книги, не модифицируя их. Примеры в книге лучше всего работают с Perl 5.14.0 или старше, однако мы рекомендуем по крайней мере Perl 5.16. Хотя термин &quot;Modern Perl&quot; может относится к любой версии Perl начиная с 5.10.1, некоторые функции, добавленные в в новейших версиях, необходимы для современной разработки.</p>
 
 <p id="U3RyYXdiZXJyeVBlcmw1"> <a name="QWN0aXZlUGVybA1"></a> <a name="cGVybGJyZXc1"></a> <a name="Q1BBTjtBcHA6OnBlcmxicmV31"></a>If you have no Perl installed (or if you have an old version installed), you can install a newer release yourself. Windows users, download Strawberry Perl from <a class="url" href="http://www.strawberryperl.com/">http://www.strawberryperl.com/</a> or ActivePerl from <a class="url" href="http://www.activestate.com/activeperl">http://www.activestate.com/activeperl</a>. Users of other operating systems with Perl already installed (and a C compiler and the other development tools), start by installing the CPAN module <code>App::perlbrew</code> <span class="footnote">See <a class="url" href="http://search.cpan.org/perldoc?App::perlbrew">http://search.cpan.org/perldoc?App::perlbrew</a> for installation instructions.</span>.</p>
 
