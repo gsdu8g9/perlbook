@@ -1,78 +1,80 @@
 % layout 'wrapper';
 <div class="span8">
 
-<h1 id="VGhlUGVybFBoaWxvc29waHk"><a name="VGhlUGVybFBoaWxvc29waHk"></a>The Perl Philosophy</h1>
+<h1 id="VGhlUGVybFBoaWxvc29waHk"><a name="VGhlUGVybFBoaWxvc29waHk"></a>Философия Perl</h1>
 
-<p>Perl gets things done—it&#39;s flexible, forgiving, and malleable. Capable programmers use it every day for everything from one-liners and one-off automations to multi-year, multi-programmer projects.</p>
+<p>Perl добивается цели — он гибкий, снисходительный, и податливый.Умелые программисты используют его каждый день для всего, от однострочников и одноразовых автоматизаций 
+до многолетных проектов, над которыми трудятся много программистов.</p>
 
-<p>Perl is pragmatic. You&#39;re in charge. You decide how to solve your problems and Perl will mold itself to do what you mean, with little frustration and no ceremony.</p>
+<p>Perl прагматичен. Все в Ваших руках. Вы выбираете как решать вашы проблемы и 
+Perl будет формировать себя делать то, что вы имеете в виду, с небольшой фрустрацией и никакой церемонией.</p>
 
-<p>Perl will grow with you. In the next hour, you&#39;ll learn enough to write real, useful programs—and you&#39;ll understand <em>how</em> the language works and <em>why</em> it works as it does. Modern Perl takes advantage of this knowledge and the combined experience of the global Perl community to help you write working, maintainable code.</p>
+<p>Perl будет расти вместе с вами. В течении следующего часа, вы узнаете достаточного, для написания реально полезных программ, и вы поймете <em>как</em> работает язык и <em>почему</em> он ранотает именно так. Modern Perl использует эти знания и совместный опыт мирового Perl сообщества чтобы помочь вам писать писать рабочий, сопровождаемый код.</p>
 
-<p>First, you need to know how to learn more.</p>
+<p>Во первых, Вы должны знать, как узнать больше.</p>
 
 <h2 id="cGVybGRvYw"><a name="UGVybGRvYw"></a>Perldoc</h2>
 
-<p id="cGVybGRvYw"><a name="cGVybGRvYw1"></a>Perl has a culture of useful documentation. The <code>perldoc</code> utility is part of every complete Perl installation <span class="footnote">However your Unix-like system may require you to install an additional package such as <code>perl-doc</code> on Debian or Ubuntu GNU/Linux.</span>. The <code>perldoc</code> command-line utility displays the documentation of every Perl module installed on the system—whether a core module or one installed from the Comprehensive Perl Archive Network (CPAN)—as well as thousands of pages of Perl&#39;s copious core documentation.</p>
+<p id="cGVybGRvYw"><a name="cGVybGRvYw1"></a>У Perl есть культура полезной документации. Утилита <code>perldoc</code> входит в комплекет стандартной установки Perl. <span class="footnote">Тем не менее, в вашей Unix подобной системе может потребоватся установить дополнителные пакеты, такие как <code>perl-doc</code> в Debian или Ubuntu GNU/Linux.</span>. Утилита командной строки <code>perldoc</code>  показывает документацию каждого Perl модуля установленного в системе — будь то  основной модуль или установленный через CPAN (Comprehensive Perl Archive Network ) — а также тисячи страниц основной Perl документации.</p>
 
 <div class="sidebar">
 
 <p id="Q1BBTg1"> <a name="bWV0YWNwYW41"></a></p>
 
-<p><a class="url" href="http://perldoc.perl.org/">http://perldoc.perl.org/</a> hosts recent versions of the Perl documentation. CPAN indexes at <a class="url" href="http://search.cpan.org/">http://search.cpan.org/</a> and <a class="url" href="http://metacpan.org/">http://metacpan.org/</a> provide documentation for all CPAN modules. Other distributions such as ActivePerl and Strawberry Perl provide local documentation in HTML formats.</p>
+<p><a class="url" href="http://perldoc.perl.org/">http://perldoc.perl.org/</a> содержит последние версии документации Perl. CPAN расположенный на <a class="url" href="http://search.cpan.org/">http://search.cpan.org/</a> и <a class="url" href="http://metacpan.org/">http://metacpan.org/</a> содержит документацию по всем CPAN модулям. Другие дистрибутиви, такие как ActivePerl и Strawberry Perl,содержат локальную документацию в формате HTML.</p>
 
 </div>
 
-<p>Use <code>perldoc</code> to read the documentation for a module or part of the core documentation:</p>
+<p>Используейте <code>perldoc</code> для чтения документации по модулю или части основной документации:</p>
 
 <div class="screen">
 <pre><code>    $ <strong>perldoc List::Util</strong>
     $ <strong>perldoc perltoc</strong>
     $ <strong>perldoc Moose::Manual</strong></code></pre>
 
-</div><p>The first example displays the documentation embedded within the <code>List::Util</code> module. The second example displays a pure documentation file, in this case the table of contents of the core documentation. The third example displays a pure documentation file included as part of a CPAN distribution (<a href="07-object-oriented-perl.html#bW9vc2U">Moose</a>). <code>perldoc</code> hides these details; there&#39;s no distinction between reading the documentation for a core library such as <code>Data::Dumper</code> or one installed from the CPAN. This consistency is a benefit to you—Perl culture values documentation so much that even external libraries tend to follow the good example of the core language documentation.</p>
+</div><p>Первый пример показывает чтение встроенной документации модуля <code>List::Util</code>. Втрой пример показывает полный файл документации, в данном случае оглавление основной документации. Третий пример показывает полный файл документации встроенный в часть CPAN дистрибутива (<a href="07-object-oriented-perl.html#bW9vc2U">Moose</a>). <code>perldoc</code> скрывает эти детали; нет никакого различия между чтением документации по основным библиотекам, таким как <code>Data::Dumper</code>, и установленным с CPAN. Эта консистенция является преимуществом для вас — культура Perl оценивает документацию так, что даже внешние библиотеки склонны следовать хорошему примеру основной языковой документации.</p>
 
-<p>The standard documentation template includes a description of the module, demonstrates sample uses, and then contains a detailed explanation of the module and its interface. While the amount of documentation varies by author, the form of the documentation is remarkably consistent.</p>
+<p>Стандартный шаблон документации включает описание модуля, демонстрирует типовое использование, и после содержит детальное обяснение модуля и его интерфейса. Несмотря на то что объем документации зависит от автора, форма документации удивительно последовательна.</p>
 
 <div class="tip">
-<p class="title">How to Read the Documentation</p>
-<p>Perl has lots of documentation. Where do you start?</p>
+<p class="title">Как читать документацию</p>
+<p>Perl имеет много документации. С чего начать?</p>
 
-<p><code>perldoc perltoc</code> displays the table of contents of the core documentation, and <code>perldoc perlfaq</code> displays the table of contents for Frequently Asked Questions about Perl. <code>perldoc perlop</code> and <code>perldoc perlsyn</code> document Perl&#39;s symbolic operators and syntactic constructs. <code>perldoc perldiag</code> explains the meanings of Perl&#39;s warning messages. <code>perldoc perlvar</code> lists all of Perl&#39;s symbolic variables. Skimming these files will give you a great overview of the language.</p>
+<p><code>perldoc perltoc</code> выведет оглавление основной документации , и <code>perldoc perlfaq</code> выведет оглавление Часто Задаваемых Вопросов (FAQ) о Perl. <code>perldoc perlop</code> и <code>perldoc perlsyn</code> описивают символические операции и синтаксические конструкции Perl. <code>perldoc perldiag</code> обьясняют значения предупреждающих (warnings) сообщений Perl. В <code>perldoc perlvar</code> перечислены все символические переменные в Perl. Просмотрение этих файлов даст вам большой обзор языка.</p>
 
-</div><p id="cGVybGRvYzstcShzZWFyY2hwZXJsZmFxKQ1">The <code>perldoc</code> utility has many more abilities (see <code>perldoc perldoc</code>). To search the Perl FAQ, use the <code>-q</code> option with a keyword. For example, <code>perldoc -q sort</code> returns three questions: <em>How do I sort an array by (anything)?</em>, <em>How do I sort a hash (optionally by value instead of key)?</em>, and <em>How can I always keep my hash sorted?</em>.</p>
+</div><p id="cGVybGRvYzstcShzZWFyY2hwZXJsZmFxKQ1">Утилита <code>perldoc</code> имеет гораздо больше возможностей (смотри <code>perldoc perldoc</code>). Для поиска Perl FAQ, uиспользуйте опцию <code>-q</code> с ключевым словом. К примеру, <code>perldoc -q sort</code> возвращяет три вопроса: <em>How do I sort an array by (anything)?</em>, <em>How do I sort a hash (optionally by value instead of key)?</em>, and <em>How can I always keep my hash sorted?</em>.</p>
 
-<p id="cGVybGRvYzstZihzZWFyY2hwZXJsZnVuYyk1">The <code>-f</code> option displays the documentation for a builtin Perl function. <code>perldoc -f sort</code> explains the behavior of the <code>sort</code> operator. If you don&#39;t know the name of the function you want, browse the list of available builtins in <code>perldoc perlfunc</code>.</p>
+<p id="cGVybGRvYzstZihzZWFyY2hwZXJsZnVuYyk1">Опция <code>-f</code> выведет документацию по встроенной функции Perl функции. <code>perldoc -f sort</code> обясняет поведение оператора <code>sort</code> . Если вы не знаете имя нужной функции, просматрите список доступных команд в <code>perldoc perlfunc</code>.</p>
 
-<p id="cGVybGRvYzstdihzZWFyY2hwZXJsdmFyKQ1">The <code>-v</code> option looks up a builtin variable. For example, <code>perldoc -v $PID</code> displays the documentation for the variable which contains the current program&#39;s process id. Depending on your shell, you may have to quote the variable appropriately.</p>
+<p id="cGVybGRvYzstdihzZWFyY2hwZXJsdmFyKQ1">Опция <code>-v</code> ищет встроенную переменную. К примеру, <code>perldoc -v $PID</code> выводит документацию по переменной, которая содержит идентификатор процесса текущей программы. В зависимости от вашего shell, вам вероятно придется указать соответствующую переменную.</p>
 
-<p>The <code>-l</code> option causes <code>perldoc</code> to display the <em>path</em> to the documentation file rather than the contents of the documentation <span class="footnote">Be aware that a module may have a separate <em>.pod</em> file in addition to its <em>.pm</em> file.</span>.</p>
+<p>Опция <code>-l</code>  указывает <code>perldoc</code>  показать не содержимое документации а путь (<em>path</em>) к файлу документации. <span class="footnote">Имейте ввиду, что модуль может иметь отдельный <em>.pod</em> файл в дополнение к <em>.pm</em> файлу.</span>.</p>
 
-<p>The <code>-m</code> option displays the entire <em>contents</em> of the module, code and all, without performing any special formatting.</p>
+<p>Опция <code>-m</code> выдает содержимое модуля, код и все, без какого либо форматирования.</p>
 
-<p id="UE9E1"> <a name="UE9EO3Blcmxkb2M1"></a> <a name="UE9EO3BvZGNoZWNrZXI1"></a> <a name="UE9EO1BvZDo6V2Vic2VydmVy1"></a> <a name="Q1BBTjtQb2Q6OldlYnNlcnZlcg1"></a>Perl uses a documentation format called <em>POD</em>, which is short for <em>Plain Old Documentation</em>, or <em>POD</em>. <code>perldoc perlpod</code> describes how POD works. Other POD tools include <code>podchecker</code>, which validates the structure of POD documents, and the <code>Pod::Webserver</code> CPAN module, which displays local POD as HTML through a minimal web server.</p>
+<p id="UE9E1"> <a name="UE9EO3Blcmxkb2M1"></a> <a name="UE9EO3BvZGNoZWNrZXI1"></a> <a name="UE9EO1BvZDo6V2Vic2VydmVy1"></a> <a name="Q1BBTjtQb2Q6OldlYnNlcnZlcg1"></a>Perl использует формат документации именуемый <em>POD</em>, что я вляется сокращением для <em>Plain Old Documentation</em>. <code>perldoc perlpod</code> описывает как POD работает. Есть также POD инструменты <code>podchecker</code>, который проверяет структуру POD документов, и <code>Pod::Webserver</code> - модуль CPAN, который показывает локальный POD как HTML через минимальный веб сервер.</p>
 
-<h2 id="ZXhwcmVzc2l2aXR5"><a name="RXhwcmVzc2l2aXR5"></a>Expressivity</h2>
+<h2 id="ZXhwcmVzc2l2aXR5"><a name="RXhwcmVzc2l2aXR5"></a>Выразительность</h2>
 
-<p id="ZXhwcmVzc2l2aXR5"><a name="V2FsbCxMYXJyeQ1"></a> <a name="TGFycnlXYWxs1"></a>Larry Wall studied linguistics and human languages. Then he designed Perl. Unlike other languages designed around a mathematical notion, Perl takes into account how people communicate. In return, you get the freedom to decide how to arrange your programs to meet your needs. You may write simple, straightforward code or combine many small pieces into larger programs. You may select from multiple design paradigms, and you may eschew or embrace advanced features.</p>
+<p id="ZXhwcmVzc2l2aXR5"><a name="V2FsbCxMYXJyeQ1"></a> <a name="TGFycnlXYWxs1"></a>Larry Wall изучал лингвистику и человеческие языки. Потом он разработал Perl. В отличие от других языков, разработанных с математическим уклоном, Perl учитивает то, как люди общаются. Взамен Вы получаете свободу решения организации ваших программ, для удовлетворения ваших нужд. Вы можете написать простой, незамысловатый код или объеденить много мельких частей в более крупные программы. Вы можете выбрать из множества парадигм проектирования,и вы можете обойти или использовать дополнительные возможности.</p>
 
-<p>Where other languages claim that there should be only one best way to solve any problem, Perl allows <em>you</em> to decide what&#39;s most readable, most useful, most appealing, or most fun.</p>
+<p>Там, где другие языки утверждают, что должен быть только один лучший способ решения любой проблемы, Perl позволяет <em>Вам</em> решить что является наиболее читаемым, наиболее полезным, наиболее привлекательным, или наиболее веселым.</p>
 
-<p id="VElNVE9XVERJ1"> <a name="VGltVG9hZHk1"></a>Perl hackers have a slogan for this: <em>TIMTOWTDI</em>, pronounced &quot;Tim Toady&quot;, or &quot;There&#39;s more than one way to do it!&quot;</p>
+<p id="VElNVE9XVERJ1"> <a name="VGltVG9hZHk1"></a>У Perl хакеров есть слоган: <em>TIMTOWTDI</em>, провозглашенный &quot;Tim Toady&quot;, или &quot;There&#39;s more than one way to do it!&quot; (Есть больше одного сбособа сделать это!)</p>
 
-<p>Though this expressivity allows master craftworkers to create amazing programs, it also allows the unwary to make messes. Experience and good taste will guide you as you design your code, but the choice is always yours. Express yourself, but be mindful of readability and maintainability, especially for those who come after you.</p>
+<p>Хотя такая експрессивность позоляет мастерам ремесла создавать изумительные програмы, она также позволяет неосторожным создавать путаницу. Опыт и хороший вкус будут напрявлять вас в процессе разработки вашего кода,но выбор всегда ваш. Проявляйте себя, но учитиваете читаемость и поддерживаемость, особенно для тех кто придет после вас.</p>
 
-<p>Learning Perl is like learning any spoken language. You&#39;ll learn a few words, then string together sentences, and then enjoy simple conversations. Mastery comes from practice of both reading and writing code. You don&#39;t have to understand every detail of Perl to be productive, but the principles in this chapter are vital to your growth as a programmer.</p>
+<p>Изучение Perl похоже на изучение какого нибудь разговорного языка. Вы учите несколько слов, затем соединяете их в предложения, и затем наслаждаетесь простым разговором. Мастерство приходит с практикой чтения и написания кода. Вам не обязательно понимать все детали Perl что бы быть продуктивным, однако принципы, описанные в данной главе, жизненно важны для Вашего развития как програмиста.</p>
 
-<p>Perl novices often find certain syntactic constructs opaque. These idioms (<a href="10-perl-beyond-syntax.html#aWRpb21z">Idioms</a>) offer great (if subtle) power in the hands of experienced programmers, but it&#39;s okay to avoid them until you&#39;re comfortable with them.</p>
+<p>Perl новички часто находят некоторые синтаксические конструкции неясными.Эти идиомы (<a href="10-perl-beyond-syntax.html#aWRpb21z">Идиомы</a>) очень мощные в руках опытных программистов,однако вполне нормально избегать их до того как вы освоитесь с ними.</p>
 
-<p>As another design goal, Perl tries to avoid surprising experienced (Perl) programmers. For example, adding two variables (<code>$first_num + $second_num</code>) is obviously a numeric operation (<a href="04-perl-operators.html#bnVtZXJpY19vcGVyYXRvcnM">Numeric Operators</a>); the addition operator must treat both as numeric values to produce a numeric result. No matter the contents of <code>$first_num</code> and <code>$second_num</code>, Perl will coerce them to numeric values (<a href="03-perl-language.html#bnVtZXJpY19jb2VyY2lvbg">Numeric Coercion</a>). You&#39;ve expressed your intent to treat them as numbers by using a numeric operator. Perl happily does so.</p>
+<p>Еще одна архитектурная особенность в том, что Perl пытается избежать неожидонностей для опытных (Perl) программистов.К примеру, суммированние двух переменных (<code>$first_num + $second_num</code>) очевидно числовая операция (<a href="04-perl-operators.html#bnVtZXJpY19vcGVyYXRvcnM">Numeric Operators</a>);оператор суммирования должен рассматривать оба значения как числа что бы выдать числовой реаультат.Вне зависимости от содержания  <code>$first_num</code> и <code>$second_num</code>,Perl преобразует их в числовые значения (<a href="03-perl-language.html#bnVtZXJpY19jb2VyY2lvbg">Числовое принуждение</a>).Вы виразили свое намерение рассматривать их как числа используя числовой оператор. Perl с радостью делает это.</p>
 
-<p id="RFdJTQ1"> <a name="cHJpbmNpcGxlb2ZsZWFzdGFzdG9uaXNobWVudA1"></a>Perl adepts often call this principle <em>DWIM</em>, or <em>do what I mean</em>. You could just as well say that Perl follows the <em>principle of least astonishment</em>. Given a cursory understanding of Perl (especially context; <a href="01-perl-philosophy.html#Y29udGV4dF9waGlsb3NvcGh5">Context</a>), it should be possible to understand the intent of an unfamiliar Perl expression. You will develop this skill as you learn Perl.</p>
+<p id="RFdJTQ1"> <a name="cHJpbmNpcGxlb2ZsZWFzdGFzdG9uaXNobWVudA1"></a>Эксперты Perl часто называют этот принцип <em>DWIM</em>, or <em>do what I mean (делай то что я имею ввиду)</em>. Вы могли бы также сказать что Perl следует <em>принципу наименьшего удивления</em>. Даже поверхностное понимания Perl (особенно контекст; <a href="01-perl-philosophy.html#Y29udGV4dF9waGlsb3NvcGh5">Контекст</a>),должно хватить для понятия незнакомого Perl выражения. Вы разовьете это умение по мене изучения Perl.</p>
 
-<p id="YmFieVBlcmw1">Perl&#39;s expressivity allows novices to write useful programs without having to understand the entire language. This is by design! Experienced developers often call the results <em>baby Perl</em>. This is a term of endearment, because everyone begins as a novice. Through practice and learning from more experienced programmers, you will understand and adopt more powerful idioms and techniques. It&#39;s okay for you to write simple code that you understand. Keep practicing and you&#39;ll become a native speaker.</p>
+<p id="YmFieVBlcmw1">Выразительность Perl позволяют новичкам писать полезные программы без понимания всего языка. Это дизайн! Опытные разработчики часто называют резултать <em>baby Perl</em>. Это ласковое обращение, поскольку все начинают как новичок. Практикуясь и учась у более опытных программистов, вы будете понимать и принимать более мощьные идиомы и техники. Это нормально для вас - писать простой код, который вы понимаете. Продолжайте практиковатся и вы станете a носителем языа.</p>
 
-<p>An experienced Perl hacker might triple a list of numbers with:</p>
+<p>Опытный Perl хакер может утроить список чисел таким кодом:</p>
 
 <div class="programlisting">
 
@@ -80,7 +82,7 @@
 
 </div>
 
-<p>... and a Perl adept might write:</p>
+<p>... а Perl эксперт может написать:</p>
 
 <div class="programlisting">
 
@@ -93,7 +95,7 @@
 
 </div>
 
-<p>... while a novice might try:</p>
+<p>... когда новичок может попробовать так:</p>
 
 <div class="programlisting">
 
@@ -106,27 +108,28 @@
 
 </div>
 
-<p>Every program does the same thing, but each uses Perl in a different way.</p>
+<p>Каждая программа делает одно и то же, но каждая использует Perl по разному.</p>
 
-<p>As you get more comfortable with Perl, you can let the language do more for you. With experience, you can focus on <em>what</em> you want to do rather than <em>how</em> to do it. Even so, Perl will happily run baby Perl just as well as expert Perl. You can design and refine your programs for clarity, expressivity, reuse, and maintainability, in part or in whole. Take advantage of this flexibility and pragmatism: it&#39;s far better to accomplish your task effectively now than to write a conceptually pure and beautiful program next year.</p>
+<p>Когда вы будете чуствовать себя более комфортно с Perl, вы можете позволить языку сделать большее для вас. С опытом вы можете сфокусироватся на том <em>что<em> вы хотите сделать а не <em>как<em> вы хотите сделать это. Тем не менее, Perl с радостью работает с baby Perl так же как с экспертным Perl. Вы можете спроектировать и совершеншествовать ваши программы для ясности, выразительности, повторного использования и поддерживаемости отдельно или в целом. Воспользуйтесь этой гибкостью и прагматизмом: гораздо лучше выпполнить вашу задачу эффективно сейчас чем писать концептуально чистую и красивую программу в следующем году.</p>
 
-<h2 id="Y29udGV4dF9waGlsb3NvcGh5"><a name="Q29udGV4dA"></a>Context</h2>
+<h2 id="Y29udGV4dF9waGlsb3NvcGh5"><a name="Q29udGV4dA"></a>Контекст</h2>
 
-<p id="Y29udGV4dF9waGlsb3NvcGh5"><a name="Y29udGV4dA1"></a>In spoken languages, the meaning of a word or phrase may depend on how you use it; the local <em>context</em> helps clarify the intent. For example, the inappropriate pluralization of &quot;Please give me one hamburgers!&quot; <span class="footnote">The pluralization of the noun differs from the amount.</span> sounds wrong, just as the incorrect gender of &quot;la gato&quot; <span class="footnote">The article is feminine, but the noun is masculine.</span> makes native speakers chuckle. Other words do double duty; one sheep is a sheep just as two sheep are also sheep.</p>
+<p id="Y29udGV4dF9waGlsb3NvcGh5"><a name="Y29udGV4dA1"></a>В разговорных языках значение слова или фразы может зависить от того как вы употребили его; частный <em>контекст</em> помогает прояснить намерение.К примеру, несоответствующая плюрализация &quot;Пожалуйста дай мне один гамбургеры!&quot;<span class="footnote">Плюрализация существительного отличается от количества, </span> звучит неправильно, как неверного пола  &quot;la gato&quot (кот по испанский); <span class="footnote">Приставка женского рода, однако существительное мужского. </span> это вызовет хихикание у носителей языка. Некоторые слова имеют двойное значение; одна овца на английском sheep когда как две овцы тоже sheep.</p>
 
-<p>Context in Perl is similar. It describes the <em>amount</em> as well as the <em>kind</em> of data to use. Perl will do what you mean to do to data if you choose the appropriate context for that data.</p>
+<p>Контекст в Perl аналогичен. Он описивает <em>количество</em> так же как <em>вид</em> используемых данных. Perl сделает то что вы имели ввиду с данными если вы выберите соответствующий контекст для этих данных.</p>
 
-<p>For example, several Perl operations produce different behaviors when you expect zero, one, or many results. A specific construct in Perl may do something different if you write &quot;Do this, but I don&#39;t care about any results&quot; compared to &quot;Do this and give me multiple results.&quot; Other operations allow you to specify whether you expect to work with numeric data, textual data, or true or false data.</p>
+<p>К примеру, некоторые Perl операдоры ведут себя по разному, когда вы ожидаете ноль, единицу или много результатов. Конкретная конструкция в Perl может сделать по разному если вы пишете &quot;Сделай это, но я не волнуюсь о результате&quot; в сравнении с &quot;Сделай это и дай мне множественный результат.&quot; Другие операции позволяют вам задавать ожидаете ли вы числовие данные, текстовые, или истынные или ложные данные.</p>
 
-<p>Context can be tricky if you try to write or read Perl code as a series of single steps in isolation. That&#39;s not how Perl works! Every expression is part of a larger context. You may find yourself slapping your forehead after a long debugging session when you discover that your assumptions about context were incorrect. If instead you&#39;re aware of context, your code will be more correct—and cleaner, flexible, and more concise.</p>
+<p>Контекст может быть запутанным, если вы пытаетесь писать или читать Perl код как серию отдельных шагов в изоляции. Perl работает не так! Каждое выражение является частю большего контекста. Вы можете долго ломать голову отлаживая код, пока не обнаружите что ваши предположения по поводу контекста были не верны. Если же вместо этого вы будете помнить о контексте, ваш код будет более корректным и чистым, гибким и более кратким.</p>
 
-<h3 id="YW1vdW50X2NvbnRleHQ"><a name="Vm9pZCxTY2FsYXIsYW5kTGlzdENvbnRleHQ"></a>Void, Scalar, and List Context</h3>
+<h3 id="YW1vdW50X2NvbnRleHQ"><a name="Vm9pZCxTY2FsYXIsYW5kTGlzdENvbnRleHQ"></a>Пустой, скалярный и списковый Контекст</h3>
 
-<p id="YW1vdW50X2NvbnRleHQ"><a name="Y29udGV4dDthbW91bnQ1"></a> <a name="YW1vdW50Y29udGV4dA1"></a><em>Amount context</em> governs <em>how many</em> items you expect from an operation. The English language&#39;s subject-verb number agreement is a close parallel. Even without knowing the formal description of this linguistic principle, you probably understand the error in the sentence &quot;Perl are a fun language&quot; <span class="footnote">In terms of amount context, you could say that the verb &quot;are&quot; expects multiple nouns.</span>. In Perl, the number of items you request determines how many you get.</p>
+<p id="YW1vdW50X2NvbnRleHQ"><a name="Y29udGV4dDthbW91bnQ1"></a> <a name="YW1vdW50Y29udGV4dA1"></a>
+<em>Количественный контекст</em> регулирует <em>сколько</em> сущностей вы ожидаете от операции. Соглашение о числе подчиненного глагола в английском - близкая паралелль. Даже не зная формального описания этого лингвистического принципа, вы навярняка поймете ошибку в предложении &quot;Perl are a fun language&quot;. <span class="footnote"> В терминах количественного контекста, вы можете сказать глагол  &quot;are&quot; ожидая множество существительных.</span>. В Perl, количество элементов которые вы запрашиваете определяет то сколько вы получите.</p>
 
-<p id="dm9pZGNvbnRleHQ1"> <a name="Y29udGV4dDt2b2lk1"></a>Suppose the function (<a href="05-perl-functions.html#ZnVuY3Rpb25z">Declaring Functions</a>) called <code>find_chores()</code> sorts your household todo list in order of task priority. The number of chores you expect to read from your list determines what exactly the function will do. If you expect nothing, you&#39;re just pretending to be busy. If you expect one task, you have something to do for the next fifteen minutes. If you have a burst of energy on a free weekend, you could get all of the chores.</p>
+<p id="dm9pZGNvbnRleHQ1"> <a name="Y29udGV4dDt2b2lk1"></a>Предположим функция (<a href="05-perl-functions.html#ZnVuY3Rpb25z">Обьявление функций</a>) по имени <code>find_chores()</code> сортирует список ваших домашних дел по порядку важности задач. Номер домашнего задания, который вы ожидаете прочитать из вашего списка определяет что именно функция будет делать. Если вы ничего не ожидаете, вы просто притворяетесь что заняты. Если вы ожидаете одно задание, вам есть что делать ближайшие пятдесят минут. Если у вас прилив енергии в свободные выходные, вы можете взять все домашние задания.</p>
 
-<p>When you call a function on its own and never use its return value, you&#39;ve used <em>void context</em>:</p>
+<p>Когда вы вызываете функцию самостоятельно и никогда не используете его возвращяемое значение, вы используете <em>пустой контекст</em>:</p>
 
 <div class="programlisting">
 
@@ -134,7 +137,7 @@
 
 </div>
 
-<p id="Y29udGV4dDtzY2FsYXI1"> <a name="c2NhbGFyY29udGV4dA1"></a>Assigning the function&#39;s return value to a single item (<a href="03-perl-language.html#c2NhbGFycw">Scalars</a>) enforces <em>scalar context</em>:</p>
+<p id="Y29udGV4dDtzY2FsYXI1"> <a name="c2NhbGFyY29udGV4dA1"></a>Присваивание возвращяемого значения фунции одному елементу (<a href="03-perl-language.html#c2NhbGFycw">Скаляры</a>) обеспечивает <em>скалярный контекст</em>:</p>
 
 <div class="programlisting">
 
@@ -142,7 +145,7 @@
 
 </div>
 
-<p id="bGlzdGNvbnRleHQ1"> <a name="Y29udGV4dDtsaXN01"></a>Assigning the results of calling the function to an array (<a href="03-perl-language.html#YXJyYXlz">Arrays</a>) or a list, or using it in a list, evaluates the function in <em>list context</em>:</p>
+<p id="bGlzdGNvbnRleHQ1"> <a name="Y29udGV4dDtsaXN01"></a>Присваивание результата вызываемой функции массиву (<a href="03-perl-language.html#YXJyYXlz">Массивы</a>) или списку, или использование его в списке, выплоняет функцию в <em>списочном контексте</em>:</p>
 
 <div class="programlisting">
 
@@ -154,7 +157,7 @@
 
 </div>
 
-<p>The parentheses in the second line of the previous example group the two variable declarations (<a href="05-perl-functions.html#bGV4aWNhbF9zY29wZQ">Lexical Scope</a>) into a single unit so that assignment assigns to both of the variables. Note that a single-item list is still a list, however. You could also correctly write:</p>
+<p>Скобки на второй строчке предыдущего примера группирует два определения переменных (<a href="05-perl-functions.html#bGV4aWNhbF9zY29wZQ">Лексический контекст</a>) в один елемент и поэтому это присваивание присваивается обоим переменным. Заметтье, что одноелементный список все же является списком. Вы также корректно могли написать:</p>
 
 <div class="programlisting">
 
@@ -162,7 +165,7 @@
 
 </div>
 
-<p>.... in which case the parentheses give a hint to the Perl parser that you intend list context for the assignment even though you assign only one element of a list. This is subtle, but now that you know about it, the difference of amount context between these two statements should be obvious:</p>
+<p>.... в таком случае круглые скобки подсказывают парсеру Perl что вы подразумеваете списковый контекст для присваивания даже при том, что вы присваиваете всего одному елементу списка. Теперь, когда вы знаете об этой тонкости, количественное разничие контекстов между этими двумя выражениями должны быть очевидны:</p>
 
 <div class="programlisting">
 
@@ -171,7 +174,7 @@
 
 </div>
 
-<p>Evaluating a function or expression—except for assignment—in list context can produce confusion. Lists propagate list context to the expressions they contain. Both of these calls to <code>find_chores()</code> occur in list context:</p>
+<p>Выполнение функции или выражения, за исключением присваивания, в списковом контексте может произвести путаницу. Списки распространяют списочный контекст на выражения, которые их содержат. Оба этих вызова <code>find_chores()</code> происходят в списочном  контексте:</p>
 
 <div class="programlisting">
 
@@ -185,7 +188,7 @@
 
 </div>
 
-<p id="YnVpbHRpbnM7c2NhbGFy1">The latter example often surprises novice programmers, as initializing a hash (<a href="03-perl-language.html#aGFzaGVz">Hashes</a>) with a list of values imposes list context on <code>find_chores</code>. Use the <code>scalar</code> operator to impose scalar context:</p>
+<p id="YnVpbHRpbnM7c2NhbGFy1">Последний пример часто удивляет начинающих программистов,инизиализация хеша (<a href="03-perl-language.html#aGFzaGVz">Хеши</a>) списком значений налагает списочный контекст на <code>find_chores</code>. Используйте оператор <code>scalar</code> для наложения скалярного контекста:</p>
 
 <div class="programlisting">
 
@@ -197,13 +200,13 @@
 
 </div>
 
-<p>Why does context matter? A context-aware function can examine its calling context and decide how much work it must do. In void context, <code>find_chores()</code> may legitimately do nothing. In scalar context, it can find only the most important task. In list context, it must sort and return the entire list.</p>
+<p>Почему контекстс важен? Контекстно зависимые функции могут проанализировать свой вызов и решить сколько работы они должны сделать. В пустом контексте <code>find_chores()</code> может легитимно ничего не делать. В скалярном контексте, она может найти только самую важную задачу. В списковом контексте, она должна отсортировать и вернуть весь список.</p>
 
-<h3 id="dmFsdWVfY29udGV4dHM"><a name="TnVtZXJpYyxTdHJpbmcsYW5kQm9vbGVhbkNvbnRleHQ"></a>Numeric, String, and Boolean Context</h3>
+<h3 id="dmFsdWVfY29udGV4dHM"><a name="TnVtZXJpYyxTdHJpbmcsYW5kQm9vbGVhbkNvbnRleHQ"></a>Числовой, строковый и логический контексты</h3>
 
-<p id="dmFsdWVfY29udGV4dHM"><a name="dmFsdWVjb250ZXh01"></a> <a name="Y29udGV4dDt2YWx1ZQ1"></a>Perl&#39;s other context—<em>value context</em>—governs how Perl interprets a piece of data. You&#39;ve probably already noticed that Perl can figure out if you have a number or a string and convert data between the two forms. In exchange for not having to declare (or at least track) explicitly what <em>type</em> of data a variable contains or a function produces, Perl&#39;s value contexts provide hints about how to treat that data.</p>
+<p id="dmFsdWVfY29udGV4dHM"><a name="dmFsdWVjb250ZXh01"></a> <a name="Y29udGV4dDt2YWx1ZQ1"></a>Иной контекст Perl - <em>контекст значения<em> - регулирует то, как Perl интерпретирует часть данных. Вы вероятно уже заметили, что Perl может выяснить у вас число или строка и сконвертировать данные между эти двумя формами. В обмен на невозможность декларирования (или хотя бы отслеживания ) явно какой тип данных содержит переменная или возвращяет функция, контекст значения Perl предоставляет подсказки про то как трактовать эти данные.</p>
 
-<p id="YnVpbHRpbnM7ZXE1">Perl will coerce values to specific proper types (<a href="03-perl-language.html#Y29lcmNpb24">Coercion</a>), depending on the operators you use. For example, the <code>eq</code> operator tests that strings contain the same information <em>as strings</em>:</p>
+<p id="YnVpbHRpbnM7ZXE1">Perl пробразует значения в конретные надлежащие типы (<a href="03-perl-language.html#Y29lcmNpb24">Преобразование</a>), в зависимости от используемых вами ооператоров. К примеру, оператор <code>eq</code> проверяет, что строки содержат одну и ту же информацию <em>как строки</em>:</p>
 
 <div class="programlisting">
 
@@ -211,7 +214,7 @@
 
 </div>
 
-<p>You may have had a baffling experience where you <em>know</em> that the strings are different, but they still compare the same:</p>
+<p>Вы возможно были в замешательстве, когда <em>зная</em> что чтроки разные, они сравнивались как одинаковые:</p>
 
 <div class="programlisting">
 
@@ -220,31 +223,37 @@
 
 </div>
 
-<p id="c3RyaW5nY29udGV4dA1"> <a name="bnVtZXJpY2NvbnRleHQ1"></a> <a name="Y29udGV4dDtzdHJpbmc1"></a> <a name="Y29udGV4dDtudW1lcmlj1"></a><a name="YnVpbHRpbnM7PT01"></a>Where the <code>eq</code> operator treats its operands as strings by enforcing <em>string context</em> on them, the <code>==</code> operator imposes <em>numeric context</em>. In numeric context, both strings evaluate to <code>0</code> (<a href="03-perl-language.html#bnVtZXJpY19jb2VyY2lvbg">Numeric Coercion</a>). Be sure to use the proper operator for the type of context you want.</p>
+<p id="c3RyaW5nY29udGV4dA1"> <a name="bnVtZXJpY2NvbnRleHQ1"></a> <a name="Y29udGV4dDtzdHJpbmc1"></a> <a name="Y29udGV4dDtudW1lcmlj1"></a><a name="YnVpbHRpbnM7PT01"></a>Где оператор <code>eq</code> рассматривает свои операнды как строки <em>строковый контекст</em> на них, а опертор <code>==</code> навязывает <em>Числовой контекст</em>. В числовом контексте обе строки оцениваются как <code>0</code> (<a href="03-perl-language.html#bnVtZXJpY19jb2VyY2lvbg">Числовое преобразование</a>). Обязательно используйте правильный оператор для того типа контекста, которого хотите.</p>
 
-<p id="Ym9vbGVhbmNvbnRleHQ1"> <a name="Y29udGV4dDtib29sZWFu1"></a><em>Boolean context</em> occurs when you use a value in a conditional statement. In the previous examples, <code>if</code> evaluated the results of the <code>eq</code> and <code>==</code> operators in boolean context.</p>
+<p id="Ym9vbGVhbmNvbnRleHQ1"> <a name="Y29udGV4dDtib29sZWFu1"></a><em>Логический контекст</em> применяется , когда вы используете значение в условном операторе. В предыдущих примерах, <code>if</code> оценивает результаты операторов <code>eq</code> и <code>==</code> в логическом контексте.</p>
 
-<p id="Y29udGV4dDtleHBsaWNpdA1">In rare circumstances, you may need to force an explicit context where no appropriately typed operator exists. To force a numeric context, add zero to a variable. To force a string context, concatenate a variable with the empty string. To force a boolean context, double up the negation operator:</p>
+<p id="Y29udGV4dDtleHBsaWNpdA1">
+В редких ослучаях, Вам возможно потребуется явно задать контекст, когда нету соответствующего оператора. Для вызова числового котекста, добавьте ноль к значению. Для вызова строкового контекста, конкатенируйте переменную с пустой строкой. Для вызова логического контекста, дважды примените оператор отрицания:</p>
 
 <div class="programlisting">
 
-<pre><code>    my $numeric_x =  0 + $x;  # forces numeric context
-    my $stringy_x = &#39;&#39; . $x;  # forces string  context
-    my $boolean_x =    !!$x;  # forces boolean context</code></pre>
+<pre>
+ <code>    
+    my $numeric_x =  0 + $x;  # вызывает числовой контекст
+    my $stringy_x = &#39;&#39; . $x;  # вызывает строковый контекст
+    my $boolean_x =    !!$x;  # вызывает логический контекст
+ </code>
+</pre>
 
 </div>
 
-<p>Value contexts are easier to identify than amount contexts. Once you know which operators provide which contexts (<a href="04-perl-operators.html#b3BlcmF0b3JfdHlwZXM">Operator Types</a>), you&#39;ll rarely make mistakes.</p>
+<p>Контекст значения легче распознать чем количественный контекст. Как только вы узнаете какой оператор вызывает какой контекст (<a href="04-perl-operators.html#b3BlcmF0b3JfdHlwZXM">Типы операторов</a>), вы редко будете ошибатся.</p>
 
-<h2 id="aW1wbGljaXRfaWRlYXM"><a name="SW1wbGljaXRJZGVhcw"></a>Implicit Ideas</h2>
+<h2 id="aW1wbGljaXRfaWRlYXM"><a name="SW1wbGljaXRJZGVhcw"></a>Неявные идеи</h2>
 
-<p id="aW1wbGljaXRfaWRlYXM">Programmers who understand Perl&#39;s linguistic shortcuts can glance at code and instantly understand its most important characteristics. Besides context, Perl has default variables—the programming equivalent of pronouns.</p>
+<p id="aW1wbGljaXRfaWRlYXM">Программисты, которые понимают лингвистичеки короткие пути Perl могут пройдясь беглым взглядом по коду сразу понять его самые важные характеристики. Помимо контекста, Perl имеет перемменные по умолчанию (встроенные переменные ) — эквивалент местоимений в программировании.</p>
 
-<h3 id="ZGVmYXVsdF9zY2FsYXJfdmFyaWFibGU"><a name="VGhlRGVmYXVsdFNjYWxhclZhcmlhYmxl"></a>The Default Scalar Variable</h3>
+<h3 id="ZGVmYXVsdF9zY2FsYXJfdmFyaWFibGU"><a name="VGhlRGVmYXVsdFNjYWxhclZhcmlhYmxl"></a>Скалярная переменная по умолчанию</h3>
 
-<p id="ZGVmYXVsdF9zY2FsYXJfdmFyaWFibGU"><a name="ZGVmYXVsdHZhcmlhYmxlcztzY2FsYXI1"></a> <a name="ZGVmYXVsdHZhcmlhYmxlczskXw1"></a> <a name="dmFyaWFibGVzOyRf1"></a> <a name="JF87ZGVmYXVsdHNjYWxhcnZhcmlhYmxl1"></a>The <em>default scalar variable</em> (also called the <em>topic variable</em>), <code>$_</code>, is most notable in its <em>absence</em>: many of Perl&#39;s builtin operations work on the contents of <code>$_</code> in the absence of an explicit variable. You can still use <code>$_</code> as the variable, but it&#39;s often unnecessary.</p>
+<p id="ZGVmYXVsdF9zY2FsYXJfdmFyaWFibGU"><a name="ZGVmYXVsdHZhcmlhYmxlcztzY2FsYXI1"></a> <a name="ZGVmYXVsdHZhcmlhYmxlczskXw1"></a> <a name="dmFyaWFibGVzOyRf1"></a> <a name="JF87ZGVmYXVsdHNjYWxhcnZhcmlhYmxl1"></a>
+<em>Скалярная переменная по умолчанию</em> (также называемая <em>переменная темы</em>), <code>$_</code>, наиболее заметна в своем <em>отсутсвии</em>: многие встроенные операторы Perl работают над содержимым <code>$_</code> при отсутствии явной перемменной. Вы можете все еще использовать <code>$_</code> в качестве переменной, но это часто не нужно.</p>
 
-<p id="YnVpbHRpbnM7Y2hvbXA1"> <a name="YnVpbHRpbnM7Y2hy1"></a> <a name="YnVpbHRpbnM7b3Jk1"></a> <a name="YnVpbHRpbnM7bGM1"></a> <a name="YnVpbHRpbnM7bGVuZ3Ro1"></a> <a name="YnVpbHRpbnM7cmV2ZXJzZQ1"></a> <a name="YnVpbHRpbnM7dWM1"></a>Many of Perl&#39;s scalar operators (including <code>chr</code>, <code>ord</code>, <code>lc</code>, <code>length</code>, <code>reverse</code>, and <code>uc</code>) work on the default scalar variable if you do not provide an alternative. For example, the <code>chomp</code> builtin removes any trailing newline sequence from its operand <span class="footnote">See <code>perldoc -f chomp</code> and <code>$/</code> for more precise details of its behavior.</span>:</p>
+<p id="YnVpbHRpbnM7Y2hvbXA1"> <a name="YnVpbHRpbnM7Y2hy1"></a> <a name="YnVpbHRpbnM7b3Jk1"></a> <a name="YnVpbHRpbnM7bGM1"></a> <a name="YnVpbHRpbnM7bGVuZ3Ro1"></a> <a name="YnVpbHRpbnM7cmV2ZXJzZQ1"></a> <a name="YnVpbHRpbnM7dWM1"></a> Многие скалярные операторы Perl (включая <code>chr</code>, <code>ord</code>, <code>lc</code>, <code>length</code>, <code>reverse</code>, и <code>uc</code>) работают с переменной по умолчанию, если вы не предоставили алтернативу. К примеру, <code>chomp</code> удаляет любой завершающий символ новой строки у своего операнда <span class="footnote">Посмотрите <code>perldoc -f chomp</code> и <code>$/</code> для более точных деталей его характеристик.</span>:</p>
 
 <div class="programlisting">
 
@@ -254,7 +263,7 @@
 
 </div>
 
-<p><code>$_</code> has the same function in Perl as the pronoun <em>it</em> in English. Without an explicit variable, <code>chomp</code> removes the trailing newline sequence from <code>$_</code>. Perl understands what you mean when you say &quot;<code>chomp</code>&quot;; Perl will always chomp <em>it</em>. These two lines of code are equivalent:</p>
+<p><code>$_</code> выполняет ту же функцию в Perl что и местоимение <em>it</em> в Английском. Без явной переменной, <code>chomp</code> удаляет завершающий символ новой строки последовательности из <code>$_</code>. Perl понимает что вы имеете ввиду когда говорите &quot;<code>chomp</code>&quot;; Perl всегда chomp-ает <em>it</em>. Эти две строки кода эквивалентны:</p>
 
 <div class="programlisting">
 
@@ -263,16 +272,16 @@
 
 </div>
 
-<p id="YnVpbHRpbnM7c2F51"> <a name="YnVpbHRpbnM7cHJpbnQ1"></a>Similarly, <code>say</code> and <code>print</code> operate on <code>$_</code> in the absence of other arguments:</p>
+<p id="YnVpbHRpbnM7c2F51"> <a name="YnVpbHRpbnM7cHJpbnQ1"></a>Подобным образом, <code>say</code> и <code>print</code> оперируют с <code>$_</code> при отсутствии своих аргументов:</p>
 
 <div class="programlisting">
 
-<pre><code>    print;  # prints $_ to the current filehandle
-    say;    # prints &quot;$_\n&quot; to the current filehandle</code></pre>
+<pre><code>    print;  # напечатает $_ на текущий дескриптор файла
+    say;    # напечатает &quot;$_\n&quot; на текущий дескриптор файла</code></pre>
 
 </div>
 
-<p id="cy8vLztzdWJzdGl0dXRpb25vcGVyYXRvcg1"> <a name="bS8vO21hdGNob3BlcmF0b3I1"></a> <a name="dHIvLzt0cmFuc2xpdGVyYXRpb25vcGVyYXRvcg1"></a>Perl&#39;s regular expression facilities (<a href="06-perl-regular-expressions.html#cmVnZXg">Regular Expressions and Matching</a>) default to <code>$_</code> to match, substitute, and transliterate:</p>
+<p id="cy8vLztzdWJzdGl0dXRpb25vcGVyYXRvcg1"> <a name="bS8vO21hdGNob3BlcmF0b3I1"></a> <a name="dHIvLzt0cmFuc2xpdGVyYXRpb25vcGVyYXRvcg1"></a>Функции регулярных выражий Perl (<a href="06-perl-regular-expressions.html#cmVnZXg">Регулярные выражения</a>) по умолчанию используют <code>$_</code> для соответствия, земены, и транслитерации:</p>
 
 <div class="programlisting">
 
@@ -286,7 +295,8 @@
 
 </div>
 
-<p id="YnVpbHRpbnM7Zm9y1">Perl&#39;s looping directives (<a href="03-perl-language.html#bG9vcGluZ19kaXJlY3RpdmVz">Looping Directives</a>) default to using <code>$_</code> as the iteration variable. Consider <code>for</code> iterating over a list:</p>
+<p id="YnVpbHRpbnM7Zm9y1">
+Директивы циклов Perl (<a href="03-perl-language.html#bG9vcGluZ19kaXJlY3RpdmVz">Директивы цыклов</a>) dпо умолчанию используют <code>$_</code> как переменную итерации. Рассмотрим <code>for</code> итерации по списку:</p>
 
 <div class="programlisting">
 
@@ -299,7 +309,7 @@
 
 </div>
 
-<p id="YnVpbHRpbnM7d2hpbGU1">... or <code>while</code>:</p>
+<p id="YnVpbHRpbnM7d2hpbGU1">... или <code>while</code>:</p>
 
 <div class="programlisting">
 
@@ -311,7 +321,7 @@
 
 </div>
 
-<p id="YnVpbHRpbnM7bWFw1">... or <code>map</code> transforming a list:</p>
+<p id="YnVpbHRpbnM7bWFw1">... или <code>map</code> преобразует список:</p>
 
 <div class="programlisting">
 
@@ -320,7 +330,7 @@
 
 </div>
 
-<p id="YnVpbHRpbnM7Z3JlcA1">... or <code>grep</code> filtering a list:</p>
+<p id="YnVpbHRpbnM7Z3JlcA1">... или <code>grep</code> филтрует список:</p>
 
 <div class="programlisting">
 
@@ -329,7 +339,7 @@
 
 </div>
 
-<p>As English gets confusing when you have too many pronouns and antecedents, so does Perl when you mix explicit and implicit uses of <code>$_</code>. If you use it in multiple places, one piece of code may silently override the value expected by another piece of code. For example, if one function uses <code>$_</code> and you call it from another function which uses <code>$_</code>, the callee may clobber the caller&#39;s value:</p>
+<p>Как и Английский становится запутанным, если вы используете слишком много местоимений и предшественников, так и Perl, когда вы смешиваете явное и неявное использование <code>$_</code>. Если вы используете это во многих местах, один кусок кода может тихо переопределить значение, ожидаемое другим куском кода. К примеру, если одна функция использует <code>$_</code> и вы вызываете ее в другой функции, которая использует <code>$_</code>,то вызываемая может затереть значение вызывающего:</p>
 
 <div class="programlisting">
 
@@ -337,7 +347,7 @@
     {
         chomp;
 
-        # BAD EXAMPLE
+        # ПЛОХОЙ ПРИМЕР!
         my $munged = calculate_value( $_ );
         say &quot;Original: $_&quot;;
         say &quot;Munged  : $munged&quot;;
@@ -345,7 +355,7 @@
 
 </div>
 
-<p>If <code>calculate_value()</code> or any other function changed <code>$_</code>, that change would persist through that iteration of the loop. As of Perl 5.10, you can declare <code>$_</code> as a lexical variable (<a href="05-perl-functions.html#bGV4aWNhbF9zY29wZQ">Lexical Scope</a>) with <code>my</code> to prevent clobbering an existing instance of <code>$_</code>:</p>
+<p>Если <code>calculate_value()</code> или любая другая функция изменит <code>$_</code>, это изменение останется на протяжении всей итерации цикла. Начиная с Perl 5.10, вы можете объявить <code>$_</code> как лексическую переменную (<a href="05-perl-functions.html#bGV4aWNhbF9zY29wZQ">Лексическая область</a>) с <code>my</code> для предотвращения затирания существующего экземпляра <code>$_</code>:</p>
 
 <div class="programlisting">
 
@@ -356,7 +366,7 @@
 
 </div>
 
-<p>Unfortunately, this construct has a few edge cases related to how existing functions behave when they expect <code>$_</code> to be a global variable. As of Perl 5.18, the Perl 5 Porters consider this feature experimental. Use it with caution. Besides, using a named lexical may be even clearer:</p>
+<p>К сожелению это конструкция имеет несколько крайних случаев связаных с тем как сушествуюшие функции ведут себя когда они ожидают что <code>$_</code> будет глобальной переменной. Начиная с Perl 5.18, Perl 5 Porters считают эту возможность эксперементальной. Используйте это с осторожностю. Кроме того, испоьлзование именных лексических переменных может быть еще яснее:</p>
 
 <div class="programlisting">
 
@@ -367,15 +377,19 @@
 
 </div>
 
-<p>Use <code>$_</code> as you would the word &quot;it&quot; in formal writing: sparingly, in small and well-defined scopes.</p>
+<p>Use <code>$_</code> как слово &quot;it&quot; в формальном письме: экономно, в маленьких и вполне определленых облаятях.</p>
 
 <div class="tip">
-<p class="title">The <code>...</code> Operator</p>
-<a name="YnVpbHRpbnM7Li4u1"></a><p>Perl 5.12 introduced the triple-dot (<code>...</code>) operator as a placeholder for code you intend to fill in later. Perl will parse it as a complete statement, but will throw an exception that you&#39;re trying to run unimplemented code if you try to run it. See <code>perldoc perlop</code> for more details.</p>
+<p class="title">Оператор <code>...</code></p><a name="YnVpbHRpbnM7Li4u1"></a><p>В Perl 5.12  введен оператор троеточия (<code>...</code>)  как заполничель кода который вы намерены заполнить позже. Perl парсит это как полную инструкцию, однако выдаст исключение что вы пытаетесь запустить нерелаизованный код если вы попытаетесь запустить его. Подробнее смотрите <code>perldoc perlop</code>.</p>
 
-</div><h3 id="ZGVmYXVsdF9hcnJheV92YXJpYWJsZXM"><a name="VGhlRGVmYXVsdEFycmF5VmFyaWFibGVz"></a>The Default Array Variables</h3>
+</div><h3 id="ZGVmYXVsdF9hcnJheV92YXJpYWJsZXM"><a name="VGhlRGVmYXVsdEFycmF5VmFyaWFibGVz"></a>Переменная массива по умолчанию</h3>
 
-<p id="ZGVmYXVsdF9hcnJheV92YXJpYWJsZXM"><a name="ZGVmYXVsdHZhcmlhYmxlczthcnJheQ1"></a> <a name="ZGVmYXVsdHZhcmlhYmxlcztAXw1"></a> <a name="dmFyaWFibGVzO0Bf1"></a> <a name="QF81"></a>Perl also provides two implicit array variables. Perl passes arguments to functions (<a href="05-perl-functions.html#ZnVuY3Rpb25z">Declaring Functions</a>) in an array named <code>@_</code>. Array manipulation operations (<a href="03-perl-language.html#YXJyYXlz">Arrays</a>) inside functions operate on this array by default. These two snippets of code are equivalent:</p>
+<p id="ZGVmYXVsdF9hcnJheV92YXJpYWJsZXM"><a name="ZGVmYXVsdHZhcmlhYmxlczthcnJheQ1"></a> <a name="ZGVmYXVsdHZhcmlhYmxlcztAXw1"></a> <a name="dmFyaWFibGVzO0Bf1"></a> <a name="QF81"></a>
+Perl также имеет два неявных(скрытих) переменных массивa. 
+Perl передает аргументы функции (<a href="05-perl-functions.html#ZnVuY3Rpb25z">Обьявления функций</a>) 
+в массив по имени <code>@_</code>. 
+Манипулятивные операции массивов (<a href="03-perl-language.html#YXJyYXlz">Массивы</a>) внутри функций оперируют над этим массивом по умолчанию. 
+Эти два отрывка кода эквивалентны:</p>
 
 <div class="programlisting">
 
@@ -393,17 +407,18 @@
 
 </div>
 
-<p id="YnVpbHRpbnM7c2hpZnQ1"> <a name="YnVpbHRpbnM7cG9w1"></a>Just as <code>$_</code> corresponds to the pronoun <em>it</em>, <code>@_</code> corresponds to the pronouns <em>they</em> and <em>them</em>. <em>Unlike</em> <code>$_</code>, Perl automatically localizes <code>@_</code> for you when you call other functions. The builtins <code>shift</code> and <code>pop</code> operate on <code>@_</code>, if provided no explicit operands.</p>
+<p id="YnVpbHRpbnM7c2hpZnQ1"> <a name="YnVpbHRpbnM7cG9w1"></a>Так же как <code>$_</code> соответствует местоимению <em>it</em>, <code>@_</code> соответствует местоимениям <em>they</em> и <em>them</em>.<em>В отличие от</em> <code>$_</code>, Perl автоматически локализует <code>@_</code> для вас, когда вы вызываете другую функцию. Встроенные <code>shift</code> и <code>pop</code> оперируют на <code>@_</code>, если не предоставлены явные операнды.</p>
 
-<p id="ZGVmYXVsdHZhcmlhYmxlcztAQVJHVg1"> <a name="dmFyaWFibGVzO0BBUkdW1"></a> <a name="QEFSR1Y1"></a>Outside of all functions, the default array variable <code>@ARGV</code> contains the command-line arguments to the program. Perl&#39;s array operations (including <code>shift</code> and <code>pop</code>) operate on <code>@ARGV</code> implicitly outside of functions. You cannot use <code>@_</code> when you mean <code>@ARGV</code>.</p>
+<p id="ZGVmYXVsdHZhcmlhYmxlcztAQVJHVg1"> <a name="dmFyaWFibGVzO0BBUkdW1"></a> <a name="QEFSR1Y1"></a>Вне всех функций, Переменная массив по умолчанию <code>@ARGV</code> содержит аргументы командной строки к программе. Операции массивов Perl (включая <code>shift</code> и <code>pop</code>) оперируют над <code>@ARGV</code> неявно вне функций. Вы не можете использовать <code>@_</code> когда имеете ввиду <code>@ARGV</code>.</p>
 
 <div class="tip">
 <p class="title"><code>readline</code></p>
 <p id="YnVpbHRpbnM7cmVhZGxpbmU1"> <a name="YnVpbHRpbnM7Z2xvYg1"></a></p>
 
-<p>Perl&#39;s <code>&lt;$fh&gt;</code> operator is the same as the <code>readline</code> builtin. <code>readline $fh</code> does the same thing as <code>&lt;$fh&gt;</code>. As of Perl 5.10, a bare <code>readline</code> behaves just like <code>&lt;&gt;</code>, so you can now use <code>readline</code> everywhere. For historic reasons, <code>&lt;&gt;</code> is still more common, but consider using <code>readline</code> as a more readable alternative. (What&#39;s more readable, <code>glob &#39;*.html&#39;</code> to <code>&lt;*.html&gt;</code>? The same idea applies.)</p>
+<p>Perl оператор <code>&lt;$fh&gt;</code> тот же что и встроенный <code>readline</code>. 
+<code>readline $fh</code> делает то же что и <code>&lt;$fh&gt;</code>. Начиная с Perl 5.10, a bare <code>readline</code> ведет себя как <code>&lt;&gt;</code>, так что вы теперь можете использовать <code>readline</code> везьде. По историческим причинам, <code>&lt;&gt;</code> еще более распространен, но рассмотрите использование <code>readline</code>, как более читаемую алтернативу. (Что более читаемо, <code>glob &#39;*.html&#39;</code> или <code>&lt;*.html&gt;</code>? Та же идея.)</p>
 
-</div><p id="bnVsbGZpbGVoYW5kbGU1"><code>ARGV</code> has one special case. If you read from the null filehandle <code>&lt;&gt;</code>, Perl will treat every element in <code>@ARGV</code> as the <em>name</em> of a file to open for reading. (If <code>@ARGV</code> is empty, Perl will read from standard input.) This implicit <code>@ARGV</code> behavior is useful for writing short programs, such as a command-line filter which reverses its input:</p>
+</div><p id="bnVsbGZpbGVoYW5kbGU1"><code>ARGV</code> имеет один особый случай. Если вы читается с пустого файлового дексриптора <code>&lt;&gt;</code>, Perl трактует каждый элемент <code>@ARGV</code> как <em>имя</em> файла для открытия для чтения.(Если <code>@ARGV</code> пустой, Perl читает с стандартного ввода.) Неявное поведение <code>@ARGV</code> пригодно для написания маленьких программ,таких как филтр командной строки который реверсирует свой вход:</p>
 
 <div class="programlisting">
 
@@ -415,14 +430,11 @@
 
 </div>
 
-<p>Why <code>scalar</code>? <code>say</code> imposes list context on its operands. <code>reverse</code> passes its context on to its operands, treating them as a list in list context and a concatenated string in scalar context. If the behavior of <code>reverse</code> sounds confusing, your instincts are correct. Perl arguably should have separated &quot;reverse a string&quot; from &quot;reverse a list&quot;.</p>
+<p>Почему <code>scalar</code>? <code>say</code> навязывает списочный контекст на свои операнды. <code>reverse</code> передает свой контекст своим операндам, трактуя их как список в списочном контексте и конкатениренную строку в скалярном контексте. Если поведение <code>reverse</code> звучит странно, ваши инстинкты корректны. Perl возможно следовало бы отделить &quot;reverse строки&quot; от &quot;reverse списка&quot;.</p>
 
-<p>If you run it with a list of files:</p>
+<p>Если вы запустите это со списком файлов:</p>
 
 <div class="screen">
 <pre><code>    $ <strong>perl reverse_lines.pl encrypted/*.txt</strong></code></pre>
 
-</div><p>... the result will be one long stream of output. Without any arguments, you can provide your own standard input by piping in from another program or typing directly. That&#39;s a lot of flexibility in a small program, but Perl&#39;s only getting started.</p>
-
-
-        </div>
+</div><p>... результат будет одной длинной строкой вывода.Без каких либо аргументов, вы можете предоставить свой стандартный ввод по конвееру в другой программе или введя непосредственно.Это - большая гибкость в маленькой программе, однако Perl только начинается .</p> </div>
