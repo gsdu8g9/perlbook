@@ -4,6 +4,7 @@ use Mojo::DOM;
 use utf8;
 use open ':encoding(utf8)';
 use HTML::Entities;
+use FindBin;
 
 get '/' => sub {
     my $self = shift;
@@ -33,8 +34,7 @@ post '/save' => sub {
         json => sub { $self->render( json => { error => "params missed" } ) } 
     ) unless $id && $html && $page;
     
-    warn "\n\n HERE \n\n";
-    my $filename = "/home/tigran/Documents/Development/perl/perlbook/templates${page}.ep";
+    my $filename = "$FindBin::Bin/templates${page}.ep";
     
     my $outfile = "${filename}_";
     open OUT, ">$outfile";
