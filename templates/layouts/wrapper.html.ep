@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,10 +19,10 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </a>
-  <a class="brand" href="#">Modern Perl: 2014</a>
+  <a class="brand" href="/">Modern Perl: 2014</a>
   <div class="nav-collapse">
     <ul class="nav">
-      <li><a href="index.html">Содержание</a></li>
+      <li><a href="index.html">Содержание </a></li>
       <li><a href="theindex.html">Index</a></li>
       <li><a href="http://modernperlbooks.com/">Modern Perl Books</a></li>
     </ul>
@@ -34,25 +35,24 @@
       <div class="row">
         <div class="span3">
           <div class="sidebar-nav well">
-                          <h2>Содержание</h2>
+                          <h2><a href="/">Содержание</a></h2>
             <ul class="nav nav-list.html">
-
-<li><a href="00-preface.html">Предисловие</a></li>
-<li><a href="01-perl-philosophy.html">The Perl Philosophy</a></li>
-<li><a href="02-perl-community.html">Perl and Its Community</a></li>
-<li><a href="03-perl-language.html">The Perl Language</a></li>
-<li><a href="04-perl-operators.html">Operators</a></li>
-<li><a href="05-perl-functions.html">Functions</a></li>
-<li><a href="06-perl-regular-expressions.html">Regular Expressions and Matching</a></li>
-<li><a href="07-object-oriented-perl.html">Objects</a></li>
-<li><a href="08-perl-style-efficiency.html">Style and Efficacy</a></li>
-<li><a href="09-managing-perl-programs.html">Managing Real Programs</a></li>
-<li><a href="10-perl-beyond-syntax.html">Perl Beyond Syntax</a></li>
-<li><a href="11-what-to-avoid-in-perl.html">What to Avoid</a></li>
-<li><a href="12-perl-missing-features.html">What&#39;s Missing</a></li>
-<li>→ Table of Contents ←</li>
-<li><a href="theindex.html">Index</a></li>
-</ul>
+                <li><a href="00-preface.html">Предисловие</a></li>
+                <li><a href="01-perl-philosophy.html">Философия Perl</a></li>
+                <li><a href="02-perl-community.html">Perl and Its Community</a></li>
+                <li><a href="03-perl-language.html">The Perl Language</a></li>
+                <li><a href="04-perl-operators.html">Operators</a></li>
+                <li><a href="05-perl-functions.html">Functions</a></li>
+                <li><a href="06-perl-regular-expressions.html">Regular Expressions and Matching</a></li>
+                <li><a href="07-object-oriented-perl.html">Objects</a></li>
+                <li><a href="08-perl-style-efficiency.html">Style and Efficacy</a></li>
+                <li><a href="09-managing-perl-programs.html">Managing Real Programs</a></li>
+                <li><a href="10-perl-beyond-syntax.html">Perl Beyond Syntax</a></li>
+                <li><a href="11-what-to-avoid-in-perl.html">What to Avoid</a></li>
+                <li><a href="12-perl-missing-features.html">What&#39;s Missing</a></li>
+                <li>→ Table of Contents ←</li>
+                <li><a href="theindex.html">Index</a></li>
+            </ul>
             <hr>
 
             <hr>
@@ -67,10 +67,26 @@
             <p><small>Published by <a href="http://onyxneon.com/">Onyx Neon</a></small></p>
           </div>
         </div>
-
-		<%= content %>
+        
+        <%= content %>
     </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>
+    $(function(){
+        $('p[contenteditable=true]').blur(function(){
+            var data = {
+                        html : $(this).html(),
+                        id: $(this).attr('content_id'),
+                        page: window.location.pathname
+                        }
+            $.post('/save.json', data, function(res){
+                if (res.error){
+                    alert(res.error);
+                }
+            })
+        });
+    });
+</script>
 </body>
 </html>

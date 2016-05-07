@@ -3,26 +3,26 @@
 
 <h1 id="UHJlZmFjZQ">Предисловие</h1>
 
-<p>Книга <em>Modern Perl</em> является одним из способов описания того, как работают наиболее эффективные Perl программисты в во всем мире. Они используют идиомы языка. Они пользуются преимуществом CPAN. Они показывают хороший стиль и мастерство для написания мощного, сопровождаемого, масштабируемого, краткого и эффективного кода. Вы тоже можете научится этому!</p>
+<p content_id="1328">Книга <em>Modern Perl</em> является одним из способов описания того, как работают наиболее эффективные Perl программисты в во всем мире. Они используют идиомы языка. Они пользуются преимуществом CPAN. Они показывают хороший стиль и мастерство для написания мощного, сопровождаемого, масштабируемого, краткого и эффективного кода. Вы тоже можете научится этому!</p>
 
-<p>Perl впервые появился в 1987 году, как простой инструмент для системного администрирования. Хотя в начале он занял комфортную нишу между написанием shell сценариев и C программированием, он стал мощным семейством языков общего назначения. Perl имеет солидную историю прагматизма и светлое будущее улучшений и полировки.</p>
+<p content_id="1329">Perl впервые появился в 1987 году, как простой инструмент для системного администрирования. Хотя в начале он занял комфортную нишу между написанием shell сценариев и C программированием, он стал мощным семейством языков общего назначения. Perl имеет солидную историю прагматизма и светлое будущее улучшений и полировки.</p>
 
-<p> За долгую историю Perl, особенно 19-и лет 5- ого Perl, наше понимание того что делает великим Perl программы изменилось. Хотя вы можете писать продуктивные программы, которые никогда не используют все преимущество языка, мировое сообщество Perl изобрело, позаимствовало, улучшило и отполировало идеи и сделало их доступными для каждого, кто готов их изучить. </p>
+<p content_id="1330"> За долгую историю Perl, особенно 19-и лет 5- ого Perl, наше понимание того что делает великим Perl программы изменилось. Хотя вы можете писать продуктивные программы, которые никогда не используют все преимущество языка, мировое сообщество Perl изобрело, позаимствовало, улучшило и отполировало идеи и сделало их доступными для каждого, кто готов их изучить. </p>
 
 <h2 id="UnVubmluZ01vZGVyblBlcmw"><a name="UnVubmluZ01vZGVyblBlcmw"></a>Запуск Modern Perl</h2>
 
-<p>Модуль <code>Modern::Perl</code> из CPAN (<a href="02-perl-community.html#Y3Bhbg">The CPAN</a>) указывает Perl предупреждать о сомнительных конструкций и опечатках, а также активирует новые возможности, введенные в современных версиях Perl. Если другого не указано, фрагменты кода всегда предполагают основной каркас программы:</p>
+<p content_id="1331">Модуль <code>Modern::Perl</code> из CPAN (<a href="02-perl-community.html#Y3Bhbg">The CPAN</a>) указывает Perl предупреждать о сомнительных конструкций и опечатках, а также активирует новые возможности, введенные в современных версиях Perl. Если другого не указано, фрагменты кода всегда предполагают основной каркас программы:</p>
 
 <div class="programlisting">
 
 <pre><code>    #!/usr/bin/env perl
 
-    use Modern::Perl &#39;2013&#39;;
+    use Modern::Perl '2013';
     use autodie;</code></pre>
 
 </div>
 
-<p>... который эквивалентен:</p>
+<p content_id="1332">... который эквивалентен:</p>
 
 <div class="programlisting">
 
@@ -34,7 +34,7 @@
 
 </div>
 
-<p>Некоторые примеры используют функции тестирования, такие как <code>ok()</code>, <code>like()</code>, и <code>is()</code> (<a href="09-managing-perl-programs.html#dGVzdGluZw">Testing</a>). Эти программы следуют шаблону:</p>
+<p content_id="1333">Некоторые примеры используют функции тестирования, такие как <code>ok()</code>, <code>like()</code>, и <code>is()</code> (<a href="09-managing-perl-programs.html#dGVzdGluZw">Testing</a>). Эти программы следуют шаблону:</p>
 
 <div class="programlisting">
 
@@ -49,19 +49,19 @@
 
 </div>
 
-<p>На момент написания, текущая стабильная версия Perl это Perl 5.18. Если вы используете более ранние версии Perl, то вы вероятно не сможете запустить все примеры этой книги, не модифицируя их. Примеры в книге лучше всего работают с Perl 5.14.0 или старше, однако мы рекомендуем по крайней мере Perl 5.16. Хотя термин &quot;Modern Perl&quot; может относится к любой версии Perl начиная с 5.10.1, некоторые функции, добавленные в в новейших версиях, необходимы для современной разработки.</p>
+<p content_id="1334">На момент написания, текущая стабильная версия Perl это Perl 5.18. Если вы используете более ранние версии Perl, то вы вероятно не сможете запустить все примеры этой книги, не модифицируя их. Примеры в книге лучше всего работают с Perl 5.14.0 или старше, однако мы рекомендуем по крайней мере Perl 5.16. Хотя термин &quot;Modern Perl&quot; может относится к любой версии Perl начиная с 5.10.1, некоторые функции, добавленные в в новейших версиях, необходимы для современной разработки.</p>
 
-<p id="U3RyYXdiZXJyeVBlcmw1"> <a name="QWN0aXZlUGVybA1"></a> <a name="cGVybGJyZXc1"></a> <a name="Q1BBTjtBcHA6OnBlcmxicmV31"></a>Если у вас не установлен Perl ( или у вас установлена старая версия ), Вы можете сами установить новейшую версию. Пользователи Windows скачайте Strawberry Perl с <a class="url" href="http://www.strawberryperl.com/">http://www.strawberryperl.com/</a> или ActivePerl с <a class="url" href="http://www.activestate.com/activeperl">http://www.activestate.com/activeperl</a>. Пользователи других операционных систем, с уже установленным Perl ( и с установленным C компилятором и другими инструментами разработки ), начните с установки CPAN модуля <code>App::perlbrew</code>. <span class="footnote">Инструкция по установке по адресу <a class="url" href="http://search.cpan.org/perldoc?App::perlbrew">http://search.cpan.org/perldoc?App::perlbrew</a></span>.</p>
+<p content_id="1335" id="U3RyYXdiZXJyeVBlcmw1"> <a name="QWN0aXZlUGVybA1"></a> <a name="cGVybGJyZXc1"></a> <a name="Q1BBTjtBcHA6OnBlcmxicmV31"></a>Если у вас не установлен Perl ( или у вас установлена старая версия ), Вы можете сами установить новейшую версию. Пользователи Windows скачайте Strawberry Perl с <a class="url" href="http://www.strawberryperl.com/">http://www.strawberryperl.com/</a> или ActivePerl с <a class="url" href="http://www.activestate.com/activeperl">http://www.activestate.com/activeperl</a>. Пользователи других операционных систем, с уже установленным Perl ( и с установленным C компилятором и другими инструментами разработки ), начните с установки CPAN модуля <code>App::perlbrew</code>. <span class="footnote">Инструкция по установке по адресу <a class="url" href="http://search.cpan.org/perldoc?App::perlbrew">http://search.cpan.org/perldoc?App::perlbrew</a></span>.</p>
 
-<p><code>perlbrew</code> позволяет вам устанавливать и управлять несколькими версиями Perl. Это позволяет вам переключатся между версиями а также устанавливать Perl и CPAN модули в свой домашний каталог не влияя на системную версию. Если вы когда либо просили вашего системного администратора дать вам права на установку программного обеспечения, то вы знаете насколько облегчилась ваша жизнь.</p>
+<p content_id="1336"><code>perlbrew</code> позволяет вам устанавливать и управлять несколькими версиями Perl. Это позволяет вам переключатся между версиями а также устанавливать Perl и CPAN модули в свой домашний каталог не влияя на системную версию. Если вы когда либо просили вашего системного администратора дать вам права на установку программного обеспечения, то вы знаете насколько облегчилась ваша жизнь.</p>
 
 <h2 id="Y3JlZGl0cw"><a name="Q3JlZGl0cw"></a>Благодарности</h2>
 
-<p>Это книга не была бы написана без вопросов, комментариев, предложений, советов, мудрости, и поощрения очень многих людей. В частности, автор и редактор благодарны:</p>
+<p content_id="1337">Это книга не была бы написана без вопросов, комментариев, предложений, советов, мудрости, и поощрения очень многих людей. В частности, автор и редактор благодарны:</p>
 
-<p id="Y3JlZGl0cw"> John SJ Anderson, Peter Aronoff, Lee Aylward, Alex Balhatchet, Nitesh Bezzala, Ævar Arnfjörð Bjarmason, Matthias Bloch, John Bokma, Vasily Chekalkin, Dmitry Chestnykh, E. Choroba, Tom Christiansen, Anneli Cuss, Paulo Custodio, Steve Dickinson, Kurt Edmiston, Felipe, Shlomi Fish, Jeremiah Foster, Mark Fowler, John Gabriele, Nathan Glenn, Kevin Granade, Andrew Grangaard, Bruce Gray, Ask Bjørn Hansen, Tim Heaney, Graeme Hewson, Robert Hicks, Michael Hicks, Michael Hind, Mark Hindess, Yary Hluchan, Daniel Holz, Mike Huffman, Gary H. Jones II, Curtis Jewell, Mohammed Arafat Kamaal, James E Keenan, Kirk Kimmel, Graham Knop, Yuval Kogman, Jan Krynicky, Michael Lang, Jeff Lavallee, Moritz Lenz, Andy Lester, Jean-Baptiste Mazon, Josh McAdams, Gareth McCaughan, John McNamara, Shawn M Moore, Alex Muntada, Carl Mäsak, Chris Niswander, Nelo Onyiah, Chas. Owens, ww from PerlMonks, Jess Robinson, Dave Rolsky, Gabrielle Roth, Grzegorz Rożniecki, Jean-Pierre Rupp, Eduardo Santiago, Andrew Savige, Lorne Schachter, Steve Schulze, Dan Scott, Alex-ander Scott-Johns, Phillip Smith, Christopher E. Stith, Mark A. Stratman, Bryan Summersett, Audrey Tang, Scott Thomson, Ben Tilly, Ruud H. G. van Tol, Sam Vilain, Larry Wall, Lewis Wall, Paul Waring, Colin Wetherbee, Frank Wiegand, Doug Wilson, Sawyer X, David Yingling, Marko Zagozen, Ahmad M. Zawawi, harleypig, hbm, and sunnavy.</p>
+<p content_id="1338" id="Y3JlZGl0cw"> John SJ Anderson, Peter Aronoff, Lee Aylward, Alex Balhatchet, Nitesh Bezzala, Ævar Arnfjörð Bjarmason, Matthias Bloch, John Bokma, Vasily Chekalkin, Dmitry Chestnykh, E. Choroba, Tom Christiansen, Anneli Cuss, Paulo Custodio, Steve Dickinson, Kurt Edmiston, Felipe, Shlomi Fish, Jeremiah Foster, Mark Fowler, John Gabriele, Nathan Glenn, Kevin Granade, Andrew Grangaard, Bruce Gray, Ask Bjørn Hansen, Tim Heaney, Graeme Hewson, Robert Hicks, Michael Hicks, Michael Hind, Mark Hindess, Yary Hluchan, Daniel Holz, Mike Huffman, Gary H. Jones II, Curtis Jewell, Mohammed Arafat Kamaal, James E Keenan, Kirk Kimmel, Graham Knop, Yuval Kogman, Jan Krynicky, Michael Lang, Jeff Lavallee, Moritz Lenz, Andy Lester, Jean-Baptiste Mazon, Josh McAdams, Gareth McCaughan, John McNamara, Shawn M Moore, Alex Muntada, Carl Mäsak, Chris Niswander, Nelo Onyiah, Chas. Owens, ww from PerlMonks, Jess Robinson, Dave Rolsky, Gabrielle Roth, Grzegorz Rożniecki, Jean-Pierre Rupp, Eduardo Santiago, Andrew Savige, Lorne Schachter, Steve Schulze, Dan Scott, Alex-ander Scott-Johns, Phillip Smith, Christopher E. Stith, Mark A. Stratman, Bryan Summersett, Audrey Tang, Scott Thomson, Ben Tilly, Ruud H. G. van Tol, Sam Vilain, Larry Wall, Lewis Wall, Paul Waring, Colin Wetherbee, Frank Wiegand, Doug Wilson, Sawyer X, David Yingling, Marko Zagozen, Ahmad M. Zawawi, harleypig, hbm, and sunnavy.</p>
 
-<p>Все оставшиеся ошибки по вине упорства автора.</p>
+<p content_id="1339">Все оставшиеся ошибки по вине упорства автора.</p>
 
 
         </div>

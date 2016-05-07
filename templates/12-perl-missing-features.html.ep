@@ -3,49 +3,49 @@
 
 <h1 id="V2hhdCdzTWlzc2luZw"><a name="V2hhdCdzTWlzc2luZw"></a>What&#39;s Missing</h1>
 
-<p>Perl isn&#39;t perfect, but it is malleable—in part because no single configuration is ideal for every programmer and every purpose. Some useful behaviors are available as core libraries. More are available from the CPAN. Effective Perl programmers take full advantage of the options available to them.</p>
+<p content_id="260">Perl isn&#39;t perfect, but it is malleable—in part because no single configuration is ideal for every programmer and every purpose. Some useful behaviors are available as core libraries. More are available from the CPAN. Effective Perl programmers take full advantage of the options available to them.</p>
 
 <h2 id="bWlzc2luZ19kZWZhdWx0cw"><a name="TWlzc2luZ0RlZmF1bHRz"></a>Missing Defaults</h2>
 
-<p id="bWlzc2luZ19kZWZhdWx0cw">Perl&#39;s language design process has always tried to combine practicality with expandability, but it was as impossible to predict the future in 1994 as it is in 2014. Perl 5 expanded the language and made the CPAN possible, but it also retained backwards compatibility with most Perl 1 code written as far back as 1987.</p>
+<p content_id="261" id="bWlzc2luZ19kZWZhdWx0cw">Perl&#39;s language design process has always tried to combine practicality with expandability, but it was as impossible to predict the future in 1994 as it is in 2014. Perl 5 expanded the language and made the CPAN possible, but it also retained backwards compatibility with most Perl 1 code written as far back as 1987.</p>
 
-<p>The best Perl code of 2014 is very different from the best Perl code of 1994 or the best Perl code of 1987.</p>
+<p content_id="262">The best Perl code of 2014 is very different from the best Perl code of 1994 or the best Perl code of 1987.</p>
 
-<p id="Q1BBTjtUYXNrOjpLZW5zaG81">Although Perl includes an extensive core library, it&#39;s not comprehensive. Many of the best modules are available outside of the core, from the CPAN (<a href="02-perl-community.html#Y3Bhbg">The CPAN</a>). The <code>Task::Kensho</code> meta-distribution includes several other distributions which represent the best the CPAN has to offer. When you need to solve a problem, look there first.</p>
+<p content_id="263" id="Q1BBTjtUYXNrOjpLZW5zaG81">Although Perl includes an extensive core library, it&#39;s not comprehensive. Many of the best modules are available outside of the core, from the CPAN (<a href="02-perl-community.html#Y3Bhbg">The CPAN</a>). The <code>Task::Kensho</code> meta-distribution includes several other distributions which represent the best the CPAN has to offer. When you need to solve a problem, look there first.</p>
 
-<p>There are still plenty of gems in the core, however.</p>
+<p content_id="264">There are still plenty of gems in the core, however.</p>
 
 <h3 id="VGhlc3RyaWN0UHJhZ21h"><a name="VGhlc3RyaWN0UHJhZ21h"></a>The strict Pragma</h3>
 
-<p id="c3RyaWN01"> <a name="cHJhZ21hcztzdHJpY3Q4"></a>The <code>strict</code> pragma (<a href="08-perl-style-efficiency.html#cHJhZ21hcw">Pragmas</a>) allows you to forbid (or re-enable) various powerful language constructs which offer potential for accidental abuse.</p>
+<p content_id="265" id="c3RyaWN01"> <a name="cHJhZ21hcztzdHJpY3Q4"></a>The <code>strict</code> pragma (<a href="08-perl-style-efficiency.html#cHJhZ21hcw">Pragmas</a>) allows you to forbid (or re-enable) various powerful language constructs which offer potential for accidental abuse.</p>
 
-<p><code>strict</code> forbids symbolic references, requires variable declarations (<a href="05-perl-functions.html#bGV4aWNhbF9zY29wZQ">Lexical Scope</a>), and prohibits the use of undeclared barewords (<a href="11-what-to-avoid-in-perl.html#YmFyZXdvcmRz">Barewords</a>). While symbolic references are occasionally necessary (<a href="09-managing-perl-programs.html#aW1wb3J0">Using and Importing</a>), the use of a variable as a variable name offers the possibility of subtle errors of action at a distance—or, worse, the possibility of poorly-validated user input manipulating private data for malicious purposes.</p>
+<p content_id="266"><code>strict</code> forbids symbolic references, requires variable declarations (<a href="05-perl-functions.html#bGV4aWNhbF9zY29wZQ">Lexical Scope</a>), and prohibits the use of undeclared barewords (<a href="11-what-to-avoid-in-perl.html#YmFyZXdvcmRz">Barewords</a>). While symbolic references are occasionally necessary (<a href="09-managing-perl-programs.html#aW1wb3J0">Using and Importing</a>), the use of a variable as a variable name offers the possibility of subtle errors of action at a distance—or, worse, the possibility of poorly-validated user input manipulating private data for malicious purposes.</p>
 
-<p>Requiring variable declarations helps to detect typos in variable names and encourages proper scoping of lexical variables. It&#39;s easier to see the intended scope of a lexical variable if all variables have <code>my</code> or <code>our</code> declarations in the appropriate scope.</p>
+<p content_id="267">Requiring variable declarations helps to detect typos in variable names and encourages proper scoping of lexical variables. It&#39;s easier to see the intended scope of a lexical variable if all variables have <code>my</code> or <code>our</code> declarations in the appropriate scope.</p>
 
-<p><code>strict</code> takes effect in lexical scopes. See <code>perldoc strict</code> for more details.</p>
+<p content_id="268"><code>strict</code> takes effect in lexical scopes. See <code>perldoc strict</code> for more details.</p>
 
 <h3 id="VGhld2FybmluZ3NQcmFnbWE"><a name="VGhld2FybmluZ3NQcmFnbWE"></a>The warnings Pragma</h3>
 
-<p>The <code>warnings</code> pragma (<a href="09-managing-perl-programs.html#aGFuZGxpbmdfd2FybmluZ3M">Handling Warnings</a>) controls the reporting of various warning classes, such as attempting to stringify the <code>undef</code> value or using the wrong type of operator on values. It also warns about the use of deprecated features.</p>
+<p content_id="269">The <code>warnings</code> pragma (<a href="09-managing-perl-programs.html#aGFuZGxpbmdfd2FybmluZ3M">Handling Warnings</a>) controls the reporting of various warning classes, such as attempting to stringify the <code>undef</code> value or using the wrong type of operator on values. It also warns about the use of deprecated features.</p>
 
-<p>The most useful warnings explain that Perl had trouble understanding what you meant and had to guess at the proper interpretation. Even though Perl often guesses correctly, disambiguation on your part will ensure that your programs run correctly.</p>
+<p content_id="270">The most useful warnings explain that Perl had trouble understanding what you meant and had to guess at the proper interpretation. Even though Perl often guesses correctly, disambiguation on your part will ensure that your programs run correctly.</p>
 
-<p>The <code>warnings</code> pragma takes effect in lexical scopes. See <code>perldoc perllexwarn</code> and <code>perldoc warnings</code> for more details.</p>
+<p content_id="271">The <code>warnings</code> pragma takes effect in lexical scopes. See <code>perldoc perllexwarn</code> and <code>perldoc warnings</code> for more details.</p>
 
 <div class="tip">
-<p class="title">Asking for More Help</p>
-<p>If you use both <code>warnings</code> with <code>diagnostics</code>, you&#39;ll get expanded diagnostic messages for each warning present in your programs, straight out of <code>perldoc perldiag</code>. It&#39;s a great help when learning Perl, but be sure to disable <code>diagnostics</code> before deploying your program, lest you fill up your logs or expose debugging information to users.</p>
+<p content_id="272" class="title">Asking for More Help</p>
+<p content_id="273">If you use both <code>warnings</code> with <code>diagnostics</code>, you&#39;ll get expanded diagnostic messages for each warning present in your programs, straight out of <code>perldoc perldiag</code>. It&#39;s a great help when learning Perl, but be sure to disable <code>diagnostics</code> before deploying your program, lest you fill up your logs or expose debugging information to users.</p>
 
 </div><h3 id="SU86OkZpbGVhbmRJTzo6SGFuZGxl"><a name="SU86OkZpbGVhbmRJTzo6SGFuZGxl"></a><code>IO::File</code> and <code>IO::Handle</code></h3>
 
-<p id="SU86OkZpbGU4"> <a name="SU86OkhhbmRsZQ3"></a>Before Perl 5.14, lexical filehandles were objects of the <code>IO::Handle</code> class, but you had to load <code>IO::Handle</code> explicitly before you could call methods on them. As of Perl 5.14, lexical filehandles are instances of <code>IO::File</code> and Perl loads it for you.</p>
+<p content_id="274" id="SU86OkZpbGU4"> <a name="SU86OkhhbmRsZQ3"></a>Before Perl 5.14, lexical filehandles were objects of the <code>IO::Handle</code> class, but you had to load <code>IO::Handle</code> explicitly before you could call methods on them. As of Perl 5.14, lexical filehandles are instances of <code>IO::File</code> and Perl loads it for you.</p>
 
-<p>Add <code>use IO::Handle;</code> to code running on Perl 5.12 or earlier if you call methods on lexical filehandles.</p>
+<p content_id="275">Add <code>use IO::Handle;</code> to code running on Perl 5.12 or earlier if you call methods on lexical filehandles.</p>
 
 <h3 id="YXV0b2RpZQ"><a name="VGhlYXV0b2RpZVByYWdtYQ"></a>The autodie Pragma</h3>
 
-<p id="YXV0b2RpZQ"> <a name="YXV0b2RpZXByYWdtYQ1"></a> <a name="cHJhZ21hczthdXRvZGll2"></a>Perl leaves error handling (or error ignoring) up to you. If you forget to check the return value of every <code>open()</code> call, for example, you could try to read from a closed filehandle—or worse, lose data as you try to write to one. The <code>autodie</code> pragma changes this for you. If you write:</p>
+<p content_id="276" id="YXV0b2RpZQ"> <a name="YXV0b2RpZXByYWdtYQ1"></a> <a name="cHJhZ21hczthdXRvZGll2"></a>Perl leaves error handling (or error ignoring) up to you. If you forget to check the return value of every <code>open()</code> call, for example, you could try to read from a closed filehandle—or worse, lose data as you try to write to one. The <code>autodie</code> pragma changes this for you. If you write:</p>
 
 <div class="programlisting">
 
@@ -55,13 +55,13 @@
 
 </div>
 
-<p>... an unsuccessful <code>open()</code> call will throw an exception. Given that the most appropriate approach to a failed system call is throwing an exception, this pragma can remove a lot of boilerplate code and allow you the peace of mind of knowing that you haven&#39;t forgotten to check a return value. See <code>perldoc autodie</code> for more information.</p>
+<p content_id="277">... an unsuccessful <code>open()</code> call will throw an exception. Given that the most appropriate approach to a failed system call is throwing an exception, this pragma can remove a lot of boilerplate code and allow you the peace of mind of knowing that you haven&#39;t forgotten to check a return value. See <code>perldoc autodie</code> for more information.</p>
 
 <h3 id="dmVyc2lvbl9udW1iZXJz"><a name="UGVybFZlcnNpb25OdW1iZXJz"></a>Perl Version Numbers</h3>
 
-<p id="dmVyc2lvbl9udW1iZXJz"> <a name="Q1BBTjtQZXJsOjpNaW5pbXVtVmVyc2lvbg1"></a>If you encounter a piece of Perl code without knowing when it was written or who wrote it, can you tell which version of Perl it requires? If you have a lot of experience with Perl both before and after the release of Perl 5.10, you might remember which version added <code>say</code> and when <code>autodie</code> entered the core. Otherwise, you might have to guess, trawl through <code>perldelta</code> files, or use <code>CPAN::MinimumVersion</code> from the CPAN.</p>
+<p content_id="278" id="dmVyc2lvbl9udW1iZXJz"> <a name="Q1BBTjtQZXJsOjpNaW5pbXVtVmVyc2lvbg1"></a>If you encounter a piece of Perl code without knowing when it was written or who wrote it, can you tell which version of Perl it requires? If you have a lot of experience with Perl both before and after the release of Perl 5.10, you might remember which version added <code>say</code> and when <code>autodie</code> entered the core. Otherwise, you might have to guess, trawl through <code>perldelta</code> files, or use <code>CPAN::MinimumVersion</code> from the CPAN.</p>
 
-<p>There&#39;s no requirement for you to add the minimum required Perl version number to all new code you write, but it <em>can</em> clarify your intentions. For example, if you&#39;ve tested your code with Perl 5.12 and use only features present in Perl 5.12, write:</p>
+<p content_id="279">There&#39;s no requirement for you to add the minimum required Perl version number to all new code you write, but it <em>can</em> clarify your intentions. For example, if you&#39;ve tested your code with Perl 5.12 and use only features present in Perl 5.12, write:</p>
 
 <div class="programlisting">
 
@@ -69,7 +69,7 @@
 
 </div>
 
-<p>... and you&#39;ll document your intent. You&#39;ll also make it easier for tools to identify the particular features of Perl you may or may not use in this code. If someone comes along later and proves that the code works just fine on Perl 5.10, you can change the version number—and you&#39;ll do so based on practical evidence.</p>
+<p content_id="280">... and you&#39;ll document your intent. You&#39;ll also make it easier for tools to identify the particular features of Perl you may or may not use in this code. If someone comes along later and proves that the code works just fine on Perl 5.10, you can change the version number—and you&#39;ll do so based on practical evidence.</p>
 
 
         </div>

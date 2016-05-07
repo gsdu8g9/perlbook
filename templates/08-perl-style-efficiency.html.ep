@@ -3,33 +3,33 @@
 
 <h1 id="c3R5bGU"><a name="U3R5bGVhbmRFZmZpY2FjeQ"></a>Style and Efficacy</h1>
 
-<p>Quality matters. Programs have bugs. Programs need maintenance and expansion. Programs have multiple programmers.</p>
+<p content_id="1340">Quality matters. Programs have bugs. Programs need maintenance and expansion. Programs have multiple programmers.</p>
 
-<p>To program well, we must find the balance between getting the job done now and making our lives easier in the future. We must balance time, resources, and quality. The craft of programming demands that we do that to the best of our ability.</p>
+<p content_id="1341">To program well, we must find the balance between getting the job done now and making our lives easier in the future. We must balance time, resources, and quality. The craft of programming demands that we do that to the best of our ability.</p>
 
-<p>To write Perl well, we must understand the language. We must also cultivate a sense of good taste for the language and the design of programs. The only way to do so is to practice maintaining code and reading and writing great code. This path has no shortcuts, but it does have guideposts.</p>
+<p content_id="1342">To write Perl well, we must understand the language. We must also cultivate a sense of good taste for the language and the design of programs. The only way to do so is to practice maintaining code and reading and writing great code. This path has no shortcuts, but it does have guideposts.</p>
 
 <h2 id="V3JpdGluZ01haW50YWluYWJsZVBlcmw"><a name="V3JpdGluZ01haW50YWluYWJsZVBlcmw"></a>Writing Maintainable Perl</h2>
 
-<p id="c3R5bGU"><a name="bWFpbnRhaW5hYmlsaXR51"></a><em>Maintainability</em> is the nebulous measurement of how easy it is to understand and modify a program. Write some code. Come back to it in six months. How long does it take you to fix a bug or add a feature? That&#39;s maintainability.</p>
+<p content_id="1343" id="c3R5bGU"><a name="bWFpbnRhaW5hYmlsaXR51"></a><em>Maintainability</em> is the nebulous measurement of how easy it is to understand and modify a program. Write some code. Come back to it in six months. How long does it take you to fix a bug or add a feature? That&#39;s maintainability.</p>
 
-<p>Maintainability doesn&#39;t measure whether you have to look up the syntax for a builtin or a library function. It doesn&#39;t measure how someone who has never programmed before will or won&#39;t read your code. It&#39;s more interesting to ask whether a competent programmer who understands the problem you&#39;re trying to solve will find it easy or difficult to modify the program. What problems get in the way of fixing a bug or adding an enhancement correctly?</p>
+<p content_id="1344">Maintainability doesn&#39;t measure whether you have to look up the syntax for a builtin or a library function. It doesn&#39;t measure how someone who has never programmed before will or won&#39;t read your code. It&#39;s more interesting to ask whether a competent programmer who understands the problem you&#39;re trying to solve will find it easy or difficult to modify the program. What problems get in the way of fixing a bug or adding an enhancement correctly?</p>
 
-<p>To write maintainable software, you need experience solving real problems, an understanding of the idioms and techniques and style of your programming language, and good taste. You can develop all of these by concentrating on a few principles:</p>
+<p content_id="1345">To write maintainable software, you need experience solving real problems, an understanding of the idioms and techniques and style of your programming language, and good taste. You can develop all of these by concentrating on a few principles:</p>
 
 <ul>
 
-<li><em>Remove duplication.</em> Bugs lurk in sections of repeated and similar code—when you fix a bug in one piece of code, did you fix it in others? When you update one section, did you update the others?<p>Well-designed systems have little duplication. They use functions, modules, objects, and roles to extract duplicate code into distinct components which accurately model the domain of the problem. The best designs allow you to add features by <em>removing</em> code.</p>
+<li><em>Remove duplication.</em> Bugs lurk in sections of repeated and similar code—when you fix a bug in one piece of code, did you fix it in others? When you update one section, did you update the others?<p content_id="1346">Well-designed systems have little duplication. They use functions, modules, objects, and roles to extract duplicate code into distinct components which accurately model the domain of the problem. The best designs allow you to add features by <em>removing</em> code.</p>
 
 </li>
 
 <li><em>Name entities well.</em> Your code tells a story. Every name you choose for a variable, function, module, and class allows you to clarify or obfuscate your intent. Choose your names carefully. If you&#39;re having trouble choosing good names, you may need to rethink your design or study your problem in more detail.</li>
 
-<li><em>Avoid unnecessary cleverness.</em> Concise code is good, when it reveals the intention of the code. Clever code hides your intent behind flashy tricks. Perl allows you to write the right code at the right time. Choose the most obvious solution when possible. Experience and good taste will guide you.<p>Some problems require clever solutions. When this happens, encapsulate this code behind a simple interface and document your cleverness.</p>
+<li><em>Avoid unnecessary cleverness.</em> Concise code is good, when it reveals the intention of the code. Clever code hides your intent behind flashy tricks. Perl allows you to write the right code at the right time. Choose the most obvious solution when possible. Experience and good taste will guide you.<p content_id="1347">Some problems require clever solutions. When this happens, encapsulate this code behind a simple interface and document your cleverness.</p>
 
 </li>
 
-<li><em>Embrace simplicity.</em> If everything else is equal, a simpler program is easier to maintain than its more complex workalike. Simplicity means knowing what&#39;s most important and doing just that.<p>Sometimes you need powerful, robust code. Sometimes you need a one-liner. Simplicity means knowing the difference and building only what you need. This is no excuse to avoid error checking or modularity or validation or security. Simple code can use advanced features. Simple code can use CPAN modules, and many of them. Simple code may require work to understand. Yet simple code solves problems effectively, without <em>unnecessary</em> work.</p>
+<li><em>Embrace simplicity.</em> If everything else is equal, a simpler program is easier to maintain than its more complex workalike. Simplicity means knowing what&#39;s most important and doing just that.<p content_id="1348">Sometimes you need powerful, robust code. Sometimes you need a one-liner. Simplicity means knowing the difference and building only what you need. This is no excuse to avoid error checking or modularity or validation or security. Simple code can use advanced features. Simple code can use CPAN modules, and many of them. Simple code may require work to understand. Yet simple code solves problems effectively, without <em>unnecessary</em> work.</p>
 
 </li>
 
@@ -37,13 +37,13 @@
 
 <h2 id="V3JpdGluZ0lkaW9tYXRpY1Blcmw"><a name="V3JpdGluZ0lkaW9tYXRpY1Blcmw"></a>Writing Idiomatic Perl</h2>
 
-<p id="aWRpb21z1">Perl borrows liberally from other languages. Perl lets you write the code you want to write. C programmers often write C-style Perl, just as Java programmers write Java-style Perl. Effective Perl programmers write Perlish Perl, embracing the language&#39;s idioms.</p>
+<p content_id="1349" id="aWRpb21z1">Perl borrows liberally from other languages. Perl lets you write the code you want to write. C programmers often write C-style Perl, just as Java programmers write Java-style Perl. Effective Perl programmers write Perlish Perl, embracing the language&#39;s idioms.</p>
 
 <ul>
 
-<li><em>Understand community wisdom.</em> Perl programmers often debate techniques and idioms fiercely. Perl programmers also often share their work, and not just on the CPAN. Pay attention, and gain enlightenment on the tradeoffs between various ideals and styles.<p>CPAN developers, Perl Mongers, and mailing list participants have hard-won experience solving problems in myriad ways. Talk to them. Read their code. Ask questions. Learn from them and let them learn from you.</p>
+<li><em>Understand community wisdom.</em> Perl programmers often debate techniques and idioms fiercely. Perl programmers also often share their work, and not just on the CPAN. Pay attention, and gain enlightenment on the tradeoffs between various ideals and styles.<p content_id="1350">CPAN developers, Perl Mongers, and mailing list participants have hard-won experience solving problems in myriad ways. Talk to them. Read their code. Ask questions. Learn from them and let them learn from you.</p>
 
-<p id="Q1BBTjtQZXJsOjpDcml0aWM1"> <a name="Q1BBTjtQZXJsOjpUaWR51"></a> <a name="Q1BBTjtDUEFOOjpNaW5p1"></a> <a name="Q1BBTjtDYXJ0b241"></a> <a name="Q1BBTjtQaW50bw1"></a></p>
+<p content_id="1351" id="Q1BBTjtQZXJsOjpDcml0aWM1"> <a name="Q1BBTjtQZXJsOjpUaWR51"></a> <a name="Q1BBTjtDUEFOOjpNaW5p1"></a> <a name="Q1BBTjtDYXJ0b241"></a> <a name="Q1BBTjtQaW50bw1"></a></p>
 
 </li>
 
@@ -55,7 +55,7 @@
 
 <h2 id="V3JpdGluZ0VmZmVjdGl2ZVBlcmw"><a name="V3JpdGluZ0VmZmVjdGl2ZVBlcmw"></a>Writing Effective Perl</h2>
 
-<p id="ZWZmaWNhY3k1">Writing maintainable code means designing maintainable code. Good design comes from good habits:</p>
+<p content_id="1352" id="ZWZmaWNhY3k1">Writing maintainable code means designing maintainable code. Good design comes from good habits:</p>
 
 <ul>
 
@@ -65,9 +65,9 @@
 
 <li><em>Follow sensible coding standards.</em> Effective guidelines discuss error handling, security, encapsulation, API design, project layout, and other facets of maintainable code. Excellent guidelines help developers communicate with each other with code. Your job is to solve problems with code. Let your code speak clearly.</li>
 
-<li><em>Exploit the CPAN.</em> Perl programmers solve problems. Then we share those solutions. The CPAN is a force multiplier; search it first for a solution or partial solution to your problem. Invest time in research to find full or partial solutions you can reuse. It will pay off.<p>If you find a bug, report it. Patch it, if possible. Fix a typo. Ask for a feature. Say &quot;Thank you!&quot; We are better together than we are separately. We are powerful and effective when we reuse code.</p>
+<li><em>Exploit the CPAN.</em> Perl programmers solve problems. Then we share those solutions. The CPAN is a force multiplier; search it first for a solution or partial solution to your problem. Invest time in research to find full or partial solutions you can reuse. It will pay off.<p content_id="1353">If you find a bug, report it. Patch it, if possible. Fix a typo. Ask for a feature. Say &quot;Thank you!&quot; We are better together than we are separately. We are powerful and effective when we reuse code.</p>
 
-<p>When you&#39;re ready—when you create something new or fix something old in a reusable way—share your code. Join us. We solve problems.</p>
+<p content_id="1354">When you&#39;re ready—when you create something new or fix something old in a reusable way—share your code. Join us. We solve problems.</p>
 
 </li>
 
@@ -75,13 +75,13 @@
 
 <h2 id="ZXhjZXB0aW9ucw"><a name="RXhjZXB0aW9ucw"></a>Exceptions</h2>
 
-<p id="ZXhjZXB0aW9ucw"> <a name="ZXhjZXB0aW9ucw1"></a>Good programmers anticipate the unexpected. Files that should exist won&#39;t. A huge disk that will never fill up will. The always-up network goes down. The unbreakable database breaks. Exceptions happen. Robust software must handle them. If you can recover, great! If you can&#39;t, log the relevant information and retry.</p>
+<p content_id="1355" id="ZXhjZXB0aW9ucw"> <a name="ZXhjZXB0aW9ucw1"></a>Good programmers anticipate the unexpected. Files that should exist won&#39;t. A huge disk that will never fill up will. The always-up network goes down. The unbreakable database breaks. Exceptions happen. Robust software must handle them. If you can recover, great! If you can&#39;t, log the relevant information and retry.</p>
 
-<p>Perl handles exceptional conditions through <em>exceptions</em>: a dynamically-scoped control flow mechanism designed to raise and handle errors.</p>
+<p content_id="1356">Perl handles exceptional conditions through <em>exceptions</em>: a dynamically-scoped control flow mechanism designed to raise and handle errors.</p>
 
 <h3 id="dGhyb3dpbmdfZXhjZXB0aW9ucw"><a name="VGhyb3dpbmdFeGNlcHRpb25z"></a>Throwing Exceptions</h3>
 
-<p id="dGhyb3dpbmdfZXhjZXB0aW9ucw">Suppose you want to write a log file. If you can&#39;t open the file, something has gone wrong. Use <code>die</code> to throw an exception <span class="footnote">... or let <code>autodie</code> (<a href="12-perl-missing-features.html#YXV0b2RpZQ">The autodie Pragma</a>) add it for you, in this case.</span>:</p>
+<p content_id="1357" id="dGhyb3dpbmdfZXhjZXB0aW9ucw">Suppose you want to write a log file. If you can&#39;t open the file, something has gone wrong. Use <code>die</code> to throw an exception <span class="footnote">... or let <code>autodie</code> (<a href="12-perl-missing-features.html#YXV0b2RpZQ">The autodie Pragma</a>) add it for you, in this case.</span>:</p>
 
 <div class="programlisting">
 
@@ -95,15 +95,15 @@
 
 </div>
 
-<p id="YnVpbHRpbnM7ZGll1"> <a name="ZXhjZXB0aW9uczt0aHJvd2luZw1"></a> <a name="ZXhjZXB0aW9uczt0aHJvd2luZ3N0cmluZ3M1"></a> <a name="ZXhjZXB0aW9ucztkaWU1"></a> <a name="JEA2"></a> <a name="ZXhjZXB0aW9uczskQA1"></a><code>die()</code> sets the global variable <code>$@</code> to its operand and immediately exits the current function <em>without returning anything</em>. This thrown exception will continue up the call stack (<a href="10-perl-beyond-syntax.html#Y29udHJvbGxlZF9leGVjdXRpb24">Controlled Execution</a>) until something catches it. If nothing catches the exception, the program will exit with an error.</p>
+<p content_id="1358" id="YnVpbHRpbnM7ZGll1"> <a name="ZXhjZXB0aW9uczt0aHJvd2luZw1"></a> <a name="ZXhjZXB0aW9uczt0aHJvd2luZ3N0cmluZ3M1"></a> <a name="ZXhjZXB0aW9ucztkaWU1"></a> <a name="JEA2"></a> <a name="ZXhjZXB0aW9uczskQA1"></a><code>die()</code> sets the global variable <code>$@</code> to its operand and immediately exits the current function <em>without returning anything</em>. This thrown exception will continue up the call stack (<a href="10-perl-beyond-syntax.html#Y29udHJvbGxlZF9leGVjdXRpb24">Controlled Execution</a>) until something catches it. If nothing catches the exception, the program will exit with an error.</p>
 
-<p>Exception handling uses the same dynamic scope (<a href="05-perl-functions.html#ZHluYW1pY19zY29wZQ">Dynamic Scope</a>) as <code>local</code> symbols.</p>
+<p content_id="1359">Exception handling uses the same dynamic scope (<a href="05-perl-functions.html#ZHluYW1pY19zY29wZQ">Dynamic Scope</a>) as <code>local</code> symbols.</p>
 
 <h3 id="Y2F0Y2hpbmdfZXhjZXB0aW9ucw"><a name="Q2F0Y2hpbmdFeGNlcHRpb25z"></a>Catching Exceptions</h3>
 
-<p id="Y2F0Y2hpbmdfZXhjZXB0aW9ucw"><a name="ZXhjZXB0aW9ucztjYXRjaGluZw1"></a>Sometimes allowing an exception to end the program is useful. A program run as a timed process might throw an exception when the error logs have filled, causing an SMS to go out to administrators. Yet not all exceptions should be fatal. Your program might need to recover from some exceptions. Other exceptions might only give you a chance to save your user&#39;s work and exit cleanly.</p>
+<p content_id="1360" id="Y2F0Y2hpbmdfZXhjZXB0aW9ucw"><a name="ZXhjZXB0aW9ucztjYXRjaGluZw1"></a>Sometimes allowing an exception to end the program is useful. A program run as a timed process might throw an exception when the error logs have filled, causing an SMS to go out to administrators. Yet not all exceptions should be fatal. Your program might need to recover from some exceptions. Other exceptions might only give you a chance to save your user&#39;s work and exit cleanly.</p>
 
-<p id="YnVpbHRpbnM7ZXZhbA1"> <a name="ZXZhbDtibG9jaw1"></a>Use the block form of the <code>eval</code> operator to catch an exception:</p>
+<p content_id="1361" id="YnVpbHRpbnM7ZXZhbA1"> <a name="ZXZhbDtibG9jaw1"></a>Use the block form of the <code>eval</code> operator to catch an exception:</p>
 
 <div class="programlisting">
 
@@ -112,11 +112,11 @@
 
 </div>
 
-<p>If the file open succeeds, <code>$fh</code> will contain the filehandle. If it fails, <code>$fh</code> will remain undefined, and program flow will continue.</p>
+<p content_id="1362">If the file open succeeds, <code>$fh</code> will contain the filehandle. If it fails, <code>$fh</code> will remain undefined, and program flow will continue.</p>
 
-<p>The block argument to <code>eval</code> introduces a new scope, both lexical and dynamic. If <code>open_log_file()</code> called other functions and something eventually threw an exception, this <code>eval</code> could catch it.</p>
+<p content_id="1363">The block argument to <code>eval</code> introduces a new scope, both lexical and dynamic. If <code>open_log_file()</code> called other functions and something eventually threw an exception, this <code>eval</code> could catch it.</p>
 
-<p id="bWFnaWN2YXJpYWJsZXM7JEA2">An exception handler is a blunt tool. It will catch all exceptions thrown in its dynamic scope. To check which exception you&#39;ve caught (or if you&#39;ve caught an exception at all), check the value of <code>$@</code>. Be sure to <code>local</code>ize <code>$@</code> before you attempt to catch an exception, as <code>$@</code> is a global variable:</p>
+<p content_id="1364" id="bWFnaWN2YXJpYWJsZXM7JEA2">An exception handler is a blunt tool. It will catch all exceptions thrown in its dynamic scope. To check which exception you&#39;ve caught (or if you&#39;ve caught an exception at all), check the value of <code>$@</code>. Be sure to <code>local</code>ize <code>$@</code> before you attempt to catch an exception, as <code>$@</code> is a global variable:</p>
 
 <div class="programlisting">
 
@@ -130,9 +130,9 @@
 
 </div>
 
-<p id="ZXhjZXB0aW9ucztyZXRocm93aW5n1">Copy <code>$@</code> to a lexical variable immediately to avoid the possibility of subsequent code clobbering the global variable <code>$@</code>. You never know what else has used an <code>eval</code> block elsewhere and reset <code>$@</code>.</p>
+<p content_id="1365" id="ZXhjZXB0aW9ucztyZXRocm93aW5n1">Copy <code>$@</code> to a lexical variable immediately to avoid the possibility of subsequent code clobbering the global variable <code>$@</code>. You never know what else has used an <code>eval</code> block elsewhere and reset <code>$@</code>.</p>
 
-<p><code>$@</code> usually contains a string describing the exception. Inspect its contents to see whether you can handle the exception:</p>
+<p content_id="1366"><code>$@</code> usually contains a string describing the exception. Inspect its contents to see whether you can handle the exception:</p>
 
 <div class="programlisting">
 
@@ -145,11 +145,11 @@
 
 </div>
 
-<p>Rethrow an exception by calling <code>die()</code> again. Pass the existing exception or a new one as necessary.</p>
+<p content_id="1367">Rethrow an exception by calling <code>die()</code> again. Pass the existing exception or a new one as necessary.</p>
 
-<p id="ZXhjZXB0aW9uczt0aHJvd2luZ29iamVjdHM1">Applying regular expressions to string exceptions can be fragile, because error messages may change over time. This includes the core exceptions that Perl itself throws. Instead of throwing an exception as a string, you may use a reference—even a blessed reference—with <code>die</code>. This allows you to provide much more information in your exception: line numbers, files, and other debugging information. Retrieving information from a data structure is much easier than parsing data out of a string. Catch these exceptions as you would any other exception.</p>
+<p content_id="1368" id="ZXhjZXB0aW9uczt0aHJvd2luZ29iamVjdHM1">Applying regular expressions to string exceptions can be fragile, because error messages may change over time. This includes the core exceptions that Perl itself throws. Instead of throwing an exception as a string, you may use a reference—even a blessed reference—with <code>die</code>. This allows you to provide much more information in your exception: line numbers, files, and other debugging information. Retrieving information from a data structure is much easier than parsing data out of a string. Catch these exceptions as you would any other exception.</p>
 
-<p id="ZXhjZXB0aW9ucztjdXN0b21jbGFzc2Vzd2l0aEV4Y2VwdGlvbjo6Q2xhc3M1"> <a name="RXhjZXB0aW9uOjpDbGFzcw1"></a>The CPAN distribution <code>Exception::Class</code> makes creating and using exception objects easy:</p>
+<p content_id="1369" id="ZXhjZXB0aW9ucztjdXN0b21jbGFzc2Vzd2l0aEV4Y2VwdGlvbjo6Q2xhc3M1"> <a name="RXhjZXB0aW9uOjpDbGFzcw1"></a>The CPAN distribution <code>Exception::Class</code> makes creating and using exception objects easy:</p>
 
 <div class="programlisting">
 
@@ -180,7 +180,7 @@
 
 <h3 id="ZXhjZXB0aW9uX2NhdmVhdHM"><a name="RXhjZXB0aW9uQ2F2ZWF0cw"></a>Exception Caveats</h3>
 
-<p id="ZXhjZXB0aW9uX2NhdmVhdHM"><a name="ZXhjZXB0aW9ucztjYXZlYXRz1"></a>Though throwing exceptions is relatively simple, catching them is less so. Using <code>$@</code> correctly requires you to navigate several subtle risks:</p>
+<p content_id="1370" id="ZXhjZXB0aW9uX2NhdmVhdHM"><a name="ZXhjZXB0aW9ucztjYXZlYXRz1"></a>Though throwing exceptions is relatively simple, catching them is less so. Using <code>$@</code> correctly requires you to navigate several subtle risks:</p>
 
 <ul>
 
@@ -194,9 +194,9 @@
 
 </ul>
 
-<p id="ZXhjZXB0aW9ucztoYW5kbGluZ3NhZmVseXdpdGhUcnk6OlRpbnk1"> <a name="VHJ5OjpUaW551"></a>Perl 5.14 fixed some of these issues. They occur rarely, but they&#39;re often difficult to diagnose and to fix. The <code>Try::Tiny</code> CPAN distribution improves the safety of exception handling <em>and</em> the syntax <span class="footnote"><code>Try::Tiny</code> inspired improvements to Perl 5.14&#39;s exception handling.</span>.</p>
+<p content_id="1371" id="ZXhjZXB0aW9ucztoYW5kbGluZ3NhZmVseXdpdGhUcnk6OlRpbnk1"> <a name="VHJ5OjpUaW551"></a>Perl 5.14 fixed some of these issues. They occur rarely, but they&#39;re often difficult to diagnose and to fix. The <code>Try::Tiny</code> CPAN distribution improves the safety of exception handling <em>and</em> the syntax <span class="footnote"><code>Try::Tiny</code> inspired improvements to Perl 5.14&#39;s exception handling.</span>.</p>
 
-<p><code>Try::Tiny</code> is easy to use:</p>
+<p content_id="1372"><code>Try::Tiny</code> is easy to use:</p>
 
 <div class="programlisting">
 
@@ -207,11 +207,11 @@
 
 </div>
 
-<p><code>try</code> replaces <code>eval</code>. The optional <code>catch</code> block executes only when <code>try</code> catches an exception. <code>catch</code> receives the caught exception as the topic variable <code>$_</code>.</p>
+<p content_id="1373"><code>try</code> replaces <code>eval</code>. The optional <code>catch</code> block executes only when <code>try</code> catches an exception. <code>catch</code> receives the caught exception as the topic variable <code>$_</code>.</p>
 
 <h3 id="YnVpbHRpbl9leGNlcHRpb25z"><a name="QnVpbHQtaW5FeGNlcHRpb25z"></a>Built-in Exceptions</h3>
 
-<p id="YnVpbHRpbl9leGNlcHRpb25z"><a name="ZXhjZXB0aW9ucztjb3Jl1"></a>Perl itself throws several exceptional conditions. <code>perldoc perldiag</code> lists several &quot;trappable fatal errors&quot;. Some are syntax errors that Perl produces during failed compilations, but you can catch the others during runtime. The most interesting are:</p>
+<p content_id="1374" id="YnVpbHRpbl9leGNlcHRpb25z"><a name="ZXhjZXB0aW9ucztjb3Jl1"></a>Perl itself throws several exceptional conditions. <code>perldoc perldiag</code> lists several &quot;trappable fatal errors&quot;. Some are syntax errors that Perl produces during failed compilations, but you can catch the others during runtime. The most interesting are:</p>
 
 <ul>
 
@@ -231,15 +231,15 @@
 
 </ul>
 
-<p id="YXV0b2RpZQ1">Of course you can also catch exceptions produced by <code>autodie</code> (<a href="12-perl-missing-features.html#YXV0b2RpZQ">The autodie Pragma</a>) and any lexical warnings promoted to exceptions (<a href="09-managing-perl-programs.html#cmVnaXN0ZXJpbmdfd2FybmluZ3M">Registering Your Own Warnings</a>).</p>
+<p content_id="1375" id="YXV0b2RpZQ1">Of course you can also catch exceptions produced by <code>autodie</code> (<a href="12-perl-missing-features.html#YXV0b2RpZQ">The autodie Pragma</a>) and any lexical warnings promoted to exceptions (<a href="09-managing-perl-programs.html#cmVnaXN0ZXJpbmdfd2FybmluZ3M">Registering Your Own Warnings</a>).</p>
 
 <h2 id="cHJhZ21hcw"><a name="UHJhZ21hcw"></a>Pragmas</h2>
 
-<p id="cHJhZ21hcw"><a name="cHJhZ21hcw1"></a> <a name="bW9kdWxlcztwcmFnbWFz1"></a>Most Perl modules which provide new functions or define classes (<a href="07-object-oriented-perl.html#bW9vc2U">Moose</a>). Others, such as <code>strict</code> or <code>warnings</code>, influence the behavior of the language itself. This second class of module is a <em>pragma</em>. By convention, pragmas have lower-case names to differentiate them from other modules.</p>
+<p content_id="1376" id="cHJhZ21hcw"><a name="cHJhZ21hcw1"></a> <a name="bW9kdWxlcztwcmFnbWFz1"></a>Most Perl modules which provide new functions or define classes (<a href="07-object-oriented-perl.html#bW9vc2U">Moose</a>). Others, such as <code>strict</code> or <code>warnings</code>, influence the behavior of the language itself. This second class of module is a <em>pragma</em>. By convention, pragmas have lower-case names to differentiate them from other modules.</p>
 
 <h3 id="UHJhZ21hc2FuZFNjb3Bl"><a name="UHJhZ21hc2FuZFNjb3Bl"></a>Pragmas and Scope</h3>
 
-<p id="cHJhZ21hcztzY29wZQ1">Pragmas work by exporting specific behavior or information into the lexical scopes of their callers. You&#39;ve seen how declaring a lexical variable makes a symbol name available within a scope. Using a pragma makes its behavior effective within a scope as well:</p>
+<p content_id="1377" id="cHJhZ21hcztzY29wZQ1">Pragmas work by exporting specific behavior or information into the lexical scopes of their callers. You&#39;ve seen how declaring a lexical variable makes a symbol name available within a scope. Using a pragma makes its behavior effective within a scope as well:</p>
 
 <div class="programlisting">
 
@@ -255,7 +255,7 @@
 
 </div>
 
-<p>Just as lexical declarations affect inner scopes, pragmas maintain their effects within inner scopes:</p>
+<p content_id="1378">Just as lexical declarations affect inner scopes, pragmas maintain their effects within inner scopes:</p>
 
 <div class="programlisting">
 
@@ -271,7 +271,7 @@
 
 <h3 id="VXNpbmdQcmFnbWFz"><a name="VXNpbmdQcmFnbWFz"></a>Using Pragmas</h3>
 
-<p id="cHJhZ21hcztlbmFibGluZw1"><code>use</code> a pragma as you would any other module. Pragmas take arguments, such as a minimum version number to use or a list of arguments to change the pragma&#39;s behavior:</p>
+<p content_id="1379" id="cHJhZ21hcztlbmFibGluZw1"><code>use</code> a pragma as you would any other module. Pragmas take arguments, such as a minimum version number to use or a list of arguments to change the pragma&#39;s behavior:</p>
 
 <div class="programlisting">
 
@@ -283,7 +283,7 @@
 
 </div>
 
-<p id="cHJhZ21hcztkaXNhYmxpbmc1"> <a name="YnVpbHRpbnM7bm81"></a>Sometimes you need to <em>disable</em> all or part of those effects within a further nested lexical scope. The <code>no</code> builtin performs an unimport (<a href="05-perl-functions.html#aW1wb3J0aW5n">Importing</a>), which undoes the effects of a well-behaved pragma. For example, to disable the protection of <code>strict</code> when you need to do something symbolic:</p>
+<p content_id="1380" id="cHJhZ21hcztkaXNhYmxpbmc1"> <a name="YnVpbHRpbnM7bm81"></a>Sometimes you need to <em>disable</em> all or part of those effects within a further nested lexical scope. The <code>no</code> builtin performs an unimport (<a href="05-perl-functions.html#aW1wb3J0aW5n">Importing</a>), which undoes the effects of a well-behaved pragma. For example, to disable the protection of <code>strict</code> when you need to do something symbolic:</p>
 
 <div class="programlisting">
 
@@ -298,7 +298,7 @@
 
 <h3 id="VXNlZnVsUHJhZ21hcw"><a name="VXNlZnVsUHJhZ21hcw"></a>Useful Pragmas</h3>
 
-<p id="cHJhZ21hczt1c2VmdWxjb3JlcHJhZ21hcw1">Perl includes several useful core pragmas.</p>
+<p content_id="1381" id="cHJhZ21hczt1c2VmdWxjb3JlcHJhZ21hcw1">Perl includes several useful core pragmas.</p>
 
 <ul>
 
@@ -320,9 +320,9 @@
 
 </ul>
 
-<p id="cHJhZ21hcztzdHJpY3Q1"><a name="bWFnaWN2YXJpYWJsZXM7JF5I1"></a> <a name="cHJhZ21hczt3cml0aW5n1"></a>As you might suspect from <code>less</code>, you can write your own lexical pragmas in pure Perl. <code>perldoc perlpragma</code> explains how to do so, while the explanation of <code>$^H</code> in <code>perldoc perlvar</code> explains how the feature works.</p>
+<p content_id="1382" id="cHJhZ21hcztzdHJpY3Q1"><a name="bWFnaWN2YXJpYWJsZXM7JF5I1"></a> <a name="cHJhZ21hczt3cml0aW5n1"></a>As you might suspect from <code>less</code>, you can write your own lexical pragmas in pure Perl. <code>perldoc perlpragma</code> explains how to do so, while the explanation of <code>$^H</code> in <code>perldoc perlvar</code> explains how the feature works.</p>
 
-<p>The CPAN has begun to gather non-core pragmas:</p>
+<p content_id="1383">The CPAN has begun to gather non-core pragmas:</p>
 
 <ul>
 
@@ -336,7 +336,7 @@
 
 </ul>
 
-<p id="Q1BBTjthdXRvYm941"> <a name="Q1BBTjtwZXJsNWk1"></a> <a name="Q1BBTjthdXRvdml2aWZpY2F0aW9u1"></a> <a name="Q1BBTjtpbmRpcmVjdA1"></a>These tools are not widely used yet, but they have their champions. <code>autovivification</code> and <code>indirect</code> can help you write more correct code. <code>autobox</code> and <code>perl5i</code> are experiments with what Perl might one day become; they&#39;re worth playing with in small projects.</p>
+<p content_id="1384" id="Q1BBTjthdXRvYm941"> <a name="Q1BBTjtwZXJsNWk1"></a> <a name="Q1BBTjthdXRvdml2aWZpY2F0aW9u1"></a> <a name="Q1BBTjtpbmRpcmVjdA1"></a>These tools are not widely used yet, but they have their champions. <code>autovivification</code> and <code>indirect</code> can help you write more correct code. <code>autobox</code> and <code>perl5i</code> are experiments with what Perl might one day become; they&#39;re worth playing with in small projects.</p>
 
 
         </div>

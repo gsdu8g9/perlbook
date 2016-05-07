@@ -3,49 +3,49 @@
 
 <h1 id="b3BlcmF0b3Jz"><a name="T3BlcmF0b3Jz"></a>Operators</h1>
 
-<p id="b3BlcmF0b3Jz"> <a name="b3BlcmF0b3Jz1"></a> <a name="b3BlcmFuZHM1"></a>Some people call Perl an &quot;operator-oriented language&quot;. To understand a Perl program, you must understand how its operators interact with their operands.</p>
+<p content_id="281" id="b3BlcmF0b3Jz"> <a name="b3BlcmF0b3Jz1"></a> <a name="b3BlcmFuZHM1"></a>Some people call Perl an &quot;operator-oriented language&quot;. To understand a Perl program, you must understand how its operators interact with their operands.</p>
 
-<p>A Perl <em>operator</em> is a series of one or more symbols used as part of the syntax of a language. Each operator operates on zero or more <em>operands</em>. Think of an operator as a special sort of function the parser understands and its operands as arguments.</p>
+<p content_id="282">A Perl <em>operator</em> is a series of one or more symbols used as part of the syntax of a language. Each operator operates on zero or more <em>operands</em>. Think of an operator as a special sort of function the parser understands and its operands as arguments.</p>
 
 <h2 id="b3BlcmF0b3JfY2hhcmFjdGVyaXN0aWNz"><a name="T3BlcmF0b3JDaGFyYWN0ZXJpc3RpY3M"></a>Operator Characteristics</h2>
 
-<p id="b3BlcmF0b3JfY2hhcmFjdGVyaXN0aWNz"> <a name="b3BlcmF0b3JzO2NoYXJhY3RlcmlzdGljcw1"></a>Every operator possesses several important characteristics which govern its behavior: the number of operands on which it operates, its relationship to other operators, the contexts it enforces, and the syntax it provides.</p>
+<p content_id="283" id="b3BlcmF0b3JfY2hhcmFjdGVyaXN0aWNz"> <a name="b3BlcmF0b3JzO2NoYXJhY3RlcmlzdGljcw1"></a>Every operator possesses several important characteristics which govern its behavior: the number of operands on which it operates, its relationship to other operators, the contexts it enforces, and the syntax it provides.</p>
 
-<p><code>perldoc perlop</code> and <code>perldoc perlsyn</code> provide voluminous information about Perl&#39;s operators, but the documentation assumes you&#39;re already familiar with a few essential computer science concepts. These ideas sound complicated, but they use complex names for ideas you already understand, even if you&#39;ve never thought about them. If you can do elementary math in your head, you&#39;ll do fine.</p>
+<p content_id="284"><code>perldoc perlop</code> and <code>perldoc perlsyn</code> provide voluminous information about Perl&#39;s operators, but the documentation assumes you&#39;re already familiar with a few essential computer science concepts. These ideas sound complicated, but they use complex names for ideas you already understand, even if you&#39;ve never thought about them. If you can do elementary math in your head, you&#39;ll do fine.</p>
 
 <h3 id="cHJlY2VkZW5jZQ"><a name="UHJlY2VkZW5jZQ"></a>Precedence</h3>
 
-<p id="cHJlY2VkZW5jZQ"> <a name="cHJlY2VkZW5jZQ1"></a>The <em>precedence</em> of an operator governs when Perl should evaluate it in an expression. Evaluation order proceeds from highest to lowest precedence. Remember basic math? Multiply and divide before you add and subtract. That&#39;s precedence. Because the precedence of multiplication is higher than the precedence of addition, in Perl <code>7 + 7 * 10</code> evaluates to <code>77</code>, not <code>140</code>.</p>
+<p content_id="285" id="cHJlY2VkZW5jZQ"> <a name="cHJlY2VkZW5jZQ1"></a>The <em>precedence</em> of an operator governs when Perl should evaluate it in an expression. Evaluation order proceeds from highest to lowest precedence. Remember basic math? Multiply and divide before you add and subtract. That&#39;s precedence. Because the precedence of multiplication is higher than the precedence of addition, in Perl <code>7 + 7 * 10</code> evaluates to <code>77</code>, not <code>140</code>.</p>
 
-<p>To force the evaluation of some operators before others, group their subexpressions in parentheses. In <code>(7 + 7) * 10</code>, grouping the addition into a single unit forces its evaluation before the multiplication. The result is <code>140</code>.</p>
+<p content_id="286">To force the evaluation of some operators before others, group their subexpressions in parentheses. In <code>(7 + 7) * 10</code>, grouping the addition into a single unit forces its evaluation before the multiplication. The result is <code>140</code>.</p>
 
-<p><code>perldoc perlop</code> contains a table of precedence. Skim it a few times, but don&#39;t bother memorizing it (almost no one does). Spend your time simplifying your code where you can and then adding clarifying parentheses where you need them.</p>
+<p content_id="287"><code>perldoc perlop</code> contains a table of precedence. Skim it a few times, but don&#39;t bother memorizing it (almost no one does). Spend your time simplifying your code where you can and then adding clarifying parentheses where you need them.</p>
 
-<p>In cases where two operators have the same precedence, other factors such as associativity (<a href="04-perl-operators.html#YXNzb2NpYXRpdml0eQ">Associativity</a>) and fixity (<a href="04-perl-operators.html#Zml4aXR5">Fixity</a>) break the tie.</p>
+<p content_id="288">In cases where two operators have the same precedence, other factors such as associativity (<a href="04-perl-operators.html#YXNzb2NpYXRpdml0eQ">Associativity</a>) and fixity (<a href="04-perl-operators.html#Zml4aXR5">Fixity</a>) break the tie.</p>
 
 <h3 id="YXNzb2NpYXRpdml0eQ"><a name="QXNzb2NpYXRpdml0eQ"></a>Associativity</h3>
 
-<p id="YXNzb2NpYXRpdml0eQ"> <a name="YXNzb2NpYXRpdml0eQ1"></a> <a name="YXNzb2NpYXRpdml0eTtsZWZ01"></a> <a name="bGVmdGFzc29jaWF0aXZpdHk1"></a> <a name="YXNzb2NpYXRpdml0eTtyaWdodA1"></a> <a name="cmlnaHRhc3NvY2lhdGl2aXR51"></a>The <em>associativity</em> of an operator governs whether it evaluates from left to right or right to left. Addition is left associative, such that <code>2 + 3 + 4</code> evaluates <code>2 + 3</code> first, then adds <code>4</code> to the result. Exponentiation is right associative, such that <code>2 ** 3 ** 4</code> evaluates <code>3 ** 4</code> first, then raises <code>2</code> to the 81st power. As usual, grouping with parentheses will let you change the order of evaluation.</p>
+<p content_id="289" id="YXNzb2NpYXRpdml0eQ"> <a name="YXNzb2NpYXRpdml0eQ1"></a> <a name="YXNzb2NpYXRpdml0eTtsZWZ01"></a> <a name="bGVmdGFzc29jaWF0aXZpdHk1"></a> <a name="YXNzb2NpYXRpdml0eTtyaWdodA1"></a> <a name="cmlnaHRhc3NvY2lhdGl2aXR51"></a>The <em>associativity</em> of an operator governs whether it evaluates from left to right or right to left. Addition is left associative, such that <code>2 + 3 + 4</code> evaluates <code>2 + 3</code> first, then adds <code>4</code> to the result. Exponentiation is right associative, such that <code>2 ** 3 ** 4</code> evaluates <code>3 ** 4</code> first, then raises <code>2</code> to the 81st power. As usual, grouping with parentheses will let you change the order of evaluation.</p>
 
-<p>If you memorize only the precedence and associativity of the common mathematical operators, you&#39;ll be fine. Simplify your code and you won&#39;t have to memorize other associativities.</p>
+<p content_id="290">If you memorize only the precedence and associativity of the common mathematical operators, you&#39;ll be fine. Simplify your code and you won&#39;t have to memorize other associativities.</p>
 
 <div class="sidebar">
 
-<p id="Qjo6RGVwYXJzZQ1"> <a name="cHJlY2VkZW5jZTtkaXNhbWJpZ3VhdGlvbg1"></a> <a name="YXNzb2NpYXRpdml0eTtkaXNhbWJpZ3VhdGlvbg1"></a></p>
+<p content_id="291" id="Qjo6RGVwYXJzZQ1"> <a name="cHJlY2VkZW5jZTtkaXNhbWJpZ3VhdGlvbg1"></a> <a name="YXNzb2NpYXRpdml0eTtkaXNhbWJpZ3VhdGlvbg1"></a></p>
 
-<p>The core <code>B::Deparse</code> module is an invaluable debugging tool. Run <code>perl -MO=Deparse,-p</code> on a snippet of code to see exactly how Perl handles operator precedence and associativity. The <code>-p</code> flag adds extra grouping parentheses which often clarify evaluation order.</p>
+<p content_id="292">The core <code>B::Deparse</code> module is an invaluable debugging tool. Run <code>perl -MO=Deparse,-p</code> on a snippet of code to see exactly how Perl handles operator precedence and associativity. The <code>-p</code> flag adds extra grouping parentheses which often clarify evaluation order.</p>
 
-<p>Beware that Perl&#39;s optimizer will simplify mathematical operations using constant values. To work around this, use named variables instead, as in <code>$x ** $y ** $z</code>.</p>
+<p content_id="293">Beware that Perl&#39;s optimizer will simplify mathematical operations using constant values. To work around this, use named variables instead, as in <code>$x ** $y ** $z</code>.</p>
 
 </div>
 
 <h3 id="YXJpdHk"><a name="QXJpdHk"></a>Arity</h3>
 
-<p id="YXJpdHk"><a name="YXJpdHk1"></a> <a name="b3BlcmF0b3JzO2FyaXR51"></a> <a name="bnVsbGFyeQ1"></a> <a name="dW5hcnk1"></a> <a name="YmluYXJ51"></a> <a name="dHJpbmFyeQ1"></a> <a name="bGlzdGFyeQ1"></a>The <em>arity</em> of an operator is the number of operands on which it operates. A <em>nullary</em> operator operates on zero operands. A <em>unary</em> operator operates on one operand. A <em>binary</em> operator operates on two operands. A <em>trinary</em> operator operates on three operands. A <em>listary</em> operator operates on a list of operands.</p>
+<p content_id="294" id="YXJpdHk"><a name="YXJpdHk1"></a> <a name="b3BlcmF0b3JzO2FyaXR51"></a> <a name="bnVsbGFyeQ1"></a> <a name="dW5hcnk1"></a> <a name="YmluYXJ51"></a> <a name="dHJpbmFyeQ1"></a> <a name="bGlzdGFyeQ1"></a>The <em>arity</em> of an operator is the number of operands on which it operates. A <em>nullary</em> operator operates on zero operands. A <em>unary</em> operator operates on one operand. A <em>binary</em> operator operates on two operands. A <em>trinary</em> operator operates on three operands. A <em>listary</em> operator operates on a list of operands.</p>
 
-<p>The arithmetic operators are binary operators and are usually left associative. <code>2 + 3 - 4</code> evaluates <code>2 + 3</code> first; addition and subtraction have the same precedence, but they&#39;re left associative and binary, so the proper evaluation order applies the leftmost operator (<code>+</code>) to the leftmost two operands (<code>2</code> and <code>3</code>) with the leftmost operator (<code>+</code>), then applies the rightmost operator (<code>-</code>) to the result of the first operation and the rightmost operand (<code>4</code>).</p>
+<p content_id="295">The arithmetic operators are binary operators and are usually left associative. <code>2 + 3 - 4</code> evaluates <code>2 + 3</code> first; addition and subtraction have the same precedence, but they&#39;re left associative and binary, so the proper evaluation order applies the leftmost operator (<code>+</code>) to the leftmost two operands (<code>2</code> and <code>3</code>) with the leftmost operator (<code>+</code>), then applies the rightmost operator (<code>-</code>) to the result of the first operation and the rightmost operand (<code>4</code>).</p>
 
-<p>Perl novices often find confusion between the interaction of listary operators—especially function calls—and nested expressions. Where parentheses usually help, beware of the parsing complexity of:</p>
+<p content_id="296">Perl novices often find confusion between the interaction of listary operators—especially function calls—and nested expressions. Where parentheses usually help, beware of the parsing complexity of:</p>
 
 <div class="programlisting">
 
@@ -54,23 +54,23 @@
 
 </div>
 
-<p>... which prints the value <code>6</code> and (probably) evaluates as a whole to <code>4</code> (the return value of <code>say</code> multiplied by <code>4</code>). Perl&#39;s parser happily interprets the parentheses as postcircumfix (<a href="04-perl-operators.html#Zml4aXR5">Fixity</a>) operators denoting the arguments to <code>say</code>, not circumfix parentheses grouping an expression to change precedence.</p>
+<p content_id="297">... which prints the value <code>6</code> and (probably) evaluates as a whole to <code>4</code> (the return value of <code>say</code> multiplied by <code>4</code>). Perl&#39;s parser happily interprets the parentheses as postcircumfix (<a href="04-perl-operators.html#Zml4aXR5">Fixity</a>) operators denoting the arguments to <code>say</code>, not circumfix parentheses grouping an expression to change precedence.</p>
 
 <h3 id="Zml4aXR5"><a name="Rml4aXR5"></a>Fixity</h3>
 
-<p id="Zml4aXR5"> <a name="Zml4aXR51"></a> <a name="b3BlcmF0b3JzO2ZpeGl0eQ1"></a> <a name="aW5maXg1"></a> <a name="Zml4aXR5O2luZml41"></a> <a name="cHJlZml41"></a> <a name="Zml4aXR5O3ByZWZpeA1"></a> <a name="cG9zdGZpeA1"></a> <a name="Zml4aXR5O3Bvc3RmaXg1"></a> <a name="Y2lyY3VtZml41"></a> <a name="Zml4aXR5O2NpcmN1bWZpeA1"></a> <a name="cG9zdGNpcmN1bWZpeA1"></a> <a name="Zml4aXR5O3Bvc3RjaXJjdW1maXg1"></a>An operator&#39;s <em>fixity</em> <span class="footnote">Don&#39;t memorize all of these words. Just remember what they mean.</span> is its position relative to its operands:</p>
+<p content_id="298" id="Zml4aXR5"> <a name="Zml4aXR51"></a> <a name="b3BlcmF0b3JzO2ZpeGl0eQ1"></a> <a name="aW5maXg1"></a> <a name="Zml4aXR5O2luZml41"></a> <a name="cHJlZml41"></a> <a name="Zml4aXR5O3ByZWZpeA1"></a> <a name="cG9zdGZpeA1"></a> <a name="Zml4aXR5O3Bvc3RmaXg1"></a> <a name="Y2lyY3VtZml41"></a> <a name="Zml4aXR5O2NpcmN1bWZpeA1"></a> <a name="cG9zdGNpcmN1bWZpeA1"></a> <a name="Zml4aXR5O3Bvc3RjaXJjdW1maXg1"></a>An operator&#39;s <em>fixity</em> <span class="footnote">Don&#39;t memorize all of these words. Just remember what they mean.</span> is its position relative to its operands:</p>
 
 <ul>
 
-<li><em>Infix</em> operators appear between their operands. Most mathematical operators are infix operators, such as the multiplication operator in <code>$length * $width</code>.<p id="XDtwcmVmaXhvcGVyYXRvcg1"> <a name="fjtwcmVmaXhvcGVyYXRvcg1"></a> <a name="Kys7cHJlZml4b3BlcmF0b3I1"></a> <a name="LS07cHJlZml4b3BlcmF0b3I1"></a> <a name="KztwcmVmaXhvcGVyYXRvcg1"></a> <a name="LTtwcmVmaXhvcGVyYXRvcg1"></a> <a name="ITtwcmVmaXhvcGVyYXRvcg1"></a> <a name="ISE7cHJlZml4b3BlcmF0b3I1"></a></p>
+<li><em>Infix</em> operators appear between their operands. Most mathematical operators are infix operators, such as the multiplication operator in <code>$length * $width</code>.<p content_id="299" id="XDtwcmVmaXhvcGVyYXRvcg1"> <a name="fjtwcmVmaXhvcGVyYXRvcg1"></a> <a name="Kys7cHJlZml4b3BlcmF0b3I1"></a> <a name="LS07cHJlZml4b3BlcmF0b3I1"></a> <a name="KztwcmVmaXhvcGVyYXRvcg1"></a> <a name="LTtwcmVmaXhvcGVyYXRvcg1"></a> <a name="ITtwcmVmaXhvcGVyYXRvcg1"></a> <a name="ISE7cHJlZml4b3BlcmF0b3I1"></a></p>
 
 </li>
 
-<li><em>Prefix</em> operators precede their operands. <em>Postfix</em> operators follow their operands. These operators tend to be unary, such as mathematic negation (<code>-$x</code>), boolean negation (<code>!$y</code>), and postfix increment (<code>$z++</code>).<p id="KCk7Y2lyY3VtZml4b3BlcmF0b3I1"> <a name="e307Y2lyY3VtZml4b3BlcmF0b3I1"></a> <a name="W107Y2lyY3VtZml4b3BlcmF0b3I1"></a> <a name="Ly87Y2lyY3VtZml4b3BlcmF0b3I1"></a> <a name="YGA7Y2lyY3VtZml4b3BlcmF0b3I1"></a> <a name="Jyc7Y2lyY3VtZml4b3BlcmF0b3I1"></a> <a name="O2NpcmN1bWZpeG9wZXJhdG9y1"></a></p>
+<li><em>Prefix</em> operators precede their operands. <em>Postfix</em> operators follow their operands. These operators tend to be unary, such as mathematic negation (<code>-$x</code>), boolean negation (<code>!$y</code>), and postfix increment (<code>$z++</code>).<p content_id="300" id="KCk7Y2lyY3VtZml4b3BlcmF0b3I1"> <a name="e307Y2lyY3VtZml4b3BlcmF0b3I1"></a> <a name="W107Y2lyY3VtZml4b3BlcmF0b3I1"></a> <a name="Ly87Y2lyY3VtZml4b3BlcmF0b3I1"></a> <a name="YGA7Y2lyY3VtZml4b3BlcmF0b3I1"></a> <a name="Jyc7Y2lyY3VtZml4b3BlcmF0b3I1"></a> <a name="O2NpcmN1bWZpeG9wZXJhdG9y1"></a></p>
 
 </li>
 
-<li><em>Circumfix</em> operators surround their operands, as with the anonymous hash constructor (<code>{ ... }</code>) and quoting operators (<code>qq[ ... ]</code>).<p id="KCk7cG9zdGNpcmN1bWZpeG9wZXJhdG9y1"> <a name="e307cG9zdGNpcmN1bWZpeG9wZXJhdG9y1"></a> <a name="W107cG9zdGNpcmN1bWZpeG9wZXJhdG9y1"></a></p>
+<li><em>Circumfix</em> operators surround their operands, as with the anonymous hash constructor (<code>{ ... }</code>) and quoting operators (<code>qq[ ... ]</code>).<p content_id="301" id="KCk7cG9zdGNpcmN1bWZpeG9wZXJhdG9y1"> <a name="e307cG9zdGNpcmN1bWZpeG9wZXJhdG9y1"></a> <a name="W107cG9zdGNpcmN1bWZpeG9wZXJhdG9y1"></a></p>
 
 </li>
 
@@ -80,27 +80,27 @@
 
 <h2 id="b3BlcmF0b3JfdHlwZXM"><a name="T3BlcmF0b3JUeXBlcw"></a>Operator Types</h2>
 
-<p id="LjtpbmZpeG9wZXJhdG9y1"> <a name="Lj07aW5maXhvcGVyYXRvcg1"></a> <a name="Li47aW5maXhvcGVyYXRvcg1"></a> <a name="Li4uO2luZml4b3BlcmF0b3I1"></a> <a name="PX47aW5maXhvcGVyYXRvcg1"></a> <a name="IX47aW5maXhvcGVyYXRvcg1"></a> <a name="fDtpbmZpeG9wZXJhdG9y1"></a> <a name="fHw7aW5maXhvcGVyYXRvcg1"></a> <a name="Ly87aW5maXhvcGVyYXRvcg2"></a> <a name="fD07aW5maXhvcGVyYXRvcg1"></a> <a name="fHw9O2luZml4b3BlcmF0b3I1"></a> <a name="Ly89O2luZml4b3BlcmF0b3I1"></a><a name="b3BlcmF0b3JfdHlwZXM"></a>Perl operators provide value contexts (<a href="01-perl-philosophy.html#dmFsdWVfY29udGV4dHM">Numeric, String, and Boolean Context</a>) to their operands. To choose the appropriate operator, you must know the values of the operands you provide as well as the value you expect to receive.</p>
+<p content_id="302" id="LjtpbmZpeG9wZXJhdG9y1"> <a name="Lj07aW5maXhvcGVyYXRvcg1"></a> <a name="Li47aW5maXhvcGVyYXRvcg1"></a> <a name="Li4uO2luZml4b3BlcmF0b3I1"></a> <a name="PX47aW5maXhvcGVyYXRvcg1"></a> <a name="IX47aW5maXhvcGVyYXRvcg1"></a> <a name="fDtpbmZpeG9wZXJhdG9y1"></a> <a name="fHw7aW5maXhvcGVyYXRvcg1"></a> <a name="Ly87aW5maXhvcGVyYXRvcg2"></a> <a name="fD07aW5maXhvcGVyYXRvcg1"></a> <a name="fHw9O2luZml4b3BlcmF0b3I1"></a> <a name="Ly89O2luZml4b3BlcmF0b3I1"></a><a name="b3BlcmF0b3JfdHlwZXM"></a>Perl operators provide value contexts (<a href="01-perl-philosophy.html#dmFsdWVfY29udGV4dHM">Numeric, String, and Boolean Context</a>) to their operands. To choose the appropriate operator, you must know the values of the operands you provide as well as the value you expect to receive.</p>
 
 <h3 id="bnVtZXJpY19vcGVyYXRvcnM"><a name="TnVtZXJpY09wZXJhdG9ycw"></a>Numeric Operators</h3>
 
-<p id="bnVtZXJpY19vcGVyYXRvcnM"><a name="b3BlcmF0b3JzO251bWVyaWM1"></a> <a name="b3BlcmF0b3JzO2FyaXRobWV0aWM1"></a> <a name="b3BlcmF0b3JzOys1"></a> <a name="KztudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOy01"></a> <a name="LTtudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOw1"></a> <a name="O251bWVyaWNvcGVyYXRvcg1"></a> <a name="b3BlcmF0b3JzOy81"></a> <a name="LztudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOyo1"></a> <a name="KjtudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOyU1"></a> <a name="JTtudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOys91"></a> <a name="Kz07bnVtZXJpY29wZXJhdG9y1"></a> <a name="b3BlcmF0b3JzOy091"></a> <a name="LT07bnVtZXJpY29wZXJhdG9y1"></a> <a name="b3BlcmF0b3JzOz01"></a> <a name="PTtudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOy891"></a> <a name="Lz07bnVtZXJpY29wZXJhdG9y1"></a> <a name="b3BlcmF0b3JzOyo91"></a> <a name="Kj07bnVtZXJpY29wZXJhdG9y1"></a> <a name="b3BlcmF0b3JzOyU91"></a> <a name="JT07bnVtZXJpY29wZXJhdG9y1"></a> <a name="b3BlcmF0b3JzOy0t1"></a> <a name="LS07bnVtZXJpY29wZXJhdG9y1"></a>Numeric operators impose numeric contexts on their operands. These operators are the standard arithmetic operators such as addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), division (<code>/</code>), exponentiation (<code>**</code>), and modulo (<code>%</code>), their in-place variants (<code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>**=</code>, and <code>%=</code>), and both postfix and prefix auto-decrement (<code>--</code>).</p>
+<p content_id="303" id="bnVtZXJpY19vcGVyYXRvcnM"><a name="b3BlcmF0b3JzO251bWVyaWM1"></a> <a name="b3BlcmF0b3JzO2FyaXRobWV0aWM1"></a> <a name="b3BlcmF0b3JzOys1"></a> <a name="KztudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOy01"></a> <a name="LTtudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOw1"></a> <a name="O251bWVyaWNvcGVyYXRvcg1"></a> <a name="b3BlcmF0b3JzOy81"></a> <a name="LztudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOyo1"></a> <a name="KjtudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOyU1"></a> <a name="JTtudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOys91"></a> <a name="Kz07bnVtZXJpY29wZXJhdG9y1"></a> <a name="b3BlcmF0b3JzOy091"></a> <a name="LT07bnVtZXJpY29wZXJhdG9y1"></a> <a name="b3BlcmF0b3JzOz01"></a> <a name="PTtudW1lcmljb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOy891"></a> <a name="Lz07bnVtZXJpY29wZXJhdG9y1"></a> <a name="b3BlcmF0b3JzOyo91"></a> <a name="Kj07bnVtZXJpY29wZXJhdG9y1"></a> <a name="b3BlcmF0b3JzOyU91"></a> <a name="JT07bnVtZXJpY29wZXJhdG9y1"></a> <a name="b3BlcmF0b3JzOy0t1"></a> <a name="LS07bnVtZXJpY29wZXJhdG9y1"></a>Numeric operators impose numeric contexts on their operands. These operators are the standard arithmetic operators such as addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), division (<code>/</code>), exponentiation (<code>**</code>), and modulo (<code>%</code>), their in-place variants (<code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>**=</code>, and <code>%=</code>), and both postfix and prefix auto-decrement (<code>--</code>).</p>
 
-<p>The auto-increment operator has special string behavior (<a href="04-perl-operators.html#YXV0b19pbmNyZW1lbnRfb3BlcmF0b3I">Special Operators</a>).</p>
+<p content_id="304">The auto-increment operator has special string behavior (<a href="04-perl-operators.html#YXV0b19pbmNyZW1lbnRfb3BlcmF0b3I">Special Operators</a>).</p>
 
-<p id="b3BlcmF0b3JzOz091"> <a name="b3BlcmF0b3JzOyE91"></a> <a name="b3BlcmF0b3JzOzw1"></a> <a name="b3BlcmF0b3JzOz41"></a> <a name="b3BlcmF0b3JzOzw91"></a> <a name="b3BlcmF0b3JzOz491"></a> <a name="b3BlcmF0b3JzOzw9Pg1"></a><a name="IT07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1"></a> <a name="PT07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1"></a> <a name="PjtudW1lcmljY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="PDtudW1lcmljY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="Pj07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1"></a> <a name="PD07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1"></a> <a name="PD0-O251bWVyaWNjb21wYXJpc29ub3BlcmF0b3I1"></a>Several comparison operators impose numeric contexts upon their operands. These are numeric equality (<code>==</code>), numeric inequality (<code>!=</code>), greater than (<code>&gt;</code>), less than (<code>&lt;</code>), greater than or equal to (<code>&gt;=</code>), less than or equal to (<code>&lt;=</code>), and the sort comparison operator (<code>&lt;=&gt;</code>).</p>
+<p content_id="305" id="b3BlcmF0b3JzOz091"> <a name="b3BlcmF0b3JzOyE91"></a> <a name="b3BlcmF0b3JzOzw1"></a> <a name="b3BlcmF0b3JzOz41"></a> <a name="b3BlcmF0b3JzOzw91"></a> <a name="b3BlcmF0b3JzOz491"></a> <a name="b3BlcmF0b3JzOzw9Pg1"></a><a name="IT07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1"></a> <a name="PT07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1"></a> <a name="PjtudW1lcmljY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="PDtudW1lcmljY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="Pj07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1"></a> <a name="PD07bnVtZXJpY2NvbXBhcmlzb25vcGVyYXRvcg1"></a> <a name="PD0-O251bWVyaWNjb21wYXJpc29ub3BlcmF0b3I1"></a>Several comparison operators impose numeric contexts upon their operands. These are numeric equality (<code>==</code>), numeric inequality (<code>!=</code>), greater than (<code>&gt;</code>), less than (<code>&lt;</code>), greater than or equal to (<code>&gt;=</code>), less than or equal to (<code>&lt;=</code>), and the sort comparison operator (<code>&lt;=&gt;</code>).</p>
 
 <h3 id="U3RyaW5nT3BlcmF0b3Jz"><a name="U3RyaW5nT3BlcmF0b3Jz"></a>String Operators</h3>
 
-<p id="b3BlcmF0b3JzO3N0cmluZw1"> <a name="c3RyaW5ncztvcGVyYXRvcnM1"></a> <a name="b3BlcmF0b3JzOz1-1"></a> <a name="PX47c3RyaW5nb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOyF-1"></a> <a name="IX47c3RyaW5nb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOy42"></a> <a name="LjtzdHJpbmdvcGVyYXRvcg1"></a>String operators impose string contexts on their operands. These operators are positive and negative regular expression binding (<code>=~</code> and <code>!~</code>, respectively), and concatenation (<code>.</code>).</p>
+<p content_id="306" id="b3BlcmF0b3JzO3N0cmluZw1"> <a name="c3RyaW5ncztvcGVyYXRvcnM1"></a> <a name="b3BlcmF0b3JzOz1-1"></a> <a name="PX47c3RyaW5nb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOyF-1"></a> <a name="IX47c3RyaW5nb3BlcmF0b3I1"></a> <a name="b3BlcmF0b3JzOy42"></a> <a name="LjtzdHJpbmdvcGVyYXRvcg1"></a>String operators impose string contexts on their operands. These operators are positive and negative regular expression binding (<code>=~</code> and <code>!~</code>, respectively), and concatenation (<code>.</code>).</p>
 
-<p id="b3BlcmF0b3JzO2Vx1"> <a name="b3BlcmF0b3JzO25l1"></a> <a name="b3BlcmF0b3JzO2d01"></a> <a name="b3BlcmF0b3JzO2x01"></a> <a name="b3BlcmF0b3JzO2dl1"></a> <a name="b3BlcmF0b3JzO2xl1"></a> <a name="b3BlcmF0b3JzO2NtcA1"></a> <a name="ZXE7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="bmU7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="Z3Q7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="bHQ7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="Z2U7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="bGU7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="Y21wO3N0cmluZ2NvbXBhcmlzb25vcGVyYXRvcg1"></a>Several comparison operators impose string contexts upon their operands. These are string equality (<code>eq</code>), string inequality (<code>ne</code>), greater than (<code>gt</code>), less than (<code>lt</code>), greater than or equal to (<code>ge</code>), less than or equal to (<code>le</code>), and the string sort comparison operator (<code>cmp</code>).</p>
+<p content_id="307" id="b3BlcmF0b3JzO2Vx1"> <a name="b3BlcmF0b3JzO25l1"></a> <a name="b3BlcmF0b3JzO2d01"></a> <a name="b3BlcmF0b3JzO2x01"></a> <a name="b3BlcmF0b3JzO2dl1"></a> <a name="b3BlcmF0b3JzO2xl1"></a> <a name="b3BlcmF0b3JzO2NtcA1"></a> <a name="ZXE7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="bmU7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="Z3Q7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="bHQ7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="Z2U7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="bGU7c3RyaW5nY29tcGFyaXNvbm9wZXJhdG9y1"></a> <a name="Y21wO3N0cmluZ2NvbXBhcmlzb25vcGVyYXRvcg1"></a>Several comparison operators impose string contexts upon their operands. These are string equality (<code>eq</code>), string inequality (<code>ne</code>), greater than (<code>gt</code>), less than (<code>lt</code>), greater than or equal to (<code>ge</code>), less than or equal to (<code>le</code>), and the string sort comparison operator (<code>cmp</code>).</p>
 
 <h3 id="TG9naWNhbE9wZXJhdG9ycw"><a name="TG9naWNhbE9wZXJhdG9ycw"></a>Logical Operators</h3>
 
-<p id="b3BlcmF0b3JzO2xvZ2ljYWw1"> <a name="b3BlcmF0b3JzOyYm1"></a> <a name="b3BlcmF0b3JzO2FuZA1"></a> <a name="b3BlcmF0b3JzO3x81"></a> <a name="b3BlcmF0b3JzO29y1"></a> <a name="b3BlcmF0b3JzOy8v2"></a> <a name="b3BlcmF0b3JzOz861"></a> <a name="b3BlcmF0b3JzOyE1"></a> <a name="b3BlcmF0b3JzO25vdA1"></a> <a name="b3BlcmF0b3JzO3hvcg1"></a> <a name="JiY7bG9naWNhbG9wZXJhdG9y1"></a> <a name="YW5kO2xvZ2ljYWxvcGVyYXRvcg1"></a> <a name="fHw7bG9naWNhbG9wZXJhdG9y1"></a> <a name="b3I7bG9naWNhbG9wZXJhdG9y1"></a> <a name="Ly87bG9naWNhbG9wZXJhdG9y1"></a> <a name="Pzo7bG9naWNhbG9wZXJhdG9y1"></a> <a name="ITtsb2dpY2Fsb3BlcmF0b3I1"></a> <a name="bm90O2xvZ2ljYWxvcGVyYXRvcg1"></a> <a name="eG9yO2xvZ2ljYWxvcGVyYXRvcg1"></a> <a name="b3BlcmF0b3JzO2RlZmluZWQtb3I2"></a> <a name="ZGVmaW5lZC1vcjtsb2dpY2Fsb3BlcmF0b3I1"></a> <a name="c2hvcnQtY2lyY3VpdGluZw2"></a>Logical operators impose a boolean context on their operands. These operators are <code>&amp;&amp;</code>, <code>and</code>, <code>||</code>, and <code>or</code>. All are infix and all exhibit <em>short-circuiting</em> behavior (<a href="03-perl-language.html#c2hvcnRfY2lyY3VpdGluZw">Short Circuiting</a>). The word forms have lower precedence than their punctuation forms.</p>
+<p content_id="308" id="b3BlcmF0b3JzO2xvZ2ljYWw1"> <a name="b3BlcmF0b3JzOyYm1"></a> <a name="b3BlcmF0b3JzO2FuZA1"></a> <a name="b3BlcmF0b3JzO3x81"></a> <a name="b3BlcmF0b3JzO29y1"></a> <a name="b3BlcmF0b3JzOy8v2"></a> <a name="b3BlcmF0b3JzOz861"></a> <a name="b3BlcmF0b3JzOyE1"></a> <a name="b3BlcmF0b3JzO25vdA1"></a> <a name="b3BlcmF0b3JzO3hvcg1"></a> <a name="JiY7bG9naWNhbG9wZXJhdG9y1"></a> <a name="YW5kO2xvZ2ljYWxvcGVyYXRvcg1"></a> <a name="fHw7bG9naWNhbG9wZXJhdG9y1"></a> <a name="b3I7bG9naWNhbG9wZXJhdG9y1"></a> <a name="Ly87bG9naWNhbG9wZXJhdG9y1"></a> <a name="Pzo7bG9naWNhbG9wZXJhdG9y1"></a> <a name="ITtsb2dpY2Fsb3BlcmF0b3I1"></a> <a name="bm90O2xvZ2ljYWxvcGVyYXRvcg1"></a> <a name="eG9yO2xvZ2ljYWxvcGVyYXRvcg1"></a> <a name="b3BlcmF0b3JzO2RlZmluZWQtb3I2"></a> <a name="ZGVmaW5lZC1vcjtsb2dpY2Fsb3BlcmF0b3I1"></a> <a name="c2hvcnQtY2lyY3VpdGluZw2"></a>Logical operators impose a boolean context on their operands. These operators are <code>&amp;&amp;</code>, <code>and</code>, <code>||</code>, and <code>or</code>. All are infix and all exhibit <em>short-circuiting</em> behavior (<a href="03-perl-language.html#c2hvcnRfY2lyY3VpdGluZw">Short Circuiting</a>). The word forms have lower precedence than their punctuation forms.</p>
 
-<p>The defined-or operator, <code>//</code>, tests the <em>definedness</em> of its operand. Unlike <code>||</code> which tests the <em>truth</em> of its operand, <code>//</code> evaluates to a true value even if its operand evaluates to a numeric zero or the empty string. This is especially useful for setting default parameter values:</p>
+<p content_id="309">The defined-or operator, <code>//</code>, tests the <em>definedness</em> of its operand. Unlike <code>||</code> which tests the <em>truth</em> of its operand, <code>//</code> evaluates to a true value even if its operand evaluates to a numeric zero or the empty string. This is especially useful for setting default parameter values:</p>
 
 <div class="programlisting">
 
@@ -112,7 +112,7 @@
 
 </div>
 
-<p id="Pzo7dGVybmFyeWNvbmRpdGlvbmFsb3BlcmF0b3I1">The ternary conditional operator (<code>?:</code>) takes three operands. It evaluates the first in boolean context and evaluates to the second if the first is true and the third otherwise:</p>
+<p content_id="310" id="Pzo7dGVybmFyeWNvbmRpdGlvbmFsb3BlcmF0b3I1">The ternary conditional operator (<code>?:</code>) takes three operands. It evaluates the first in boolean context and evaluates to the second if the first is true and the third otherwise:</p>
 
 <div class="programlisting">
 
@@ -120,17 +120,17 @@
 
 </div>
 
-<p>The prefix <code>!</code> and <code>not</code> operators return the logical opposites of the boolean values of their operands. <code>not</code> is a lower precedence version of <code>!</code>.</p>
+<p content_id="311">The prefix <code>!</code> and <code>not</code> operators return the logical opposites of the boolean values of their operands. <code>not</code> is a lower precedence version of <code>!</code>.</p>
 
-<p>The <code>xor</code> operator is an infix operator which evaluates to the exclusive-or of its operands.</p>
+<p content_id="312">The <code>xor</code> operator is an infix operator which evaluates to the exclusive-or of its operands.</p>
 
 <h3 id="Qml0d2lzZU9wZXJhdG9ycw"><a name="Qml0d2lzZU9wZXJhdG9ycw"></a>Bitwise Operators</h3>
 
-<p id="b3BlcmF0b3JzO2JpdHdpc2U1"> <a name="b3BlcmF0b3JzOzw81"></a> <a name="b3BlcmF0b3JzOz4-1"></a> <a name="b3BlcmF0b3JzOyY1"></a> <a name="b3BlcmF0b3JzO3w1"></a> <a name="b3BlcmF0b3JzO141"></a> <a name="b3BlcmF0b3JzOyY91"></a> <a name="b3BlcmF0b3JzO3w91"></a> <a name="b3BlcmF0b3JzO1491"></a> <a name="b3BlcmF0b3JzOzw8PQ1"></a> <a name="b3BlcmF0b3JzOz4-PQ1"></a><a name="PDw7Yml0d2lzZW9wZXJhdG9y1"></a> <a name="Pj47Yml0d2lzZW9wZXJhdG9y1"></a><a name="JjtiaXR3aXNlb3BlcmF0b3I1"></a> <a name="fDtiaXR3aXNlb3BlcmF0b3I1"></a> <a name="XjtiaXR3aXNlb3BlcmF0b3I1"></a> <a name="Jj07Yml0d2lzZW9wZXJhdG9y1"></a> <a name="fD07Yml0d2lzZW9wZXJhdG9y1"></a> <a name="Xj07Yml0d2lzZW9wZXJhdG9y1"></a> <a name="PDw9O2JpdHdpc2VvcGVyYXRvcg1"></a> <a name="Pj49O2JpdHdpc2VvcGVyYXRvcg1"></a>Bitwise operators treat their operands numerically at the bit level. These operations are uncommon. They consist of left shift (<code>&lt;&lt;</code>), right shift (<code>&gt;&gt;</code>), bitwise and (<code>&amp;</code>), bitwise or (<code>|</code>), and bitwise xor (<code>^</code>), as well as their in-place variants (<code>&lt;&lt;=</code>, <code>&gt;&gt;=</code>, <code>&amp;=</code>, <code>|=</code>, and <code>^=</code>).</p>
+<p content_id="313" id="b3BlcmF0b3JzO2JpdHdpc2U1"> <a name="b3BlcmF0b3JzOzw81"></a> <a name="b3BlcmF0b3JzOz4-1"></a> <a name="b3BlcmF0b3JzOyY1"></a> <a name="b3BlcmF0b3JzO3w1"></a> <a name="b3BlcmF0b3JzO141"></a> <a name="b3BlcmF0b3JzOyY91"></a> <a name="b3BlcmF0b3JzO3w91"></a> <a name="b3BlcmF0b3JzO1491"></a> <a name="b3BlcmF0b3JzOzw8PQ1"></a> <a name="b3BlcmF0b3JzOz4-PQ1"></a><a name="PDw7Yml0d2lzZW9wZXJhdG9y1"></a> <a name="Pj47Yml0d2lzZW9wZXJhdG9y1"></a><a name="JjtiaXR3aXNlb3BlcmF0b3I1"></a> <a name="fDtiaXR3aXNlb3BlcmF0b3I1"></a> <a name="XjtiaXR3aXNlb3BlcmF0b3I1"></a> <a name="Jj07Yml0d2lzZW9wZXJhdG9y1"></a> <a name="fD07Yml0d2lzZW9wZXJhdG9y1"></a> <a name="Xj07Yml0d2lzZW9wZXJhdG9y1"></a> <a name="PDw9O2JpdHdpc2VvcGVyYXRvcg1"></a> <a name="Pj49O2JpdHdpc2VvcGVyYXRvcg1"></a>Bitwise operators treat their operands numerically at the bit level. These operations are uncommon. They consist of left shift (<code>&lt;&lt;</code>), right shift (<code>&gt;&gt;</code>), bitwise and (<code>&amp;</code>), bitwise or (<code>|</code>), and bitwise xor (<code>^</code>), as well as their in-place variants (<code>&lt;&lt;=</code>, <code>&gt;&gt;=</code>, <code>&amp;=</code>, <code>|=</code>, and <code>^=</code>).</p>
 
 <h3 id="YXV0b19pbmNyZW1lbnRfb3BlcmF0b3I"><a name="U3BlY2lhbE9wZXJhdG9ycw"></a>Special Operators</h3>
 
-<p id="YXV0b19pbmNyZW1lbnRfb3BlcmF0b3I"><a name="b3BlcmF0b3JzO2F1dG8taW5jcmVtZW501"></a> <a name="YXV0by1pbmNyZW1lbnQ1"></a> <a name="b3BlcmF0b3JzOysr1"></a> <a name="Kys7YXV0by1pbmNyZW1lbnRvcGVyYXRvcg1"></a>The auto-increment operator has special behavior. When used on a value with a numeric component (<a href="03-perl-language.html#Y2FjaGVkX2NvZXJjaW9ucw">Cached Coercions</a>), the operator increments that numeric component. If the value is obviously a string (and has no numeric component), the operator increments the value&#39;s string component such that <code>a</code> becomes <code>b</code>, <code>zz</code> becomes <code>aaa</code>, and <code>a9</code> becomes <code>b0</code>.</p>
+<p content_id="314" id="YXV0b19pbmNyZW1lbnRfb3BlcmF0b3I"><a name="b3BlcmF0b3JzO2F1dG8taW5jcmVtZW501"></a> <a name="YXV0by1pbmNyZW1lbnQ1"></a> <a name="b3BlcmF0b3JzOysr1"></a> <a name="Kys7YXV0by1pbmNyZW1lbnRvcGVyYXRvcg1"></a>The auto-increment operator has special behavior. When used on a value with a numeric component (<a href="03-perl-language.html#Y2FjaGVkX2NvZXJjaW9ucw">Cached Coercions</a>), the operator increments that numeric component. If the value is obviously a string (and has no numeric component), the operator increments the value&#39;s string component such that <code>a</code> becomes <code>b</code>, <code>zz</code> becomes <code>aaa</code>, and <code>a9</code> becomes <code>b0</code>.</p>
 
 <div class="programlisting">
 
@@ -151,9 +151,9 @@
 
 </div>
 
-<p id="b3BlcmF0b3JzO3JlcGV0aXRpb241"> <a name="b3BlcmF0b3JzO3g1"></a> <a name="eDtyZXBldGl0aW9ub3BlcmF0b3I1"></a>The repetition operator (<code>x</code>) is an infix operator with complex behavior. When evaluated in list context with a list as its first operand, it evaluates to that list repeated the number of times specified by its second operand. When evaluated in list context with a scalar as its first operand, it produces a string consisting of the string value of its first operand concatenated to itself the number of times specified by its second operand.</p>
+<p content_id="315" id="b3BlcmF0b3JzO3JlcGV0aXRpb241"> <a name="b3BlcmF0b3JzO3g1"></a> <a name="eDtyZXBldGl0aW9ub3BlcmF0b3I1"></a>The repetition operator (<code>x</code>) is an infix operator with complex behavior. When evaluated in list context with a list as its first operand, it evaluates to that list repeated the number of times specified by its second operand. When evaluated in list context with a scalar as its first operand, it produces a string consisting of the string value of its first operand concatenated to itself the number of times specified by its second operand.</p>
 
-<p>In scalar context, the operator repeats and concatenates a string:</p>
+<p content_id="316">In scalar context, the operator repeats and concatenates a string:</p>
 
 <div class="programlisting">
 
@@ -174,7 +174,7 @@
 
 </div>
 
-<p id="b3BlcmF0b3JzO3Jhbmdl2"> <a name="cmFuZ2U1"></a> <a name="b3BlcmF0b3JzOy4u2"></a> <a name="Li47cmFuZ2VvcGVyYXRvcg2"></a>The infix <em>range</em> operator (<code>..</code>) produces a list of items in list context:</p>
+<p content_id="317" id="b3BlcmF0b3JzO3Jhbmdl2"> <a name="cmFuZ2U1"></a> <a name="b3BlcmF0b3JzOy4u2"></a> <a name="Li47cmFuZ2VvcGVyYXRvcg2"></a>The infix <em>range</em> operator (<code>..</code>) produces a list of items in list context:</p>
 
 <div class="programlisting">
 
@@ -182,9 +182,9 @@
 
 </div>
 
-<p>It can <em>only</em> produce simple, incrementing ranges of integers or strings.</p>
+<p content_id="318">It can <em>only</em> produce simple, incrementing ranges of integers or strings.</p>
 
-<p id="b3BlcmF0b3JzO2ZsaXAtZmxvcA1"> <a name="ZmxpcC1mbG9w1"></a> <a name="Li47ZmxpcC1mbG9wb3BlcmF0b3I1"></a>In boolean context, the range operator becomes the <em>flip-flop</em> operator. This operator produces a false value until its left operand is true. That value stays true until the right operand is true, after which the value is false again until the left operand is true again. Imagine parsing the text of a formal letter with:</p>
+<p content_id="319" id="b3BlcmF0b3JzO2ZsaXAtZmxvcA1"> <a name="ZmxpcC1mbG9w1"></a> <a name="Li47ZmxpcC1mbG9wb3BlcmF0b3I1"></a>In boolean context, the range operator becomes the <em>flip-flop</em> operator. This operator produces a false value until its left operand is true. That value stays true until the right operand is true, after which the value is false again until the left operand is true again. Imagine parsing the text of a formal letter with:</p>
 
 <div class="programlisting">
 
@@ -195,11 +195,11 @@
 
 </div>
 
-<p id="b3BlcmF0b3JzO2NvbW1h1"> <a name="b3BlcmF0b3JzOyw1"></a> <a name="LDtvcGVyYXRvcg1"></a> <a name="b3BlcmF0b3JzOz0-2"></a> <a name="PT47ZmF0Y29tbWFvcGVyYXRvcg2"></a>The <em>comma</em> operator (<code>,</code>) is an infix operator. In scalar context it evaluates its left operand then returns the value produced by evaluating its right operand. In list context, it evaluates both operands in left-to-right order.</p>
+<p content_id="320" id="b3BlcmF0b3JzO2NvbW1h1"> <a name="b3BlcmF0b3JzOyw1"></a> <a name="LDtvcGVyYXRvcg1"></a> <a name="b3BlcmF0b3JzOz0-2"></a> <a name="PT47ZmF0Y29tbWFvcGVyYXRvcg2"></a>The <em>comma</em> operator (<code>,</code>) is an infix operator. In scalar context it evaluates its left operand then returns the value produced by evaluating its right operand. In list context, it evaluates both operands in left-to-right order.</p>
 
-<p>The fat comma operator (<code>=&gt;</code>) also automatically quotes any bareword used as its left operand (<a href="03-perl-language.html#aGFzaGVz">Hashes</a>).</p>
+<p content_id="321">The fat comma operator (<code>=&gt;</code>) also automatically quotes any bareword used as its left operand (<a href="03-perl-language.html#aGFzaGVz">Hashes</a>).</p>
 
-<p id="b3BlcmF0b3JzO3RyaXBsZS1kb3Q1"> <a name="b3BlcmF0b3JzO3doYXRldmVy1"></a> <a name="b3BlcmF0b3JzOy4uLg1"></a>The <em>triple-dot</em> or <em>whatever</em> operator stands in for a single statement. It is nullary and has neither precedence nor associativity. It parses, but when executed it throws an exception with the string <code>Unimplemented</code>. This makes a great placeholder in example code you don&#39;t expect anyone to execute:</p>
+<p content_id="322" id="b3BlcmF0b3JzO3RyaXBsZS1kb3Q1"> <a name="b3BlcmF0b3JzO3doYXRldmVy1"></a> <a name="b3BlcmF0b3JzOy4uLg1"></a>The <em>triple-dot</em> or <em>whatever</em> operator stands in for a single statement. It is nullary and has neither precedence nor associativity. It parses, but when executed it throws an exception with the string <code>Unimplemented</code>. This makes a great placeholder in example code you don&#39;t expect anyone to execute:</p>
 
 <div class="programlisting">
 
